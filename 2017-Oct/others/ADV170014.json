@@ -1,0 +1,301 @@
+{
+  "document_title": "October 2017 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV170014",
+      "alias": "ADV170014"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "18",
+        "date": "2021-04-06T07:00:00Z",
+        "description": "October 2017 Security Updates"
+      }
+    },
+    "initial_release_date": "2017-10-10T07:00:00Z",
+    "current_release_date": "2021-04-06T07:00:00Z"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The October security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Adobe Flash Player</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Skype for Business and Lync</li>\n<li>Chakra Core</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>ADV170016 was deprecated in lieu of CVE-2017-13080.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer.  This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041691\">4041691</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4042895\">4042895</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041676\">4041676</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041681\">4041681</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4040685\">4040685</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4049179\">4049179</a></li>\n</ul>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Windows",
+          "fullproductname": [
+            {
+              "text": "Windows 10 Version 1703 for 32-bit Systems",
+              "productid": "10951"
+            },
+            {
+              "text": "Windows 10 Version 1703 for x64-based Systems",
+              "productid": "10952"
+            },
+            {
+              "text": "Windows 10 for 32-bit Systems",
+              "productid": "10729"
+            },
+            {
+              "text": "Windows 10 for x64-based Systems",
+              "productid": "10735"
+            },
+            {
+              "text": "Windows 10 Version 1511 for 32-bit Systems",
+              "productid": "10789"
+            },
+            {
+              "text": "Windows 10 Version 1511 for x64-based Systems",
+              "productid": "10788"
+            },
+            {
+              "text": "Windows 10 Version 1607 for 32-bit Systems",
+              "productid": "10852"
+            },
+            {
+              "text": "Windows 10 Version 1607 for x64-based Systems",
+              "productid": "10853"
+            },
+            {
+              "text": "Windows Server 2016",
+              "productid": "10816"
+            },
+            {
+              "text": "Windows Server 2016  (Server Core installation)",
+              "productid": "10855"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "1",
+      "title": "Optional Windows NTLM SSO authentication changes",
+      "notes": {
+        "note": [
+          {
+            "text": "<p>Microsoft is releasing an optional security enhancement to NT LAN Manager (NTLM), limiting which network resources various clients in the Windows 10 or the Windows Server 2016 operating systems can use NTLM Single Sign On(SSO) as an authentication method. When you deploy the new security enhancement with a Network Isolation Policy defining your organization's resources, attackers can no longer redirect a user to a malicious resource outside your organization to obtain the NTLM authentication messages. This new behavior is optional, and requires customers who wish to enable it to opt in via a Windows Registry Setting or other means described below.</p>\n<p>Customers should be aware that enabling this new behavior will prevent NTLM SSO authentication with resources that are not marked as internal by the Windows Firewall. This may break some functionality by preventing NTLM SSO authentication to resources marked external, though other authentication methods will remain available. Examples where NTLM SSO authentication appear would be Internet Explorer or Edge, or a service calling WinHTTP to access a web resource; a user trying to connect to an SMB file share; or processes making RPC calls. Microsoft is releasing this new functionality as a mitigation to NTLM dictionary attacks. Microsoft continues to recommend that customers move to public key authentication methods for applications which do not support modern authentication, and use negotiate with Kerberos authentication whenever possible.</p>\n<p>The new functionality works by denying NTLM SSO authentication as a method for public resources. This is achieved when the NTLM client leverages the Windows Firewall’s ability to determine if a resource is a Public, Private, or Enterprise resource as defined by the customer-configured Windows Information Protection settings. Depending on this determination, the connection will either be allowed or denied.</p>\n<h2>FAQ</h2>\n<p><strong>1. Which registry setting should I set to enable this behavior?</strong></p>\n<p>Customers can add a DWORD32 key named “EnterpriseAccountSSO” to the Windows Registry location HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Lsa\\MSV1_0 with the following options:</p>\n<ul>\n<li>2 – Always allow SSO. (This is the default state.)</li>\n<li>1 – Deny SSO if the resource is public. Allow if the resource is private or enterprise. <strong>Allow</strong> SSO if the resource is unspecified.</li>\n<li>0 – Deny SSO if the resource is public. Allow if the resource is private or enterprise. <strong>Deny</strong> SSO if the resource is unspecified.</li>\n</ul>\n<p><strong>2. Is any other configuration necessary for this new behavior?</strong></p>\n<p>Yes. Customers need to configure a Network Isolation Policy(NIP) that defines which networks should be considered internal/enterprise and thus will permit NTLM as an SSO Authentication method. A correctly configured NIP is critical for NTLM SSO to continue to function.</p>\n<p><strong>3. Which operating systems are vulnerable to this type of attack?</strong></p>\n<p>All versions of Windows that use NTLM are susceptible to this type of attack. Microsoft is releasing this new behavior only on the Windows 10 and Server 2016 platforms due to limitations in the older versions of the Windows Firewall, which preclude older operating systems from using this new behavior. Microsoft recommends customers upgrade to the newest, and most secure offerings.</p>\n<p><strong>4. Where can I find more information about Windows Information Protection?</strong></p>\n<ul>\n<li>For general information, see <a href=\"https://blogs.technet.microsoft.com/windowsitpro/2016/06/29/introducing-windows-information-protection/\">Introducing Windows Information Protection</a></li>\n<li>For configuration deatils, please see the &quot;Choose where apps can access enterprise data&quot; section of: <a href=\"https://docs.microsoft.com/en-us/windows/threat-protection/windows-information-protection/create-wip-policy-using-sccm\">Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager</a></li>\n</ul>\n<p><strong>5. Where can I find details about enabling this functionality through Group Policy?</strong></p>\n<p>See [https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/isolating-apps-on-your-network#step-1-define-your-network](See https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/isolating-apps-on-your-network#step-1-define-your-network)</p>\n<p><strong>6. Are there other ways to opt-in to this new behavior?</strong></p>\n<p>Yes. Both the Group Policy network isolation settings and Windows Information Protection cover the same area, both for Apps and for NTLM SSO Authentication. Using either is equally effective at mitigating NTLM SSO hash theft, but customers should select between these options. Mixing various means could create unexpected behavior.</p>\n<p><strong>7. Is a reboot required to enable this new behavior?</strong></p>\n<p>A reboot will be required to install the security update. When you then enable this new behavior with a Windows Registry change, the new behavior will be immediately take effect and not require a reboot. The changes to the Windows Firewall will have a varied delay depending on whether WIP or GP was used, and when this configuration is refreshed.</p>\n<p><strong>8. My enterprise has enabled this behavior, and now users are being prompted for credentials where they previously were not. Why is this happening?</strong></p>\n<p>This is an indication that the resource is marked as public or that its designation is uncertain, if the strictest mode has been enabled. This is most likely a symptom of the resource being inaccurately represented in your enterprise’s NIP, or you have configured 0 and the application is not using SMB, RPC, or HTTP.</p>\n<p>To check whether a resource is public, please enable the “Network Isolation Operational” logs under Windows Firewall with Advanced Security in Event Viewer. For the purposes of the log, enterprise resources are considered private. Please note that Network Isolation policies from Group Policy and WIP settings only affect networks whose profile is “Domain”. For more information about network profiles, please see: <a href=\"https://technet.microsoft.com/en-us/library/cc731634(v=ws.11).aspx\">Understanding Firewall Profiles</a>.</p>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "Windows NTLM",
+            "title": "Windows NTLM",
+            "type": "Tag",
+            "ordinal": "20"
+          },
+          {
+            "text": "Microsoft",
+            "title": "Issuing CNA",
+            "type": "CNA",
+            "ordinal": "30"
+          }
+        ]
+      },
+      "cve": "ADV170014",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "10816",
+            "10951",
+            "10952",
+            "10729",
+            "10735",
+            "10789",
+            "10788",
+            "10852",
+            "10853",
+            "10855"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "product_id": "10816"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10951"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10952"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10729"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10735"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10789"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10788"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10852"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10853"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10855"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10816"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10951"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10952"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10729"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10735"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10789"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10788"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10852"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10853"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10855"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A"
+          }
+        ]
+      },
+      "cvssscoresets": {},
+      "remediations": {
+        "remediation": [
+          {
+            "type": "Vendor Fix",
+            "description": "4041691",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041691",
+            "supercedence": "4038782",
+            "product_id": [
+              "10816",
+              "10852",
+              "10853",
+              "10855"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4041676",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041676",
+            "supercedence": "4038788",
+            "product_id": [
+              "10951",
+              "10952"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4042895",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4042895",
+            "supercedence": "4038781",
+            "product_id": [
+              "10729",
+              "10735"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4041689",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041689",
+            "supercedence": "4038783",
+            "product_id": [
+              "10789",
+              "10788"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          }
+        ]
+      },
+      "acknowledgments": {},
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "1.0",
+            "date": "2017-10-10T07:00:00Z",
+            "description": "<p>Information published.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}

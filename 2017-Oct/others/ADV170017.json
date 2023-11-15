@@ -1,0 +1,326 @@
+{
+  "document_title": "October 2017 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV170017",
+      "alias": "ADV170017"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "18",
+        "date": "2021-04-06T07:00:00Z",
+        "description": "October 2017 Security Updates"
+      }
+    },
+    "initial_release_date": "2017-10-10T07:00:00Z",
+    "current_release_date": "2021-04-06T07:00:00Z"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The October security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Adobe Flash Player</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Skype for Business and Lync</li>\n<li>Chakra Core</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>ADV170016 was deprecated in lieu of CVE-2017-13080.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer.  This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041691\">4041691</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4042895\">4042895</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041676\">4041676</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041681\">4041681</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4040685\">4040685</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4049179\">4049179</a></li>\n</ul>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Microsoft Office",
+          "fullproductname": [
+            {
+              "text": "Microsoft Office 2010 Service Pack 2 (32-bit editions)",
+              "productid": "10521"
+            },
+            {
+              "text": "Microsoft Office 2010 Service Pack 2 (64-bit editions)",
+              "productid": "10522"
+            },
+            {
+              "text": "Microsoft Office 2013 RT Service Pack 1",
+              "productid": "10603"
+            },
+            {
+              "text": "Microsoft Office 2013 Service Pack 1 (32-bit editions)",
+              "productid": "10601"
+            },
+            {
+              "text": "Microsoft Office 2013 Service Pack 1 (64-bit editions)",
+              "productid": "10602"
+            },
+            {
+              "text": "Microsoft Office 2016 (32-bit edition)",
+              "productid": "10753"
+            },
+            {
+              "text": "Microsoft Office 2016 (64-bit edition)",
+              "productid": "10754"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "2",
+      "title": "Microsoft Office Defense in Depth Update",
+      "notes": {
+        "note": [
+          {
+            "text": "<p>Microsoft has released an update for Microsoft Office that provides enhanced security as a defense in depth measure.</p>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "<p><strong>1. How should this update be deployed?</strong></p>\n<p>The update can be applied from Microsoft Update or the Download Center to existing Office installations by following the links in the KB articles listed in the <strong>Affected Products</strong> table. In addition, the update can be deployed in a new installation of Office by placing the Office setup files in the Updates folder in the Office installation image as follows:</p>\n<ol>\n<li><p>Download OfficeSetupFiles2.zip from the following link: <a href=\"http://download.microsoft.com/download/5/C/0/5C08695C-D518-4FF2-A9CF-B0180B828965/OfficeSetupFiles2.ZIP\">OfficeSetupFiles</a>.</p>\n</li>\n<li><p>Extract the files from OfficeSetupFiles2.zip. There are x86 and x64 versions of OSE.EXE and OSETUP.DLL for Office 2013 and Office 2016, and OSE.EXE, OSETUP.DLL, and PSETUP.DLL for Office 2010.</p>\n</li>\n<li><p>Copy the files for the appropriate Office version and architecture into the Updates folder in the installation image. If the Updates folder already contains older versions of the same files, replace the old files with the new ones.</p>\n</li>\n<li><p>Extract the .msp patch files from the download EXEs linked in the <strong>Affected Products</strong> table and place them in the Updates folder in the installation image by following these steps:</p>\n<ol>\n<li><p>Download the EXE files for the desired Office version listed in the  <strong>Affected Products</strong> table.</p>\n</li>\n<li><p>At the command prompt, type the name of the download EXE with the /extract switch and the path to where you want to extract the files. For example:</p>\n<pre><code> osetup2013-kb4011254-fullfile-x86-glb.exe /extract:&quot;c:\\ExtractFiles&quot;\n</code></pre>\n</li>\n<li><p>Copy the extracted .msp files to the Updates folder in the installation image. If the Updates folder already contains older versions of the same files, replace the old files with the new ones.</p>\n</li>\n<li><p>Install Office.</p>\n</li>\n</ol>\n</li>\n</ol>\n<p><strong>Note:</strong> If you are installing the original release of Office 2010 or 2013, and not the service pack re-release, then you must also include the service pack .msp files in the Updates folder of the installation image. Do this as follows:</p>\n<ol>\n<li><p>Download Office 2010 Service Pack 2 or Office 2013 Service Pack 1 from the following links:</p>\n<ul>\n<li><a href=\"https://www.microsoft.com/download/details.aspx?id=39667\">Office 2010 Service Pack 2 – 32-bit Edition</a></li>\n<li><a href=\"https://www.microsoft.com/download/details.aspx?id=39647\">Office 2010 Service Pack 2 – 64-bit Edition</a></li>\n<li><a href=\"https://www.microsoft.com/download/details.aspx?id=42017\">Office 2013 Service Pack 1 – 32-bit Edition</a></li>\n<li><a href=\"https://www.microsoft.com/download/details.aspx?id=42006\">Office 2013 Service Pack 1 – 64-bit Edition</a></li>\n</ul>\n</li>\n<li><p>Extract the .msp patch files from the service pack download EXEs and place them in the Updates folder, following the instructions in step 4 in the preceding section.</p>\n</li>\n</ol>\n<p><strong>2. Are there any other mitigations for installing Office products that I should be aware of?</strong></p>\n<p>Yes. To use Microsoft Office self-extracting executable installers (.exe files), such as Office tools and updates downloaded from the Microsoft Download Center, in a safe manner Microsoft recommends that you:</p>\n<ol>\n<li>Create a new empty directory and restrict permissions to the directory so that only administrators can modify it.</li>\n<li>Download or copy the self-extracting installer to the directory.</li>\n<li>Run the installer from the directory.</li>\n</ol>\n<p>For Click-to-Run versions of Office 2013 and 2016:</p>\n<p>Use the most recent version of the Office Deployment Tool for Click-to-Run, which can be downloaded from the following locations:</p>\n<ul>\n<li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=36778\">Microsoft Office 2013 Deployment Tool for Click-to-Run</a></li>\n<li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=49117\">Microsoft Office 2016 Deployment Tool for Click-to-Run</a></li>\n</ul>\n",
+            "title": "FAQ",
+            "type": "FAQ",
+            "ordinal": "10"
+          },
+          {
+            "text": "Microsoft Office",
+            "title": "Microsoft Office",
+            "type": "Tag",
+            "ordinal": "20"
+          },
+          {
+            "text": "Microsoft",
+            "title": "Issuing CNA",
+            "type": "CNA",
+            "ordinal": "30"
+          }
+        ]
+      },
+      "cve": "ADV170017",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "10521",
+            "10522",
+            "10603",
+            "10601",
+            "10602",
+            "10753",
+            "10754"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10521"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10522"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10603"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10601"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10602"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10753"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10754"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10521"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10522"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10603"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10601"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10602"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10753"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10754"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A"
+          }
+        ]
+      },
+      "cvssscoresets": {},
+      "remediations": {
+        "remediation": [
+          {
+            "type": "Vendor Fix",
+            "description": "4022206",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=b4016c8c-9fa6-40c0-ae74-93b3a66e6c0d",
+            "supercedence": "4011274",
+            "product_id": [
+              "10521",
+              "10522"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4022208",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=c9e5660e-9c33-4303-b82a-fe62be624ad1",
+            "product_id": [
+              "10521",
+              "10522"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4022188",
+            "supercedence": "4011253",
+            "product_id": [
+              "10603",
+              "10601",
+              "10602"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4022189",
+            "supercedence": "4011254",
+            "product_id": [
+              "10603",
+              "10601",
+              "10602"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4022176",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=0ca6d983-81cf-4cb5-9ba4-99e54d174546",
+            "supercedence": "4011237",
+            "product_id": [
+              "10753",
+              "10754"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4022172",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=8efb58d2-31a8-4244-87fc-b45a4e99dd88",
+            "supercedence": "4011239",
+            "product_id": [
+              "10753",
+              "10754"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          }
+        ]
+      },
+      "acknowledgments": {
+        "acknowledgment": [
+          {
+            "name": "<li><a href=\"http://eskamation.de/\">Stefan Kanthak</a></li>"
+          }
+        ]
+      },
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "1.0",
+            "date": "2017-10-10T07:00:00Z",
+            "description": "<p>Information published.</p>\n"
+          },
+          {
+            "number": "2.0",
+            "date": "2018-05-08T07:00:00Z",
+            "description": "<p>To further protect customers, Microsoft is announcing the release of new updates for ADV170017 for supported editions of Microsoft Office 2010, Microsoft Office 2013, and Microsoft Office 2016. Microsoft recommends that customers follow the instructions in FAQ #1, which has been revised to clarify the deployment procedure, to download and install the new updates. In addition, FAQ #2 has been added to explain how customers can safely use Microsoft Office self-extracting executable installers (.exe files).</p>\n"
+          },
+          {
+            "number": "3.0",
+            "date": "2018-07-10T07:00:00Z",
+            "description": "<p>Microsoft is announcing the release of new updates for ADV170017 that further enhance security for supported editions of Microsoft Office 2010, Microsoft Office 2013, and Microsoft Office 2016. Microsoft recommends that customers follow the instructions in FAQ #1 to download and install the updates.</p>\n"
+          },
+          {
+            "number": "3.1",
+            "date": "2021-04-06T07:00:00Z",
+            "description": "<p>Updated details in the table in the description. This is an informational change only.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}

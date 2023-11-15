@@ -1,0 +1,472 @@
+{
+  "document_title": "November 2018 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV180028",
+      "alias": "ADV180028"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "9",
+        "date": "2019-01-15T08:00:00Z",
+        "description": "November 2018 Security Updates"
+      }
+    },
+    "initial_release_date": "2018-11-13T08:00:00Z",
+    "current_release_date": "2019-01-15T08:00:00Z"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The November security release consists of security updates for the following software:</p>\n<ul>\n<li>Adobe Flash Player</li>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>ChakraCore</li>\n<li>.NET Core</li>\n<li>Skype for Business</li>\n<li>Azure App Service on Azure Stack</li>\n<li>Team Foundation Server</li>\n<li>Microsoft Dynamics 365 (on-premises) version 8</li>\n<li>PowerShell Core</li>\n<li>Microsoft.PowerShell.Archive 1.2.2.0</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>A list of the latest servicing stack updates for each operating system can be found in <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001\">ADV990001</a>. This list will be updated whenever a new servicing stack update is released. It is important to install the latest servicing stack update.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer. This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n</ul>\n<p><strong>The following CVEs have FAQs with additional information and may include * further steps to take after installing the updates.</strong></p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV180025\">ADV180025</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8407\">CVE-2018-8407</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8408\">CVE-2018-8408</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8454\">CVE-2018-8454</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8545\">CVE-2018-8545</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8558\">CVE-2018-8558</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8563\">CVE-2018-8563</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8565\">CVE-2018-8565</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8566\">CVE-2018-8566</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8573\">CVE-2018-8573</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8578\">CVE-2018-8578</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8579\">CVE-2018-8579</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8581\">CVE-2018-8581</a>*</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2018-8592\">CVE-2018-8592</a>*</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/en-us/help/4467691\">4467691</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4467696\">4467696</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4467686\">4467686</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4467702\">4467702</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4467107\">4467107</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4461529\">4461529</a></li>\n</ul>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Windows",
+          "fullproductname": [
+            {
+              "text": "Windows 10 Version 1703 for 32-bit Systems",
+              "productid": "10951"
+            },
+            {
+              "text": "Windows 10 Version 1703 for x64-based Systems",
+              "productid": "10952"
+            },
+            {
+              "text": "Windows 10 Version 1803 for 32-bit Systems",
+              "productid": "11497"
+            },
+            {
+              "text": "Windows 10 Version 1803 for x64-based Systems",
+              "productid": "11498"
+            },
+            {
+              "text": "Windows Server, version 1803  (Server Core Installation)",
+              "productid": "11499"
+            },
+            {
+              "text": "Windows 10 Version 1709 for 32-bit Systems",
+              "productid": "11453"
+            },
+            {
+              "text": "Windows 10 Version 1709 for x64-based Systems",
+              "productid": "11454"
+            },
+            {
+              "text": "Windows Server, version 1709  (Server Core Installation)",
+              "productid": "11466"
+            },
+            {
+              "text": "Windows 10 for 32-bit Systems",
+              "productid": "10729"
+            },
+            {
+              "text": "Windows 10 for x64-based Systems",
+              "productid": "10735"
+            },
+            {
+              "text": "Windows 10 Version 1607 for 32-bit Systems",
+              "productid": "10852"
+            },
+            {
+              "text": "Windows 10 Version 1607 for x64-based Systems",
+              "productid": "10853"
+            },
+            {
+              "text": "Windows Server 2016",
+              "productid": "10816"
+            },
+            {
+              "text": "Windows Server 2016  (Server Core installation)",
+              "productid": "10855"
+            },
+            {
+              "text": "Windows 8.1 for 32-bit systems",
+              "productid": "10481"
+            },
+            {
+              "text": "Windows 8.1 for x64-based systems",
+              "productid": "10482"
+            },
+            {
+              "text": "Windows RT 8.1",
+              "productid": "10484"
+            },
+            {
+              "text": "Windows Server 2012",
+              "productid": "10378"
+            },
+            {
+              "text": "Windows Server 2012 (Server Core installation)",
+              "productid": "10379"
+            },
+            {
+              "text": "Windows Server 2012 R2",
+              "productid": "10483"
+            },
+            {
+              "text": "Windows Server 2012 R2 (Server Core installation)",
+              "productid": "10543"
+            },
+            {
+              "text": "Windows 10 Version 1803 for ARM64-based Systems",
+              "productid": "11563"
+            },
+            {
+              "text": "Windows 10 Version 1809 for ARM64-based Systems",
+              "productid": "11570"
+            },
+            {
+              "text": "Windows Server 2019",
+              "productid": "11571"
+            },
+            {
+              "text": "Windows 10 Version 1809 for 32-bit Systems",
+              "productid": "11568"
+            },
+            {
+              "text": "Windows Server 2019  (Server Core installation)",
+              "productid": "11572"
+            },
+            {
+              "text": "Windows 10 Version 1809 for x64-based Systems",
+              "productid": "11569"
+            },
+            {
+              "text": "Windows 10 Version 1709 for ARM64-based Systems",
+              "productid": "11583"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "1",
+      "title": "Guidance for configuring BitLocker to enforce software encryption",
+      "notes": {
+        "note": [
+          {
+            "text": "<p>Microsoft is aware of reports of vulnerabilities in the hardware encryption of certain self-encrypting drives (SEDs). Customers concerned about this issue should consider using the software only encryption provided by BitLocker Drive Encryption™.  On Windows computers with self-encrypting drives, BitLocker Drive Encryption™ manages encryption and will use hardware encryption by default. Administrators who want to force software encryption on computers with self-encrypting drives can accomplish this by deploying a Group Policy to override the default behavior. Windows will consult Group Policy to enforce software encryption only at the time of enabling BitLocker.</p>\n<p>To check the type of drive encryption being used (hardware or software):</p>\n<ol>\n<li>Run ‘manage-bde.exe -status’ from elevated command prompt.</li>\n<li>If none of the drives listed report &quot;Hardware Encryption&quot; for the <strong>Encryption Method</strong> field, then this device is using software encryption and is not affected by vulnerabilities associated with self-encrypting drive encryption.</li>\n</ol>\n<p>For drives that are encrypted using a vulnerable form of hardware encryption, you can mitigate the vulnerability by switching to software encryption using Bitlocker with a Group Policy.</p>\n<p><strong>Note</strong>: After a drive has been encrypted using hardware encryption, switching to software encryption on that drive will require that the drive be unencrypted first and then re-encrypted using software encryption. If you are using BitLocker Drive Encryption, changing the Group Policy value to enforce software encryption alone is not sufficient to re-encrypt existing data.</p>\n<p><strong>IMPORTANT</strong>: You do NOT need to reformat the drive or reinstall any applications after changing BitLocker settings.</p>\n<p>To mitigate vulnerabilities associated with self-encrypting drives on Windows systems:</p>\n<ol>\n<li>Configure and deploy a Group Policy to enable forced software encryption.</li>\n<li>Fully turn off BitLocker to decrypt the drive.</li>\n<li>Enable BitLocker again.</li>\n</ol>\n<p>For more information on Bitlocker and Group Policy settings to enforce software encryption:</p>\n<ul>\n<li><a href=\"https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview\">Bitlocker Overview</a></li>\n<li><a href=\"https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10\">BitLocker Device Encryption in Windows 10</a></li>\n<li><a href=\"https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions\">BitLocker frequently asked questions (FAQ)</a></li>\n<li><a href=\"https://docs.microsoft.com/en-us/windows/security/information-protection/encrypted-hard-drive\">Bitlocker and Encrypted Hard Drives</a></li>\n<li><a href=\"https://docs.microsoft.com/en-us/previous-versions/windows/hardware/design/dn653989(v=vs.85)\">Encrypted Hard Drive Device Guide</a></li>\n<li><a href=\"https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings\">BitLocker Group Policy Settings</a></li>\n</ul>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "Microsoft Windows",
+            "title": "Microsoft Windows",
+            "type": "Tag",
+            "ordinal": "20"
+          }
+        ]
+      },
+      "cve": "ADV180028",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "10951",
+            "10952",
+            "11497",
+            "11498",
+            "11499",
+            "11563",
+            "11568",
+            "11569",
+            "11570",
+            "11571",
+            "11572",
+            "11453",
+            "11454",
+            "11583",
+            "11466",
+            "10729",
+            "10735",
+            "10852",
+            "10853",
+            "10816",
+            "10855",
+            "10481",
+            "10482",
+            "10484",
+            "10378",
+            "10379",
+            "10483",
+            "10543"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "product_id": "10951"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10952"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11497"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11498"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11499"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11563"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11568"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11569"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11570"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11571"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11572"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11453"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11454"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11583"
+          },
+          {
+            "type": "Impact",
+            "product_id": "11466"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10729"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10735"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10852"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10853"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10816"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10855"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10481"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10482"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10484"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10378"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10379"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10483"
+          },
+          {
+            "type": "Impact",
+            "product_id": "10543"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10951"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10952"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11497"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11498"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11499"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11563"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11568"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11569"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11570"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11571"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11572"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11453"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11454"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11583"
+          },
+          {
+            "type": "Severity",
+            "product_id": "11466"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10729"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10735"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10852"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10853"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10816"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10855"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10481"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10482"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10484"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10378"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10379"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10483"
+          },
+          {
+            "type": "Severity",
+            "product_id": "10543"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:Yes;Exploited:No"
+          }
+        ]
+      },
+      "cvssscoresets": {},
+      "remediations": {},
+      "acknowledgments": {},
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "1.0",
+            "date": "2018-11-06T08:00:00Z",
+            "description": "<p>Information published.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}

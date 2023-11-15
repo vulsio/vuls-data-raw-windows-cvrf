@@ -1,0 +1,748 @@
+{
+  "document_title": "December 2017 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV170021",
+      "alias": "ADV170021"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "10",
+        "date": "2022-01-11T08:00:00",
+        "description": "December 2017 Security Updates"
+      }
+    },
+    "initial_release_date": "2017-12-12T08:00:00",
+    "current_release_date": "2022-01-11T08:00:00"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The December security release consists of security updates for the following software: </p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Microsoft Exchange Server</li>\n<li>ChakraCore</li>\n<li>Microsoft Malware Protection Engine</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer.  This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/help/4036108\">4036108</a></li>\n<li><a href=\"https://support.microsoft.com/help/4045655\">4045655</a></li>\n<li><a href=\"https://support.microsoft.com/help/4054517\">4054517</a></li>\n<li><a href=\"https://support.microsoft.com/help/891716\">891716</a></li>\n</ul>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Microsoft Office",
+          "fullproductname": [
+            {
+              "text": "Microsoft Excel 2016 (32-bit edition)",
+              "productid": "10739"
+            },
+            {
+              "text": "Microsoft Excel 2016 (64-bit edition)",
+              "productid": "10740"
+            },
+            {
+              "text": "Microsoft Word 2016 (32-bit edition)",
+              "productid": "10746"
+            },
+            {
+              "text": "Microsoft Word 2016 (64-bit edition)",
+              "productid": "10747"
+            },
+            {
+              "text": "Microsoft Office 2016 Click-to-Run (C2R) for 32-bit editions",
+              "productid": "10905"
+            },
+            {
+              "text": "Microsoft Office 2016 Click-to-Run (C2R) for 64-bit editions",
+              "productid": "10906"
+            },
+            {
+              "text": "Microsoft Excel 2007 Service Pack 3",
+              "productid": "10152"
+            },
+            {
+              "text": "Microsoft Excel 2010 Service Pack 2 (32-bit editions)",
+              "productid": "10489"
+            },
+            {
+              "text": "Microsoft Excel 2010 Service Pack 2 (64-bit editions)",
+              "productid": "10490"
+            },
+            {
+              "text": "Microsoft Excel 2013 RT Service Pack 1",
+              "productid": "10656"
+            },
+            {
+              "text": "Microsoft Excel 2013 Service Pack 1 (32-bit editions)",
+              "productid": "10654"
+            },
+            {
+              "text": "Microsoft Excel 2013 Service Pack 1 (64-bit editions)",
+              "productid": "10655"
+            },
+            {
+              "text": "Microsoft Excel Viewer 2007 Service Pack 3",
+              "productid": "10279"
+            },
+            {
+              "text": "Microsoft Office 2010 Service Pack 2 (32-bit editions)",
+              "productid": "10521"
+            },
+            {
+              "text": "Microsoft Office 2010 Service Pack 2 (64-bit editions)",
+              "productid": "10522"
+            },
+            {
+              "text": "Microsoft Office Compatibility Pack Service Pack 3",
+              "productid": "4497"
+            },
+            {
+              "text": "Microsoft Word 2007 Service Pack 3",
+              "productid": "10162"
+            },
+            {
+              "text": "Microsoft Word 2010 Service Pack 2 (32-bit editions)",
+              "productid": "10513"
+            },
+            {
+              "text": "Microsoft Word 2010 Service Pack 2 (64-bit editions)",
+              "productid": "10514"
+            },
+            {
+              "text": "Microsoft Word 2013 RT Service Pack 1",
+              "productid": "10606"
+            },
+            {
+              "text": "Microsoft Word 2013 Service Pack 1 (32-bit editions)",
+              "productid": "10604"
+            },
+            {
+              "text": "Microsoft Word 2013 Service Pack 1 (64-bit editions)",
+              "productid": "10605"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "0",
+      "title": "Microsoft Office Defense in Depth Update",
+      "notes": {
+        "note": [
+          {
+            "text": "<p>Microsoft has released an update for Microsoft Office that provides enhanced security as a defense-in-depth measure. The update disables the Dynamic Data Exchange protocol (DDE) in all supported editions of Microsoft Word.</p>\n<p>Microsoft is continuing to investigate this issue and will update this advisory as further updates become available. If you are unable to install the update, or if you need to disable the DDE protocol in other Office applications, see <a href=\"https://docs.microsoft.com/en-us/security-updates/securityadvisories/2017/4053440\">Microsoft Security Advisory 4053440</a>. Note that the mitigations listed in the advisory will not disable DDE, but will disable auto-update for any linked fields, including DDE.</p>\n<p>If you need to change DDE functionality in Word after installing the update, follow these steps:</p>\n<ol>\n<li>In the Registry Editor navigate to \\HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\&lt;version&gt;\\Word\\Security<br />\nAllowDDE(DWORD)</li>\n<li>Set the DWORD value based on your requirements as follows:</li>\n</ol>\n<ul>\n<li>AllowDDE(DWORD) = 0: To disable DDE. This is the default setting after you install the update.</li>\n<li>AllowDDE(DWORD) = 1: To allow DDE requests to an already running program, but prevent DDE requests that require another executable program to be launched.</li>\n<li>AllowDDE(DWORD) = 2: To fully allow DDE requests.</li>\n</ul>\n<p><strong>Update:</strong> On 1/9/2018, Microsoft released an update for Microsoft Office that adds defense-in-depth configuration options to selectively disable the DDE protocol in all supported editions of Microsoft Excel.</p>\n<p>If you need to change DDE functionality in Excel after installing the update, follow these steps:</p>\n<ol>\n<li>In the Registry Editor navigate to \\HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\&lt;version&gt;\\Excel\\Security\nDisableDDEServerLaunch(DWORD)</li>\n<li>Set the DWORD value based on your requirements as follows:</li>\n</ol>\n<ul>\n<li>DisableDDEServerLaunch = 0: Keep DDE server launch settings unchanged from their initial behavior. This is the default setting after you install the update.</li>\n<li>DisableDDEServerLaunch = 1: Do not display the dialog that allows users to choose whether to launch a specific DDE server. Instead, behave automatically as though the user chose the default choice of NO.</li>\n</ul>\n<ol start=\"3\">\n<li>In the Registry Editor navigate to \\HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\&lt;version&gt;\\Excel\\Security\nDisableDDEServerLookup(DWORD)</li>\n<li>Set the DWORD value based on your requirements as follows:</li>\n</ol>\n<ul>\n<li>DisableDDEServerLookup = 0: Keep DDE server lookup settings unchanged from their initial behavior. This is the default setting after you install the update.</li>\n<li>DisableDDEServerLookup = 1: Disable querying for DDE Server availability – no query attempt will be made to find DDE servers.</li>\n</ul>\n<p><strong>Update:</strong> On 8/13/2019 Excel for Office 365 clients (&gt;= 1902) disable DDE Server Launch by default, protecting customers out of the box from attacks targeting DDE, even if this defense-in-depth update has not been applied.</p>\n<p>In  addition to registry entries that can be configured to control DDE, Office 365 Excel clients now support:</p>\n<ol>\n<li>Two new user controls in Trust Center to configure DDE in Excel. This can help users easily configure DDE behavior without needing to update registry.</li>\n<li>Two new Group Policy controls to configure DDE in Excel. This can help enterprise administrators enforce granular security control on DDE behavior. Following is the policy information:</li>\n</ol>\n<table>\n<thead>\n<tr>\n<th>Policy path</th>\n<th>Setting Name</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>User\\Microsoft Excel 2016\\Excel Options\\Security\\Trust Center\\External Content\\</td>\n<td>Don't allow Dynamic Data Exchange (DDE) server launch in Excel</td>\n</tr>\n<tr>\n<td>User\\Microsoft Excel 2016\\Excel Options\\Security\\Trust Center\\External Content\\</td>\n<td>Don't allow Dynamic Data Exchange (DDE) server lookup in Excel</td>\n</tr>\n</tbody>\n</table>\n<p>These policy controls should now be available in the latest Office policy templates published at: <a href=\"https://www.microsoft.com/download/details.aspx?id=49030\">https://www.microsoft.com/download/details.aspx?id=49030</a>.</p>\n<p>They can also be configured using the <a href=\"https://docs.microsoft.com/en-us/DeployOffice/overview-office-cloud-policy-service\">Office cloud policy service</a>.</p>\n<p><strong>Update:</strong> On 1/11/2022 Microsoft released an update for all supported versions of Excel that disables DDE Server Launch by default, protecting customers out of the box from attacks targeting DDE.\nDDE Server Launch can be enabled by setting the DisableDDEServerLaunch registry value to 0. Administrators can enable DDE Server Launch for Office 2016 and later by using the Group Policy template; administrators should be aware that users cannot disable DDE Server Launch if an administrator has enabled it via Group Policy. For more information see <a href=\"https://support.microsoft.com/help/5010321\">Microsoft Excel security enhancements in the January 2022 update</a>.</p>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "<p><strong>I have Microsoft Word 2010 installed. Why am I not being offered the 4011612 update?</strong>\nThe 4011612 update only applies to systems running specific configurations of Microsoft Office 2010. Some configurations will not be offered the update.</p>\n<p><strong>I am being offered this update for software that is not specifically indicated as being affected in the Affected Software and Vulnerability Severity Ratings table. Why am I being offered this update?</strong>\nWhen updates address vulnerable code that exists in a component that is shared between multiple Microsoft Office products or shared between multiple versions of the same Microsoft Office product, the update is considered to be applicable to all supported products and versions that contain the vulnerable component.</p>\n<p>For example, when an update applies to Microsoft Office 2007 products, only Microsoft Office 2007 may be specifically listed in the Affected Software table. However, the update could apply to Microsoft Word 2007, Microsoft Excel 2007, Microsoft Visio 2007, Microsoft Compatibility Pack, Microsoft Excel Viewer, or any other Microsoft Office 2007 product that is not specifically listed in the Affected Software table. Furthermore, when an update applies to Microsoft Office 2010 products, only Microsoft Office 2010 may be specifically listed in the Affected Software table. However, the update could apply to Microsoft Word 2010, Microsoft Excel 2010, Microsoft Visio 2010, Microsoft Visio Viewer, or any other Microsoft Office 2010 product that is not specifically listed in the Affected Software table.</p>\n<p>For more information on this behavior and recommended actions, see <a href=\"https://support.microsoft.com/kb/830335\">Microsoft Knowledge Base Article 830335</a>. For a list of Microsoft Office products that an update may apply to, refer to the Microsoft Knowledge Base Article associated with the specific update.</p>\n",
+            "title": "FAQ",
+            "type": "FAQ",
+            "ordinal": "10"
+          },
+          {
+            "text": "Microsoft Office",
+            "title": "Microsoft Office",
+            "type": "Tag",
+            "ordinal": "20"
+          },
+          {
+            "text": "Microsoft",
+            "title": "Microsoft",
+            "type": "CNA",
+            "ordinal": "30"
+          }
+        ]
+      },
+      "cve": "ADV170021",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "10739",
+            "10740",
+            "10746",
+            "10747",
+            "10905",
+            "10906",
+            "10152",
+            "10489",
+            "10490",
+            "10656",
+            "10654",
+            "10655",
+            "10279",
+            "10521",
+            "10522",
+            "4497",
+            "10162",
+            "10513",
+            "10514",
+            "10606",
+            "10604",
+            "10605"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10739"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10740"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10746"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10747"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10905"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10906"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10152"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10489"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10490"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10656"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10654"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10655"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10279"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10521"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10522"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "4497"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10162"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10513"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10514"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10606"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10604"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10605"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10739"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10740"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10746"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10747"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10905"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10906"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10152"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10489"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10490"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10656"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10654"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10655"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10279"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10521"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10522"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "4497"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10162"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10513"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10514"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10606"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10604"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10605"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation More Likely;Older Software Release:Exploitation More Likely;DOS:N/A"
+          }
+        ]
+      },
+      "cvssscoresets": {},
+      "remediations": {
+        "remediation": [
+          {
+            "type": "Vendor Fix",
+            "description": "4011627",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=6d682358-aaba-411e-adb6-884283abf193",
+            "supercedence": "4011220",
+            "product_id": [
+              "10739",
+              "10740"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011627",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=eb27e943-afc0-4df0-8ea8-0962f04ef2b7",
+            "supercedence": "4011220",
+            "product_id": [
+              "10739",
+              "10740"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011575",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=45e2924e-0398-4aca-8971-95defd6fd731",
+            "supercedence": "4011242",
+            "product_id": [
+              "10746",
+              "10747"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011575",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=5f675e95-a075-4cad-8f1f-90b0268fca7a",
+            "supercedence": "4011242",
+            "product_id": [
+              "10746",
+              "10747"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "Click to Run",
+            "product_id": [
+              "10905",
+              "10906"
+            ],
+            "affectedfiles": {},
+            "restart_required": "No",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011602",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=f1afffcc-b6d4-4c0a-9961-e19a965d80c4",
+            "supercedence": "4011199",
+            "product_id": [
+              "10152"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011660",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=d0623e9e-d97d-4337-8b9e-5e123b0c1cec",
+            "supercedence": "4011197",
+            "product_id": [
+              "10489",
+              "10490"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011660",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=45767755-c58e-4c2e-834e-f9dfc41c9a7b",
+            "supercedence": "4011197",
+            "product_id": [
+              "10489",
+              "10490"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011639",
+            "supercedence": "4011233",
+            "product_id": [
+              "10656",
+              "10654",
+              "10655"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011639",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=5b6a745f-59af-4475-ab9a-8695ce52f838",
+            "supercedence": "4011233",
+            "product_id": [
+              "10656",
+              "10654",
+              "10655"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011639",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=47582b44-ec8a-4efe-967c-51980cdf47ef",
+            "supercedence": "4011233",
+            "product_id": [
+              "10656",
+              "10654",
+              "10655"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011606",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=37f29c56-64a0-472e-bd09-793208a6466c",
+            "supercedence": "4011206",
+            "product_id": [
+              "10279"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011612",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=60cbaeac-b79a-400e-b313-b6b82067177b",
+            "supercedence": "4011268",
+            "product_id": [
+              "10521",
+              "10522"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011612",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=5bb1788a-9c58-41bc-9d5a-e0a58d04bbdc",
+            "supercedence": "4011268",
+            "product_id": [
+              "10521",
+              "10522"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011605",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=b2552319-092b-4f63-9baa-c4175a8815d2",
+            "supercedence": "4011205",
+            "product_id": [
+              "4497"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011608",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=0f7fc545-099c-474b-b45b-0b92552d9817",
+            "supercedence": "4011266",
+            "product_id": [
+              "10162"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011614",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=5a565fd4-473a-49ee-9500-03abe229b693",
+            "supercedence": "4011270",
+            "product_id": [
+              "10513",
+              "10514"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011614",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=0ae7bfd9-05d0-4050-86f7-079203d7509b",
+            "supercedence": "4011270",
+            "product_id": [
+              "10513",
+              "10514"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011590",
+            "supercedence": "4011250",
+            "product_id": [
+              "10606",
+              "10604",
+              "10605"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011590",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=4425c867-b27c-4efe-95e3-c3a319fb8ec6",
+            "supercedence": "4011250",
+            "product_id": [
+              "10606",
+              "10604",
+              "10605"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011590",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=11adedec-fd39-4549-b0e2-b77ebfdf8087",
+            "supercedence": "4011250",
+            "product_id": [
+              "10606",
+              "10604",
+              "10605"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          }
+        ]
+      },
+      "acknowledgments": {
+        "acknowledgment": [
+          {
+            "name": "Saif El-Sherei, and Etienne Stalmans"
+          },
+          {
+            "name": "<a href=\"mailto:international@cert.gov.il\">CERT-IL</a>"
+          }
+        ]
+      },
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "2.0",
+            "date": "2018-01-09T08:00:00",
+            "description": "<p>ADV170021 has been revised to add support for disabling the Dynamic Update Exchange protocol (DDE) in all supported editions of Microsoft Excel.</p>\n"
+          },
+          {
+            "number": "1.0",
+            "date": "2017-12-12T08:00:00",
+            "description": "<p>Information published.</p>\n"
+          },
+          {
+            "number": "3.0",
+            "date": "2019-08-13T07:00:00",
+            "description": "<p>ADV170021 has been revised to announce that the DDE Server is now disabled by default for certain versions of Office 365.</p>\n"
+          },
+          {
+            "number": "4.0",
+            "date": "2022-01-11T08:00:00",
+            "description": "<p>ADV170021 has been revised to announce that with the installation of updates released on January 11, 2022 the DDE Server is now disabled by default for all supported versions of Microsoft Excel. See  <a href=\"https://support.microsoft.com/help/5010321\">Microsoft Excel security enhancements in the January 2022 update</a> for more information.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}

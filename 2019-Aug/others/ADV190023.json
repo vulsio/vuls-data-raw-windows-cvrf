@@ -1,0 +1,479 @@
+{
+  "document_title": "August 2019 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV190023",
+      "alias": "ADV190023"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "19",
+        "date": "2023-10-24T07:00:00",
+        "description": "August 2019 Security Updates"
+      }
+    },
+    "initial_release_date": "2019-08-13T07:00:00",
+    "current_release_date": "2023-10-24T07:00:00"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The August security release consists of security updates for the following software:</p>\n<ul>\n<li>Microsoft Windows</li>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>ChakraCore</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Visual Studio</li>\n<li>Online Services</li>\n<li>Active Directory</li>\n<li>Microsoft Dynamics</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>A list of the latest servicing stack updates for each operating system can be found in <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001\">ADV990001</a>. This list will be updated whenever a new servicing stack update is released. It is important to install the latest servicing stack update.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>Starting in May 2019, Internet Explorer 11 is available on Windows Server 2012. This configuration is present only in the IE Cumulative package.</li>\n</ul>\n<p><strong>The following CVEs have FAQs with additional information and may include * further steps to take after installing the updates. Please note that this is not a complete list of CVEs for this release.</strong></p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190014\">ADV190014</a>*</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1030\">CVE-2019-1030</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1078\">CVE-2019-1078</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1143\">CVE-2019-1143</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1146\">CVE-2019-1146</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1147\">CVE-2019-1147</a>*</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1148\">CVE-2019-1148</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1149\">CVE-2019-1149</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1151\">CVE-2019-1151</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1153\">CVE-2019-1153</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1154\">CVE-2019-1154</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1155\">CVE-2019-1155</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1156\">CVE-2019-1156</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1157\">CVE-2019-1157</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1158\">CVE-2019-1158</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1161\">CVE-2019-1161</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1171\">CVE-2019-1171</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1172\">CVE-2019-1172</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1181\">CVE-2019-1181</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1182\">CVE-2019-1182</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1199\">CVE-2019-1199</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1200\">CVE-2019-1200</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1201\">CVE-2019-1201</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1202\">CVE-2019-1202</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1203\">CVE-2019-1203</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1204\">CVE-2019-1204</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1205\">CVE-2019-1205</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1218\">CVE-2019-1218</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1224\">CVE-2019-1224</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1225\">CVE-2019-1225</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1227\">CVE-2019-1227</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1228\">CVE-2019-1228</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-9511\">CVE-2019-9511</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-9512\">CVE-2019-9512</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-9513\">CVE-2019-9513</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-9514\">CVE-2019-9514</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-9518\">CVE-2019-9518</a> *</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<table>\n<thead>\n<tr>\n<th>KB Article</th>\n<th>Applies To</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4511553\">4511553</a></td>\n<td>Windows 10, version 1809, Windows Server 2019</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4511872\">4511872</a></td>\n<td>Internet Explorer</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512476\">4512476</a></td>\n<td>Windows Server 2008 SP2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512482\">4512482</a></td>\n<td>Windows Server 2012 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512486\">4512486</a></td>\n<td>Windows 7 Service Pack 1, Windows Server 2008 R2 Service Pack 1 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512488\">4512488</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512489\">4512489</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512491\">4512491</a></td>\n<td>Windows Server 2008 SP2 (Security-only Update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512497\">4512497</a></td>\n<td>Windows 10</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512501\">4512501</a></td>\n<td>Windows 10, version 1803, Windows Server version 1803</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512506\">4512506</a></td>\n<td>Windows 7 Service Pack 1, Windows Server 2008 R2 Service Pack 1 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512507\">4512507</a></td>\n<td>Windows 10, version 1703</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512508\">4512508</a></td>\n<td>Windows 10, version 1903, Windows Server version 1903</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512516\">4512516</a></td>\n<td>Windows 10, version 1709</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512517\">4512517</a></td>\n<td>Windows 10, version 1607, Windows Server 2016</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4512518\">4512518</a></td>\n<td>Windows Server 2012 (Monthly Rollup)</td>\n</tr>\n</tbody>\n</table>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Windows",
+          "fullproductname": [
+            {
+              "text": "Windows 10 Version 1809 for x64-based Systems",
+              "productid": "11569"
+            },
+            {
+              "text": "Windows Server 2019",
+              "productid": "11571"
+            },
+            {
+              "text": "Windows Server 2019 (Server Core installation)",
+              "productid": "11572"
+            },
+            {
+              "text": "Windows 10 Version 1809 for 32-bit Systems",
+              "productid": "11568"
+            },
+            {
+              "text": "Windows Server 2012",
+              "productid": "10378"
+            },
+            {
+              "text": "Windows Server 2012 R2",
+              "productid": "10483"
+            },
+            {
+              "text": "Windows RT 8.1",
+              "productid": "10484"
+            },
+            {
+              "text": "Windows Server 2012 R2 (Server Core installation)",
+              "productid": "10543"
+            },
+            {
+              "text": "Windows Server 2012 (Server Core installation)",
+              "productid": "10379"
+            },
+            {
+              "text": "Windows 10 Version 1607 for 32-bit Systems",
+              "productid": "10852"
+            },
+            {
+              "text": "Windows Server 2016 (Server Core installation)",
+              "productid": "10855"
+            },
+            {
+              "text": "Windows Server 2016",
+              "productid": "10816"
+            },
+            {
+              "text": "Windows 10 Version 1607 for x64-based Systems",
+              "productid": "10853"
+            },
+            {
+              "text": "Windows Server 2022",
+              "productid": "11923"
+            },
+            {
+              "text": "Windows Server 2022 (Server Core installation)",
+              "productid": "11924"
+            }
+          ]
+        },
+        {
+          "type": "Product Family",
+          "name": "ESU",
+          "fullproductname": [
+            {
+              "text": "Windows Server 2008 for 32-bit Systems Service Pack 2",
+              "productid": "9312"
+            },
+            {
+              "text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
+              "productid": "10049"
+            },
+            {
+              "text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
+              "productid": "10051"
+            },
+            {
+              "text": "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
+              "productid": "10287"
+            },
+            {
+              "text": "Windows Server 2008 for x64-based Systems Service Pack 2",
+              "productid": "9318"
+            },
+            {
+              "text": "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
+              "productid": "9344"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "1",
+      "title": "Microsoft Guidance for Enabling LDAP Channel Binding and LDAP Signing",
+      "notes": {
+        "note": [
+          {
+            "text": "<h1>Executive Summary</h1>\n<p><a href=\"https://support.microsoft.com/en-us/help/4034879/how-to-add-the-ldapenforcechannelbinding-registry-entry\">LDAP channel binding</a> and <a href=\"https://support.microsoft.com/en-us/help/935834/how-to-enable-ldap-signing-in-windows-server-2008\">LDAP signing</a> provide ways to increase the security for communications between LDAP clients and Active Directory domain controllers. A set of unsafe default configurations for LDAP channel binding and LDAP signing exist on Active Directory domain controllers that let LDAP clients communicate with them without enforcing LDAP channel binding and LDAP signing. This can open Active Directory domain controllers to an elevation of privilege vulnerability.</p>\n<p>Microsoft is aware that when these default configurations are used, an elevation of privilege vulnerability exists in Microsoft Windows that could allow a man-in-the-middle attacker to successfully forward an authentication request to a Windows LDAP server, such as a system running AD DS, which has not configured to require channel binding, and signing or sealing on incoming connections.</p>\n<p>Microsoft is addressing this vulnerability by providing recommendations for administrators to harden the configurations for LDAP channel binding and LDAP signing on Active Directory domain controllers as follows:</p>\n<ol>\n<li><p>In August 2019, Microsoft published ADV190023 with the following recommendations for settings:</p>\n<ol>\n<li>LDAP signing to <strong>Require Signing</strong> in group policy.</li>\n<li>Channel Binding Token (CBT) to <strong>1</strong> as a registry key or set the <strong>Domain controller: LDAP server channel binding token requirements</strong> group policy to <strong>When Supported</strong> after installing the March 10, 2020 updates.</li>\n</ol>\n</li>\n<li><p>On March 10, 2020, Windows updates will add options for administrators to harden the configurations for LDAP channel binding on Active Directory domain controllers. The updates add:</p>\n<ol>\n<li><strong>Domain controller: LDAP server channel binding token requirements</strong> group policy.</li>\n<li>CBT signing events 3039, 3040, and 3041 with event source <strong>Microsoft-Windows-ActiveDirectory_DomainService</strong> in the Directory Service event log.</li>\n</ol>\n</li>\n<li><p>On August 8, 2023, Windows Updates for Server 2022 will add options for administrators to audit client machines that cannot utilize LDAP channel binding tokens via events on Active Directory domain controllers. The updates add the capability to enable CBT events 3074 &amp; 3075 with event source <strong>Microsoft-Windows-ActiveDirectory_DomainService</strong> in the Directory Service event log.</p>\n</li>\n<li><p>On October 10, 2023, Windows updates for Server 2019 will add options for administrators to audit those clients. The updates add the capability to enable CBT events 3074 &amp; 3075 with event source <strong>Microsoft-Windows-ActiveDirectory_DomainService</strong> in the Directory Service event log.</p>\n</li>\n<li><p>On October 17, 2023, Microsoft released Windows Server 2022, 23H2 Edition (Server Core installation). This version includes the options for administrators to audit client machines that cannot utilize LDAP channel binding tokens via events on Active Directory domain controllers, and includes the capability to enable CBT events 3074 &amp; 3075 with event source <strong>Microsoft-Windows-ActiveDirectory_DomainService</strong> in the Directory Service event log.</p>\n</li>\n</ol>\n<p><strong>Important</strong> The March 10, 2020 and updates in the foreseeable future will <strong>not</strong> make changes to LDAP signing or LDAP channel binding policies or their registry equivalent on new or existing domain controllers.</p>\n<p>Note that LDAP signing <strong>Domain controller: LDAP server signing requirements</strong> policy already exists in all supported versions of Windows.</p>\n<h1>Recommended Actions</h1>\n<p>Microsoft recommends that administrators configure LDAP signing and LDAP channel binding as recommended in Step One of the Executive Summary of this advisory and as described in detail in KB4520412: <a href=\"https://support.microsoft.com/help/4520412\">2020 and 2023 LDAP channel binding and LDAP signing requirements for Windows</a>.</p>\n<h2>How to get notified of updates to this advisory</h2>\n<p>When the March 10, 2020 Windows updates become available, customers will be notified via a revision to this advisory. If you wish to be notified when these update are released, we recommend that you register for the security notifications mailer to be alerted of content changes to this advisory. See <a href=\"https://technet.microsoft.com/security/dd252948\">Microsoft Technical Security Notifications</a>.</p>\n<h2>References</h2>\n<p>See the following Microsoft Knowledge Base articles for detailed guidance on how to enable LDAP channel binding and LDAP signing on Active Directory domain controllers:</p>\n<ul>\n<li>KB4520412: <a href=\"https://support.microsoft.com/help/4520412\">2020 and 2023 LDAP channel binding and LDAP signing requirements for Windows</a></li>\n<li>KB4034879: <a href=\"https://support.microsoft.com/help/4034879/how-to-add-the-ldapenforcechannelbinding-registry-entry\">LDAP channel binding</a></li>\n<li>KB935834: <a href=\"https://support.microsoft.com/help/935834/how-to-enable-ldap-signing-in-windows-server-2008\">LDAP signing</a></li>\n<li>KB4546509: <a href=\"https://support.microsoft.com/help/4546509\">Frequently asked questions about changes to Lightweight Directory Access Protocol</a></li>\n</ul>\n<h1>FAQ</h1>\n<p><strong>Where can I find further answers to my questions?</strong></p>\n<p>For a list of Frequently Asked Questions on LDAP channel binding and LDAP signing on Active Directory Domain Controllers, see KB4546509: <a href=\"https://support.microsoft.com/en-us/help/4546509\">Frequently asked questions about changes to Lightweight Directory Access Protocol</a>. See also KB4520412: <a href=\"https://support.microsoft.com/help/4520412\">2020 and 2023 LDAP channel binding and LDAP signing requirements for Windows</a>.</p>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "Windows Active Directory",
+            "title": "Windows Active Directory",
+            "type": "Tag",
+            "ordinal": "20"
+          },
+          {
+            "text": "Microsoft",
+            "title": "Microsoft",
+            "type": "CNA",
+            "ordinal": "30"
+          }
+        ]
+      },
+      "cve": "ADV190023",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "11568",
+            "11569",
+            "11571",
+            "11572",
+            "11923",
+            "11924",
+            "10852",
+            "10853",
+            "10816",
+            "10855",
+            "10484",
+            "9312",
+            "10287",
+            "9318",
+            "9344",
+            "10051",
+            "10049",
+            "10378",
+            "10379",
+            "10483",
+            "10543"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "11568"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "11569"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "11571"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "11572"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "11923"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "11924"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10852"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10853"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10816"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10855"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10484"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "9312"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10287"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "9318"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "9344"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10051"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10049"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10378"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10379"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10483"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10543"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "11568"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "11569"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "11571"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "11572"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "11923"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "11924"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10852"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10853"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10816"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10855"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10484"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "9312"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10287"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "9318"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "9344"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10051"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10049"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10378"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10379"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10483"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10543"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:Yes;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely;DOS:N/A"
+          }
+        ]
+      },
+      "cvssscoresets": {},
+      "remediations": {},
+      "acknowledgments": {
+        "acknowledgment": [
+          {}
+        ]
+      },
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "1.0",
+            "date": "2019-08-13T07:00:00",
+            "description": "<p>Information published.</p>\n"
+          },
+          {
+            "number": "1.1",
+            "date": "2019-09-09T07:00:00",
+            "description": "<p>Revised Recommended Actions section to provide customers with more detailed information about actions to take to make LDAP channel binding and LDAP signing on Active Directory Domain Controllers more secure.</p>\n"
+          },
+          {
+            "number": "1.2",
+            "date": "2019-12-17T08:00:00",
+            "description": "<p>In the Recommended Actions section, updated the opening sentence to indicate that the Windows update will be available in March 2020.</p>\n"
+          },
+          {
+            "number": "1.3",
+            "date": "2020-02-04T08:00:00",
+            "description": "<p>In the Recommended Actions section, added information that details what will be included in the March 2020 updates to enable hardening LDAP Channel Binding and LDAP Signing. Included information about a future monthly update that will LDAP signing and channel binding on domain controllers configured with default values for those settings. These are informational changes only.</p>\n"
+          },
+          {
+            "number": "1.4",
+            "date": "2020-02-28T08:00:00",
+            "description": "<p>The following revisions have been made: 1. Clarified the actions customers need to take to harden the configurations for LDAP channel binding and LDAP signing on Active Directory Domain Controllers. 2. In the References section, added a link to KB4546509: https://support.microsoft.com/en-us/help/4546509 - Frequently asked questions about changes to Lightweight Directory Access Protocol. 3. Updated the FAQ section to direct customers to KB4546509.</p>\n"
+          },
+          {
+            "number": "2.0",
+            "date": "2020-03-10T07:00:00",
+            "description": "<p>Microsoft is announcing that the March 10, 2020 security updates are available that add options for administrators to harden the configurations for LDAP channel binding on Active Directory domain controllers. These options are: 1. &quot;Domain controller: LDAP server channel binding token requirements&quot; group policy. 2. CBT signing events 3039, 3040, and 3041 with event source Microsoft-Windows-ActiveDirectory_DomainService in the Directory Service event log. Note that these March 10, 2020 updates and updates in the foreseeable future will not make changes to LDAP signing or LDAP channel binding policies or their registry equivalent on new or existing domain controllers.</p>\n"
+          },
+          {
+            "number": "3.0",
+            "date": "2023-08-08T07:00:00",
+            "description": "<p>Microsoft is announcing that the August 8, 2023 updates are available for Windows Server 2022 and Windows Server 2022 (Server Core installation) to audit client machines that cannot utilize LDAP channel binding tokens via events on Active Directory domain controllers. The updates add the capability to enable CBT events 3074 &amp; 3075 with event source <strong>Microsoft-Windows-ActiveDirectory_DomainService</strong> in the Directory Service event log.</p>\n"
+          },
+          {
+            "number": "4.0",
+            "date": "2023-10-10T07:00:00",
+            "description": "<p>Microsoft is announcing that the October 10, 2023 updates are available for Windows Server 2022 and Windows Server 2022 (Server Core installation) to enable administrators to audit client machines that cannot use events to utilize LDAP channel binding tokens on Active Directory domain controllers. The updates add the capability to enable CBT events 3074 &amp; 3075 with event source <strong>Microsoft-Windows-ActiveDirectory_DomainService</strong> in the Directory Service event log.</p>\n"
+          },
+          {
+            "number": "4.1",
+            "date": "2023-10-24T07:00:00",
+            "description": "<p>On October 17, 2023, Microsoft released Windows Server 2022, 23H2 Edition (Server Core installation). This version includes the options for administrators to audit client machines that cannot utilize LDAP channel binding tokens via events on Active Directory domain controllers, and includes the capability to enable CBT events 3074 &amp; 3075 with event source <strong>Microsoft-Windows-ActiveDirectory_DomainService</strong> in the Directory Service event log.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}

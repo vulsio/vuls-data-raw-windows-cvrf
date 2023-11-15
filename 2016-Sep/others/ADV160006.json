@@ -1,0 +1,306 @@
+{
+  "document_title": "September 2016 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV160006",
+      "alias": "ADV160006"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "4",
+        "date": "2017-07-11T07:00:00Z",
+        "description": "September 2016 Security Updates"
+      }
+    },
+    "initial_release_date": "2016-09-13T07:00:00Z",
+    "current_release_date": "2017-07-11T07:00:00Z"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The September security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Microsoft .NET Framework</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Microsoft Exchange</li>\n<li>Adobe Flash Player</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Vulnerabilities addressed in the September 2016 security release might also affect Windows Server 2016 Technical Preview 5. To be protected from these vulnerabilities, Microsoft recommends that customers running this operating system apply the current update, which is available from Windows Update.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li>Windows, IE: <a href=\"https://support.microsoft.com/en-us/kb/3185319\">3185319</a></li>\n<li>Windows: <a href=\"https://support.microsoft.com/en-us/kb/3175024\">3175024</a></li>\n<li>Windows: <a href=\"https://support.microsoft.com/en-us/kb/3187754\">3187754</a></li>\n</ul>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Exchange Server",
+          "fullproductname": [
+            {
+              "text": "Microsoft Exchange Server 2013 Cumulative Update 12",
+              "productid": "10837"
+            },
+            {
+              "text": "Microsoft Exchange Server 2013 Cumulative Update 13",
+              "productid": "10896"
+            },
+            {
+              "text": "Microsoft Exchange Server 2016 Cumulative Update 1",
+              "productid": "10838"
+            },
+            {
+              "text": "Microsoft Exchange Server 2016 Cumulative Update 2",
+              "productid": "10897"
+            },
+            {
+              "text": "Microsoft Exchange Server 2010 Service Pack 3",
+              "productid": "10476"
+            },
+            {
+              "text": "Microsoft Exchange Server 2013 Service Pack 1",
+              "productid": "10650"
+            },
+            {
+              "text": "Microsoft Exchange Server 2007 Service Pack 3",
+              "productid": "10004"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "1",
+      "title": "Oracle Outside In Vulnerabilities",
+      "notes": {
+        "note": [
+          {
+            "text": "<p>This security update addresses the following vulnerabilities, which are described in <a href=\"http://www.oracle.com/technetwork/security-advisory/cpujul2016-2881720.html\">Oracle Critical Patch Update Advisory – July 2016</a></p>\n<p>Remote Code Execution: CVE-2016-3575, CVE-2016-3581, CVE-2016-3582, CVE-2016-3583, CVE-2016-3595, CVE-2016-3594, CVE-2015-6014, CVE-2016-3593, CVE-2016-3592, CVE-2016-3596, CVE-2016-3591</p>\n<p>Information Disclosure: CVE-2016-3574</p>\n<p>Denial of Service: CVE-2016-3576, CVE-2016-3577, CVE-2016-3578, CVE-2016-3579, CVE-2016-3580, CVE-2016-3590</p>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "<p><strong>Why is Microsoft issuing a security update for vulnerabilities that are in third-party code, Oracle Outside In libraries?</strong>\nMicrosoft licenses a custom implementation of the Oracle Outside In libraries, specific to the product in which the third-party code is used. Microsoft is issuing this security update to help ensure that all customers using this third-party code in Microsoft Exchange are protected from these vulnerabilities. For more information about these vulnerabilities, see <a href=\"http://www.oracle.com/technetwork/security-advisory/cpujul2016-2881720.html\">Oracle Critical Patch Update Advisory – July 2016.</a></p>\n",
+            "title": "FAQ",
+            "type": "FAQ",
+            "ordinal": "10"
+          },
+          {
+            "text": "Microsoft Exchange Server",
+            "title": "Microsoft Exchange Server",
+            "type": "Tag",
+            "ordinal": "20"
+          }
+        ]
+      },
+      "cve": "ADV160006",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "10004",
+            "10476",
+            "10650",
+            "10896",
+            "10837",
+            "10838",
+            "10897"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "10004"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "10476"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "10650"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "10896"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "10837"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "10838"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "10897"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "10004"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "10476"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "10650"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "10896"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "10837"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "10838"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "10897"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:Yes;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely"
+          }
+        ]
+      },
+      "cvssscoresets": {},
+      "remediations": {
+        "remediation": [
+          {
+            "type": "Vendor Fix",
+            "description": "3184711",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=7346ee80-aa1d-4a74-abdf-40ba864eebc8",
+            "supercedence": "3151086",
+            "product_id": [
+              "10004"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3184728",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=4d9bd5bb-34e8-49b8-9ae8-3275230e1c1d",
+            "supercedence": "3151097",
+            "product_id": [
+              "10476"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3184736",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=9c8e9062-2c83-46d2-85fe-af4fe80d96e1",
+            "supercedence": "3150501",
+            "product_id": [
+              "10650"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3184736",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=9c8e9062-2c83-46d2-85fe-af4fe80d96e1",
+            "supercedence": "3150501",
+            "product_id": [
+              "10896"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3184736",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=9c8e9062-2c83-46d2-85fe-af4fe80d96e1",
+            "supercedence": "3150501",
+            "product_id": [
+              "10837"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3184736",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=6b407e49-79b7-450c-9278-315cfec23c1b",
+            "supercedence": "3150501",
+            "product_id": [
+              "10838"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3184736",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=6b407e49-79b7-450c-9278-315cfec23c1b",
+            "supercedence": "3150501",
+            "product_id": [
+              "10897"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          }
+        ]
+      },
+      "acknowledgments": {},
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "1.0",
+            "date": "2016-09-13T07:00:00Z",
+            "description": "<p>Information published.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}

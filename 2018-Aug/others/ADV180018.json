@@ -1,0 +1,1306 @@
+{
+  "document_title": "August 2018 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV180018",
+      "alias": "ADV180018"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "16",
+        "date": "2020-05-27T07:00:00Z",
+        "description": "August 2018 Security Updates"
+      }
+    },
+    "initial_release_date": "2018-08-14T07:00:00Z",
+    "current_release_date": "2020-05-27T07:00:00Z"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The August security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>ChakraCore</li>\n<li>Adobe Flash Player</li>\n<li>.NET Framework</li>\n<li>Microsoft Exchange Server</li>\n<li>Microsoft SQL Server</li>\n<li>Visual Studio</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer. This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n</ul>\n<p><strong>The following CVEs have FAQs with additional information and may include * further steps to take after installing the updates.</strong></p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180016\">ADV180016</a>*</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180018\">ADV180018</a>*</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180020\">ADV180020</a>*</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8273\">CVE-2018-8273</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8341\">CVE-2018-8341</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8348\">CVE-2018-8348</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8351\">CVE-2018-8351</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8360\">CVE-2018-8360</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8370\">CVE-2018-8370</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8378\">CVE-2018-8378</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8382\">CVE-2018-8382</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8394\">CVE-2018-8394</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8396\">CVE-2018-8396</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8398\">CVE-2018-8398</a></li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/help/4340731\">4340731</a></li>\n<li><a href=\"https://support.microsoft.com/help/4340733\">4340733</a></li>\n<li><a href=\"https://support.microsoft.com/help/4343205\">4343205</a></li>\n<li><a href=\"https://support.microsoft.com/help/4343897\">4343897</a></li>\n<li><a href=\"https://support.microsoft.com/help/4343898\">4343898</a></li>\n<li><a href=\"https://support.microsoft.com/help/4343900\">4343900</a></li>\n</ul>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Windows",
+          "fullproductname": [
+            {
+              "text": "Windows 10 Version 1803 for 32-bit Systems",
+              "productid": "11497"
+            },
+            {
+              "text": "Windows 10 Version 1803 for x64-based Systems",
+              "productid": "11498"
+            },
+            {
+              "text": "Windows Server, version 1803  (Server Core Installation)",
+              "productid": "11499"
+            },
+            {
+              "text": "Windows 10 Version 1703 for 32-bit Systems",
+              "productid": "10951"
+            },
+            {
+              "text": "Windows 10 Version 1703 for x64-based Systems",
+              "productid": "10952"
+            },
+            {
+              "text": "Windows 10 Version 1709 for 32-bit Systems",
+              "productid": "11453"
+            },
+            {
+              "text": "Windows 10 Version 1709 for x64-based Systems",
+              "productid": "11454"
+            },
+            {
+              "text": "Windows Server, version 1709  (Server Core Installation)",
+              "productid": "11466"
+            },
+            {
+              "text": "Windows 10 for 32-bit Systems",
+              "productid": "10729"
+            },
+            {
+              "text": "Windows 10 for x64-based Systems",
+              "productid": "10735"
+            },
+            {
+              "text": "Windows 10 Version 1607 for 32-bit Systems",
+              "productid": "10852"
+            },
+            {
+              "text": "Windows 10 Version 1607 for x64-based Systems",
+              "productid": "10853"
+            },
+            {
+              "text": "Windows Server 2016",
+              "productid": "10816"
+            },
+            {
+              "text": "Windows Server 2016  (Server Core installation)",
+              "productid": "10855"
+            },
+            {
+              "text": "Windows 8.1 for 32-bit systems",
+              "productid": "10481"
+            },
+            {
+              "text": "Windows 8.1 for x64-based systems",
+              "productid": "10482"
+            },
+            {
+              "text": "Windows RT 8.1",
+              "productid": "10484"
+            },
+            {
+              "text": "Windows Server 2012",
+              "productid": "10378"
+            },
+            {
+              "text": "Windows Server 2012 (Server Core installation)",
+              "productid": "10379"
+            },
+            {
+              "text": "Windows Server 2012 R2",
+              "productid": "10483"
+            },
+            {
+              "text": "Windows Server 2012 R2 (Server Core installation)",
+              "productid": "10543"
+            }
+          ]
+        },
+        {
+          "type": "Product Family",
+          "name": "ESU",
+          "fullproductname": [
+            {
+              "text": "Windows 7 for 32-bit Systems Service Pack 1",
+              "productid": "10047"
+            },
+            {
+              "text": "Windows 7 for x64-based Systems Service Pack 1",
+              "productid": "10048"
+            },
+            {
+              "text": "Windows Server 2008 for 32-bit Systems Service Pack 2",
+              "productid": "9312"
+            },
+            {
+              "text": "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
+              "productid": "10287"
+            },
+            {
+              "text": "Windows Server 2008 for x64-based Systems Service Pack 2",
+              "productid": "9318"
+            },
+            {
+              "text": "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
+              "productid": "9344"
+            },
+            {
+              "text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
+              "productid": "10051"
+            },
+            {
+              "text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
+              "productid": "10049"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "0",
+      "title": "Microsoft Guidance to mitigate L1TF variant",
+      "notes": {
+        "note": [
+          {
+            "text": "<h1>Executive Summary</h1>\n<p>On January 3, 2018, Microsoft released an advisory and security updates for a new class of hardware vulnerabilities involving speculative execution side channels (known as Spectre and Meltdown). Microsoft is aware of a new speculative execution side channel vulnerability known as <a href=\"https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00161.html\">L1 Terminal Fault (L1TF)</a> which has been assigned multiple CVEs as noted in the following table. This vulnerability affects Intel® Core® processors and Intel® Xeon® processors.  For more information, see Intel’s advisory at: <a href=\"https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00161.html\">https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00161.html</a>.</p>\n<table>\n<thead>\n<tr>\n<th>CVE</th>\n<th>Name</th>\n<th>Applicability</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3615\">CVE-2018-3615</a></td>\n<td>L1 Terminal Fault</td>\n<td>Intel® Software Guard Extensions (SGX)</td>\n</tr>\n<tr>\n<td><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620\">CVE-2018-3620</a></td>\n<td>L1 Terminal Fault</td>\n<td>Operating System (OS), System Management Mode (SMM)</td>\n</tr>\n<tr>\n<td><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646\">CVE-2018-3646</a></td>\n<td>L1 Terminal Fault</td>\n<td>Virtual Machine Manager (VMM)</td>\n</tr>\n</tbody>\n</table>\n<p>An attacker who has successfully exploited L1TF may be able to read privileged data across trust boundaries. In shared resource environments (such that exist in some cloud services configurations), this vulnerability could allow one virtual machine to improperly access information from another. An attacker would need prior access to the system or the ability to run code on the system to leverage this vulnerability. For a technical description of L1TF please see our <a href=\"https://aka.ms/sescsrdl1tf\">Security Research and Defense (SRD) blog</a>.</p>\n<p>Microsoft has released several updates to help mitigate this vulnerability. To get all available protections, firmware (microcode) and software updates are required. We have also taken action to secure our cloud services. See the <strong>Microsoft cloud customers</strong> section for more details.</p>\n<p>Microsoft has not received any information to indicate that this vulnerability has been used to attack customers at this time. Microsoft continues to work closely with industry partners, including chip makers, hardware OEMs, and app vendors to protect customers from the speculative execution class of hardware vulnerabilities.</p>\n<h1>Recommended Actions</h1>\n<ol>\n<li><p>The best protection is to keep your computers up to date. You can do this by taking advantage of automatic updates. Learn how to turn on automatic updates <a href=\"https://support.microsoft.com/en-us/help/12373/windows-update-faq\">here</a>.</p>\n</li>\n<li><p>Enterprise customers should:</p>\n<ol>\n<li><p>Review this advisory in detail for guidance by product or service and register for the security notifications mailer to be alerted of content changes to this advisory. See <a href=\"https://technet.microsoft.com/en-us/security/dd252948\">Microsoft Technical Security Notifications</a>.</p>\n</li>\n<li><p>Inventory the processors in use across the enterprise to determine risk exposure and help inform the required protections for L1TF.</p>\n</li>\n<li><p>Inventory the use of <a href=\"https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs\">Virtualization Based Security (VBS)</a> across the enterprise and especially in client systems to help inform the required protections.</p>\n</li>\n<li><p>Evaluate the risk posed by L1TF to enterprise environments. In general terms, any system that was deemed to need protection for CVE-2017-5715 (Spectre Variant 2, Branch Target Injection) would need protection for L1TF.</p>\n</li>\n</ol>\n</li>\n<li><p>Verify the status of protection for CVE-2018-3620 using the PowerShell script Get-SpeculationControlSettings. For more information and to obtain the PowerShell script see <a href=\"https://support.microsoft.com/en-us/help/4074629/understanding-the-output-of-get-speculationcontrolsettings-powershell\">Understanding Get-SpeculationControlSettings PowerShell script output</a>.</p>\n</li>\n</ol>\n<h2>Potential performance impacts</h2>\n<p>In testing, Microsoft has seen some performance impact with these mitigations depending on the configuration of the system and what mitigations are needed. For most consumer devices, we have not observed a noticeable performance impact after applying the updates.  Customers that use Virtualization Based Security (VBS) or versions of Hyper-V prior to Windows Server 2016 may need to disable Hyper-Threading to fully address the risk from L1 Terminal Fault (L1TF), resulting in performance degradation. Performance impact will vary by hardware and the workloads running on the system. As the most common device and server configuration is to have Hyper-Threading enabled, the performance impact will depend on whether the user or administrator takes the action to disable Hyper-Threading on the system. As noted earlier, Windows Server 2016 provides an option to enable the Hyper-V Core Scheduler which mitigates the L1TF attack vector while allowing Hyper-Threading to remain enabled, resulting in a minimal performance impact. Windows Server 2019 uses the Core Scheduler by default. For information on performance impact by Intel, please see: <a href=\"www.intel.com/securityfirst\">www.intel.com/securityfirst</a>.</p>\n<h1>Advisory Details</h1>\n<h2>Vulnerabilities Description</h2>\n<p>Speculative execution side-channel vulnerabilities such as L1 Terminal Fault (L1TF) can be used to read the content of memory across a trusted boundary and if exploited, can lead to information disclosure. There are multiple vectors by which an attacker could trigger the vulnerabilities depending on the configured environment. For a detailed view of affected scenarios and Microsoft’s approach to mitigating L1TF please see our <a href=\"https://aka.ms/sescsrdl1tf\">Security Research and Defense (SRD) blog</a>. The following table summarizes the potential relevance of L1TF to various attack scenarios and the applicable CVE:</p>\n<table>\n<thead>\n<tr>\n<th>Attack Category</th>\n<th>Attack Scenario</th>\n<th>L1TF CVE</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Inter-VM</td>\n<td>Hypervisor-to-guest</td>\n<td>CVE-2018-3646</td>\n</tr>\n<tr>\n<td></td>\n<td>Host-to-guest</td>\n<td>CVE-2018-3646</td>\n</tr>\n<tr>\n<td></td>\n<td>Guest-to-guest</td>\n<td>CVE-2018-3646</td>\n</tr>\n<tr>\n<td>Intra-OS</td>\n<td>Kernel-to-user</td>\n<td>CVE-2018-3620</td>\n</tr>\n<tr>\n<td></td>\n<td>Process-to-process</td>\n<td>CVE-2018-3620</td>\n</tr>\n<tr>\n<td></td>\n<td>Intra-process</td>\n<td>CVE-2018-3620</td>\n</tr>\n<tr>\n<td>Enclave</td>\n<td>SGX-to-any</td>\n<td>CVE-2018-3615</td>\n</tr>\n<tr>\n<td></td>\n<td>VSM-to-any</td>\n<td>CVE-2018-3646</td>\n</tr>\n</tbody>\n</table>\n<h2>Microsoft cloud customers</h2>\n<p>Microsoft has deployed mitigations across our cloud services which reinforce the isolation between customers.</p>\n<p>Customers who host untrusted code inside their applications should see <a href=\"https://docs.microsoft.com/en-us/azure/virtual-machines/windows/mitigate-se\">Guidance for mitigating speculative execution side-channel vulnerabilities in Azure</a>.</p>\n<h2>Azure Stack customers</h2>\n<p>Azure Stack customers should see <a href=\"https://support.microsoft.com/help/4463100\">Guidance for mitigating L1 Terminal Fault in Azure Stack</a>.</p>\n<h2>Microsoft Windows client customers</h2>\n<p>Customers using Windows client operating systems on systems with affected Intel processors may need to apply both firmware (Microcode) and software updates, depending on how the system is configured. However, most devices running Windows client operating systems will only need Windows software updates for protection. We have not observed performance degradation from these changes. The following table outlines the requirements for full protection for each CVE:</p>\n<table>\n<thead>\n<tr>\n<th>CVE</th>\n<th>Windows Changes</th>\n<th>Requires microcode?</th>\n<th>Requires additional action?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>CVE-2018-3620</td>\n<td>Kernel updates</td>\n<td>No</td>\n<td>No*</td>\n</tr>\n<tr>\n<td>CVE-2018-3646</td>\n<td>Hypervisor updates</td>\n<td>Yes**</td>\n<td>Yes, if using VBS or Hyper-V</td>\n</tr>\n</tbody>\n</table>\n<p>* Protection for CVE-2018-3620 builds on the mitigation for CVE-2017-5754 (Meltdown). When the mitigation for CVE-2017-5754 is enabled, Windows automatically enables protection for CVE-2018-3620. The mitigation for CVE-2017-5754 (Meltdown) is enabled by default on Windows client. Customers that have disabled the protection for CVE-2017-5754 must re-enable it to gain protection for CVE-2018-3620. (See <strong>FAQ#2</strong>)</p>\n<p>** The required microcode is the same microcode that addresses CVE-2018-3639 and CVE-2018-3640. Microsoft is making available Intel-validated microcode updates for Windows 10 operating systems. Please see <a href=\"https://support.microsoft.com/help/4093836\">Microsoft Knowledge Base Article 4093836</a> for the current Intel microcode updates.</p>\n<p>Customers using Hyper-V or features that rely on <a href=\"https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs\">Virtualization Based Security (VBS)</a> may need to take additional action to be fully protected:</p>\n<ol>\n<li>Installation of Windows Security updates (See the <strong>Affected Products</strong> table in this advisory).</li>\n<li>Installation of firmware updates provided by the device’s OEM.</li>\n<li>Disabling Hyper-Threading (See <strong>FAQ #1</strong>). Note: Disabling Hyper-Threading can affect system performance. Please see Intel’s guidance at <a href=\"www.intel.com/securityfirst\">www.intel.com/securityfirst</a> for more information.</li>\n</ol>\n<p>Windows Virtualization Based Security (VBS) is foundational to Windows 10 security. All VBS features including Hypervisor-enforced Code Integrity (HVCI) and VBS enclaves depend on confidentiality to maintain a strong security boundary. The L1TF vulnerability introduces risk that the confidentiality of VBS secrets could be compromised via a side-channel attack when Hyper-Threading (HT) is enabled, weakening the security boundary provided by VBS. Even with this increased risk, VBS still provides valuable security benefits and mitigates a range of attacks with HT enabled. Hence, we recommend that VBS continue to be used on HT-enabled systems. Customers who want to eliminate the potential risk of the L1TF vulnerability on the confidentiality of VBS should consider disabling HT to mitigate this additional risk.</p>\n<p>Windows client operating system users who are using Hyper-V for the security guarantees provided by VM isolation should disable HT to protect against L1TF.</p>\n<h2>Microsoft Windows Server customers</h2>\n<p>Customers using Windows Server operating systems may need to apply both firmware (microcode) and software updates, depending on how the system is configured. The following table outlines the requirements for full protection for each CVE:</p>\n<table>\n<thead>\n<tr>\n<th>CVE</th>\n<th>Windows Server changes</th>\n<th>Requires microcode?</th>\n<th>Requires additional action?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>CVE-2018-3620</td>\n<td>Kernel updates</td>\n<td>No</td>\n<td>Windows Server 2019: No*</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td>Windows Server 2016 or earlier: Yes*</td>\n</tr>\n<tr>\n<td>CVE-2018-3646</td>\n<td>Hypervisor updates</td>\n<td>Yes**</td>\n<td>Windows Server 2019: Yes, if using VBS and Hyper-Threading is enabled***</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td>Windows Server 2016 or earlier: Yes, if using VBS or Hyper-V and Hyper-Threading is enabled</td>\n</tr>\n</tbody>\n</table>\n<p>* Protection for CVE-2018-3620 builds on the mitigation for CVE-2017-5754 (Meltdown). When the mitigation for CVE-2017-5754 is enabled, Windows automatically enables protection for CVE-2018-3620.  The mitigation for CVE-2017-5754 is enabled by default on Windows Server 2019 and disabled by default on Windows Server 2016 and earlier versions. To obtain protection for CVE-2018-3620, customers must enable the protection for CVE-2017-5754 if disabled. (See <strong>FAQ #2</strong>).</p>\n<p>** The required microcode is the same microcode that addresses CVE-2018-3639 and CVE-2018-3640. Microsoft is making available Intel-validated microcode updates for Windows  Server 2016 operating systems. Please see <a href=\"https://support.microsoft.com/help/4093836\">Microsoft Knowledge Base Article 4093836</a> for the current Intel microcode updates.</p>\n<p>*** Windows Server 2019 defaults to using the Core Scheduler as the hypervisor scheduler type. Prior versions of Windows Server use the classic scheduler. Servers that use Hyper-V with Core Scheduler do not need to disable Hyper-Threading to protect against L1TF.</p>\n<p>Detailed guidance on the actions required for Windows Server customers can be found in <a href=\"https://support.microsoft.com/en-us/help/4457951/windows-server-guidance-to-protect-against-l1-terminal-fault\">Microsoft Knowledge Base Article 4457951</a>.</p>\n<h2>Microsoft Surface customers</h2>\n<p>Customers using Microsoft Surface and Surface Book products need to follow the guidance for Windows Client outlined on this advisory. See <a href=\"https://support.microsoft.com/en-us/help/4073065\">Microsoft Knowledge Base Article 4073065</a> for more information about affected Surface products and availability of the microcode updates.</p>\n<h2>Microsoft Hololens customers</h2>\n<p>Microsoft HoloLens is unaffected by L1TF because it does not use an affected Intel processor.</p>\n<h1>FAQ</h1>\n<p><strong>1. How do I disable Hyper-Threading on my device?</strong></p>\n<p>The steps necessary to disable Hyper-Threading will differ from OEM to OEM but are generally part of the BIOS or firmware setup and configuration tools.</p>\n<p><strong>2. How do I enable the mitigation for CVE-2017-5754 (Meltdown)?</strong></p>\n<p><strong>Important</strong> This section, method, or task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. You can then restore the registry if a problem occurs. For more information about how to back up and restore the registry, see <a href=\"https://support.microsoft.com/en-us/help/322756\">Microsoft Knowledge Base 322756 How to back up and restore the registry in Windows</a>.</p>\n<p>To enable protection for CVE-2017-5715 and CVE 2017-5754:</p>\n<pre><code>reg add &quot;HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management&quot; /v FeatureSettingsOverride /t REG_DWORD /d 0 /f\n\nreg add &quot;HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management&quot; /v FeatureSettingsOverrideMask /t REG_DWORD /d 3 /f\n</code></pre>\n<p>Restart the computer for the changes to take effect.</p>\n<p><strong>Note</strong>: Customers who turned on the mitigation for Speculative Store Bypass (CVE-2018-3639) by following the guidance in <a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180012\">Security Advisory 180012</a> do not need to take further action because the registry key settings provided in ADV180012 also enable protections for CVE-2017-5754.</p>\n<p><strong>3. What is VBS and how do I know if I am using it?</strong></p>\n<p><a href=\"https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs\">Virtualization Based Security (VBS)</a> uses hardware virtualization features to create and isolate a secure region of memory from the normal operating system and is used by security features such as Device Guard, Application Guard, Credential Guard, and Hypervisor Code Integrity (HVCI). VBS is supported in the following versions of Windows:</p>\n<ul>\n<li>Windows 10 Version 1809</li>\n<li>Windows 10 Version 1803</li>\n<li>Windows 10 Version 1709</li>\n<li>Windows 10 Version 1703</li>\n<li>Windows 10 Version 1607</li>\n<li>Windows Serve 2016</li>\n<li>Windows Server, version 1709</li>\n<li>Windows Server, version 1803</li>\n<li>Windows Server 2019</li>\n</ul>\n<p>To determine if VBS is enabled, run MSINFO32.EXE and look for the Virtualization-based Security line item under the System Summary node.</p>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "Microsoft Windows",
+            "title": "Microsoft Windows",
+            "type": "Tag",
+            "ordinal": "20"
+          }
+        ]
+      },
+      "cve": "ADV180018",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "11497",
+            "11498",
+            "10951",
+            "10952",
+            "11453",
+            "11454",
+            "11466",
+            "10729",
+            "10735",
+            "10852",
+            "10853",
+            "10816",
+            "10855",
+            "10047",
+            "10048",
+            "10481",
+            "10482",
+            "10484",
+            "9312",
+            "10287",
+            "9318",
+            "9344",
+            "10051",
+            "10049",
+            "10378",
+            "10379",
+            "10483",
+            "10543",
+            "11499"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "11497"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "11498"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10951"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10952"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "11453"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "11454"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "11466"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10729"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10735"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10852"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10853"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10816"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10855"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10047"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10048"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10481"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10482"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10484"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "9312"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10287"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "9318"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "9344"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10051"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10049"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10378"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10379"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10483"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "10543"
+          },
+          {
+            "type": "Impact",
+            "description": "Information Disclosure",
+            "product_id": "11499"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11497"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11498"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10951"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10952"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11453"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11454"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11466"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10729"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10735"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10852"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10853"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10816"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10855"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10047"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10048"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10481"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10482"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10484"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "9312"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10287"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "9318"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "9344"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10051"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10049"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10378"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10379"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10483"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10543"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11499"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely"
+          }
+        ]
+      },
+      "cvssscoresets": {
+        "scoreset": [
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "11497"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "11498"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10951"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10952"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "11453"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "11454"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "11466"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10729"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10735"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10852"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10853"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10816"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10855"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10047"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10048"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10481"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10482"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10484"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "9312"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10287"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "9318"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "9344"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10051"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10049"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10378"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10379"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10483"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "10543"
+          },
+          {
+            "base_score": "7.1",
+            "temporal_score": "7.1",
+            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "product_id": "11499"
+          }
+        ]
+      },
+      "remediations": {
+        "remediation": [
+          {
+            "type": "Vendor Fix",
+            "description": "4343909",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343909",
+            "supercedence": "4338819",
+            "product_id": [
+              "11497"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343909",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343909",
+            "supercedence": "4338819",
+            "product_id": [
+              "11498"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343885",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343885",
+            "supercedence": "4338826",
+            "product_id": [
+              "10951"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343885",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343885",
+            "supercedence": "4338826",
+            "product_id": [
+              "10952"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343897",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343897",
+            "supercedence": "4338825",
+            "product_id": [
+              "11453"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343897",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343897",
+            "supercedence": "4338825",
+            "product_id": [
+              "11454"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343897",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343897",
+            "supercedence": "4338825",
+            "product_id": [
+              "11466"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343892",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343892",
+            "supercedence": "4338829",
+            "product_id": [
+              "10729"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343892",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343892",
+            "supercedence": "4338829",
+            "product_id": [
+              "10735"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343887",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343887",
+            "supercedence": "4338814",
+            "product_id": [
+              "10852"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343887",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343887",
+            "supercedence": "4338814",
+            "product_id": [
+              "10853"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343887",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343887",
+            "supercedence": "4338814",
+            "product_id": [
+              "10816"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343887",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343887",
+            "supercedence": "4338814",
+            "product_id": [
+              "10855"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343900",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343900",
+            "supercedence": "4338818",
+            "product_id": [
+              "10047"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343899",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343899",
+            "product_id": [
+              "10047"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343900",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343900",
+            "supercedence": "4338818",
+            "product_id": [
+              "10048"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343899",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343899",
+            "product_id": [
+              "10048"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343898",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343898",
+            "supercedence": "4338815",
+            "product_id": [
+              "10481"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343888",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343888",
+            "product_id": [
+              "10481"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343898",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343898",
+            "supercedence": "4338815",
+            "product_id": [
+              "10482"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343888",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343888",
+            "product_id": [
+              "10482"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343898",
+            "supercedence": "4338815",
+            "product_id": [
+              "10484"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4341832",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4341832",
+            "product_id": [
+              "9312"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4458010",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4458010",
+            "product_id": [
+              "9312"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4457984",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4457984",
+            "product_id": [
+              "9312"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4341832",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4341832",
+            "product_id": [
+              "10287"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4458010",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4458010",
+            "product_id": [
+              "10287"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4457984",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4457984",
+            "product_id": [
+              "10287"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4458010",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4458010",
+            "product_id": [
+              "9318"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4458010",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4458010",
+            "product_id": [
+              "9318"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4457984",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4457984",
+            "product_id": [
+              "9318"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4458010",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4458010",
+            "product_id": [
+              "9344"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4458010",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4458010",
+            "product_id": [
+              "9344"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4457984",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4457984",
+            "product_id": [
+              "9344"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343900",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343900",
+            "supercedence": "4338818",
+            "product_id": [
+              "10051"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343899",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343899",
+            "product_id": [
+              "10051"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343900",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343900",
+            "supercedence": "4338818",
+            "product_id": [
+              "10049"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343899",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343899",
+            "product_id": [
+              "10049"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343901",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343901",
+            "supercedence": "4338830",
+            "product_id": [
+              "10378"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343896",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343896",
+            "product_id": [
+              "10378"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343901",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343901",
+            "supercedence": "4338830",
+            "product_id": [
+              "10379"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343896",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343896",
+            "product_id": [
+              "10379"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343898",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343898",
+            "supercedence": "4338815",
+            "product_id": [
+              "10483"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343888",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343888",
+            "product_id": [
+              "10483"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343898",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343898",
+            "supercedence": "4338815",
+            "product_id": [
+              "10543"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Monthly Rollup"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343888",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343888",
+            "product_id": [
+              "10543"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Only"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4343909",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4343909",
+            "supercedence": "4338819",
+            "product_id": [
+              "11499"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Yes",
+            "sub_type": "Security Update"
+          }
+        ]
+      },
+      "acknowledgments": {
+        "acknowledgment": [
+          {
+            "name": "Microsoft would like to thank Raoul Strackx, Jo Van Bulck, and Frank Piessens of imec-DistriNet, KU Leuven; Marina Minkin and Mark Silberstein of Technion; Ofir Weisse, Daniel Genkin, Baris Kasikci, and Thomas F. Wenisch of University of Michigan; Yuval Yarom, University of Adelaide and Data61; Lei Shi of <a href=\"https://www.360.com\">Qihoo360 CERT</a>; Leibo Liu, Ao Luo, Bowei Zhang, and Guanhua Li of Tsinghua University for reporting this and working with us on coordinated disclosure."
+          }
+        ]
+      },
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "1.0",
+            "date": "2018-08-14T07:00:00Z",
+            "description": "<p>Information published.</p>\n"
+          },
+          {
+            "number": "2.0",
+            "date": "2018-08-24T07:00:00Z",
+            "description": "<p>Microsoft is announcing the availability of Intel-validated microcode updates for Windows 10 operating systems. Please see Microsoft Knowledge Base Article 4093836 (https://support.microsoft.com/en-us/help/4093836) for the current Intel microcode updates.</p>\n"
+          },
+          {
+            "number": "3.0",
+            "date": "2018-09-06T07:00:00Z",
+            "description": "<p>Added a section under Advisory Details to provide a link to L1TF guidance for Azure Stack customers. Please see Guidance for mitigating L1 Terminal Fault in Azure Stack (https://support.microsoft.com/help/4463100) for information.</p>\n"
+          },
+          {
+            "number": "4.0",
+            "date": "2018-09-11T07:00:00Z",
+            "description": "<p>Microsoft is announcing the release of Monthly Rollup 4458010 and Security Only 4457984 for Windows Server 2008 to provide additional protections against the speculative execution side-channel vulnerability known as L1 Terminal Fault (L1TF) that affects Intel® Core® processors and Intel® Xeon® processors (CVE-2018-3620 and CVE-2018-3646). Customers running Windows Server 2008 should install either 4458010 or 4457984 in addition to Security Update 4341832, which was released on August 14, 2018. See <a href=\"https://cloudblogs.microsoft.com/windowsserver/2018/06/12/windows-server-2008-sp2-servicing-changes/\">Windows Server 2008 SP2 servicing changes</a> for more information. In addition, a note has been added to FAQ #2 to provide further information regarding enabling the mitigation for CVE-2017-5754 (Meltdown).</p>\n"
+          },
+          {
+            "number": "1.1",
+            "date": "2018-08-15T07:00:00Z",
+            "description": "<p>Updated acknowledgment. This is an informational change only.</p>\n"
+          },
+          {
+            "number": "5.0",
+            "date": "2018-11-13T08:00:00Z",
+            "description": "<p>The following updates have been made: 1. Updated the &quot;Microsoft Windows client customers&quot; section to provide clarification about how the protections for CVE-2018-5754 and CVE-2018-3620 are related. Customers that have disabled the protection for CVE-2017-5754 must re-enable it to gain protection for CVE-2018-3620 (See FAQ#2). 2. Updated the &quot;Microsoft Window Server customers&quot; section to include information for customers running Windows Server 2019. Added further clarification to address VBS, Hyper-V, and Hyper-Threading configurations based on the version of Windows Server. 3. In FAQ 3, added Windows 10 Version 1809 to the list of Windows versions in which VBS is supported.</p>\n"
+          },
+          {
+            "number": "5.1",
+            "date": "2019-06-18T07:00:00Z",
+            "description": "<p>Added acknowledgements. This is an informational change only.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}

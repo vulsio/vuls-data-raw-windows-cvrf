@@ -1,0 +1,569 @@
+{
+  "document_title": "September 2017 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV170015",
+      "alias": "ADV170015"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "11",
+        "date": "2019-12-04T08:00:00Z",
+        "description": "September 2017 Security Updates"
+      }
+    },
+    "initial_release_date": "2017-09-12T07:00:00Z",
+    "current_release_date": "2019-12-04T08:00:00Z"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The September security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Adobe Flash Player</li>\n<li>Skype for Business and Lync</li>\n<li>.NET Framework</li>\n<li>Microsoft Exchange Server</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer.  This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/help/4011040\">4011040</a></li>\n<li><a href=\"https://support.microsoft.com/help/4011050\">4011050</a></li>\n<li><a href=\"https://support.microsoft.com/help/4011960\">4040960</a></li>\n<li><a href=\"https://support.microsoft.com/help/4040971\">4040971</a></li>\n<li><a href=\"https://support.microsoft.com/help/4040972\">4040972</a></li>\n<li><a href=\"https://support.microsoft.com/help/4040973\">4040973</a></li>\n<li><a href=\"https://support.microsoft.com/help/4040977\">4040977</a></li>\n</ul>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Microsoft Office",
+          "fullproductname": [
+            {
+              "text": "Microsoft Office 2016 (32-bit edition)",
+              "productid": "10753"
+            },
+            {
+              "text": "Microsoft Office 2016 (64-bit edition)",
+              "productid": "10754"
+            },
+            {
+              "text": "Microsoft Office 2007 Service Pack 3",
+              "productid": "10150"
+            },
+            {
+              "text": "Microsoft Office 2010 Service Pack 2 (32-bit editions)",
+              "productid": "10521"
+            },
+            {
+              "text": "Microsoft Office 2010 Service Pack 2 (64-bit editions)",
+              "productid": "10522"
+            },
+            {
+              "text": "Microsoft Office 2013 RT Service Pack 1",
+              "productid": "10603"
+            },
+            {
+              "text": "Microsoft Office 2013 Service Pack 1 (32-bit editions)",
+              "productid": "10601"
+            },
+            {
+              "text": "Microsoft Office 2013 Service Pack 1 (64-bit editions)",
+              "productid": "10602"
+            },
+            {
+              "text": "Microsoft Outlook 2016 (32-bit edition)",
+              "productid": "10765"
+            },
+            {
+              "text": "Microsoft Outlook 2016 (64-bit edition)",
+              "productid": "10766"
+            },
+            {
+              "text": "Microsoft Outlook 2007 Service Pack 3",
+              "productid": "10156"
+            },
+            {
+              "text": "Microsoft Outlook 2010 Service Pack 2 (32-bit editions)",
+              "productid": "10527"
+            },
+            {
+              "text": "Microsoft Outlook 2010 Service Pack 2 (64-bit editions)",
+              "productid": "10528"
+            },
+            {
+              "text": "Microsoft Outlook 2013 (32-bit editions)",
+              "productid": "10317"
+            },
+            {
+              "text": "Microsoft Outlook 2013 (64-bit editions)",
+              "productid": "10318"
+            },
+            {
+              "text": "Microsoft Outlook 2013 RT Service Pack 1",
+              "productid": "10407"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "1",
+      "title": "Microsoft Office Defense in Depth Update",
+      "notes": {
+        "note": [
+          {
+            "text": "<p>Microsoft has released an update for Microsoft Office that provides enhanced security as a defense in depth measure.</p>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "Microsoft Office",
+            "title": "Microsoft Office",
+            "type": "Tag",
+            "ordinal": "20"
+          }
+        ]
+      },
+      "cve": "ADV170015",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "10765",
+            "10766",
+            "10156",
+            "10527",
+            "10528",
+            "10317",
+            "10318",
+            "10407",
+            "10753",
+            "10754",
+            "10150",
+            "10521",
+            "10522",
+            "10603",
+            "10601",
+            "10602"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10765"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10766"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10156"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10527"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10528"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10317"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10318"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10407"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10753"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10754"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10150"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10521"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10522"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10603"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10601"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10602"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10765"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10766"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10156"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10527"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10528"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10317"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10318"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10407"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10753"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10754"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10150"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10521"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10522"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10603"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10601"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10602"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:Yes;Exploited:Yes"
+          }
+        ]
+      },
+      "cvssscoresets": {},
+      "remediations": {
+        "remediation": [
+          {
+            "type": "Vendor Fix",
+            "description": "4011091",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=d959bb1e-5d99-40b9-8429-728e929eeb2d",
+            "supercedence": "4011052",
+            "product_id": [
+              "10765"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011091",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=6f32c25a-394d-46c1-ad44-b0c2a5edde4e",
+            "supercedence": "4011052",
+            "product_id": [
+              "10766"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011110",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=df1c2665-07ef-49c5-b6c3-2694e220d870",
+            "supercedence": "3213643",
+            "product_id": [
+              "10156"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011089",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=5b664c50-281c-49e0-9e01-c7739f3e666d",
+            "supercedence": "2956078",
+            "product_id": [
+              "10527"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011089",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=d08e77bd-75c2-46b9-a078-60327d671cad",
+            "supercedence": "2956078",
+            "product_id": [
+              "10528"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011090",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=0b0f7bd5-2dd6-4ffb-bb69-e78ba1104529",
+            "supercedence": "4011078",
+            "product_id": [
+              "10317"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011090",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=0d8d5f78-5e72-4f7d-b5be-2cda27a5840b",
+            "supercedence": "4011078",
+            "product_id": [
+              "10318"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011090",
+            "supercedence": "4011078",
+            "product_id": [
+              "10407"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011126",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=13454632-9f4e-475d-8f75-b80d5e5106b1",
+            "supercedence": "3213545",
+            "product_id": [
+              "10753"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011038",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=9f080d17-34a0-4bbc-a573-3945d5928017",
+            "supercedence": "3191943",
+            "product_id": [
+              "10753"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011126",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=9385e2fa-e7e3-42e0-9443-250db4c17c1e",
+            "supercedence": "3213545",
+            "product_id": [
+              "10754"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011038",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=1be5a597-e746-4c16-aaff-586ee9444d4a",
+            "supercedence": "3191943",
+            "product_id": [
+              "10754"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011063",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=e38d4b14-1039-48d4-9638-a92552b42f8b",
+            "product_id": [
+              "10150"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011055",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=9a70aa12-3823-44e7-8cf9-2072887509c1",
+            "supercedence": "3213624",
+            "product_id": [
+              "10521"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011055",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=ad2d2112-8beb-45f5-baed-9d4b9ffeeca5",
+            "supercedence": "3213624",
+            "product_id": [
+              "10522"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011103",
+            "supercedence": "3213555",
+            "product_id": [
+              "10603"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011103",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=c5ed8bb3-6908-44ee-bfc9-97fa0dd05a55",
+            "supercedence": "3213555",
+            "product_id": [
+              "10601"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "4011103",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=b35f062a-ea19-432a-8875-34ff2a3edc0c",
+            "supercedence": "3213555",
+            "product_id": [
+              "10602"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          }
+        ]
+      },
+      "acknowledgments": {},
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "1.0",
+            "date": "2017-09-12T07:00:00Z",
+            "description": "<p>Information published.</p>\n"
+          },
+          {
+            "number": "2.0",
+            "date": "2017-09-19T07:00:00Z",
+            "description": "<p>Information updated to announce that Microsoft is replacing KB4011086 for Microsoft Outlook 2007 Service Pack 3 with KB401110. Note that you must first uninstall KB4011086 and then install KB401110. For more information, see https://support.microsoft.com/help/4011110.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}

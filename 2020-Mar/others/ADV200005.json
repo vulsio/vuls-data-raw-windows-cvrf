@@ -1,0 +1,264 @@
+{
+  "document_title": "March 2020 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV200005",
+      "alias": "ADV200005"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "15",
+        "date": "2021-08-10T07:00:00Z",
+        "description": "March 2020 Security Updates"
+      }
+    },
+    "initial_release_date": "2020-03-10T07:00:00Z",
+    "current_release_date": "2021-08-10T07:00:00Z"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The March 2020 security release consists of security updates for the following software:</p>\n<ul>\n<li>Microsoft Windows</li>\n<li>Microsoft Edge (EdgeHTML-based)</li>\n<li>Microsoft Edge (Chromium-based)</li>\n<li>ChakraCore</li>\n<li>Internet Explorer</li>\n<li>Microsoft Exchange Server</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Azure DevOps</li>\n<li>Windows Defender</li>\n<li>Visual Studio</li>\n<li>Open Source Software</li>\n<li>Azure</li>\n<li>Microsoft Dynamics</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>A list of the latest servicing stack updates for each operating system can be found in <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001\">ADV990001</a>. This list will be updated whenever a new servicing stack update is released. It is important to install the latest servicing stack update.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>Customers running Windows 7, Windows Server 2008 R2, or Windows Server 2008 need to purchase the Extended Security Update to continue receiving security updates. See <a href=\"https://support.microsoft.com/en-us/help/4522133/procedure-to-continue-receiving-security-updates\">4522133</a> for more information.</li>\n</ul>\n<p><strong>The following CVEs have additional information and may include * further steps to take after installing the updates. Please note that this is not a complete list of CVEs for this release.</strong></p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV200005\">ADV200005</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV200006\">ADV200006</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0765\">CVE-2020-0765</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0774\">CVE-2020-0774</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0775\">CVE-2020-0775</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0795\">CVE-2020-0795</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796\">CVE-2020-0796</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0813\">CVE-2020-0813</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0820\">CVE-2020-0820</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0850\">CVE-2020-0850</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0851\">CVE-2020-0851</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0852\">CVE-2020-0852</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0853\">CVE-2020-0853</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0855\">CVE-2020-0855</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0859\">CVE-2020-0859</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0861\">CVE-2020-0861</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0863\">CVE-2020-0863</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0871\">CVE-2020-0871</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0874\">CVE-2020-0874</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0876\">CVE-2020-0876</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0879\">CVE-2020-0879</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0880\">CVE-2020-0880</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0882\">CVE-2020-0882</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0885\">CVE-2020-0885</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0891\">CVE-2020-0891</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0892\">CVE-2020-0892</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0893\">CVE-2020-0893</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0894\">CVE-2020-0894</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0902\">CVE-2020-0902</a> *</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<p>The following KBs contain information about known issues with the security updates. For a complete list of security update KBs, please see <a href=\"https://support.microsoft.com/help/20200310\">20200310</a></p>\n<table>\n<thead>\n<tr>\n<th>KB Article</th>\n<th>Applies To</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4538032\">4538032</a></td>\n<td>Visual Studio</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4538461\">4538461</a></td>\n<td>Windows 10 Version 1809, Windows Server 2019</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540123\">4540123</a></td>\n<td>Microsoft Exchange Server</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540670\">4540670</a></td>\n<td>Windows 10, version 1607, Windows Server 2016</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540671\">4540671</a></td>\n<td>Internet Explorer</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540688\">4540688</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540694\">4540694</a></td>\n<td>Windows Server 2012 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541500\">4541500</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541504\">4541504</a></td>\n<td>Windows Server 2008 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541505\">4541505</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541506\">4541506</a></td>\n<td>Windows Server 2008 Service Pack 2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541509\">4541509</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541510\">4541510</a></td>\n<td>Windows Server 2012 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4551762\">4551762</a></td>\n<td>Windows 10, version 1903, Windows Server version 1903, Windows 10, version 1909, Windows Server version 1909</td>\n</tr>\n</tbody>\n</table>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Windows",
+          "fullproductname": [
+            {
+              "text": "Windows 10 Version 1903 for 32-bit Systems",
+              "productid": "11644"
+            },
+            {
+              "text": "Windows 10 Version 1903 for x64-based Systems",
+              "productid": "11645"
+            },
+            {
+              "text": "Windows 10 Version 1903 for ARM64-based Systems",
+              "productid": "11646"
+            },
+            {
+              "text": "Windows Server, version 1903 (Server Core installation)",
+              "productid": "11647"
+            },
+            {
+              "text": "Windows 10 Version 1909 for 32-bit Systems",
+              "productid": "11712"
+            },
+            {
+              "text": "Windows 10 Version 1909 for x64-based Systems",
+              "productid": "11713"
+            },
+            {
+              "text": "Windows 10 Version 1909 for ARM64-based Systems",
+              "productid": "11714"
+            },
+            {
+              "text": "Windows Server, version 1909 (Server Core installation)",
+              "productid": "11715"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "0",
+      "title": "Microsoft Guidance for Disabling SMBv3 Compression",
+      "notes": {
+        "note": [
+          {
+            "text": "<p><strong>Important</strong> March 12, 2020 - Microsoft has released CVE-2020-0796 | Windows SMBv3 Client/Server Remote Code Execution Vulnerability to address this vulnerability. For more information about this issue, including download links for an available security update, please review <a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796\">CVE-2020-0796</a>.</p>\n<p>Microsoft is aware of a remote code execution vulnerability in the way that the Microsoft Server Message Block 3.1.1 (SMBv3) protocol handles certain requests. An attacker who successfully exploited the vulnerability could gain the ability to execute code on the target SMB Server or SMB Client.</p>\n<p>To exploit the vulnerability against an SMB Server, an unauthenticated attacker could send a specially crafted packet to a targeted SMBv3 Server. To exploit the vulnerability against an SMB Client, an unauthenticated attacker would need to configure a malicious SMBv3 Server and convince a user to connect to it.</p>\n<p>We will update this advisory when updates are available. If you wish to be notified when this advisory is updated, we recommend that you register for the security notifications mailer to be alerted of content changes to this advisory. See <a href=\"https://www.microsoft.com/en-us/msrc/technical-security-notifications?rtc=1\">Microsoft Technical Security Notifications</a>.</p>\n<table>\n<thead>\n<tr>\n<th>Publicly Disclosed</th>\n<th>Exploited</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>No</td>\n<td>No</td>\n</tr>\n</tbody>\n</table>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "<p><strong>What steps can I take to protect my network?</strong></p>\n<p><strong>1. Block TCP port 445 at the enterprise perimeter firewall</strong></p>\n<p>TCP port 445 is used to initiate a connection with the affected component. Blocking this port at the network perimeter firewall will help protect systems that are behind that firewall from attempts to exploit this vulnerability. This can help protect networks from attacks that originate outside the enterprise perimeter. Blocking the affected ports at the enterprise perimeter is the best defense to help avoid Internet-based attacks. <strong>However, systems could still be vulnerable to attacks from within their enterprise perimeter.</strong></p>\n<p><strong>2. Follow Microsoft guidelines to prevent SMB traffic from lateral connections and entering or leaving the network</strong></p>\n<p><a href=\"https://support.microsoft.com/en-us/help/3185535/preventing-smb-traffic-from-lateral-connections\">Preventing SMB traffic from lateral connections and entering or leaving the network</a></p>\n<p><strong>Are older versions of Windows (other than what is listed in the Security Updates table) affected by this vulnerability?</strong></p>\n<p>No, the vulnerability exists in a new feature that was added to Windows 10 version 1903. Older versions of Windows do not support SMBv3.1.1 compression and are not affected.</p>\n<p><strong>Windows Server, version 1903 (Server Core installation) and Windows Server, version 1909 (Server Core installation) are in the Security Updates Table.  Are Windows Server, version 1903 and Windows Server, version 1909 that are not Server Core installation  affected by this vulnerability?</strong></p>\n<p>No. Windows Server, versions 1903 and 1909 were both released under the  Semi-Annual Channel (SAC) channel. As such, only a Server Core installation is available. For more information Windows servicing channels, please see <a href=\"https://docs.microsoft.com/en-us/windows-server/get-started-19/servicing-channels-19\">Servicing Channels-19</a></p>\n",
+            "title": "FAQ",
+            "type": "FAQ",
+            "ordinal": "10"
+          },
+          {
+            "text": "Windows SMB",
+            "title": "Windows SMB",
+            "type": "Tag",
+            "ordinal": "20"
+          },
+          {
+            "text": "Microsoft",
+            "title": "Issuing CNA",
+            "type": "CNA",
+            "ordinal": "30"
+          }
+        ]
+      },
+      "cve": "ADV200005",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "11644",
+            "11645",
+            "11646",
+            "11647",
+            "11712",
+            "11713",
+            "11714",
+            "11715"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "11644"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "11645"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "11646"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "11647"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "11712"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "11713"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "11714"
+          },
+          {
+            "type": "Impact",
+            "description": "Remote Code Execution",
+            "product_id": "11715"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "11644"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "11645"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "11646"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "11647"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "11712"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "11713"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "11714"
+          },
+          {
+            "type": "Severity",
+            "description": "Critical",
+            "product_id": "11715"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation More Likely;Older Software Release:Exploitation More Likely;DOS:N/A"
+          }
+        ]
+      },
+      "cvssscoresets": {},
+      "remediations": {
+        "remediation": [
+          {
+            "type": "Workaround",
+            "description": "<p>The following <a href=\"https://technet.microsoft.com/library/security/dn848375.aspx\">workaround</a> may be helpful in your situation. In all cases, Microsoft strongly recommends that you install the updates for this vulnerability as soon as they become available even if you plan to leave this workaround in place:</p>\n<p><strong>Disable SMBv3 compression</strong></p>\n<p>You can disable compression to block unauthenticated attackers from exploiting the vulnerability against an <strong>SMBv3 Server</strong> with the PowerShell command below.</p>\n<pre><code>Set-ItemProperty -Path &quot;HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters&quot; DisableCompression -Type DWORD -Value 1 -Force\n</code></pre>\n<p><strong>Notes:</strong></p>\n<ol>\n<li>No reboot is needed after making the change.</li>\n<li><strong>This workaround does not prevent exploitation of SMB clients; please see item 2 under FAQ to protect clients.</strong></li>\n<li>SMB Compression is not yet used by Windows or Windows Server, and disabling SMB Compression has no negative performance impact.</li>\n</ol>\n<p>You can disable the workaround with the PowerShell command below.</p>\n<pre><code>Set-ItemProperty -Path &quot;HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters&quot; DisableCompression -Type DWORD -Value 0 -Force\n</code></pre>\n<p><strong>Note:</strong>\nNo reboot is needed after disabling the workaround.</p>\n",
+            "affectedfiles": {}
+          }
+        ]
+      },
+      "acknowledgments": {
+        "acknowledgment": [
+          {
+            "name": "Microsoft Platform Security Assurance & Vulnerability Research"
+          }
+        ]
+      },
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "1.0",
+            "date": "2020-03-10T07:00:00Z",
+            "description": "<p>Information published.</p>\n"
+          },
+          {
+            "number": "2.0",
+            "date": "2020-03-12T07:00:00Z",
+            "description": "<p>CVE-2020-0796 has been published to address this vulnerability. Please see CVE-2020-0796 (https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796).</p>\n"
+          },
+          {
+            "number": "1.1",
+            "date": "2020-03-11T07:00:00Z",
+            "description": "<p>Advisory updated to add clarifying statements to the workaround and the FAQ.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}

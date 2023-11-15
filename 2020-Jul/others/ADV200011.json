@@ -1,0 +1,1117 @@
+{
+  "document_title": "July 2020 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV200011",
+      "alias": "ADV200011"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "16",
+        "date": "2023-01-10T08:00:00",
+        "description": "July 2020 Security Updates"
+      }
+    },
+    "initial_release_date": "2020-07-14T07:00:00",
+    "current_release_date": "2023-01-10T08:00:00"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The July 2020 security release consists of security updates for the following software:</p>\n<ul>\n<li>Microsoft Windows</li>\n<li>Microsoft Edge (EdgeHTML-based)</li>\n<li>Microsoft Edge (Chromium-based) in IE Mode</li>\n<li>Microsoft ChakraCore</li>\n<li>Internet Explorer</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Windows Defender</li>\n<li>Skype for Business</li>\n<li>Visual Studio</li>\n<li>Microsoft OneDrive</li>\n<li>Open Source Software</li>\n<li>.NET Framework</li>\n<li>Azure DevOps</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>For information regarding enabling Windows 10, version 1909 features, please see Windows 10, version 1909 delivery options. Note that Windows 10, versions 1903 and 1909 share a common core operating system with an identical set of system files. They will also share the same security update KBs.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>A list of the latest servicing stack updates for each operating system can be found in <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001\">ADV990001</a>. This list will be updated whenever a new servicing stack update is released. It is important to install the latest servicing stack update.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>Customers running Windows 7, Windows Server 2008 R2, or Windows Server 2008 need to purchase the Extended Security Update to continue receiving security updates. See <a href=\"https://support.microsoft.com/en-us/help/4522133/procedure-to-continue-receiving-security-updates\">4522133</a> for more information.</li>\n</ul>\n<p><strong>The following CVEs have FAQs, Mitigations and Workarounds with additional information and may include * further steps to take after installing the updates. Please note that this is not a complete list of CVEs for this release.</strong></p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV200008\">ADV200008</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1032\">CVE-2020-1032</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1036\">CVE-2020-1036</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1040\">CVE-2020-1040</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1041\">CVE-2020-1041</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1042\">CVE-2020-1042</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1043\">CVE-2020-1043</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1147\">CVE-2020-1147</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1240\">CVE-2020-1240</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1330\">CVE-2020-1330</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1342\">CVE-2020-1342</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1346\">CVE-2020-1346</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1349\">CVE-2020-1349</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1350\">CVE-2020-1350</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1351\">CVE-2020-1351</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1358\">CVE-2020-1358</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1361\">CVE-2020-1361</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1367\">CVE-2020-1367</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1386\">CVE-2020-1386</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1389\">CVE-2020-1389</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1391\">CVE-2020-1391</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1397\">CVE-2020-1397</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1419\">CVE-2020-1419</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1420\">CVE-2020-1420</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1426\">CVE-2020-1426</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1432\">CVE-2020-1432</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1433\">CVE-2020-1433</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1439\">CVE-2020-1439</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1442\">CVE-2020-1442</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1445\">CVE-2020-1445</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1446\">CVE-2020-1446</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1447\">CVE-2020-1447</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1448\">CVE-2020-1448</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1449\">CVE-2020-1449</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1458\">CVE-2020-1458</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1461\">CVE-2020-1461</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1462\">CVE-2020-1462</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1468\">CVE-2020-1468</a></li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<p>The following KBs contain information about known issues with the security updates. For a complete list of security update KBs, please see <a href=\"https://support.microsoft.com/help/20200714\">20200714</a>. For more information about Windows Known Issues, please see <a href=\"https://docs.microsoft.com/en-us/windows/release-information/windows-message-center\">Windows message center</a> (links to currently-supported versions of Windows are in the left pane).</p>\n<table>\n<thead>\n<tr>\n<th>KB Article</th>\n<th>Applies To</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4558998\">4558998</a></td>\n<td>Windows 10 Version 1809, Windows Server 2019</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4565483\">4565483</a></td>\n<td>Windows 10, version 1903, Windows Server version 1903, Windows 10, version 1909, Windows Server version 1909</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4565511\">4565511</a></td>\n<td>Windows 10, version 1607, Windows Server 2016</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4565524\">4565524</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4565529\">4565529</a></td>\n<td>Windows Server 2008 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4565535\">4565535</a></td>\n<td>Windows Server 2012 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4565536\">4565536</a></td>\n<td>Windows Server 2008 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4565537\">4565537</a></td>\n<td>Windows Server 2012 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4565539\">4565539</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4565540\">4565540</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4565541\">4565541</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Monthly Rollup)</td>\n</tr>\n</tbody>\n</table>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Windows",
+          "fullproductname": [
+            {
+              "text": "Windows 10 Version 1809 for 32-bit Systems",
+              "productid": "11568"
+            },
+            {
+              "text": "Windows 10 Version 1809 for x64-based Systems",
+              "productid": "11569"
+            },
+            {
+              "text": "Windows 10 Version 1809 for ARM64-based Systems",
+              "productid": "11570"
+            },
+            {
+              "text": "Windows Server 2019",
+              "productid": "11571"
+            },
+            {
+              "text": "Windows Server 2019 (Server Core installation)",
+              "productid": "11572"
+            },
+            {
+              "text": "Windows 10 Version 1607 for 32-bit Systems",
+              "productid": "10852"
+            },
+            {
+              "text": "Windows 10 Version 1607 for x64-based Systems",
+              "productid": "10853"
+            },
+            {
+              "text": "Windows Server 2016",
+              "productid": "10816"
+            },
+            {
+              "text": "Windows Server 2016 (Server Core installation)",
+              "productid": "10855"
+            },
+            {
+              "text": "Windows Server 2012",
+              "productid": "10378"
+            },
+            {
+              "text": "Windows Server 2012 (Server Core installation)",
+              "productid": "10379"
+            },
+            {
+              "text": "Windows Server 2012 R2",
+              "productid": "10483"
+            },
+            {
+              "text": "Windows Server 2012 R2 (Server Core installation)",
+              "productid": "10543"
+            },
+            {
+              "text": "Windows 10 for 32-bit Systems",
+              "productid": "10729"
+            },
+            {
+              "text": "Windows 10 for x64-based Systems",
+              "productid": "10735"
+            },
+            {
+              "text": "Windows 8.1 for 32-bit systems",
+              "productid": "10481"
+            },
+            {
+              "text": "Windows 8.1 for x64-based systems",
+              "productid": "10482"
+            },
+            {
+              "text": "Windows RT 8.1",
+              "productid": "10484"
+            },
+            {
+              "text": "Windows 10 Version 21H1 for x64-based Systems",
+              "productid": "11896"
+            },
+            {
+              "text": "Windows 10 Version 21H1 for ARM64-based Systems",
+              "productid": "11897"
+            },
+            {
+              "text": "Windows 10 Version 21H1 for 32-bit Systems",
+              "productid": "11898"
+            },
+            {
+              "text": "Windows Server 2022",
+              "productid": "11923"
+            },
+            {
+              "text": "Windows Server 2022 (Server Core installation)",
+              "productid": "11924"
+            },
+            {
+              "text": "Windows 10 Version 20H2 for x64-based Systems",
+              "productid": "11800"
+            },
+            {
+              "text": "Windows 10 Version 20H2 for 32-bit Systems",
+              "productid": "11801"
+            },
+            {
+              "text": "Windows 10 Version 20H2 for ARM64-based Systems",
+              "productid": "11802"
+            },
+            {
+              "text": "Windows Server, version 20H2 (Server Core Installation)",
+              "productid": "11803"
+            },
+            {
+              "text": "Windows 11 version 21H2 for x64-based Systems",
+              "productid": "11926"
+            },
+            {
+              "text": "Windows 11 version 21H2 for ARM64-based Systems",
+              "productid": "11927"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "1",
+      "title": "Microsoft Guidance for Addressing Security Feature Bypass in GRUB",
+      "notes": {
+        "note": [
+          {
+            "text": "<h1>Executive Summary</h1>\n<p>Microsoft is aware of a vulnerability in the GRand Unified Boot Loader (GRUB), commonly used by Linux. This vulnerability, known as “There’s a Hole in the Boot”, could allow for Secure Boot bypass.</p>\n<p>To exploit this vulnerability, an attacker would need to have administrative privileges or physical access on a system where Secure Boot is configured to trust the Microsoft Unified Extensible Firmware Interface (UEFI) Certificate Authority (CA). The attacker could install an affected GRUB and run arbitrary boot code on the target device. After successfully exploiting this vulnerability, the attacker could disable further code integrity checks thereby allowing arbitrary executables and drivers to be loaded onto the target device.</p>\n<p>Microsoft is working to complete validation and compatibility testing of a required Windows Update that addresses this vulnerability. If you are an IT professional and would like to immediately address this vulnerability, please see the mitigation option on installing an un-tested update. When the Windows updates become available, customers will be notified via revision to this advisory. If you wish to be notified when these updates are released, we recommend that you register for the security notifications mailer to be alerted of content changes to this advisory. See <a href=\"https://technet.microsoft.com/en-us/security/dd252948\">Microsoft Technical Security Notifications</a> and <a href=\"https://msrc-blog.microsoft.com/2022/01/11/coming-soon-new-security-update-guide-notification-system/\">Coming Soon: New Security Update Guide Notification System</a>.</p>\n<p>This vulnerability is detectable via <a href=\"https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/tpm-key-attestation\">TPM attestation</a> and <a href=\"https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection\">Defender ATP</a>.</p>\n<p>CVEs released for this issue: CVE-2020-10713, CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311, CVE-2020-15705, CVE-2020-15706, CVE-2020-15707.</p>\n<p><strong>Update: March 2, 2021</strong></p>\n<p>A new set of similar vulnerabilities has been discovered, documented under: CVE-2020-14372, CVE-2020-25632, CVE-2020-25647, CVE-2020-27749, CVE-2020-27779, CVE-2021-3418, CVE-2021-20225, CVE-2021-20233.</p>\n<p><strong>Update: August 9, 2022</strong></p>\n<p>Microsoft has released standalone security update 5012170 to provide protection against the vulnerabilities described in this advisory. See the FAQ section and <a href=\"https://support.microsoft.com/help/5012170\">KB5012170: Security update for Secure Boot DBX: August 9, 2022</a> for more information about this update.</p>\n<h2>Background Information</h2>\n<p>In 2012, Microsoft introduced the Secure Boot feature into the then-new, UEFI-based PC ecosystem.  UEFI Secure Boot is an anti-rootkit feature that defends the boot process from untrusted code execution.  As part of enabling this feature, Microsoft signs boot code both for Windows and 3rd-parties including Linux distributions. This boot code allows Linux systems to take advantage of Secure Boot.</p>\n<p>The GRUB vulnerability provides a way to bypass the UEFI Secure Boot security feature for any system that trusts the Microsoft 3rd-party UEFI signer, which includes many PCs.</p>\n<h1>Mitigations</h1>\n<p>See the <strong>Mitigations</strong> section following the <strong>Exploitability</strong> section.</p>\n<h1>Recommended Actions</h1>\n<p>Microsoft recommends that enterprise customers review this advisory in detail and register for the security notifications mailer to be alerted of content changes to this advisory. See <a href=\"https://technet.microsoft.com/en-us/security/dd252948\">Microsoft Technical Security Notifications</a>.</p>\n<h1>References</h1>\n<ul>\n<li><a href=\"https://support.microsoft.com/help/4575994\">Microsoft guidance for applying Secure Boot DBX update</a></li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/microsoft-defender-atp/how-insights-from-system-attestation-and-advanced-hunting-can/ba-p/969252\">How insights from system attestation can improve enterprise security</a></li>\n<li>Blog: <a href=\"https://www.eclypsium.com/2020/07/29/theres-a-hole-in-the-boot/\">There's a Hole in the Boot</a></li>\n<li>UEFI Forum: <a href=\"https://uefi.org/revocationlistfile\">https://uefi.org/revocationlistfile</a> (Applies to CVE-2020-10713, CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311, CVE-2020-15705, CVE-2020-15706, CVE-2020-15707).</li>\n<li>Canonical: <a href=\"https://ubuntu.com/security/notices/USN-4432-1\">https://ubuntu.com/security/notices/USN-4432-1</a></li>\n<li>Debian: <a href=\"https://www.debian.org/security/2020-GRUB-UEFI-SecureBoot\">https://www.debian.org/security/2020-GRUB-UEFI-SecureBoot</a></li>\n<li>HPE: <a href=\"www.hpe.com/info/security-alerts\">www.hpe.com/info/security-alerts</a></li>\n<li>Red Hat: <a href=\"https://access.redhat.com/security/vulnerabilities/grub2bootloader\">https://access.redhat.com/security/vulnerabilities/grub2bootloader</a></li>\n<li>SUSE: <a href=\"https://www.suse.com/c/suse-addresses-grub2-secure-boot-issue/\">https://www.suse.com/c/suse-addresses-grub2-secure-boot-issue/</a></li>\n<li>VMware: <a href=\"https://kb.vmware.com/s/article/80181\">https://kb.vmware.com/s/article/80181</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10713\">CVE-2020-10713</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14308\">CVE-2020-14308</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14309\">CVE-2020-14309</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14310\">CVE-2020-14310</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14311\">CVE-2020-14311</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15705\">CVE-2020-15705</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15706\">CVE-2020-15706</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15707\">CVE-2020-15707</a></li>\n</ul>\n<p>CVEs published March 2, 2021:</p>\n<ul>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14372\">CVE-2020-14372</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25632\">CVE-2020-25632</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25647\">CVE-2020-25647</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27749\">CVE-2020-27749</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27779\">CVE-2020-27779</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3418\">CVE-2021-3418</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20225\">CVE-2021-20225</a></li>\n<li><a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20233\">CVE-2021-20233</a>\n </li>\n</ul>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "<p><strong>Is BitLocker affected by this vulnerability?</strong></p>\n<p>No. BitLocker is not affected.</p>\n<p><strong>Are Hyper-V guests configured for Secure Boot of Windows vulnerable?</strong></p>\n<p>No. Hyper-V guests configured for Secure Boot of Windows are not vulnerable.</p>\n<p><strong>How do I know my system might be affected by this vulnerability?</strong></p>\n<p>Run the following command in an administrative PowerShell session:</p>\n<p><code>[System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match 'Microsoft Corporation UEFI CA 2011'</code></p>\n<p>If the PowerShell command returns “True”, then your system firmware trusts the 'Microsoft Corporation UEFI CA 2011' signing Certificate Authority that is used to sign third-party boot managers and will allow the known vulnerable third-party boot managers to be installed and run on your system system if the latest DBXUpdate is not installed to firmware. If the PowerShell command returns “False”, then the third-party boot managers will not be trusted by your system.</p>\n<p>For more detailed instructions on verifying and manually applying updates, see  <a href=\"https://support.microsoft.com/help/4575994\">Microsoft guidance for applying Secure Boot DBX update</a>.</p>\n<p>Note that it is not necessary to verify that your system firmware trusts the 'Microsoft Corporation UEFI CA 2011' signing Certificate Authority. You can automatically install the latest update if they are applicable to your system. See <a href=\"https://support.microsoft.com/help/5012170\">KB5012170: Security update for Secure Boot DBX - Microsoft Support</a> for more details.</p>\n<p><strong>What is UEFI?</strong></p>\n<p>UEFI (Unified Extensible Firmware Interface) defines the interactions between the operating system and the platform firmware. The Secure Boot feature of UEFI prevents the loading of operating system loaders and firmware drivers that are not signed by a trusted signature.</p>\n<p><strong>What is GRUB?</strong></p>\n<p>GRUB (GRand Unified Bootloader) is the default boot loader for multiple Linux Distributions. It loads the selected kernel or operating system upon boot.</p>\n<p><strong>What is DBX?</strong></p>\n<p>DBX is the Forbidden Signature Database and tracks the revoked boot images.</p>\n<p><strong>Does this vulnerability only affect Linux?</strong></p>\n<p>No. The vulnerability affects any computer where Secure Boot trusts the 3rd-party UEFI CA.</p>\n<p><strong>You have indicated that an optional update is available. When will this update become mandatory?</strong></p>\n<p>Microsoft will release an update to address this vulnerability during mid-year 2022. You can register for the security notifications mailer to be alerted when this update is available, and when content changes are made to this advisory. See <a href=\"https://technet.microsoft.com/en-us/security/dd252948\">Microsoft Technical Security Notifications</a> and <a href=\"https://msrc-blog.microsoft.com/2022/01/11/coming-soon-new-security-update-guide-notification-system/\">Coming Soon: New Security Update Guide Notification System</a>.</p>\n",
+            "title": "FAQ",
+            "type": "FAQ",
+            "ordinal": "10"
+          },
+          {
+            "text": "<p><strong>Why are there different security update packages for this CVE?</strong></p>\n<p>These are standalone security updates. These packages must be installed in addition to the normal security updates to be protected from this vulnerability.</p>\n<p><strong>Are there any prerequisites to these security updates?</strong></p>\n<p>These security updates have a Servicing Stack Update prerequisite for specific KB numbers. The packages have a built in pre-requisite logic to ensure the ordering.</p>\n<p>Customer should ensure that they have the latest Servicing Stack Update installed before installing these standalone security updates. See <a href=\"https://portal.msrc.microsoft.com/security-guidance/advisory/ADV990001\">ADV990001 | Latest Servicing Stack Updates</a> for more information.</p>\n<p><strong>If I need to manually install these standalone updates, a Servicing Stack Update, and an August 2022 Security Update, in what order should they be installed?</strong></p>\n<p>Customers who need to manually install these three updates should install them in the following order:</p>\n<ul>\n<li>Servicing Stack Update</li>\n<li>Standalone Secure Boot Update listed in this CVE</li>\n<li>August 2022 Security Update</li>\n</ul>\n<p>Customers whose systems are configured to receive automatic updates will automatically receive these updates in the correct order.</p>\n<p><strong>Is there anything else that I should know about these updates?</strong></p>\n<p>If Windows Defender Credential Guard (Virtual Secure Mode) is enabled, two additional reboots will be required.</p>\n",
+            "title": "FAQ",
+            "type": "FAQ",
+            "ordinal": "10"
+          },
+          {
+            "text": "Microsoft Windows",
+            "title": "Microsoft Windows",
+            "type": "Tag",
+            "ordinal": "20"
+          },
+          {
+            "text": "Microsoft",
+            "title": "Microsoft",
+            "type": "CNA",
+            "ordinal": "30"
+          }
+        ]
+      },
+      "cve": "ADV200011",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "11568",
+            "11569",
+            "11570",
+            "11571",
+            "11572",
+            "11896",
+            "11897",
+            "11898",
+            "11923",
+            "11924",
+            "11800",
+            "11801",
+            "11802",
+            "11803",
+            "11926",
+            "11927",
+            "10729",
+            "10735",
+            "10852",
+            "10853",
+            "10816",
+            "10855",
+            "10481",
+            "10482",
+            "10484",
+            "10378",
+            "10379",
+            "10483",
+            "10543"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11568"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11569"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11570"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11571"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11572"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11896"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11897"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11898"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11923"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11924"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11800"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11801"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11802"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11803"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11926"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "11927"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10729"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10735"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10852"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10853"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10816"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10855"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10481"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10482"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10484"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10378"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10379"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10483"
+          },
+          {
+            "type": "Impact",
+            "description": "Security Feature Bypass",
+            "product_id": "10543"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11568"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11569"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11570"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11571"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11572"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11896"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11897"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11898"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11923"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11924"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11800"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11801"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11802"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11803"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11926"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "11927"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10729"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10735"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10852"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10853"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10816"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10855"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10481"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10482"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10484"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10378"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10379"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10483"
+          },
+          {
+            "type": "Severity",
+            "description": "Important",
+            "product_id": "10543"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:No;Exploited:No;DOS:N/A"
+          }
+        ]
+      },
+      "cvssscoresets": {},
+      "remediations": {
+        "remediation": [
+          {
+            "type": "Vendor Fix",
+            "description": "5012170",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5012170",
+            "supercedence": "4535680",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update",
+            "fixed_build": "10.0.17763.3284"
+          },
+          {
+            "type": "Known Issue",
+            "description": "5012170",
+            "url": "https://support.microsoft.com/help/5012170",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572",
+              "11896",
+              "11897",
+              "11898",
+              "11923",
+              "11924",
+              "11800",
+              "11801",
+              "11802",
+              "11803",
+              "11926",
+              "11927",
+              "10729",
+              "10735",
+              "10852",
+              "10853",
+              "10816",
+              "10855",
+              "10481",
+              "10482",
+              "10484",
+              "10378",
+              "10379",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {}
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "5012170",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5012170",
+            "supercedence": "4535680",
+            "product_id": [
+              "11896",
+              "11897",
+              "11898"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update",
+            "fixed_build": "10.0.19043.1880"
+          },
+          {
+            "type": "Known Issue",
+            "description": "5012170",
+            "url": "https://support.microsoft.com/help/5012170",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572",
+              "11896",
+              "11897",
+              "11898",
+              "11923",
+              "11924",
+              "11800",
+              "11801",
+              "11802",
+              "11803",
+              "11926",
+              "11927",
+              "10729",
+              "10735",
+              "10852",
+              "10853",
+              "10816",
+              "10855",
+              "10481",
+              "10482",
+              "10484",
+              "10378",
+              "10379",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {}
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "5012170",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5012170",
+            "supercedence": "4535680",
+            "product_id": [
+              "11923",
+              "11924"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update",
+            "fixed_build": "10.0.20348.881"
+          },
+          {
+            "type": "Known Issue",
+            "description": "5012170",
+            "url": "https://support.microsoft.com/help/5012170",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572",
+              "11896",
+              "11897",
+              "11898",
+              "11923",
+              "11924",
+              "11800",
+              "11801",
+              "11802",
+              "11803",
+              "11926",
+              "11927",
+              "10729",
+              "10735",
+              "10852",
+              "10853",
+              "10816",
+              "10855",
+              "10481",
+              "10482",
+              "10484",
+              "10378",
+              "10379",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {}
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "5012170",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5012170",
+            "supercedence": "4535680",
+            "product_id": [
+              "11800",
+              "11801",
+              "11802",
+              "11803"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update",
+            "fixed_build": "10.0.19042.1880"
+          },
+          {
+            "type": "Known Issue",
+            "description": "5012170",
+            "url": "https://support.microsoft.com/help/5012170",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572",
+              "11896",
+              "11897",
+              "11898",
+              "11923",
+              "11924",
+              "11800",
+              "11801",
+              "11802",
+              "11803",
+              "11926",
+              "11927",
+              "10729",
+              "10735",
+              "10852",
+              "10853",
+              "10816",
+              "10855",
+              "10481",
+              "10482",
+              "10484",
+              "10378",
+              "10379",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {}
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "5012170",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5012170",
+            "supercedence": "4535680",
+            "product_id": [
+              "11926",
+              "11927"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update",
+            "fixed_build": "10.0.22000.852"
+          },
+          {
+            "type": "Known Issue",
+            "description": "5012170",
+            "url": "https://support.microsoft.com/help/5012170",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572",
+              "11896",
+              "11897",
+              "11898",
+              "11923",
+              "11924",
+              "11800",
+              "11801",
+              "11802",
+              "11803",
+              "11926",
+              "11927",
+              "10729",
+              "10735",
+              "10852",
+              "10853",
+              "10816",
+              "10855",
+              "10481",
+              "10482",
+              "10484",
+              "10378",
+              "10379",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {}
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "5012170",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5012170",
+            "supercedence": "4535680",
+            "product_id": [
+              "10729",
+              "10735"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update",
+            "fixed_build": "1.002"
+          },
+          {
+            "type": "Known Issue",
+            "description": "5012170",
+            "url": "https://support.microsoft.com/help/5012170",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572",
+              "11896",
+              "11897",
+              "11898",
+              "11923",
+              "11924",
+              "11800",
+              "11801",
+              "11802",
+              "11803",
+              "11926",
+              "11927",
+              "10729",
+              "10735",
+              "10852",
+              "10853",
+              "10816",
+              "10855",
+              "10481",
+              "10482",
+              "10484",
+              "10378",
+              "10379",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {}
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "5012170",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5012170",
+            "supercedence": "4535680",
+            "product_id": [
+              "10852",
+              "10853",
+              "10816",
+              "10855"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update",
+            "fixed_build": "10.0.14393.5285"
+          },
+          {
+            "type": "Known Issue",
+            "description": "5012170",
+            "url": "https://support.microsoft.com/help/5012170",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572",
+              "11896",
+              "11897",
+              "11898",
+              "11923",
+              "11924",
+              "11800",
+              "11801",
+              "11802",
+              "11803",
+              "11926",
+              "11927",
+              "10729",
+              "10735",
+              "10852",
+              "10853",
+              "10816",
+              "10855",
+              "10481",
+              "10482",
+              "10484",
+              "10378",
+              "10379",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {}
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "5012170",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5012170",
+            "supercedence": "4535680",
+            "product_id": [
+              "10481",
+              "10482",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update",
+            "fixed_build": "V1.003"
+          },
+          {
+            "type": "Known Issue",
+            "description": "5012170",
+            "url": "https://support.microsoft.com/help/5012170",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572",
+              "11896",
+              "11897",
+              "11898",
+              "11923",
+              "11924",
+              "11800",
+              "11801",
+              "11802",
+              "11803",
+              "11926",
+              "11927",
+              "10729",
+              "10735",
+              "10852",
+              "10853",
+              "10816",
+              "10855",
+              "10481",
+              "10482",
+              "10484",
+              "10378",
+              "10379",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {}
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "5012170",
+            "supercedence": "4535680",
+            "product_id": [
+              "10484"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update",
+            "fixed_build": "V1.003"
+          },
+          {
+            "type": "Known Issue",
+            "description": "5012170",
+            "url": "https://support.microsoft.com/help/5012170",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572",
+              "11896",
+              "11897",
+              "11898",
+              "11923",
+              "11924",
+              "11800",
+              "11801",
+              "11802",
+              "11803",
+              "11926",
+              "11927",
+              "10729",
+              "10735",
+              "10852",
+              "10853",
+              "10816",
+              "10855",
+              "10481",
+              "10482",
+              "10484",
+              "10378",
+              "10379",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {}
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "5012170",
+            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5012170",
+            "supercedence": "4535680",
+            "product_id": [
+              "10378",
+              "10379"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update",
+            "fixed_build": "V1.002"
+          },
+          {
+            "type": "Known Issue",
+            "description": "5012170",
+            "url": "https://support.microsoft.com/help/5012170",
+            "product_id": [
+              "11568",
+              "11569",
+              "11570",
+              "11571",
+              "11572",
+              "11896",
+              "11897",
+              "11898",
+              "11923",
+              "11924",
+              "11800",
+              "11801",
+              "11802",
+              "11803",
+              "11926",
+              "11927",
+              "10729",
+              "10735",
+              "10852",
+              "10853",
+              "10816",
+              "10855",
+              "10481",
+              "10482",
+              "10484",
+              "10378",
+              "10379",
+              "10483",
+              "10543"
+            ],
+            "affectedfiles": {}
+          },
+          {
+            "type": "Mitigation",
+            "description": "<p>Microsoft has identified the following mitigations. Please be advised that these mitigations are not compatible with all software on all devices, so please ensure that your system is compatible before taking any action.</p>\n<p><strong>Reconfigure Secure Boot</strong></p>\n<ul>\n<li>Microsoft Surface provides the capability to configure Secure Boot with or without trust in 3rd-party UEFI CA.  Surface customers who do not require the 3rd-party UEFI CA can configure Secure Boot as 'Microsoft only' as a mitigation to this issue. For more information see <a href=\"https://docs.microsoft.com/en-us/surface/manage-surface-uefi-settings\">Manage Surface UEFI settings</a>.</li>\n</ul>\n<p><strong>WARNING</strong>  Modification of UEFI Secure Boot configuration can trigger BitLocker Recovery and failures in other security software. Be sure to suspend BitLocker and have your BitLocker Recovery Key available if you are performing this operation.</p>\n<ul>\n<li>Other OEMs may provide a similar reconfiguration option. Contact your OEM for more information.</li>\n</ul>\n<p><strong>Manually install untested DBX update</strong></p>\n<p>Working with the Linux community, Microsoft has released an untested update to address this vulnerability. This optional DBX update has received limited testing and is intended for IT professionals and enthusiasts. The update is hosted by the UEFI Forum at: <a href=\"https://uefi.org/revocationlistfile\">https://uefi.org/revocationlistfile</a>.</p>\n<p><strong>Important</strong> Please note that the currently available DBX update applies to the CVEs originally released for this issue on July 29, 2020, and to the additional CVEs released on March 2, 2021. We recommend that you register for the security notifications mailer to be alerted of content changes to this advisory. See <a href=\"https://technet.microsoft.com/en-us/security/dd252948\">Microsoft Technical Security Notifications</a>.</p>\n<p>Please see the <strong>References</strong> section of this advisory for guidance on installing this update.</p>\n<p><strong>WARNING</strong>  Installation of this patch on incompatible systems could result in runtime error, system hang, or even unrecoverable failure to boot. Please check with your OEM to determine if your equipment is compatible.</p>\n",
+            "affectedfiles": {}
+          }
+        ]
+      },
+      "acknowledgments": {},
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "2.1",
+            "date": "2021-07-13T07:00:00",
+            "description": "<p>Corrected information in the FAQ and Mitigations sections to indicate that the currently available mitigation options also address the following vulnerabilities: CVE-2020-14372, CVE-2020-25632, CVE-2020-25647, CVE-2020-27749, CVE-2020-27779, CVE-2021-3418, CVE-2021-20225, CVE-2021-20233, which were released on March 2, 2021.</p>\n"
+          },
+          {
+            "number": "3.0",
+            "date": "2021-10-12T07:00:00",
+            "description": "<p>The following revisions have been made: 1) Updated FAQ to indicate that Microsoft will release an update to address this vulnerability in Spring of 2022. You can register for the security notifications mailer to be alerted when this update is available, and when content changes are made to this advisory. See <a href=\"https://technet.microsoft.com/en-us/security/dd252948\">Microsoft Technical Security Notifications</a>. 2) In the Security Updates table, added all supported editions of the following versions of Windows and Windows Server, as they are affected by this vulnerability: Windows 10 version 20H2, Windows 10 version 21H1, Windows 11, Windows Server, version 20H2 (Server Core Installation), and Windows Server 2022. 3) In the Executive Summary, corrected location of Mitigations section.</p>\n"
+          },
+          {
+            "number": "3.1",
+            "date": "2022-04-15T07:00:00",
+            "description": "<p>Updated FAQ to indicate that Microsoft will release an update to address this vulnerability during mid-year 2022. You can register for the security notifications mailer to be alerted when this update is available, and when content changes are made to this advisory. See <a href=\"https://technet.microsoft.com/en-us/security/dd252948\">Microsoft Technical Security Notifications</a> and  <a href=\"https://msrc-blog.microsoft.com/2022/01/11/coming-soon-new-security-update-guide-notification-system/\">Coming Soon: New Security Update Guide Notification System</a>.</p>\n"
+          },
+          {
+            "number": "1.0",
+            "date": "2020-07-29T07:00:00",
+            "description": "<p>Information published.</p>\n"
+          },
+          {
+            "number": "2.0",
+            "date": "2021-03-04T08:00:00",
+            "description": "<p>Advisory updated to add the following CVEs: CVE-2020-14372, CVE-2020-25632, CVE-2020-25647, CVE-2020-27749, CVE-2020-27779, CVE-2021-3418, CVE-2021-20225, CVE-2021-20233.  A new mitigation option will become available soon for these new CVEs. When this option does become available, customers will be notified via revision to this advisory. We recommend that you register for the security notifications mailer to be alerted of content changes to this advisory. See <a href=\"https://technet.microsoft.com/en-us/security/dd252948\">Microsoft Technical Security Notifications</a>.</p>\n"
+          },
+          {
+            "number": "4.0",
+            "date": "2022-08-09T07:00:00",
+            "description": "<p>Microsoft has released standalone security update 5012170 to address the Secure Boot DBX vulnerabilities described in this advisory. Microsoft strongly recommends that customers install this update to be fully protected from the vulnerability. Customers whose systems are configured to receive automatic updates do not need to take any further action. For more information see the FAQ section of this advisory and <a href=\"https://support.microsoft.com/help/5012170\">KB5012170</a>.</p>\n"
+          },
+          {
+            "number": "4.1",
+            "date": "2023-01-10T08:00:00",
+            "description": "<p>Revised FAQ to clarify the instructions for determining if customers' systems are affected by this vulnerability. This is an informational change only.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}

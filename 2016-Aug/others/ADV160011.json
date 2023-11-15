@@ -1,0 +1,311 @@
+{
+  "document_title": "August 2016 Security Updates",
+  "document_type": "Security Update",
+  "documentpublisher": {
+    "type": "Vendor",
+    "contact_details": "secure@microsoft.com",
+    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+  },
+  "documenttracking": {
+    "identification": {
+      "id": "ADV160011",
+      "alias": "ADV160011"
+    },
+    "status": "Final",
+    "version": "1.0",
+    "revisionhistory": {
+      "revision": {
+        "number": "10",
+        "date": "2017-09-12T07:00:00Z",
+        "description": "August 2016 Security Updates"
+      }
+    },
+    "initial_release_date": "2016-08-09T07:00:00Z",
+    "current_release_date": "2017-09-12T07:00:00Z"
+  },
+  "documentnotes": {
+    "note": [
+      {
+        "text": "<p>The August security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Skype for Business</li>\n<li>Microsoft Lync</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features\n<strong>Note</strong> As a reminder, the Security Updates Guide will be replacing security bulletins as of February 2017. Please see our blog post, <a href=\"https://blogs.technet.microsoft.com/msrc/2016/11/08/furthering-our-commitment-to-security-updates/\">Furthering our commitment to security updates</a>, for more details.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li>Windows, IE: <a href=\"https://support.microsoft.com/en-us/kb/3176492\">3176492</a></li>\n<li>Windows, IE: <a href=\"https://support.microsoft.com/en-us/kb/3176493\">3176493</a></li>\n<li>Windows, IE: <a href=\"https://support.microsoft.com/en-us/kb/3176495\">3176495</a></li>\n<li>Windows: <a href=\"https://support.microsoft.com/en-us/kb/3177725\">3177725</a></li>\n<li>Windows: <a href=\"https://support.microsoft.com/kb/3179577\">3179577</a></li>\n<li>Windows: <a href=\"https://support.microsoft.com/en-us/kb/3167679\">3167679</a></li>\n</ul>\n",
+        "title": "Release Notes",
+        "audience": "Public",
+        "type": "Details",
+        "ordinal": "0"
+      },
+      {
+        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+        "title": "Legal Disclaimer",
+        "audience": "Public",
+        "type": "Legal Disclaimer",
+        "ordinal": "1"
+      }
+    ]
+  },
+  "producttree": {
+    "branch": {
+      "type": "Vendor",
+      "name": "Microsoft",
+      "branch": [
+        {
+          "type": "Product Family",
+          "name": "Microsoft Office",
+          "fullproductname": [
+            {
+              "text": "Microsoft Outlook 2007 Service Pack 3",
+              "productid": "10156"
+            },
+            {
+              "text": "Microsoft Outlook 2010 Service Pack 2 (32-bit editions)",
+              "productid": "10527"
+            },
+            {
+              "text": "Microsoft Outlook 2010 Service Pack 2 (64-bit editions)",
+              "productid": "10528"
+            },
+            {
+              "text": "Microsoft Outlook 2013 Service Pack 1 (32-bit editions)",
+              "productid": "10810"
+            },
+            {
+              "text": "Microsoft Outlook 2013 Service Pack 1 (64-bit editions)",
+              "productid": "10811"
+            },
+            {
+              "text": "Microsoft Outlook 2016 (32-bit edition)",
+              "productid": "10765"
+            },
+            {
+              "text": "Microsoft Outlook 2016 (64-bit edition)",
+              "productid": "10766"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vulnerability": [
+    {
+      "ordinal": "0",
+      "title": "Security Feature Enhancement for Microsoft Outlook",
+      "notes": {
+        "note": [
+          {
+            "text": "<p>Microsoft has released an update for Microsoft Outlook. The update adds a security feature enhancement that provides additional information to users when Outlook makes a network connection through a proxy server.</p>\n",
+            "title": "Description",
+            "type": "Description",
+            "ordinal": "0"
+          },
+          {
+            "text": "Microsoft Office",
+            "title": "Microsoft Office",
+            "type": "Tag",
+            "ordinal": "20"
+          }
+        ]
+      },
+      "cve": "ADV160011",
+      "productstatuses": {
+        "status": {
+          "type": "Known Affected",
+          "product_id": [
+            "10156",
+            "10527",
+            "10528",
+            "10810",
+            "10811",
+            "10765",
+            "10766"
+          ]
+        }
+      },
+      "threats": {
+        "threat": [
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10156"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10527"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10528"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10810"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10811"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10765"
+          },
+          {
+            "type": "Impact",
+            "description": "Defense in Depth",
+            "product_id": "10766"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10156"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10527"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10528"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10810"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10811"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10765"
+          },
+          {
+            "type": "Severity",
+            "description": "None",
+            "product_id": "10766"
+          },
+          {
+            "type": "Exploit Status",
+            "description": "Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Unlikely;Older Software Release:Exploitation Unlikely"
+          }
+        ]
+      },
+      "cvssscoresets": {},
+      "remediations": {
+        "remediation": [
+          {
+            "type": "Vendor Fix",
+            "description": "3114981",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=cd6bad90-cba6-43b0-9a0a-2fb5f488a2e2",
+            "supercedence": "MS16-029",
+            "product_id": [
+              "10156"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3115474",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=8439f784-4243-4095-a27e-016b0b27d59b",
+            "supercedence": "MS16-088",
+            "product_id": [
+              "10527"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3115474",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=2485d0ba-2cdf-463c-a5fb-4d9e00857d2d",
+            "supercedence": "MS16-088",
+            "product_id": [
+              "10528"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3115452",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=03352fa0-12af-4d58-a396-e22eae834700",
+            "supercedence": "MS16-099",
+            "product_id": [
+              "10810"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3115452",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=f0a7a230-133e-4609-9697-e7dfea8dbc6e",
+            "supercedence": "MS16-099",
+            "product_id": [
+              "10811"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3115440",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=f5b283ab-6081-49fd-b20c-434cfe73e64b",
+            "supercedence": "MS16-099",
+            "product_id": [
+              "10765"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          },
+          {
+            "type": "Vendor Fix",
+            "description": "3115440",
+            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=2f0490f8-dc90-45c4-bdde-34bca8895aac",
+            "supercedence": "MS16-099",
+            "product_id": [
+              "10766"
+            ],
+            "affectedfiles": {},
+            "restart_required": "Maybe",
+            "sub_type": "Security Update"
+          }
+        ]
+      },
+      "acknowledgments": {
+        "acknowledgment": [
+          {
+            "name": "Jerry Decime of Hewlett Packard Enterprise"
+          }
+        ]
+      },
+      "revisionhistory": {
+        "revision": [
+          {
+            "number": "1.0",
+            "date": "2016-08-09T07:00:00Z",
+            "description": "<p>Information published.</p>\n"
+          },
+          {
+            "number": "1.1",
+            "date": "2017-06-09T07:00:00Z",
+            "description": "<p>Changed identifier to reduce confusion with CVE IDs. This is an informational change only.</p>\n"
+          }
+        ]
+      }
+    }
+  ]
+}
