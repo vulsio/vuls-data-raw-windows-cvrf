@@ -1,1183 +1,1183 @@
 {
-  "document_title": "December 2022 Security Updates",
-  "document_type": "Security Update",
-  "documentpublisher": {
-    "type": "Vendor",
-    "contact_details": "secure@microsoft.com",
-    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
-  },
-  "documenttracking": {
-    "identification": {
-      "id": "ADV220005",
-      "alias": "ADV220005"
-    },
-    "status": "Final",
-    "version": "1.0",
-    "revisionhistory": {
-      "revision": {
-        "number": "34",
-        "date": "2023-11-09T08:00:00",
-        "description": "December 2022 Security Updates"
-      }
-    },
-    "initial_release_date": "2022-12-13T08:00:00",
-    "current_release_date": "2023-11-09T08:00:00"
-  },
-  "documentnotes": {
-    "note": [
-      {
-        "text": "<h2>Updates this Month</h2>\n<p>This release consists of security updates for the following products, features and roles.</p>\n<ul>\n<li>.NET Framework</li>\n<li>Azure</li>\n<li>Client Server Run-time Subsystem (CSRSS)</li>\n<li>Microsoft Bluetooth Driver</li>\n<li>Microsoft Dynamics</li>\n<li>Microsoft Edge (Chromium-based)</li>\n<li>Microsoft Graphics Component</li>\n<li>Microsoft Office</li>\n<li>Microsoft Office OneNote</li>\n<li>Microsoft Office Outlook</li>\n<li>Microsoft Office SharePoint</li>\n<li>Microsoft Office Visio</li>\n<li>Microsoft Windows Codecs Library</li>\n<li>Role: Windows Hyper-V</li>\n<li>SysInternals</li>\n<li>Windows Certificates</li>\n<li>Windows Contacts</li>\n<li>Windows DirectX</li>\n<li>Windows Error Reporting</li>\n<li>Windows Fax Compose Form</li>\n<li>Windows HTTP Print Provider</li>\n<li>Windows Kernel</li>\n<li>Windows PowerShell</li>\n<li>Windows Print Spooler Components</li>\n<li>Windows Projected File System</li>\n<li>Windows Secure Socket Tunneling Protocol (SSTP)</li>\n<li>Windows SmartScreen</li>\n<li>Windows Subsystem for Linux</li>\n<li>Windows Terminal</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<h2>Security Update Guide Blog Posts</h2>\n<table>\n<thead>\n<tr>\n<th>Date</th>\n<th>Blog Post</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>December 29, 2022</td>\n<td><a href=\"https://msrc-blog.microsoft.com/2022/12/29/security-update-guide-improvement-representing-hotpatch-updates/\">Security Update Guide Improvement – Representing Hotpatch Updates</a></td>\n</tr>\n<tr>\n<td>August 9, 2022</td>\n<td><a href=\"https://aka.ms/SUGNotificationProfile2\">Security Update Guide Notification System News: Create your profile now</a></td>\n</tr>\n<tr>\n<td>January 11, 2022</td>\n<td><a href=\"https://aka.ms/SUGNotificationProfile\">Coming Soon: New Security Update Guide Notification System</a></td>\n</tr>\n<tr>\n<td>February 9, 2021</td>\n<td><a href=\"https://msrc-blog.microsoft.com/2021/02/09/continuing-to-listen-good-news-about-the-security-update-guide-api/\">Continuing to Listen: Good News about the Security Update Guide API</a></td>\n</tr>\n<tr>\n<td>January 13, 2021</td>\n<td><a href=\"https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/\">Security Update Guide Supports CVEs Assigned by Industry Partners</a></td>\n</tr>\n<tr>\n<td>December 8, 2020</td>\n<td><a href=\"https://msrc-blog.microsoft.com/2020/12/08/security-update-guide-lets-keep-the-conversation-going/\">Security Update Guide: Let’s keep the conversation going</a></td>\n</tr>\n<tr>\n<td>November 9, 2020</td>\n<td><a href=\"https://msrc-blog.microsoft.com/2020/11/09/vulnerability-descriptions-in-the-new-version-of-the-security-update-guide/\">Vulnerability Descriptions in the New Version of the Security Update Guide</a></td>\n</tr>\n</tbody>\n</table>\n<h2>Relevant Information</h2>\n<ul>\n<li>The new Hotpatching feature is now generally available. Please see <a href=\"https://docs.microsoft.com/en-us/azure/automanage/automanage-hotpatch?WT.mc_id=modinfra-18529-thmaure\">Hotpatching feature for Windows Server Azure Edition virtual machines (VMs)</a> for more information.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"https://www.catalog.update.microsoft.com/Home.aspx\">Microsoft Update Catalog</a>. For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://docs.microsoft.com/en-us/lifecycle/faq/windows\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>Microsoft is improving Windows Release Notes. For more information, please see <a href=\"https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-next-for-windows-release-notes/ba-p/1754399\">What's next for Windows release notes</a>.</li>\n<li>A list of the latest servicing stack updates for each operating system can be found in <a href=\"https://msrc.microsoft.com/update-guide/en-us/vulnerability/ADV990001\">ADV990001</a>. This list will be updated whenever a new servicing stack update is released. It is important to install the latest servicing stack update.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>Customers running Windows 7, Windows Server 2008 R2, or Windows Server 2008 need to purchase the Extended Security Update to continue receiving security updates. See <a href=\"https://support.microsoft.com/en-us/topic/procedure-to-continue-receiving-security-updates-after-extended-support-ends-on-january-14-2020-48c59204-fe67-3f42-84fc-c3c3145ff28e\">4522133</a> for more information.</li>\n</ul>\n<h2>FAQs, Mitigations, and Workarounds</h2>\n<p>The following CVEs have FAQs, Mitigations, or Workarounds. You can see these in more detail from the Vulnerabilities tab by selecting <strong>FAQs</strong>, <strong>Mitigations</strong> and <strong>Workarounds</strong> columns in the <strong>Edit Columns</strong> panel.</p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-24480\">CVE-2022-24480</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-26804\">CVE-2022-26804</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-26805\">CVE-2022-26805</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-26806\">CVE-2022-26806</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41074\">CVE-2022-41074</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41076\">CVE-2022-41076</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41077\">CVE-2022-41077</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41094\">CVE-2022-41094</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41115\">CVE-2022-41115</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41121\">CVE-2022-41121</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41127\">CVE-2022-41127</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4174\">CVE-2022-4174</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4175\">CVE-2022-4175</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4177\">CVE-2022-4177</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4178\">CVE-2022-4178</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4179\">CVE-2022-4179</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4180\">CVE-2022-4180</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4181\">CVE-2022-4181</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4182\">CVE-2022-4182</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4183\">CVE-2022-4183</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4184\">CVE-2022-4184</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4185\">CVE-2022-4185</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4186\">CVE-2022-4186</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4187\">CVE-2022-4187</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4188\">CVE-2022-4188</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4189\">CVE-2022-4189</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4190\">CVE-2022-4190</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4191\">CVE-2022-4191</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4192\">CVE-2022-4192</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4193\">CVE-2022-4193</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4194\">CVE-2022-4194</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4195\">CVE-2022-4195</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44666\">CVE-2022-44666</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44667\">CVE-2022-44667</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44668\">CVE-2022-44668</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44669\">CVE-2022-44669</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44670\">CVE-2022-44670</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44671\">CVE-2022-44671</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44673\">CVE-2022-44673</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44674\">CVE-2022-44674</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44675\">CVE-2022-44675</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44676\">CVE-2022-44676</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44677\">CVE-2022-44677</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44678\">CVE-2022-44678</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44679\">CVE-2022-44679</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44680\">CVE-2022-44680</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44681\">CVE-2022-44681</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44682\">CVE-2022-44682</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44683\">CVE-2022-44683</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44687\">CVE-2022-44687</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44688\">CVE-2022-44688</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44689\">CVE-2022-44689</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44690\">CVE-2022-44690</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44691\">CVE-2022-44691</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44692\">CVE-2022-44692</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44693\">CVE-2022-44693</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44694\">CVE-2022-44694</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44695\">CVE-2022-44695</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44696\">CVE-2022-44696</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44697\">CVE-2022-44697</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44698\">CVE-2022-44698</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44699\">CVE-2022-44699</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44702\">CVE-2022-44702</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44704\">CVE-2022-44704</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44708\">CVE-2022-44708</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44710\">CVE-2022-44710</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44713\">CVE-2022-44713</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-47212\">CVE-2022-47212</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-47213\">CVE-2022-47213</a></li>\n</ul>\n<h2>Known Issues</h2>\n<p>You can see these in more detail from the Deployments tab by selecting <strong>Known Issues</strong> column in the <strong>Edit Columns</strong> panel.</p>\n<p>For more information about Windows Known Issues, please see <a href=\"https://docs.microsoft.com/en-us/windows/release-information/windows-message-center\">Windows message center</a> (links to currently-supported versions of Windows are in the left pane).</p>\n<table>\n<thead>\n<tr>\n<th>KB Article</th>\n<th>Applies To</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5020880\">5020880</a></td>\n<td>.NET core and .NET Framework, Change in how WPF-based applications render XPS documents</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021233\">5021233</a></td>\n<td>Windows 10, version 20H2, Windows 10, version 21H1, Windows 10, version 21H2, Windows 10, version 22H2</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021234\">5021234</a></td>\n<td>Windows 11 version 21H2</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021235\">5021235</a></td>\n<td>Windows 10, version 1607, Windows Server 2016</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021237\">5021237</a></td>\n<td>Windows Server 2019</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021243\">5021243</a></td>\n<td>Windows 10</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021249\">5021249</a></td>\n<td>Windows Server 2022</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021255\">5021255</a></td>\n<td>Windows 11 version 22H2</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021285\">5021285</a></td>\n<td>Windows Server 2012 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021288\">5021288</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021289\">5021289</a></td>\n<td>Windows Server 2008 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021291\">5021291</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021293\">5021293</a></td>\n<td>Windows Server 2008 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021294\">5021294</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021296\">5021296</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021303\">5021303</a></td>\n<td>Windows Server 2012 (Security-only update)</td>\n</tr>\n</tbody>\n</table>\n",
-        "title": "Release Notes",
-        "audience": "Public",
-        "type": "Details",
-        "ordinal": "0"
-      },
-      {
-        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
-        "title": "Legal Disclaimer",
-        "audience": "Public",
-        "type": "Legal Disclaimer",
-        "ordinal": "1"
-      }
-    ]
-  },
-  "producttree": {
-    "branch": {
-      "type": "Vendor",
-      "name": "Microsoft",
-      "branch": [
-        {
-          "type": "Product Family",
-          "name": "Windows",
-          "fullproductname": [
-            {
-              "text": "Windows 10 Version 1809 for 32-bit Systems",
-              "productid": "11568"
-            },
-            {
-              "text": "Windows 10 Version 1809 for x64-based Systems",
-              "productid": "11569"
-            },
-            {
-              "text": "Windows 10 Version 1809 for ARM64-based Systems",
-              "productid": "11570"
-            },
-            {
-              "text": "Windows Server 2019",
-              "productid": "11571"
-            },
-            {
-              "text": "Windows Server 2019 (Server Core installation)",
-              "productid": "11572"
-            },
-            {
-              "text": "Windows 10 Version 21H1 for x64-based Systems",
-              "productid": "11896"
-            },
-            {
-              "text": "Windows 10 Version 21H1 for ARM64-based Systems",
-              "productid": "11897"
-            },
-            {
-              "text": "Windows 10 Version 21H1 for 32-bit Systems",
-              "productid": "11898"
-            },
-            {
-              "text": "Windows Server 2022",
-              "productid": "11923"
-            },
-            {
-              "text": "Windows Server 2022 (Server Core installation)",
-              "productid": "11924"
-            },
-            {
-              "text": "Windows 10 Version 20H2 for 32-bit Systems",
-              "productid": "11801"
-            },
-            {
-              "text": "Windows 10 Version 20H2 for ARM64-based Systems",
-              "productid": "11802"
-            },
-            {
-              "text": "Windows 11 version 21H2 for x64-based Systems",
-              "productid": "11926"
-            },
-            {
-              "text": "Windows 11 version 21H2 for ARM64-based Systems",
-              "productid": "11927"
-            },
-            {
-              "text": "Windows 10 Version 21H2 for 32-bit Systems",
-              "productid": "11929"
-            },
-            {
-              "text": "Windows 10 Version 21H2 for ARM64-based Systems",
-              "productid": "11930"
-            },
-            {
-              "text": "Windows 10 Version 21H2 for x64-based Systems",
-              "productid": "11931"
-            },
-            {
-              "text": "Windows 11 Version 22H2 for ARM64-based Systems",
-              "productid": "12085"
-            },
-            {
-              "text": "Windows 11 Version 22H2 for x64-based Systems",
-              "productid": "12086"
-            },
-            {
-              "text": "Windows 10 Version 22H2 for x64-based Systems",
-              "productid": "12097"
-            },
-            {
-              "text": "Windows 10 Version 22H2 for ARM64-based Systems",
-              "productid": "12098"
-            },
-            {
-              "text": "Windows 10 Version 22H2 for 32-bit Systems",
-              "productid": "12099"
-            },
-            {
-              "text": "Windows 10 for 32-bit Systems",
-              "productid": "10729"
-            },
-            {
-              "text": "Windows 10 for x64-based Systems",
-              "productid": "10735"
-            },
-            {
-              "text": "Windows 10 Version 1607 for 32-bit Systems",
-              "productid": "10852"
-            },
-            {
-              "text": "Windows 10 Version 1607 for x64-based Systems",
-              "productid": "10853"
-            },
-            {
-              "text": "Windows Server 2016",
-              "productid": "10816"
-            },
-            {
-              "text": "Windows Server 2016 (Server Core installation)",
-              "productid": "10855"
-            },
-            {
-              "text": "Windows 8.1 for 32-bit systems",
-              "productid": "10481"
-            },
-            {
-              "text": "Windows 8.1 for x64-based systems",
-              "productid": "10482"
-            },
-            {
-              "text": "Windows RT 8.1",
-              "productid": "10484"
-            }
-          ]
-        },
-        {
-          "type": "Product Family",
-          "name": "ESU",
-          "fullproductname": [
-            {
-              "text": "Windows 7 for 32-bit Systems Service Pack 1",
-              "productid": "10047"
-            },
-            {
-              "text": "Windows 7 for x64-based Systems Service Pack 1",
-              "productid": "10048"
-            },
-            {
-              "text": "Windows Server 2008 for 32-bit Systems Service Pack 2",
-              "productid": "9312"
-            },
-            {
-              "text": "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
-              "productid": "10287"
-            },
-            {
-              "text": "Windows Server 2008 for x64-based Systems Service Pack 2",
-              "productid": "9318"
-            },
-            {
-              "text": "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
-              "productid": "9344"
-            },
-            {
-              "text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
-              "productid": "10051"
-            },
-            {
-              "text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
-              "productid": "10049"
-            },
-            {
-              "text": "Windows Server 2012",
-              "productid": "10378"
-            },
-            {
-              "text": "Windows Server 2012 (Server Core installation)",
-              "productid": "10379"
-            },
-            {
-              "text": "Windows Server 2012 R2",
-              "productid": "10483"
-            },
-            {
-              "text": "Windows Server 2012 R2 (Server Core installation)",
-              "productid": "10543"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "vulnerability": [
-    {
-      "ordinal": "0",
-      "title": "Guidance on Microsoft Signed Drivers Being Used Maliciously",
-      "notes": {
-        "note": [
-          {
-            "text": "<p><strong>Executive Summary:</strong></p>\n<p>Microsoft was recently informed that drivers certified by Microsoft’s Windows Hardware Developer Program were being used maliciously in post-exploitation activity. Microsoft has completed its investigation and determined that the activity was limited to the abuse of several developer program accounts and that no compromise has been identified. We’ve suspended the partners' seller accounts and implemented blocking detections to help protect customers from this threat.</p>\n<p><strong>Details:</strong></p>\n<p>Microsoft was informed that drivers certified by Microsoft’s Windows Hardware Developer Program were being used maliciously in post-exploitation activity. In these attacks, the attacker had already gained administrative privileges on compromised systems prior to use of the drivers. We were notified of this activity by SentinelOne, Mandiant, and Sophos on October 19, 2022, and subsequently performed an investigation into this activity. This investigation revealed that several developer accounts for the Microsoft Partner Center were engaged in submitting malicious drivers to obtain a Microsoft signature. A new attempt at submitting a malicious driver for signing on September 29th, 2022, led to the suspension of the sellers' accounts in early October.</p>\n<p>Ongoing Microsoft Threat Intelligence Center (MSTIC) analysis indicates the signed malicious drivers were likely used to facilitate post-exploitation intrusion activity such as the deployment of ransomware.</p>\n<p>Microsoft has released Windows Security Updates (see Security Updates table) revoking the certificate for impacted files and suspended the partners' seller accounts. Additionally, Microsoft has implemented blocking detections (Microsoft Defender 1.377.987.0 and newer) to help protect customers from legitimately signed drivers that have been used maliciously in post-exploit activity.</p>\n<p>Microsoft is working with Microsoft Active Protections Program (MAPP) partners to help develop further detections and to better protect our shared customers. Microsoft Partner Center is also working on long-term solutions to address these deceptive practices and prevent future customer impacts.</p>\n<p><strong>Recommended Actions:</strong></p>\n<p>Microsoft recommends that all customers install the latest Windows updates and ensure their anti-virus and endpoint detection products are up to date with the latest signatures and are enabled to prevent these attacks.</p>\n<p><strong>Frequently Asked Questions:</strong></p>\n<p><strong>Are any Microsoft services (Azure, M365, XBOX, Etc.) affected by this issue?</strong></p>\n<p>Microsoft’s services are not impacted by this issue. Our investigation has not identified any instances of malicious drivers affecting any of our services.</p>\n<p><strong>How can customers deploy their own Hypervisor-protected Code Integrity (HVCI) policy to perform detections in their own environment?</strong></p>\n<p>Updates will be made to the Microsoft Recommended Driver Blocklist (<a href=\"https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules\">Microsoft recommended driver block rules (Windows 10) - Windows security | Microsoft Docs</a> policy to perform detections in their own environment.</p>\n<p>After the full set of malicious files has been locked, customers (enterprise and consumer) can deploy this policy onto devices to block against this malicious file and other malicious and vulnerable drivers on the blocklist. Additionally, enabling Hypervisor-protected Code Integrity (HVCI) will automatically enforce the policy without needing to deploy the policy.</p>\n",
-            "title": "Description",
-            "type": "Description",
-            "ordinal": "0"
-          },
-          {
-            "text": "Windows Certificates",
-            "title": "Windows Certificates",
-            "type": "Tag",
-            "ordinal": "20"
-          },
-          {
-            "text": "Microsoft",
-            "title": "Microsoft",
-            "type": "CNA",
-            "ordinal": "30"
-          }
-        ]
-      },
-      "cve": "ADV220005",
-      "productstatuses": {
-        "status": {
-          "type": "Known Affected",
-          "product_id": [
-            "11568",
-            "11569",
-            "11570",
-            "11571",
-            "11572",
-            "11896",
-            "11897",
-            "11898",
-            "11923",
-            "11924",
-            "11801",
-            "11802",
-            "11926",
-            "11927",
-            "11929",
-            "11930",
-            "11931",
-            "12085",
-            "12086",
-            "12097",
-            "12098",
-            "12099",
-            "10729",
-            "10735",
-            "10852",
-            "10853",
-            "10816",
-            "10855",
-            "10047",
-            "10048",
-            "10481",
-            "10482",
-            "10484",
-            "9312",
-            "10287",
-            "9318",
-            "9344",
-            "10051",
-            "10049",
-            "10378",
-            "10379",
-            "10483",
-            "10543"
-          ]
-        }
-      },
-      "threats": {
-        "threat": [
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11568"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11569"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11570"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11571"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11572"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11896"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11897"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11898"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11923"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11924"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11801"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11802"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11926"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11927"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11929"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11930"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "11931"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "12085"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "12086"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "12097"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "12098"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "12099"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10729"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10735"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10852"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10853"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10816"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10855"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10047"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10048"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10481"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10482"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10484"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "9312"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10287"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "9318"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "9344"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10051"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10049"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10378"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10379"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10483"
-          },
-          {
-            "type": "Impact",
-            "description": "Defense in Depth",
-            "product_id": "10543"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11568"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11569"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11570"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11571"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11572"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11896"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11897"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11898"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11923"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11924"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11801"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11802"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11926"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11927"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11929"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11930"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "11931"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "12085"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "12086"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "12097"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "12098"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "12099"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10729"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10735"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10852"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10853"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10816"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10855"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10047"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10048"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10481"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10482"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10484"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "9312"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10287"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "9318"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "9344"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10051"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10049"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10378"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10379"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10483"
-          },
-          {
-            "type": "Severity",
-            "description": "None",
-            "product_id": "10543"
-          },
-          {
-            "type": "Exploit Status",
-            "description": "Publicly Disclosed:No;Exploited:No;DOS:N/A"
-          }
-        ]
-      },
-      "cvssscoresets": {},
-      "remediations": {
-        "remediation": [
-          {
-            "type": "Vendor Fix",
-            "description": "5022286",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022286",
-            "supercedence": "5021237",
-            "product_id": [
-              "11568",
-              "11569",
-              "11570",
-              "11571",
-              "11572"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update",
-            "fixed_build": "10.0.17763.3887"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022286",
-            "url": "https://support.microsoft.com/help/5022286",
-            "product_id": [
-              "11568",
-              "11569",
-              "11570",
-              "11571",
-              "11572"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022282",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022282",
-            "supercedence": "5021233",
-            "product_id": [
-              "11896",
-              "11897",
-              "11898"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update",
-            "fixed_build": "10.0.19043.2486"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022282",
-            "url": "https://support.microsoft.com/help/5022282",
-            "product_id": [
-              "11896",
-              "11897",
-              "11898",
-              "11801",
-              "11802",
-              "11929",
-              "11930",
-              "11931",
-              "12097",
-              "12098",
-              "12099"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022291",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022291",
-            "supercedence": "5021249",
-            "product_id": [
-              "11923",
-              "11924"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update",
-            "fixed_build": "10.0.20348.1487"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022282",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022282",
-            "supercedence": "5021233",
-            "product_id": [
-              "11801",
-              "11802"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update",
-            "fixed_build": "10.0.19042.2486"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022287",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022287",
-            "supercedence": "5021234",
-            "product_id": [
-              "11926",
-              "11927"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update",
-            "fixed_build": "10.0.22000.1455"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022282",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022282",
-            "supercedence": "5021233",
-            "product_id": [
-              "11929",
-              "11930",
-              "11931"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update",
-            "fixed_build": "10.0.19044.2486"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022303",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022303",
-            "supercedence": "5021255",
-            "product_id": [
-              "12085",
-              "12086"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update",
-            "fixed_build": "10.0.22621.1105"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022303",
-            "url": "https://support.microsoft.com/help/5022303",
-            "product_id": [
-              "12085",
-              "12086"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022282",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022282",
-            "supercedence": "5021233",
-            "product_id": [
-              "12097",
-              "12098",
-              "12099"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update",
-            "fixed_build": "10.0.19045.2486"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022297",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022297",
-            "supercedence": "5021243",
-            "product_id": [
-              "10729",
-              "10735"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update",
-            "fixed_build": "10.0.10240.19685"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022289",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022289",
-            "supercedence": "5021235",
-            "product_id": [
-              "10852",
-              "10853",
-              "10816",
-              "10855"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update",
-            "fixed_build": "10.0.14393.5648"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022338",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022338",
-            "supercedence": "5021291",
-            "product_id": [
-              "10047",
-              "10048",
-              "10051",
-              "10049"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup",
-            "fixed_build": "6.1.7601.26321"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022338",
-            "url": "https://support.microsoft.com/help/5022338",
-            "product_id": [
-              "10047",
-              "10048",
-              "10051",
-              "10049"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022339",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022339",
-            "product_id": [
-              "10047",
-              "10048",
-              "10051",
-              "10049"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only",
-            "fixed_build": "6.1.7601.26321"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022339",
-            "url": "https://support.microsoft.com/help/5022339",
-            "product_id": [
-              "10047",
-              "10048",
-              "10051",
-              "10049"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022352",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022352",
-            "supercedence": "5021294",
-            "product_id": [
-              "10481",
-              "10482",
-              "10484",
-              "10483",
-              "10543"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup",
-            "fixed_build": "6.3.9600.20778"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022352",
-            "url": "https://support.microsoft.com/help/5022352",
-            "product_id": [
-              "10481",
-              "10482",
-              "10484",
-              "10483",
-              "10543"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022346",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022346",
-            "product_id": [
-              "10481",
-              "10482",
-              "10483",
-              "10543"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only",
-            "fixed_build": "6.3.9600.20778"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022346",
-            "url": "https://support.microsoft.com/help/5022346",
-            "product_id": [
-              "10481",
-              "10482",
-              "10483",
-              "10543"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022340",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022340",
-            "supercedence": "5021289",
-            "product_id": [
-              "9312",
-              "10287",
-              "9318",
-              "9344"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup",
-            "fixed_build": "6.0.6003.21872"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022340",
-            "url": "https://support.microsoft.com/help/5022340",
-            "product_id": [
-              "9312",
-              "10287",
-              "9318",
-              "9344"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022353",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022353",
-            "product_id": [
-              "9312",
-              "10287",
-              "9318",
-              "9344"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only",
-            "fixed_build": "6.0.6003.21872"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022353",
-            "url": "https://support.microsoft.com/help/5022353",
-            "product_id": [
-              "9312",
-              "10287",
-              "9318",
-              "9344"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022348",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022348",
-            "supercedence": "5021285",
-            "product_id": [
-              "10378",
-              "10379"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup",
-            "fixed_build": "6.2.9200.24075"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022348",
-            "url": "https://support.microsoft.com/help/5022348",
-            "product_id": [
-              "10378",
-              "10379"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "5022343",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022343",
-            "product_id": [
-              "10378",
-              "10379"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only",
-            "fixed_build": "6.2.9200.24075"
-          },
-          {
-            "type": "Known Issue",
-            "description": "5022343",
-            "url": "https://support.microsoft.com/help/5022343",
-            "product_id": [
-              "10378",
-              "10379"
-            ],
-            "affectedfiles": {}
-          }
-        ]
-      },
-      "acknowledgments": {
-        "acknowledgment": [
-          {
-            "name": "SentinelOne, Mandiant, and Sophos X-Ops"
-          }
-        ]
-      },
-      "revisionhistory": {
-        "revision": [
-          {
-            "number": "1.0",
-            "date": "2022-12-13T08:00:00",
-            "description": "<p>Information published.</p>\n"
-          },
-          {
-            "number": "2.0",
-            "date": "2023-01-10T08:00:00",
-            "description": "<p>Microsoft is announcing that the Windows security updates released on January 10, 2023 include an updated block list. Microsoft strongly recommends that customers install the January 10, 2023 updates to ensure they have the most up-to-date block list. Customers whose Windows devices are configured to receive automatic updates do not need to take any further action.</p>\n"
-          }
-        ]
-      }
-    }
-  ]
+	"document_title": "December 2022 Security Updates",
+	"document_type": "Security Update",
+	"documentpublisher": {
+		"type": "Vendor",
+		"contact_details": "secure@microsoft.com",
+		"issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+	},
+	"documenttracking": {
+		"identification": {
+			"id": "ADV220005",
+			"alias": "ADV220005"
+		},
+		"status": "Final",
+		"version": "1.0",
+		"revisionhistory": {
+			"revision": {
+				"number": "34",
+				"date": "2023-11-09T08:00:00",
+				"description": "December 2022 Security Updates"
+			}
+		},
+		"initial_release_date": "2022-12-13T08:00:00",
+		"current_release_date": "2023-11-09T08:00:00"
+	},
+	"documentnotes": {
+		"note": [
+			{
+				"text": "<h2>Updates this Month</h2>\n<p>This release consists of security updates for the following products, features and roles.</p>\n<ul>\n<li>.NET Framework</li>\n<li>Azure</li>\n<li>Client Server Run-time Subsystem (CSRSS)</li>\n<li>Microsoft Bluetooth Driver</li>\n<li>Microsoft Dynamics</li>\n<li>Microsoft Edge (Chromium-based)</li>\n<li>Microsoft Graphics Component</li>\n<li>Microsoft Office</li>\n<li>Microsoft Office OneNote</li>\n<li>Microsoft Office Outlook</li>\n<li>Microsoft Office SharePoint</li>\n<li>Microsoft Office Visio</li>\n<li>Microsoft Windows Codecs Library</li>\n<li>Role: Windows Hyper-V</li>\n<li>SysInternals</li>\n<li>Windows Certificates</li>\n<li>Windows Contacts</li>\n<li>Windows DirectX</li>\n<li>Windows Error Reporting</li>\n<li>Windows Fax Compose Form</li>\n<li>Windows HTTP Print Provider</li>\n<li>Windows Kernel</li>\n<li>Windows PowerShell</li>\n<li>Windows Print Spooler Components</li>\n<li>Windows Projected File System</li>\n<li>Windows Secure Socket Tunneling Protocol (SSTP)</li>\n<li>Windows SmartScreen</li>\n<li>Windows Subsystem for Linux</li>\n<li>Windows Terminal</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<h2>Security Update Guide Blog Posts</h2>\n<table>\n<thead>\n<tr>\n<th>Date</th>\n<th>Blog Post</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>December 29, 2022</td>\n<td><a href=\"https://msrc-blog.microsoft.com/2022/12/29/security-update-guide-improvement-representing-hotpatch-updates/\">Security Update Guide Improvement – Representing Hotpatch Updates</a></td>\n</tr>\n<tr>\n<td>August 9, 2022</td>\n<td><a href=\"https://aka.ms/SUGNotificationProfile2\">Security Update Guide Notification System News: Create your profile now</a></td>\n</tr>\n<tr>\n<td>January 11, 2022</td>\n<td><a href=\"https://aka.ms/SUGNotificationProfile\">Coming Soon: New Security Update Guide Notification System</a></td>\n</tr>\n<tr>\n<td>February 9, 2021</td>\n<td><a href=\"https://msrc-blog.microsoft.com/2021/02/09/continuing-to-listen-good-news-about-the-security-update-guide-api/\">Continuing to Listen: Good News about the Security Update Guide API</a></td>\n</tr>\n<tr>\n<td>January 13, 2021</td>\n<td><a href=\"https://msrc-blog.microsoft.com/2021/01/13/security-update-guide-supports-cves-assigned-by-industry-partners/\">Security Update Guide Supports CVEs Assigned by Industry Partners</a></td>\n</tr>\n<tr>\n<td>December 8, 2020</td>\n<td><a href=\"https://msrc-blog.microsoft.com/2020/12/08/security-update-guide-lets-keep-the-conversation-going/\">Security Update Guide: Let’s keep the conversation going</a></td>\n</tr>\n<tr>\n<td>November 9, 2020</td>\n<td><a href=\"https://msrc-blog.microsoft.com/2020/11/09/vulnerability-descriptions-in-the-new-version-of-the-security-update-guide/\">Vulnerability Descriptions in the New Version of the Security Update Guide</a></td>\n</tr>\n</tbody>\n</table>\n<h2>Relevant Information</h2>\n<ul>\n<li>The new Hotpatching feature is now generally available. Please see <a href=\"https://docs.microsoft.com/en-us/azure/automanage/automanage-hotpatch?WT.mc_id=modinfra-18529-thmaure\">Hotpatching feature for Windows Server Azure Edition virtual machines (VMs)</a> for more information.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"https://www.catalog.update.microsoft.com/Home.aspx\">Microsoft Update Catalog</a>. For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://docs.microsoft.com/en-us/lifecycle/faq/windows\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>Microsoft is improving Windows Release Notes. For more information, please see <a href=\"https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-next-for-windows-release-notes/ba-p/1754399\">What's next for Windows release notes</a>.</li>\n<li>A list of the latest servicing stack updates for each operating system can be found in <a href=\"https://msrc.microsoft.com/update-guide/en-us/vulnerability/ADV990001\">ADV990001</a>. This list will be updated whenever a new servicing stack update is released. It is important to install the latest servicing stack update.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>Customers running Windows 7, Windows Server 2008 R2, or Windows Server 2008 need to purchase the Extended Security Update to continue receiving security updates. See <a href=\"https://support.microsoft.com/en-us/topic/procedure-to-continue-receiving-security-updates-after-extended-support-ends-on-january-14-2020-48c59204-fe67-3f42-84fc-c3c3145ff28e\">4522133</a> for more information.</li>\n</ul>\n<h2>FAQs, Mitigations, and Workarounds</h2>\n<p>The following CVEs have FAQs, Mitigations, or Workarounds. You can see these in more detail from the Vulnerabilities tab by selecting <strong>FAQs</strong>, <strong>Mitigations</strong> and <strong>Workarounds</strong> columns in the <strong>Edit Columns</strong> panel.</p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-24480\">CVE-2022-24480</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-26804\">CVE-2022-26804</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-26805\">CVE-2022-26805</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-26806\">CVE-2022-26806</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41074\">CVE-2022-41074</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41076\">CVE-2022-41076</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41077\">CVE-2022-41077</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41094\">CVE-2022-41094</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41115\">CVE-2022-41115</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41121\">CVE-2022-41121</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41127\">CVE-2022-41127</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4174\">CVE-2022-4174</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4175\">CVE-2022-4175</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4177\">CVE-2022-4177</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4178\">CVE-2022-4178</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4179\">CVE-2022-4179</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4180\">CVE-2022-4180</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4181\">CVE-2022-4181</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4182\">CVE-2022-4182</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4183\">CVE-2022-4183</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4184\">CVE-2022-4184</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4185\">CVE-2022-4185</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4186\">CVE-2022-4186</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4187\">CVE-2022-4187</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4188\">CVE-2022-4188</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4189\">CVE-2022-4189</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4190\">CVE-2022-4190</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4191\">CVE-2022-4191</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4192\">CVE-2022-4192</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4193\">CVE-2022-4193</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4194\">CVE-2022-4194</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-4195\">CVE-2022-4195</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44666\">CVE-2022-44666</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44667\">CVE-2022-44667</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44668\">CVE-2022-44668</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44669\">CVE-2022-44669</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44670\">CVE-2022-44670</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44671\">CVE-2022-44671</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44673\">CVE-2022-44673</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44674\">CVE-2022-44674</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44675\">CVE-2022-44675</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44676\">CVE-2022-44676</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44677\">CVE-2022-44677</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44678\">CVE-2022-44678</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44679\">CVE-2022-44679</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44680\">CVE-2022-44680</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44681\">CVE-2022-44681</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44682\">CVE-2022-44682</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44683\">CVE-2022-44683</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44687\">CVE-2022-44687</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44688\">CVE-2022-44688</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44689\">CVE-2022-44689</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44690\">CVE-2022-44690</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44691\">CVE-2022-44691</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44692\">CVE-2022-44692</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44693\">CVE-2022-44693</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44694\">CVE-2022-44694</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44695\">CVE-2022-44695</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44696\">CVE-2022-44696</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44697\">CVE-2022-44697</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44698\">CVE-2022-44698</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44699\">CVE-2022-44699</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44702\">CVE-2022-44702</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44704\">CVE-2022-44704</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44708\">CVE-2022-44708</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44710\">CVE-2022-44710</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-44713\">CVE-2022-44713</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-47212\">CVE-2022-47212</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-47213\">CVE-2022-47213</a></li>\n</ul>\n<h2>Known Issues</h2>\n<p>You can see these in more detail from the Deployments tab by selecting <strong>Known Issues</strong> column in the <strong>Edit Columns</strong> panel.</p>\n<p>For more information about Windows Known Issues, please see <a href=\"https://docs.microsoft.com/en-us/windows/release-information/windows-message-center\">Windows message center</a> (links to currently-supported versions of Windows are in the left pane).</p>\n<table>\n<thead>\n<tr>\n<th>KB Article</th>\n<th>Applies To</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5020880\">5020880</a></td>\n<td>.NET core and .NET Framework, Change in how WPF-based applications render XPS documents</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021233\">5021233</a></td>\n<td>Windows 10, version 20H2, Windows 10, version 21H1, Windows 10, version 21H2, Windows 10, version 22H2</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021234\">5021234</a></td>\n<td>Windows 11 version 21H2</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021235\">5021235</a></td>\n<td>Windows 10, version 1607, Windows Server 2016</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021237\">5021237</a></td>\n<td>Windows Server 2019</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021243\">5021243</a></td>\n<td>Windows 10</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021249\">5021249</a></td>\n<td>Windows Server 2022</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021255\">5021255</a></td>\n<td>Windows 11 version 22H2</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021285\">5021285</a></td>\n<td>Windows Server 2012 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021288\">5021288</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021289\">5021289</a></td>\n<td>Windows Server 2008 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021291\">5021291</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021293\">5021293</a></td>\n<td>Windows Server 2008 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021294\">5021294</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021296\">5021296</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/5021303\">5021303</a></td>\n<td>Windows Server 2012 (Security-only update)</td>\n</tr>\n</tbody>\n</table>\n",
+				"title": "Release Notes",
+				"audience": "Public",
+				"type": "Details",
+				"ordinal": "0"
+			},
+			{
+				"text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+				"title": "Legal Disclaimer",
+				"audience": "Public",
+				"type": "Legal Disclaimer",
+				"ordinal": "1"
+			}
+		]
+	},
+	"producttree": {
+		"branch": {
+			"type": "Vendor",
+			"name": "Microsoft",
+			"branch": [
+				{
+					"type": "Product Family",
+					"name": "Windows",
+					"fullproductname": [
+						{
+							"text": "Windows 10 Version 1809 for 32-bit Systems",
+							"productid": "11568"
+						},
+						{
+							"text": "Windows 10 Version 1809 for x64-based Systems",
+							"productid": "11569"
+						},
+						{
+							"text": "Windows 10 Version 1809 for ARM64-based Systems",
+							"productid": "11570"
+						},
+						{
+							"text": "Windows Server 2019",
+							"productid": "11571"
+						},
+						{
+							"text": "Windows Server 2019 (Server Core installation)",
+							"productid": "11572"
+						},
+						{
+							"text": "Windows 10 Version 21H1 for x64-based Systems",
+							"productid": "11896"
+						},
+						{
+							"text": "Windows 10 Version 21H1 for ARM64-based Systems",
+							"productid": "11897"
+						},
+						{
+							"text": "Windows 10 Version 21H1 for 32-bit Systems",
+							"productid": "11898"
+						},
+						{
+							"text": "Windows Server 2022",
+							"productid": "11923"
+						},
+						{
+							"text": "Windows Server 2022 (Server Core installation)",
+							"productid": "11924"
+						},
+						{
+							"text": "Windows 10 Version 20H2 for 32-bit Systems",
+							"productid": "11801"
+						},
+						{
+							"text": "Windows 10 Version 20H2 for ARM64-based Systems",
+							"productid": "11802"
+						},
+						{
+							"text": "Windows 11 version 21H2 for x64-based Systems",
+							"productid": "11926"
+						},
+						{
+							"text": "Windows 11 version 21H2 for ARM64-based Systems",
+							"productid": "11927"
+						},
+						{
+							"text": "Windows 10 Version 21H2 for 32-bit Systems",
+							"productid": "11929"
+						},
+						{
+							"text": "Windows 10 Version 21H2 for ARM64-based Systems",
+							"productid": "11930"
+						},
+						{
+							"text": "Windows 10 Version 21H2 for x64-based Systems",
+							"productid": "11931"
+						},
+						{
+							"text": "Windows 11 Version 22H2 for ARM64-based Systems",
+							"productid": "12085"
+						},
+						{
+							"text": "Windows 11 Version 22H2 for x64-based Systems",
+							"productid": "12086"
+						},
+						{
+							"text": "Windows 10 Version 22H2 for x64-based Systems",
+							"productid": "12097"
+						},
+						{
+							"text": "Windows 10 Version 22H2 for ARM64-based Systems",
+							"productid": "12098"
+						},
+						{
+							"text": "Windows 10 Version 22H2 for 32-bit Systems",
+							"productid": "12099"
+						},
+						{
+							"text": "Windows 10 for 32-bit Systems",
+							"productid": "10729"
+						},
+						{
+							"text": "Windows 10 for x64-based Systems",
+							"productid": "10735"
+						},
+						{
+							"text": "Windows 10 Version 1607 for 32-bit Systems",
+							"productid": "10852"
+						},
+						{
+							"text": "Windows 10 Version 1607 for x64-based Systems",
+							"productid": "10853"
+						},
+						{
+							"text": "Windows Server 2016",
+							"productid": "10816"
+						},
+						{
+							"text": "Windows Server 2016 (Server Core installation)",
+							"productid": "10855"
+						},
+						{
+							"text": "Windows 8.1 for 32-bit systems",
+							"productid": "10481"
+						},
+						{
+							"text": "Windows 8.1 for x64-based systems",
+							"productid": "10482"
+						},
+						{
+							"text": "Windows RT 8.1",
+							"productid": "10484"
+						}
+					]
+				},
+				{
+					"type": "Product Family",
+					"name": "ESU",
+					"fullproductname": [
+						{
+							"text": "Windows 7 for 32-bit Systems Service Pack 1",
+							"productid": "10047"
+						},
+						{
+							"text": "Windows 7 for x64-based Systems Service Pack 1",
+							"productid": "10048"
+						},
+						{
+							"text": "Windows Server 2008 for 32-bit Systems Service Pack 2",
+							"productid": "9312"
+						},
+						{
+							"text": "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
+							"productid": "10287"
+						},
+						{
+							"text": "Windows Server 2008 for x64-based Systems Service Pack 2",
+							"productid": "9318"
+						},
+						{
+							"text": "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
+							"productid": "9344"
+						},
+						{
+							"text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
+							"productid": "10051"
+						},
+						{
+							"text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
+							"productid": "10049"
+						},
+						{
+							"text": "Windows Server 2012",
+							"productid": "10378"
+						},
+						{
+							"text": "Windows Server 2012 (Server Core installation)",
+							"productid": "10379"
+						},
+						{
+							"text": "Windows Server 2012 R2",
+							"productid": "10483"
+						},
+						{
+							"text": "Windows Server 2012 R2 (Server Core installation)",
+							"productid": "10543"
+						}
+					]
+				}
+			]
+		}
+	},
+	"vulnerability": [
+		{
+			"ordinal": "0",
+			"title": "Guidance on Microsoft Signed Drivers Being Used Maliciously",
+			"notes": {
+				"note": [
+					{
+						"text": "<p><strong>Executive Summary:</strong></p>\n<p>Microsoft was recently informed that drivers certified by Microsoft’s Windows Hardware Developer Program were being used maliciously in post-exploitation activity. Microsoft has completed its investigation and determined that the activity was limited to the abuse of several developer program accounts and that no compromise has been identified. We’ve suspended the partners' seller accounts and implemented blocking detections to help protect customers from this threat.</p>\n<p><strong>Details:</strong></p>\n<p>Microsoft was informed that drivers certified by Microsoft’s Windows Hardware Developer Program were being used maliciously in post-exploitation activity. In these attacks, the attacker had already gained administrative privileges on compromised systems prior to use of the drivers. We were notified of this activity by SentinelOne, Mandiant, and Sophos on October 19, 2022, and subsequently performed an investigation into this activity. This investigation revealed that several developer accounts for the Microsoft Partner Center were engaged in submitting malicious drivers to obtain a Microsoft signature. A new attempt at submitting a malicious driver for signing on September 29th, 2022, led to the suspension of the sellers' accounts in early October.</p>\n<p>Ongoing Microsoft Threat Intelligence Center (MSTIC) analysis indicates the signed malicious drivers were likely used to facilitate post-exploitation intrusion activity such as the deployment of ransomware.</p>\n<p>Microsoft has released Windows Security Updates (see Security Updates table) revoking the certificate for impacted files and suspended the partners' seller accounts. Additionally, Microsoft has implemented blocking detections (Microsoft Defender 1.377.987.0 and newer) to help protect customers from legitimately signed drivers that have been used maliciously in post-exploit activity.</p>\n<p>Microsoft is working with Microsoft Active Protections Program (MAPP) partners to help develop further detections and to better protect our shared customers. Microsoft Partner Center is also working on long-term solutions to address these deceptive practices and prevent future customer impacts.</p>\n<p><strong>Recommended Actions:</strong></p>\n<p>Microsoft recommends that all customers install the latest Windows updates and ensure their anti-virus and endpoint detection products are up to date with the latest signatures and are enabled to prevent these attacks.</p>\n<p><strong>Frequently Asked Questions:</strong></p>\n<p><strong>Are any Microsoft services (Azure, M365, XBOX, Etc.) affected by this issue?</strong></p>\n<p>Microsoft’s services are not impacted by this issue. Our investigation has not identified any instances of malicious drivers affecting any of our services.</p>\n<p><strong>How can customers deploy their own Hypervisor-protected Code Integrity (HVCI) policy to perform detections in their own environment?</strong></p>\n<p>Updates will be made to the Microsoft Recommended Driver Blocklist (<a href=\"https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules\">Microsoft recommended driver block rules (Windows 10) - Windows security | Microsoft Docs</a> policy to perform detections in their own environment.</p>\n<p>After the full set of malicious files has been locked, customers (enterprise and consumer) can deploy this policy onto devices to block against this malicious file and other malicious and vulnerable drivers on the blocklist. Additionally, enabling Hypervisor-protected Code Integrity (HVCI) will automatically enforce the policy without needing to deploy the policy.</p>\n",
+						"title": "Description",
+						"type": "Description",
+						"ordinal": "0"
+					},
+					{
+						"text": "Windows Certificates",
+						"title": "Windows Certificates",
+						"type": "Tag",
+						"ordinal": "20"
+					},
+					{
+						"text": "Microsoft",
+						"title": "Microsoft",
+						"type": "CNA",
+						"ordinal": "30"
+					}
+				]
+			},
+			"cve": "ADV220005",
+			"productstatuses": {
+				"status": {
+					"type": "Known Affected",
+					"product_id": [
+						"11568",
+						"11569",
+						"11570",
+						"11571",
+						"11572",
+						"11896",
+						"11897",
+						"11898",
+						"11923",
+						"11924",
+						"11801",
+						"11802",
+						"11926",
+						"11927",
+						"11929",
+						"11930",
+						"11931",
+						"12085",
+						"12086",
+						"12097",
+						"12098",
+						"12099",
+						"10729",
+						"10735",
+						"10852",
+						"10853",
+						"10816",
+						"10855",
+						"10047",
+						"10048",
+						"10481",
+						"10482",
+						"10484",
+						"9312",
+						"10287",
+						"9318",
+						"9344",
+						"10051",
+						"10049",
+						"10378",
+						"10379",
+						"10483",
+						"10543"
+					]
+				}
+			},
+			"threats": {
+				"threat": [
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11568"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11569"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11570"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11571"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11572"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11896"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11897"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11898"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11923"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11924"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11801"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11802"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11926"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11927"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11929"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11930"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "11931"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "12085"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "12086"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "12097"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "12098"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "12099"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10729"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10735"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10852"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10853"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10816"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10855"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10047"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10048"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10481"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10482"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10484"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "9312"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10287"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "9318"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "9344"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10051"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10049"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10378"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10379"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10483"
+					},
+					{
+						"type": "Impact",
+						"description": "Defense in Depth",
+						"product_id": "10543"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11568"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11569"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11570"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11571"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11572"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11896"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11897"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11898"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11923"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11924"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11801"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11802"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11926"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11927"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11929"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11930"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "11931"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "12085"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "12086"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "12097"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "12098"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "12099"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10729"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10735"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10852"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10853"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10816"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10855"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10047"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10048"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10481"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10482"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10484"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "9312"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10287"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "9318"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "9344"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10051"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10049"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10378"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10379"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10483"
+					},
+					{
+						"type": "Severity",
+						"description": "None",
+						"product_id": "10543"
+					},
+					{
+						"type": "Exploit Status",
+						"description": "Publicly Disclosed:No;Exploited:No;DOS:N/A"
+					}
+				]
+			},
+			"cvssscoresets": {},
+			"remediations": {
+				"remediation": [
+					{
+						"type": "Vendor Fix",
+						"description": "5022286",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022286",
+						"supercedence": "5021237",
+						"product_id": [
+							"11568",
+							"11569",
+							"11570",
+							"11571",
+							"11572"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update",
+						"fixed_build": "10.0.17763.3887"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022286",
+						"url": "https://support.microsoft.com/help/5022286",
+						"product_id": [
+							"11568",
+							"11569",
+							"11570",
+							"11571",
+							"11572"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022282",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022282",
+						"supercedence": "5021233",
+						"product_id": [
+							"11896",
+							"11897",
+							"11898"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update",
+						"fixed_build": "10.0.19043.2486"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022282",
+						"url": "https://support.microsoft.com/help/5022282",
+						"product_id": [
+							"11896",
+							"11897",
+							"11898",
+							"11801",
+							"11802",
+							"11929",
+							"11930",
+							"11931",
+							"12097",
+							"12098",
+							"12099"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022291",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022291",
+						"supercedence": "5021249",
+						"product_id": [
+							"11923",
+							"11924"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update",
+						"fixed_build": "10.0.20348.1487"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022282",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022282",
+						"supercedence": "5021233",
+						"product_id": [
+							"11801",
+							"11802"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update",
+						"fixed_build": "10.0.19042.2486"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022287",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022287",
+						"supercedence": "5021234",
+						"product_id": [
+							"11926",
+							"11927"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update",
+						"fixed_build": "10.0.22000.1455"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022282",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022282",
+						"supercedence": "5021233",
+						"product_id": [
+							"11929",
+							"11930",
+							"11931"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update",
+						"fixed_build": "10.0.19044.2486"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022303",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022303",
+						"supercedence": "5021255",
+						"product_id": [
+							"12085",
+							"12086"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update",
+						"fixed_build": "10.0.22621.1105"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022303",
+						"url": "https://support.microsoft.com/help/5022303",
+						"product_id": [
+							"12085",
+							"12086"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022282",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022282",
+						"supercedence": "5021233",
+						"product_id": [
+							"12097",
+							"12098",
+							"12099"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update",
+						"fixed_build": "10.0.19045.2486"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022297",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022297",
+						"supercedence": "5021243",
+						"product_id": [
+							"10729",
+							"10735"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update",
+						"fixed_build": "10.0.10240.19685"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022289",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022289",
+						"supercedence": "5021235",
+						"product_id": [
+							"10852",
+							"10853",
+							"10816",
+							"10855"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update",
+						"fixed_build": "10.0.14393.5648"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022338",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022338",
+						"supercedence": "5021291",
+						"product_id": [
+							"10047",
+							"10048",
+							"10051",
+							"10049"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup",
+						"fixed_build": "6.1.7601.26321"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022338",
+						"url": "https://support.microsoft.com/help/5022338",
+						"product_id": [
+							"10047",
+							"10048",
+							"10051",
+							"10049"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022339",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022339",
+						"product_id": [
+							"10047",
+							"10048",
+							"10051",
+							"10049"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only",
+						"fixed_build": "6.1.7601.26321"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022339",
+						"url": "https://support.microsoft.com/help/5022339",
+						"product_id": [
+							"10047",
+							"10048",
+							"10051",
+							"10049"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022352",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022352",
+						"supercedence": "5021294",
+						"product_id": [
+							"10481",
+							"10482",
+							"10484",
+							"10483",
+							"10543"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup",
+						"fixed_build": "6.3.9600.20778"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022352",
+						"url": "https://support.microsoft.com/help/5022352",
+						"product_id": [
+							"10481",
+							"10482",
+							"10484",
+							"10483",
+							"10543"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022346",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022346",
+						"product_id": [
+							"10481",
+							"10482",
+							"10483",
+							"10543"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only",
+						"fixed_build": "6.3.9600.20778"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022346",
+						"url": "https://support.microsoft.com/help/5022346",
+						"product_id": [
+							"10481",
+							"10482",
+							"10483",
+							"10543"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022340",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022340",
+						"supercedence": "5021289",
+						"product_id": [
+							"9312",
+							"10287",
+							"9318",
+							"9344"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup",
+						"fixed_build": "6.0.6003.21872"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022340",
+						"url": "https://support.microsoft.com/help/5022340",
+						"product_id": [
+							"9312",
+							"10287",
+							"9318",
+							"9344"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022353",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022353",
+						"product_id": [
+							"9312",
+							"10287",
+							"9318",
+							"9344"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only",
+						"fixed_build": "6.0.6003.21872"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022353",
+						"url": "https://support.microsoft.com/help/5022353",
+						"product_id": [
+							"9312",
+							"10287",
+							"9318",
+							"9344"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022348",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022348",
+						"supercedence": "5021285",
+						"product_id": [
+							"10378",
+							"10379"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup",
+						"fixed_build": "6.2.9200.24075"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022348",
+						"url": "https://support.microsoft.com/help/5022348",
+						"product_id": [
+							"10378",
+							"10379"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "5022343",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5022343",
+						"product_id": [
+							"10378",
+							"10379"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only",
+						"fixed_build": "6.2.9200.24075"
+					},
+					{
+						"type": "Known Issue",
+						"description": "5022343",
+						"url": "https://support.microsoft.com/help/5022343",
+						"product_id": [
+							"10378",
+							"10379"
+						],
+						"affectedfiles": {}
+					}
+				]
+			},
+			"acknowledgments": {
+				"acknowledgment": [
+					{
+						"name": "SentinelOne, Mandiant, and Sophos X-Ops"
+					}
+				]
+			},
+			"revisionhistory": {
+				"revision": [
+					{
+						"number": "1.0",
+						"date": "2022-12-13T08:00:00",
+						"description": "<p>Information published.</p>\n"
+					},
+					{
+						"number": "2.0",
+						"date": "2023-01-10T08:00:00",
+						"description": "<p>Microsoft is announcing that the Windows security updates released on January 10, 2023 include an updated block list. Microsoft strongly recommends that customers install the January 10, 2023 updates to ensure they have the most up-to-date block list. Customers whose Windows devices are configured to receive automatic updates do not need to take any further action.</p>\n"
+					}
+				]
+			}
+		}
+	]
 }

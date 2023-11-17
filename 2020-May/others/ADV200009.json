@@ -1,157 +1,157 @@
 {
-  "document_title": "May 2020 Security Updates",
-  "document_type": "Security Update",
-  "documentpublisher": {
-    "type": "Vendor",
-    "contact_details": "secure@microsoft.com",
-    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
-  },
-  "documenttracking": {
-    "identification": {
-      "id": "ADV200009",
-      "alias": "ADV200009"
-    },
-    "status": "Final",
-    "version": "1.0",
-    "revisionhistory": {
-      "revision": {
-        "number": "11",
-        "date": "2021-02-25T08:00:00Z",
-        "description": "May 2020 Security Updates"
-      }
-    },
-    "initial_release_date": "2020-05-12T07:00:00Z",
-    "current_release_date": "2021-02-25T08:00:00Z"
-  },
-  "documentnotes": {
-    "note": [
-      {
-        "text": "<p>The May 2020 security release consists of security updates for the following software:</p>\n<ul>\n<li>Microsoft Windows</li>\n<li>Microsoft Edge (EdgeHTML-based)</li>\n<li>Microsoft Edge (Chromium-based)</li>\n<li>ChakraCore</li>\n<li>Internet Explorer</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Windows Defender</li>\n<li>Visual Studio</li>\n<li>Microsoft Dynamics</li>\n<li>.NET Framework</li>\n<li>.NET Core</li>\n<li>Power BI</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>For information regarding enabling Windows 10, version 1909 features, please see Windows 10, version 1909 delivery options. Note that Windows 10, versions 1903 and 1909 share a common core operating system with an identical set of system files. They will also share the same security update KBs.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>A list of the latest servicing stack updates for each operating system can be found in <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001\">ADV990001</a>. This list will be updated whenever a new servicing stack update is released. It is important to install the latest servicing stack update.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>Customers running Windows 7, Windows Server 2008 R2, or Windows Server 2008 need to purchase the Extended Security Update to continue receiving security updates. See <a href=\"https://support.microsoft.com/en-us/help/4522133/procedure-to-continue-receiving-security-updates\">4522133</a> for more information.</li>\n</ul>\n<p><strong>The following CVEs have FAQs with additional information and may include * further steps to take after installing the updates. Please note that this is not a complete list of CVEs for this release.</strong></p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0901\">CVE-2020-0901</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0963\">CVE-2020-0963</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1072\">CVE-2020-1072</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1075\">CVE-2020-1075</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1103\">CVE-2020-1103</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1116\">CVE-2020-1116</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1141\">CVE-2020-1141</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1145\">CVE-2020-1145</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1173\">CVE-2020-1173</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1179\">CVE-2020-1179</a></li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<p>The following KBs contain information about known issues with the security updates. For a complete list of security update KBs, please see <a href=\"https://support.microsoft.com/help/20200512\">20200512</a>. For more information about Windows Known Issues, please see <a href=\"https://docs.microsoft.com/en-us/windows/release-information/windows-message-center\">Windows message center</a> (links to currently-supported versions of Windows are in the left pane).</p>\n<table>\n<thead>\n<tr>\n<th>KB Article</th>\n<th>Applies To</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4551853\">4551853</a></td>\n<td>Windows 10 Version 1809, Windows Server 2019</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4556813\">4556813</a></td>\n<td>Windows 10, version 1607, Windows Server 2016</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4556836\">4556836</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4556843\">4556843</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4556854\">4556854</a></td>\n<td>Windows Server 2008 Service Pack 2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4556860\">4556860</a></td>\n<td>Windows Server 2008 Service Pack 2 (Monthly Rollup)</td>\n</tr>\n</tbody>\n</table>\n",
-        "title": "Release Notes",
-        "audience": "Public",
-        "type": "Details",
-        "ordinal": "0"
-      },
-      {
-        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
-        "title": "Legal Disclaimer",
-        "audience": "Public",
-        "type": "Legal Disclaimer",
-        "ordinal": "1"
-      }
-    ]
-  },
-  "producttree": {
-    "branch": {
-      "type": "Vendor",
-      "name": "Microsoft",
-      "branch": [
-        {
-          "type": "Product Family",
-          "name": "Windows",
-          "fullproductname": [
-            {
-              "text": "None Available",
-              "productid": "9237"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "vulnerability": [
-    {
-      "ordinal": "0",
-      "title": "Windows DNS Server Denial of Service Vulnerability",
-      "notes": {
-        "note": [
-          {
-            "text": "<p>Microsoft is aware of a vulnerability involving packet amplification that affects Windows DNS servers.</p>\n<p>An attacker who successfully exploited this vulnerability could cause the DNS Server service to become nonresponsive.</p>\n<p>To exploit this vulnerability an attacker would need to have access to at least one client and a domain that replies with a large volume of referral records, without glue records, that point to external victim sub domains. While resolving a name from the attacker client, for each referral record found, the resolver contacts the victim domain. This action can generate a large number of communications between the recursive resolver and the victim's authoritative DNS server to cause a Distributed Denial of Service (DDoS) attack.</p>\n<p>For more information see the <strong>Mitigations</strong> and <strong>Workaround</strong> sections of this advisory.</p>\n<p>See also <a href=\"https://support.microsoft.com/help/4564355\">Guidance for DNS Amplification discussed in ADV200009</a>.</p>\n",
-            "title": "Description",
-            "type": "Description",
-            "ordinal": "0"
-          },
-          {
-            "text": "<p><strong>Which versions of Windows are affected?</strong></p>\n<p>All supported versions of Windows Server are affected.</p>\n<p><strong>Do the mitigation and workaround summarized in this advisory apply to all versions of Windows Server?</strong></p>\n<p>No. The mitigation and workaround are not available for Windows Server 2012 or Windows Server 2012 R2. These earlier versions of Windows Server do not support the Response Rate Limit (RRL) feature, which reduces the amplification impact when a targeted DNS resolver queries your DNS Servers.</p>\n<p><strong>What should customers do if they have DNS Servers residing on edge networks that are running either Windows Server 2012 or Windows Server 2012 R2?</strong></p>\n<p>DNS Servers residing on edge networks that are running either Windows Server 2012 or Windows Server 2012 R2 should be upgraded to Windows Server 2016 or newer that support the RRL feature, which reduces the amplification impact when a targeted DNS resolver queries your DNS Servers.</p>\n",
-            "title": "FAQ",
-            "type": "FAQ",
-            "ordinal": "10"
-          },
-          {
-            "text": "Microsoft Windows DNS",
-            "title": "Microsoft Windows DNS",
-            "type": "Tag",
-            "ordinal": "20"
-          },
-          {
-            "text": "Microsoft",
-            "title": "Issuing CNA",
-            "type": "CNA",
-            "ordinal": "30"
-          }
-        ]
-      },
-      "cve": "ADV200009",
-      "productstatuses": {
-        "status": {
-          "type": "Known Affected",
-          "product_id": [
-            "9237"
-          ]
-        }
-      },
-      "threats": {
-        "threat": [
-          {
-            "type": "Impact",
-            "product_id": "9237"
-          },
-          {
-            "type": "Severity",
-            "product_id": "9237"
-          },
-          {
-            "type": "Exploit Status",
-            "description": "Publicly Disclosed:No;Exploited:No;DOS:N/A"
-          }
-        ]
-      },
-      "cvssscoresets": {},
-      "remediations": {
-        "remediation": [
-          {
-            "type": "Workaround",
-            "description": "<p><strong>Enable Response Rate Limiting on a DNS server</strong></p>\n<p>Please see <a href=\"https://docs.microsoft.com/en-us/powershell/module/dnsserver/set-dnsserverresponseratelimiting?view=win10-ps\">DNS Server Response Rate Limiting</a> for more information.</p>\n",
-            "affectedfiles": {}
-          },
-          {
-            "type": "Mitigation",
-            "description": "<p>Customers should determine if the DNS server is an intranet-facing or an edge-facing authoratative Microsoft DNS server, then refer to the applicable mitigation. Microsoft rates the risk of this exploit that targets DNS servers residing on corporate intranets as low. DNS Servers residing on edge networks are vulnerable to NXNSAttack.</p>\n<p><strong>For intranet facing MS DNS Servers:</strong></p>\n<p>The risk of this exploit is low. Monitor internal DNS Servers for unusual traffic. Disable internal NXNSAttackers residing on your corporate intranet as they are discovered.</p>\n<p><strong>For edge-facing authoritative DNS Servers:</strong></p>\n<p>Enable Response Rate Limit (RRL) supported by Windows Server 2016 and newer versions of Microsoft DNS. Using RRL on DNS resolvers minimizes the initial attack amplification. Using RRL on a public domain's authoritative DNS server reduces amplification back to the DNS resolver. Note that RRL is disabled by default.</p>\n<p>This mitigation is not available for Windows Server 2012 or Windows Server 2012 R2. These earlier versions of Windows Server do not support the RRL feature. DNS Servers residing on edge networks that are running either of these versions of Windows Server should be upgraded to Windows Server 2016 or newer that support the RRL feature.</p>\n<p>For more information on RRL, See the following:</p>\n<ul>\n<li><a href=\"https://docs.microsoft.com/en-us/windows-server/networking/dns/what-s-new-in-dns-server\">What's New in DNS Server in Windows Server</a></li>\n<li><a href=\"https://docs.microsoft.com/en-us/powershell/module/dnsserver/set-dnsserverresponseratelimiting?view=win10-ps\">SetDNSServerResponseRateLimiting</a> Powershell cmdlet</li>\n</ul>\n<p>Use the SetDNSServerResponseRateLimiting Powershell cmdlet to enable RRL using default values. If enabling RRL causes legitimate DNS queries to fail because they are being throttled too tightly, incrementally increase the values for the Response/Sec and Errors/Sec parameters only until the DNS Server responds to previously failing queries.</p>\n<p>Other parameters may also help administrators better manage RRL settings including RRL exceptions.</p>\n<p>For further information see <a href=\"https://support.microsoft.com/help/4564355\">Guidance for DNS Amplification discussed in ADV200009</a>.</p>\n",
-            "affectedfiles": {}
-          }
-        ]
-      },
-      "acknowledgments": {
-        "acknowledgment": [
-          {
-            "name": "Prof. Yehuda Afek, Tel-Aviv University, Prof. Anat Bremler-Barr, The Interdisciplinary Center, Herzliya, Lior Shafir, Tel-Aviv University."
-          }
-        ]
-      },
-      "revisionhistory": {
-        "revision": [
-          {
-            "number": "1.0",
-            "date": "2020-05-19T07:00:00Z",
-            "description": "<p>Information published.</p>\n"
-          },
-          {
-            "number": "1.1",
-            "date": "2020-05-29T07:00:00Z",
-            "description": "<p>Added FAQs section and added clarifying information to the Mitigations section. This is an informational change only.</p>\n"
-          }
-        ]
-      }
-    }
-  ]
+	"document_title": "May 2020 Security Updates",
+	"document_type": "Security Update",
+	"documentpublisher": {
+		"type": "Vendor",
+		"contact_details": "secure@microsoft.com",
+		"issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+	},
+	"documenttracking": {
+		"identification": {
+			"id": "ADV200009",
+			"alias": "ADV200009"
+		},
+		"status": "Final",
+		"version": "1.0",
+		"revisionhistory": {
+			"revision": {
+				"number": "11",
+				"date": "2021-02-25T08:00:00Z",
+				"description": "May 2020 Security Updates"
+			}
+		},
+		"initial_release_date": "2020-05-12T07:00:00Z",
+		"current_release_date": "2021-02-25T08:00:00Z"
+	},
+	"documentnotes": {
+		"note": [
+			{
+				"text": "<p>The May 2020 security release consists of security updates for the following software:</p>\n<ul>\n<li>Microsoft Windows</li>\n<li>Microsoft Edge (EdgeHTML-based)</li>\n<li>Microsoft Edge (Chromium-based)</li>\n<li>ChakraCore</li>\n<li>Internet Explorer</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Windows Defender</li>\n<li>Visual Studio</li>\n<li>Microsoft Dynamics</li>\n<li>.NET Framework</li>\n<li>.NET Core</li>\n<li>Power BI</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>For information regarding enabling Windows 10, version 1909 features, please see Windows 10, version 1909 delivery options. Note that Windows 10, versions 1903 and 1909 share a common core operating system with an identical set of system files. They will also share the same security update KBs.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>A list of the latest servicing stack updates for each operating system can be found in <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001\">ADV990001</a>. This list will be updated whenever a new servicing stack update is released. It is important to install the latest servicing stack update.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>Customers running Windows 7, Windows Server 2008 R2, or Windows Server 2008 need to purchase the Extended Security Update to continue receiving security updates. See <a href=\"https://support.microsoft.com/en-us/help/4522133/procedure-to-continue-receiving-security-updates\">4522133</a> for more information.</li>\n</ul>\n<p><strong>The following CVEs have FAQs with additional information and may include * further steps to take after installing the updates. Please note that this is not a complete list of CVEs for this release.</strong></p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0901\">CVE-2020-0901</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0963\">CVE-2020-0963</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1072\">CVE-2020-1072</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1075\">CVE-2020-1075</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1103\">CVE-2020-1103</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1116\">CVE-2020-1116</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1141\">CVE-2020-1141</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1145\">CVE-2020-1145</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1173\">CVE-2020-1173</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1179\">CVE-2020-1179</a></li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<p>The following KBs contain information about known issues with the security updates. For a complete list of security update KBs, please see <a href=\"https://support.microsoft.com/help/20200512\">20200512</a>. For more information about Windows Known Issues, please see <a href=\"https://docs.microsoft.com/en-us/windows/release-information/windows-message-center\">Windows message center</a> (links to currently-supported versions of Windows are in the left pane).</p>\n<table>\n<thead>\n<tr>\n<th>KB Article</th>\n<th>Applies To</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4551853\">4551853</a></td>\n<td>Windows 10 Version 1809, Windows Server 2019</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4556813\">4556813</a></td>\n<td>Windows 10, version 1607, Windows Server 2016</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4556836\">4556836</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4556843\">4556843</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4556854\">4556854</a></td>\n<td>Windows Server 2008 Service Pack 2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4556860\">4556860</a></td>\n<td>Windows Server 2008 Service Pack 2 (Monthly Rollup)</td>\n</tr>\n</tbody>\n</table>\n",
+				"title": "Release Notes",
+				"audience": "Public",
+				"type": "Details",
+				"ordinal": "0"
+			},
+			{
+				"text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+				"title": "Legal Disclaimer",
+				"audience": "Public",
+				"type": "Legal Disclaimer",
+				"ordinal": "1"
+			}
+		]
+	},
+	"producttree": {
+		"branch": {
+			"type": "Vendor",
+			"name": "Microsoft",
+			"branch": [
+				{
+					"type": "Product Family",
+					"name": "Windows",
+					"fullproductname": [
+						{
+							"text": "None Available",
+							"productid": "9237"
+						}
+					]
+				}
+			]
+		}
+	},
+	"vulnerability": [
+		{
+			"ordinal": "0",
+			"title": "Windows DNS Server Denial of Service Vulnerability",
+			"notes": {
+				"note": [
+					{
+						"text": "<p>Microsoft is aware of a vulnerability involving packet amplification that affects Windows DNS servers.</p>\n<p>An attacker who successfully exploited this vulnerability could cause the DNS Server service to become nonresponsive.</p>\n<p>To exploit this vulnerability an attacker would need to have access to at least one client and a domain that replies with a large volume of referral records, without glue records, that point to external victim sub domains. While resolving a name from the attacker client, for each referral record found, the resolver contacts the victim domain. This action can generate a large number of communications between the recursive resolver and the victim's authoritative DNS server to cause a Distributed Denial of Service (DDoS) attack.</p>\n<p>For more information see the <strong>Mitigations</strong> and <strong>Workaround</strong> sections of this advisory.</p>\n<p>See also <a href=\"https://support.microsoft.com/help/4564355\">Guidance for DNS Amplification discussed in ADV200009</a>.</p>\n",
+						"title": "Description",
+						"type": "Description",
+						"ordinal": "0"
+					},
+					{
+						"text": "<p><strong>Which versions of Windows are affected?</strong></p>\n<p>All supported versions of Windows Server are affected.</p>\n<p><strong>Do the mitigation and workaround summarized in this advisory apply to all versions of Windows Server?</strong></p>\n<p>No. The mitigation and workaround are not available for Windows Server 2012 or Windows Server 2012 R2. These earlier versions of Windows Server do not support the Response Rate Limit (RRL) feature, which reduces the amplification impact when a targeted DNS resolver queries your DNS Servers.</p>\n<p><strong>What should customers do if they have DNS Servers residing on edge networks that are running either Windows Server 2012 or Windows Server 2012 R2?</strong></p>\n<p>DNS Servers residing on edge networks that are running either Windows Server 2012 or Windows Server 2012 R2 should be upgraded to Windows Server 2016 or newer that support the RRL feature, which reduces the amplification impact when a targeted DNS resolver queries your DNS Servers.</p>\n",
+						"title": "FAQ",
+						"type": "FAQ",
+						"ordinal": "10"
+					},
+					{
+						"text": "Microsoft Windows DNS",
+						"title": "Microsoft Windows DNS",
+						"type": "Tag",
+						"ordinal": "20"
+					},
+					{
+						"text": "Microsoft",
+						"title": "Issuing CNA",
+						"type": "CNA",
+						"ordinal": "30"
+					}
+				]
+			},
+			"cve": "ADV200009",
+			"productstatuses": {
+				"status": {
+					"type": "Known Affected",
+					"product_id": [
+						"9237"
+					]
+				}
+			},
+			"threats": {
+				"threat": [
+					{
+						"type": "Impact",
+						"product_id": "9237"
+					},
+					{
+						"type": "Severity",
+						"product_id": "9237"
+					},
+					{
+						"type": "Exploit Status",
+						"description": "Publicly Disclosed:No;Exploited:No;DOS:N/A"
+					}
+				]
+			},
+			"cvssscoresets": {},
+			"remediations": {
+				"remediation": [
+					{
+						"type": "Workaround",
+						"description": "<p><strong>Enable Response Rate Limiting on a DNS server</strong></p>\n<p>Please see <a href=\"https://docs.microsoft.com/en-us/powershell/module/dnsserver/set-dnsserverresponseratelimiting?view=win10-ps\">DNS Server Response Rate Limiting</a> for more information.</p>\n",
+						"affectedfiles": {}
+					},
+					{
+						"type": "Mitigation",
+						"description": "<p>Customers should determine if the DNS server is an intranet-facing or an edge-facing authoratative Microsoft DNS server, then refer to the applicable mitigation. Microsoft rates the risk of this exploit that targets DNS servers residing on corporate intranets as low. DNS Servers residing on edge networks are vulnerable to NXNSAttack.</p>\n<p><strong>For intranet facing MS DNS Servers:</strong></p>\n<p>The risk of this exploit is low. Monitor internal DNS Servers for unusual traffic. Disable internal NXNSAttackers residing on your corporate intranet as they are discovered.</p>\n<p><strong>For edge-facing authoritative DNS Servers:</strong></p>\n<p>Enable Response Rate Limit (RRL) supported by Windows Server 2016 and newer versions of Microsoft DNS. Using RRL on DNS resolvers minimizes the initial attack amplification. Using RRL on a public domain's authoritative DNS server reduces amplification back to the DNS resolver. Note that RRL is disabled by default.</p>\n<p>This mitigation is not available for Windows Server 2012 or Windows Server 2012 R2. These earlier versions of Windows Server do not support the RRL feature. DNS Servers residing on edge networks that are running either of these versions of Windows Server should be upgraded to Windows Server 2016 or newer that support the RRL feature.</p>\n<p>For more information on RRL, See the following:</p>\n<ul>\n<li><a href=\"https://docs.microsoft.com/en-us/windows-server/networking/dns/what-s-new-in-dns-server\">What's New in DNS Server in Windows Server</a></li>\n<li><a href=\"https://docs.microsoft.com/en-us/powershell/module/dnsserver/set-dnsserverresponseratelimiting?view=win10-ps\">SetDNSServerResponseRateLimiting</a> Powershell cmdlet</li>\n</ul>\n<p>Use the SetDNSServerResponseRateLimiting Powershell cmdlet to enable RRL using default values. If enabling RRL causes legitimate DNS queries to fail because they are being throttled too tightly, incrementally increase the values for the Response/Sec and Errors/Sec parameters only until the DNS Server responds to previously failing queries.</p>\n<p>Other parameters may also help administrators better manage RRL settings including RRL exceptions.</p>\n<p>For further information see <a href=\"https://support.microsoft.com/help/4564355\">Guidance for DNS Amplification discussed in ADV200009</a>.</p>\n",
+						"affectedfiles": {}
+					}
+				]
+			},
+			"acknowledgments": {
+				"acknowledgment": [
+					{
+						"name": "Prof. Yehuda Afek, Tel-Aviv University, Prof. Anat Bremler-Barr, The Interdisciplinary Center, Herzliya, Lior Shafir, Tel-Aviv University."
+					}
+				]
+			},
+			"revisionhistory": {
+				"revision": [
+					{
+						"number": "1.0",
+						"date": "2020-05-19T07:00:00Z",
+						"description": "<p>Information published.</p>\n"
+					},
+					{
+						"number": "1.1",
+						"date": "2020-05-29T07:00:00Z",
+						"description": "<p>Added FAQs section and added clarifying information to the Mitigations section. This is an informational change only.</p>\n"
+					}
+				]
+			}
+		}
+	]
 }

@@ -1,1691 +1,1691 @@
 {
-  "document_title": "May 2018 Security Updates",
-  "document_type": "Security Update",
-  "documentpublisher": {
-    "type": "Vendor",
-    "contact_details": "secure@microsoft.com",
-    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
-  },
-  "documenttracking": {
-    "identification": {
-      "id": "ADV180012",
-      "alias": "ADV180012"
-    },
-    "status": "Final",
-    "version": "1.0",
-    "revisionhistory": {
-      "revision": {
-        "number": "16",
-        "date": "2019-01-08T08:00:00Z",
-        "description": "May 2018 Security Updates"
-      }
-    },
-    "initial_release_date": "2018-05-08T07:00:00Z",
-    "current_release_date": "2019-01-08T08:00:00Z"
-  },
-  "documentnotes": {
-    "note": [
-      {
-        "text": "<p>The May security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>ChakraCore</li>\n<li>Adobe Flash Player</li>\n<li>.NET Framework</li>\n<li>Microsoft Exchange Server</li>\n<li>Windows Host Compute Service Shim</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer. This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/en-us/help/4103723\">4103723</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4103727\">4103727</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4103718\">4103718</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4103712\">4103712</a></li>\n</ul>\n",
-        "title": "Release Notes",
-        "audience": "Public",
-        "type": "Details",
-        "ordinal": "0"
-      },
-      {
-        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
-        "title": "Legal Disclaimer",
-        "audience": "Public",
-        "type": "Legal Disclaimer",
-        "ordinal": "1"
-      }
-    ]
-  },
-  "producttree": {
-    "branch": {
-      "type": "Vendor",
-      "name": "Microsoft",
-      "branch": [
-        {
-          "type": "Product Family",
-          "name": "Windows",
-          "fullproductname": [
-            {
-              "text": "Windows 10 Version 1709 for 32-bit Systems",
-              "productid": "11453"
-            },
-            {
-              "text": "Windows 10 Version 1709 for x64-based Systems",
-              "productid": "11454"
-            },
-            {
-              "text": "Windows Server, version 1709  (Server Core Installation)",
-              "productid": "11466"
-            },
-            {
-              "text": "Windows 10 Version 1703 for 32-bit Systems",
-              "productid": "10951"
-            },
-            {
-              "text": "Windows 10 Version 1703 for x64-based Systems",
-              "productid": "10952"
-            },
-            {
-              "text": "Windows 10 for 32-bit Systems",
-              "productid": "10729"
-            },
-            {
-              "text": "Windows 10 for x64-based Systems",
-              "productid": "10735"
-            },
-            {
-              "text": "Windows 10 Version 1607 for 32-bit Systems",
-              "productid": "10852"
-            },
-            {
-              "text": "Windows 10 Version 1607 for x64-based Systems",
-              "productid": "10853"
-            },
-            {
-              "text": "Windows Server 2016",
-              "productid": "10816"
-            },
-            {
-              "text": "Windows Server 2016  (Server Core installation)",
-              "productid": "10855"
-            },
-            {
-              "text": "Windows 10 Version 1803 for 32-bit Systems",
-              "productid": "11497"
-            },
-            {
-              "text": "Windows 10 Version 1803 for x64-based Systems",
-              "productid": "11498"
-            },
-            {
-              "text": "Windows Server, version 1803  (Server Core Installation)",
-              "productid": "11499"
-            },
-            {
-              "text": "Windows 8.1 for x64-based systems",
-              "productid": "10482"
-            },
-            {
-              "text": "Windows Server 2012",
-              "productid": "10378"
-            },
-            {
-              "text": "Windows Server 2012 (Server Core installation)",
-              "productid": "10379"
-            },
-            {
-              "text": "Windows Server 2012 R2",
-              "productid": "10483"
-            },
-            {
-              "text": "Windows Server 2012 R2 (Server Core installation)",
-              "productid": "10543"
-            },
-            {
-              "text": "Windows 8.1 for 32-bit systems",
-              "productid": "10481"
-            },
-            {
-              "text": "Windows 10 Version 1809 for x64-based Systems",
-              "productid": "11569"
-            },
-            {
-              "text": "Windows 10 Version 1809 for 32-bit Systems",
-              "productid": "11568"
-            }
-          ]
-        },
-        {
-          "type": "Product Family",
-          "name": "ESU",
-          "fullproductname": [
-            {
-              "text": "Windows 7 for x64-based Systems Service Pack 1",
-              "productid": "10048"
-            },
-            {
-              "text": "Windows Server 2008 for x64-based Systems Service Pack 2",
-              "productid": "9318"
-            },
-            {
-              "text": "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
-              "productid": "9344"
-            },
-            {
-              "text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
-              "productid": "10051"
-            },
-            {
-              "text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
-              "productid": "10049"
-            },
-            {
-              "text": "Windows 7 for 32-bit Systems Service Pack 1",
-              "productid": "10047"
-            },
-            {
-              "text": "Windows Server 2008 for 32-bit Systems Service Pack 2",
-              "productid": "9312"
-            },
-            {
-              "text": "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
-              "productid": "10287"
-            }
-          ]
-        },
-        {
-          "type": "Product Family",
-          "name": "Device",
-          "fullproductname": [
-            {
-              "text": "Microsoft Surface Laptop",
-              "productid": "11521"
-            },
-            {
-              "text": "Surface Pro with Advanced LTE Model 1807",
-              "productid": "11524"
-            },
-            {
-              "text": "Microsoft Surface Studio",
-              "productid": "11457"
-            },
-            {
-              "text": "Microsoft Surface Book",
-              "productid": "10824"
-            },
-            {
-              "text": "Microsoft Surface Pro 4",
-              "productid": "10820"
-            },
-            {
-              "text": "Surface Pro Model 1796",
-              "productid": "11523"
-            },
-            {
-              "text": "Microsoft Surface Pro 3",
-              "productid": "10819"
-            },
-            {
-              "text": "Microsoft Surface Book 2",
-              "productid": "11520"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "vulnerability": [
-    {
-      "ordinal": "1",
-      "title": "Microsoft Guidance for Speculative Store Bypass",
-      "notes": {
-        "note": [
-          {
-            "text": "<h1>Executive summary</h1>\n<p>On January 3, 2018, Microsoft released an advisory and security updates related to a newly-discovered class of hardware vulnerabilities (known as Spectre and Meltdown) involving speculative execution side channels that affect AMD, ARM, and Intel CPUs to varying degrees. On May 21st, a new subclass of speculative execution side channel vulnerabilities known as <em>Speculative Store Bypass (SSB)</em> has been announced and assigned <a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639\">CVE-2018-3639</a>.</p>\n<p>An attacker who has successfully exploited this vulnerability may be able to read privileged data across trust boundaries. Vulnerable code patterns in the operating system (OS) or in applications could allow an attacker to exploit this vulnerability. In the case of Just-in-Time (JIT) compilers, such as JavaScript JIT employed by modern web browsers, it may be possible for an attacker to supply JavaScript that produces native code that could give rise to an instance of CVE-2018-3639. However, Microsoft Edge, Internet Explorer, and other major browsers have taken steps to increase the difficulty of successfully creating a side channel.</p>\n<p>At the time of publication, we are not aware of any exploitable code patterns of this vulnerability class in our software or cloud service infrastructure, but we are continuing to investigate. Microsoft will implement the following strategy to mitigate Speculative Store Bypass:</p>\n<ul>\n<li>If a vulnerable code pattern is found, we will address it with a security update.</li>\n<li>Microsoft Windows and Azure will add support for Speculative Store Bypass Disable (SSBD) as documented by <a href=\"https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00115.html\">Intel</a> and <a href=\"https://www.amd.com/en/corporate/security-updates\">AMD</a>. SSBD inhibits a Speculative Store Bypass from occurring, thus eliminating the security risk completely. For Windows on ARM devices, OEMs will provide an update that will mitigate Speculative Store Bypass automatically as documented by <a href=\"https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability\">ARM</a>. This mitigation will be delivered via Windows Update.</li>\n<li>Microsoft will continue to develop, release, and deploy defense-in-depth mitigations for speculative execution side channel vulnerabilities including Speculative Store Bypass. See the <a href=\"Https://aka.ms/sescsrdssb\">Microsoft Security Research and Defense blog</a> for more details.</li>\n<li>Microsoft will continue to research speculative execution side channels, including through researcher outreach and the speculative execution bounty program. See <a href=\"https://technet.microsoft.com/en-us/mt846432.aspx\">https://technet.microsoft.com/en-us/mt846432.aspx</a>.</li>\n</ul>\n<h1>Recommended actions (updated November 13, 2018)</h1>\n<ol>\n<li><p>Register for security notifications mailer to be alerted of content changes to this advisory.  See <a href=\"https://technet.microsoft.com/en-us/security/dd252948\">Microsoft Technical Security Notifications</a>.</p>\n</li>\n<li><p>Familiarize yourself with the vulnerability details. See the <strong>References</strong> section for links to further information.</p>\n</li>\n<li><p>Microsoft recommends that developers review the updated developer guidance for Speculative Store Bypass at: <a href=\"https://docs.microsoft.com/en-us/cpp/security/developer-guidance-speculative-execution\">https://docs.microsoft.com/en-us/cpp/security/developer-guidance-speculative-execution</a>.</p>\n</li>\n<li><p>Apply updates as follows:</p>\n<p>4.1. Apply the Windows updates that provide support for SSBD. See the <strong>Security Updates</strong> table to download and install these updates.</p>\n<p>4.2. Hardware-specific action may be required in devices using certain processors:</p>\n<p>a. Intel processors: For a list of affected Intel processors see Intel's advisory <a href=\"https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00115.html\">here</a>. Apply hardware/microcode updates from your device OEM for affected Intel-based systems. Note that SSBD in Intel processors is dependent upon having the corresponding microcode installed. Contact your OEM for firmware/BIOS versions that contain SSBD compatibility.</p>\n<p>b. AMD processors: For a list of affected AMD processor families see AMD’s advisory <a href=\"https://www.amd.com/en/corporate/security-updates\">here</a>. Updated microcode is not required.</p>\n<p>c. ARM processors: For a list of affected ARM processors, see ARM’s advisory <a href=\"https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability\">here</a>. An OEM provided update will be delivered via Windows Update to mitigate Speculative Store Bypass automatically (enabled by default without option to disable). Contact your OEM for availability.</p>\n<p>4.3. Evaluate the performance implication of turning on SSBD in your environment.</p>\n<p>4.4. Evaluate the Speculative Store Bypass risk to your environment, including CVSS value and exposure to vulnerable code patterns in third-party software, and decide if SSBD should be turned on.</p>\n<p>4.5. To turn on SSBD, use the registry settings documented here:</p>\n<ul>\n<li><a href=\"https://support.microsoft.com/en-us/help/4073119\">Windows Client Guidance for IT Pros to protect against speculative execution side-channel vulnerabilities</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4072698\">Windows Server guidance to protect against speculative execution side-channel vulnerabilities</a></li>\n</ul>\n<p>4.6. To verify the status of SSBD, the Get-SpeculationControlSettings PowerShell script has been updated to detect affected processors, status of the SSBD operating system updates, and state of the processor microcode if applicable. For more information and to obtain the PowerShell script visit: <a href=\"https://support.microsoft.com/en-us/help/4074629/understanding-the-output-of-get-speculationcontrolsettings-powershell\">Understanding Get-SpeculationControlSettings PowerShell script output</a>.</p>\n</li>\n</ol>\n<h2>References</h2>\n<ul>\n<li>Intel: <a href=\"https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00115.html\">https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00115.html</a></li>\n<li>AMD: <a href=\"https://www.amd.com/en/corporate/security-updates\">https://www.amd.com/en/corporate/security-updates</a></li>\n<li>ARM: <a href=\"https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability\">https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability</a></li>\n<li>Microsoft Security Research and Defense blog:  <a href=\"Https://aka.ms/sescsrdssb\">https://aka.ms/sescsrdssb</a></li>\n<li>Google Project Zero: <a href=\"https://bugs.chromium.org/p/project-zero/issues/detail?id=1528\">https://bugs.chromium.org/p/project-zero/issues/detail?id=1528</a></li>\n</ul>\n<h1>FAQ (updated November 13, 2018)</h1>\n<p><strong>1. Microsoft is releasing security updates for this advisory. Does this mean that you have found vulnerable code?</strong></p>\n<p>No. At the time of publication, we have not discovered vulnerable code patterns in our software or cloud service infrastructure. The updates released on June 12, 2018 provide Windows support for Speculative Store Bypass Disable (SSBD) for Intel processors. See the update in the <strong>Executive Summary</strong> for more information.</p>\n<p><strong>2. What does &quot;a vulnerable code pattern&quot; mean?</strong></p>\n<p>A vulnerable code pattern is software code that creates the conditions that allow exploitation of Speculative Store Bypass. For greater details, please see the Speculative Store Bypass overview at: <a href=\"https://aka.ms/sescsrdssb\">https://aka.ms/sescsrdssb</a>.</p>\n<p><strong>3. When will the Windows update(s) that provide support for SSBD be available?</strong></p>\n<p><strong>Devices using Intel processors:</strong> Support for SSBD was released in all supported versions of Windows by July 2018.</p>\n<p><strong>Devices using AMD processors:</strong> Microsoft has released support for SSBD in supported versions of Windows 10, Windows Server 2016, and Windows Server 2019 on November 13, 2018. See the <strong>Security Updates</strong> table for update information.  We continue to work with AMD to enable support of SSBD in additional supported versions of Windows.</p>\n<p>Microsoft has released support for SSBD in supported versions of Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows 8.1, and Windows Server 2012 R2 on January 8, 2019. See the <strong>Security Updates</strong> table for update information.  We continue to work with AMD to enable support of SSBD in additional supported versions of Windows.</p>\n<p><strong>Devices using ARM processors:</strong> Updates will be made available by OEMs via Windows Update. Contact your OEM for availability.</p>\n<p>See the <strong>Recommended actions</strong> section for information about the updates and the steps to apply to turn on SSBD.</p>\n<p><strong>4. Is there a performance implication when I install the updates that provide support for SSBD on AMD and Intel processors?</strong></p>\n<p>No. Installing the updates themselves will not affect the performance of your CPU.</p>\n<p><strong>5. Is there a performance implication when I turn on SSBD on supported AMD and Intel processors?</strong></p>\n<p>In testing Microsoft has seen some performance impact when SSBD is turned on.  However, the actual performance impact will depend on multiple factors, such as the specific chipset in your physical host and the workloads that are running.</p>\n<p><strong>6. Where can I find information about CVE-2018-3640 that was also announced on May 21, 2018?</strong></p>\n<p>See <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV180013\">ADV180013 | Microsoft Guidance for Rogue System Register Read</a>.</p>\n<p><strong>7. Is the Microsoft Cloud infrastructure affected?</strong></p>\n<p>At the time of publication, we have not discovered vulnerable code patterns in our software or cloud service infrastructure.  In addition, defense-in-depth mitigations have been deployed across the Microsoft cloud infrastructure which directly address speculative execution vulnerabilities.</p>\n<p><strong>8. How does Speculative Store Bypass compare to the Spectre and Meltdown vulnerabilities?</strong></p>\n<p>Speculative Store Bypass is a subclass of speculative execution side-channel vulnerabilities like Spectre and Meltdown.</p>\n<p><strong>9. Where can I find Microsoft guidance for the Spectre and Meltdown vulnerabilities?</strong></p>\n<p>See <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV180002\">ADV180002 | Guidance to mitigate speculative execution side-channel vulnerabilities</a>.</p>\n",
-            "title": "Description",
-            "type": "Description",
-            "ordinal": "0"
-          }
-        ]
-      },
-      "cve": "ADV180012",
-      "productstatuses": {
-        "status": {
-          "type": "Known Affected",
-          "product_id": [
-            "11521",
-            "11524",
-            "11457",
-            "11569",
-            "11568",
-            "10824",
-            "10820",
-            "11523",
-            "10819",
-            "11520",
-            "11497",
-            "11498",
-            "10951",
-            "10952",
-            "11453",
-            "11454",
-            "11466",
-            "10729",
-            "10735",
-            "10852",
-            "10853",
-            "10816",
-            "10855",
-            "10047",
-            "10048",
-            "10481",
-            "10482",
-            "9312",
-            "10287",
-            "9318",
-            "9344",
-            "10051",
-            "10049",
-            "10378",
-            "10379",
-            "10483",
-            "10543",
-            "11499"
-          ]
-        }
-      },
-      "threats": {
-        "threat": [
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11521"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11524"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11457"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11569"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11568"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10824"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10820"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11523"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10819"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11520"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11497"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11498"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10951"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10952"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11453"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11454"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11466"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10729"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10735"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10852"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10853"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10816"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10855"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10047"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10048"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10481"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10482"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "9312"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10287"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "9318"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "9344"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10051"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10049"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10378"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10379"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10483"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "10543"
-          },
-          {
-            "type": "Impact",
-            "description": "Information Disclosure",
-            "product_id": "11499"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11521"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11524"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11457"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11569"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11568"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10824"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10820"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11523"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10819"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11520"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11497"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11498"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10951"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10952"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11453"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11454"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11466"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10729"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10735"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10852"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10853"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10816"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10855"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10047"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10048"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10481"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10482"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "9312"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10287"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "9318"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "9344"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10051"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10049"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10378"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10379"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10483"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10543"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11499"
-          },
-          {
-            "type": "Exploit Status",
-            "description": "Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely"
-          }
-        ]
-      },
-      "cvssscoresets": {
-        "scoreset": [
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "11497"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "11498"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10951"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10952"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "11453"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "11454"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "11466"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10729"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10735"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10852"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10853"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10816"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10855"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10047"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10048"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10051"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "10049"
-          },
-          {
-            "base_score": "7.1",
-            "temporal_score": "7.1",
-            "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-            "product_id": "11499"
-          }
-        ]
-      },
-      "remediations": {
-        "remediation": [
-          {
-            "type": "Vendor Fix",
-            "description": "4073065",
-            "url": "https://support.microsoft.com/en-us/help/4037237/surface-surface-laptop-update-history",
-            "product_id": [
-              "11521"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Update history"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4073065",
-            "url": "https://support.microsoft.com/en-us/help/4037238/surface-surface-pro-update-history",
-            "product_id": [
-              "11524"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Update history"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4073065",
-            "url": "https://support.microsoft.com/en-us/help/4023490/surface-surface-studio-update-history",
-            "product_id": [
-              "11457"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Update history"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467708",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467708",
-            "supercedence": "4464330",
-            "product_id": [
-              "11569"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467708",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467708",
-            "supercedence": "4464330",
-            "product_id": [
-              "11568"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4073065",
-            "url": "https://support.microsoft.com/en-us/help/4023488/surface-surface-book-update-history",
-            "product_id": [
-              "10824"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Update history"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4073065",
-            "url": "https://support.microsoft.com/en-us/help/4023489/surface-surface-pro-4-update-history",
-            "product_id": [
-              "10820"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Update history"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4073065",
-            "url": "https://support.microsoft.com/en-us/help/4037238/surface-surface-pro-update-history",
-            "product_id": [
-              "11523"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Update history"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4073065",
-            "url": "https://support.microsoft.com/en-us/help/4023484/surface-surface-pro-3-update-history",
-            "product_id": [
-              "10819"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Update history"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4073065",
-            "url": "https://support.microsoft.com/en-us/help/4055398/surface-book-2-update-history",
-            "product_id": [
-              "11520"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Update history"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467702",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467702",
-            "supercedence": "4462919",
-            "product_id": [
-              "11497"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467702",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467702",
-            "supercedence": "4462919",
-            "product_id": [
-              "11498"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467696",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467696",
-            "supercedence": "4462937",
-            "product_id": [
-              "10951"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467696",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467696",
-            "supercedence": "4462937",
-            "product_id": [
-              "10952"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467686",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467686",
-            "supercedence": "4462918",
-            "product_id": [
-              "11453"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467686",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467686",
-            "supercedence": "4462918",
-            "product_id": [
-              "11454"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467686",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467686",
-            "supercedence": "4462918",
-            "product_id": [
-              "11466"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467680",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467680",
-            "supercedence": "4462922",
-            "product_id": [
-              "10729"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467680",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467680",
-            "supercedence": "4462922",
-            "product_id": [
-              "10735"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467691",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467691",
-            "supercedence": "4462917",
-            "product_id": [
-              "10852"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467691",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467691",
-            "supercedence": "4462917",
-            "product_id": [
-              "10853"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467691",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467691",
-            "supercedence": "4462917",
-            "product_id": [
-              "10816"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467691",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467691",
-            "supercedence": "4462917",
-            "product_id": [
-              "10855"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480970",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480970",
-            "supercedence": "4471318",
-            "product_id": [
-              "10047"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480970",
-            "url": "https://support.microsoft.com/help/4480970",
-            "product_id": [
-              "10047"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480960",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480960",
-            "product_id": [
-              "10047"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480960",
-            "url": "https://support.microsoft.com/help/4480960",
-            "product_id": [
-              "10047"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480970",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480970",
-            "supercedence": "4471318",
-            "product_id": [
-              "10048"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480970",
-            "url": "https://support.microsoft.com/help/4480970",
-            "product_id": [
-              "10048"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480960",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480960",
-            "product_id": [
-              "10048"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480960",
-            "url": "https://support.microsoft.com/help/4480960",
-            "product_id": [
-              "10048"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480963",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480963",
-            "supercedence": "4471320",
-            "product_id": [
-              "10481"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480963",
-            "url": "https://support.microsoft.com/help/4480963",
-            "product_id": [
-              "10481"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480964",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480964",
-            "product_id": [
-              "10481"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480964",
-            "url": "https://support.microsoft.com/help/4480964",
-            "product_id": [
-              "10481"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480963",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480963",
-            "supercedence": "4471320",
-            "product_id": [
-              "10482"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480963",
-            "url": "https://support.microsoft.com/help/4480963",
-            "product_id": [
-              "10482"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480964",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480964",
-            "product_id": [
-              "10482"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480964",
-            "url": "https://support.microsoft.com/help/4480964",
-            "product_id": [
-              "10482"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480968",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480968",
-            "supercedence": "4471325",
-            "product_id": [
-              "9312"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480968",
-            "url": "https://support.microsoft.com/help/4480968",
-            "product_id": [
-              "9312"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480957",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480957",
-            "product_id": [
-              "9312"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480957",
-            "url": "https://support.microsoft.com/help/4480957",
-            "product_id": [
-              "9312"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480968",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480968",
-            "supercedence": "4471325",
-            "product_id": [
-              "10287"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480968",
-            "url": "https://support.microsoft.com/help/4480968",
-            "product_id": [
-              "10287"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480957",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480957",
-            "product_id": [
-              "10287"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480957",
-            "url": "https://support.microsoft.com/help/4480957",
-            "product_id": [
-              "10287"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480968",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480968",
-            "supercedence": "4471325",
-            "product_id": [
-              "9318"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480968",
-            "url": "https://support.microsoft.com/help/4480968",
-            "product_id": [
-              "9318"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480957",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480957",
-            "product_id": [
-              "9318"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480957",
-            "url": "https://support.microsoft.com/help/4480957",
-            "product_id": [
-              "9318"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480968",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480968",
-            "supercedence": "4471325",
-            "product_id": [
-              "9344"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480968",
-            "url": "https://support.microsoft.com/help/4480968",
-            "product_id": [
-              "9344"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480957",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480957",
-            "product_id": [
-              "9344"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480957",
-            "url": "https://support.microsoft.com/help/4480957",
-            "product_id": [
-              "9344"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480970",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480970",
-            "supercedence": "4471318",
-            "product_id": [
-              "10051"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480970",
-            "url": "https://support.microsoft.com/help/4480970",
-            "product_id": [
-              "10051"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480960",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480960",
-            "product_id": [
-              "10051"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480960",
-            "url": "https://support.microsoft.com/help/4480960",
-            "product_id": [
-              "10051"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480970",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480970",
-            "supercedence": "4471318",
-            "product_id": [
-              "10049"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480970",
-            "url": "https://support.microsoft.com/help/4480970",
-            "product_id": [
-              "10049"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480960",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480960",
-            "product_id": [
-              "10049"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480960",
-            "url": "https://support.microsoft.com/help/4480960",
-            "product_id": [
-              "10049"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480975",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480975",
-            "supercedence": "4471330",
-            "product_id": [
-              "10378"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480975",
-            "url": "https://support.microsoft.com/help/4480975",
-            "product_id": [
-              "10378"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480972",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480972",
-            "product_id": [
-              "10378"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480972",
-            "url": "https://support.microsoft.com/help/4480972",
-            "product_id": [
-              "10378"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480975",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480975",
-            "supercedence": "4471330",
-            "product_id": [
-              "10379"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480975",
-            "url": "https://support.microsoft.com/help/4480975",
-            "product_id": [
-              "10379"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480972",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480972",
-            "product_id": [
-              "10379"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480972",
-            "url": "https://support.microsoft.com/help/4480972",
-            "product_id": [
-              "10379"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480963",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480963",
-            "supercedence": "4471320",
-            "product_id": [
-              "10483"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480963",
-            "url": "https://support.microsoft.com/help/4480963",
-            "product_id": [
-              "10483"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480964",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480964",
-            "product_id": [
-              "10483"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480964",
-            "url": "https://support.microsoft.com/help/4480964",
-            "product_id": [
-              "10483"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480963",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480963",
-            "supercedence": "4471320",
-            "product_id": [
-              "10543"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480963",
-            "url": "https://support.microsoft.com/help/4480963",
-            "product_id": [
-              "10543"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4480964",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480964",
-            "product_id": [
-              "10543"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Known Issue",
-            "description": "4480964",
-            "url": "https://support.microsoft.com/help/4480964",
-            "product_id": [
-              "10543"
-            ],
-            "affectedfiles": {}
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4467702",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467702",
-            "supercedence": "4462919",
-            "product_id": [
-              "11499"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          }
-        ]
-      },
-      "acknowledgments": {
-        "acknowledgment": [
-          {
-            "name": "Jann Horn of <a href=\"http://www.google.com/\" >Google Project Zero</a>"
-          },
-          {
-            "name": "Ken Johnson of Microsoft Corporation"
-          }
-        ]
-      },
-      "revisionhistory": {
-        "revision": [
-          {
-            "number": "1.0",
-            "date": "2018-05-21T07:00:00Z",
-            "description": "<p>Information published.</p>\n"
-          },
-          {
-            "number": "2.0",
-            "date": "2018-06-12T07:00:00Z",
-            "description": "<p>Microsoft is announcing that the Windows security updates released on June 12, 2018 include support for Speculative Store Bypass Disable (SSBD) in Intel processors. This support is available for all supported editions of Windows 10, Windows Server 2016, Windows 7, and Windows Server 2008 R2. See the Affected Products table for the security updates. The Recommended Actions section of this advisory has been updated to include steps for applying updates to mitigate CVE-2018-3639 - Speculative Store Bypass (SSB), Variant 4. In addtion, revisions have been made to the FAQ section to address questions about performance implications of these updates and of SSBD.</p>\n"
-          },
-          {
-            "number": "3.0",
-            "date": "2018-07-10T07:00:00Z",
-            "description": "<p>Microsoft is announcing that the Windows security updates released on July 10, 2018 include support for Speculative Store Bypass Disable (SSBD) in Intel processors. This support is available for all supported editions of Windows Server 2008, Windows Server 2012, Windows 8.1, and Windows Server 2012 R2. See the Affected Products table for the security updates, and the Recommended Actions section to follow the steps for applying updates to mitigate CVE-2018-3639 - Speculative Store Bypass (SSB), Variant 4.</p>\n"
-          },
-          {
-            "number": "4.0",
-            "date": "2018-07-26T07:00:00Z",
-            "description": "<p>Microsoft is announcing the availability of updates for Surface Pro 4, Surface Laptop, Surface Pro Model 1796, and Surface Pro with Advanced LTE Model 1807 that address the Speculative Store Bypass (SSB) (CVE-2018-3639) vulnerability. See the Affected Products table for links to download and install the updates. See <a href=\"https://support.microsoft.com/en-us/help/4073065\">Microsoft Knowledge Base article 4073065</a> for more information.</p>\n"
-          },
-          {
-            "number": "6.0",
-            "date": "2018-11-13T08:00:00Z",
-            "description": "<p>The following updates have been made to this advisory: 1. Microsoft is announcing that the security updates released on November 13, 2018 for all supported versions of Windows 10, and for Windows Server 2016; Windows Server, version 1709; Windows Server, version 1803; and Windows Server 2019 provide protections against the Speculative Store Bypass vulnerability (CVE-2018-3639) for AMD-based computers. These protections are not enabled by default. For Windows client (IT pro) guidance, follow the instructions in KB4073119. 2. Microsoft is announcing the availability of updates for Surface Studio and Surface Book that address the Speculative Store Bypass (SSB) (CVE-2018-3639) vulnerability. See the Affected Products table for links to download and install the updates. See Microsoft Knowledge Base article 4073065 for more information. 3. In the Security Updates table, the Article and Download links have been corrected for affected Surface devices. 4. Windows 10 version 1809 and Windows Server 2019 have been added to the Security Updates table because they are affected by the SSB vulnerability. 5. The Recommended Actions and FAQ sections have been updated to include information for devices using AMD processors.</p>\n"
-          },
-          {
-            "number": "7.0",
-            "date": "2019-01-08T08:00:00Z",
-            "description": "<p>The following updates have been made to this advisory: 1. Microsoft is announcing that the security updates released on January 8, 2018 for supported versions of Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows 8.1, and Windows Server 2012 R2 provide protections against the Speculative Store Bypass vulnerability (CVE-2018-3639) for AMD-based computers. These protections are not enabled by default. For Windows client (IT pro) guidance, follow the instructions in Microsoft Knowledge Base article 4073119. 2. In the Recommended Actions and FAQ sections the &quot;Affected Products&quot; table name has been corrected to &quot;Security Updates&quot; to reflect the correct table name.</p>\n"
-          },
-          {
-            "number": "5.0",
-            "date": "2018-08-08T07:00:00Z",
-            "description": "<p>Microsoft is announcing the availability of updates for Surface Pro 3 and Surface Book 2 that address the Speculative Store Bypass (SSB) (CVE-2018-3639) vulnerability. See the Affected Products table for links to download and install the updates. See <a href=\"https://support.microsoft.com/en-us/help/4073065\">Microsoft Knowledge Base article 4073065</a> for more information.</p>\n"
-          }
-        ]
-      }
-    }
-  ]
+	"document_title": "May 2018 Security Updates",
+	"document_type": "Security Update",
+	"documentpublisher": {
+		"type": "Vendor",
+		"contact_details": "secure@microsoft.com",
+		"issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+	},
+	"documenttracking": {
+		"identification": {
+			"id": "ADV180012",
+			"alias": "ADV180012"
+		},
+		"status": "Final",
+		"version": "1.0",
+		"revisionhistory": {
+			"revision": {
+				"number": "16",
+				"date": "2019-01-08T08:00:00Z",
+				"description": "May 2018 Security Updates"
+			}
+		},
+		"initial_release_date": "2018-05-08T07:00:00Z",
+		"current_release_date": "2019-01-08T08:00:00Z"
+	},
+	"documentnotes": {
+		"note": [
+			{
+				"text": "<p>The May security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>ChakraCore</li>\n<li>Adobe Flash Player</li>\n<li>.NET Framework</li>\n<li>Microsoft Exchange Server</li>\n<li>Windows Host Compute Service Shim</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer. This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/en-us/help/4103723\">4103723</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4103727\">4103727</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4103718\">4103718</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4103712\">4103712</a></li>\n</ul>\n",
+				"title": "Release Notes",
+				"audience": "Public",
+				"type": "Details",
+				"ordinal": "0"
+			},
+			{
+				"text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+				"title": "Legal Disclaimer",
+				"audience": "Public",
+				"type": "Legal Disclaimer",
+				"ordinal": "1"
+			}
+		]
+	},
+	"producttree": {
+		"branch": {
+			"type": "Vendor",
+			"name": "Microsoft",
+			"branch": [
+				{
+					"type": "Product Family",
+					"name": "Windows",
+					"fullproductname": [
+						{
+							"text": "Windows 10 Version 1709 for 32-bit Systems",
+							"productid": "11453"
+						},
+						{
+							"text": "Windows 10 Version 1709 for x64-based Systems",
+							"productid": "11454"
+						},
+						{
+							"text": "Windows Server, version 1709  (Server Core Installation)",
+							"productid": "11466"
+						},
+						{
+							"text": "Windows 10 Version 1703 for 32-bit Systems",
+							"productid": "10951"
+						},
+						{
+							"text": "Windows 10 Version 1703 for x64-based Systems",
+							"productid": "10952"
+						},
+						{
+							"text": "Windows 10 for 32-bit Systems",
+							"productid": "10729"
+						},
+						{
+							"text": "Windows 10 for x64-based Systems",
+							"productid": "10735"
+						},
+						{
+							"text": "Windows 10 Version 1607 for 32-bit Systems",
+							"productid": "10852"
+						},
+						{
+							"text": "Windows 10 Version 1607 for x64-based Systems",
+							"productid": "10853"
+						},
+						{
+							"text": "Windows Server 2016",
+							"productid": "10816"
+						},
+						{
+							"text": "Windows Server 2016  (Server Core installation)",
+							"productid": "10855"
+						},
+						{
+							"text": "Windows 10 Version 1803 for 32-bit Systems",
+							"productid": "11497"
+						},
+						{
+							"text": "Windows 10 Version 1803 for x64-based Systems",
+							"productid": "11498"
+						},
+						{
+							"text": "Windows Server, version 1803  (Server Core Installation)",
+							"productid": "11499"
+						},
+						{
+							"text": "Windows 8.1 for x64-based systems",
+							"productid": "10482"
+						},
+						{
+							"text": "Windows Server 2012",
+							"productid": "10378"
+						},
+						{
+							"text": "Windows Server 2012 (Server Core installation)",
+							"productid": "10379"
+						},
+						{
+							"text": "Windows Server 2012 R2",
+							"productid": "10483"
+						},
+						{
+							"text": "Windows Server 2012 R2 (Server Core installation)",
+							"productid": "10543"
+						},
+						{
+							"text": "Windows 8.1 for 32-bit systems",
+							"productid": "10481"
+						},
+						{
+							"text": "Windows 10 Version 1809 for x64-based Systems",
+							"productid": "11569"
+						},
+						{
+							"text": "Windows 10 Version 1809 for 32-bit Systems",
+							"productid": "11568"
+						}
+					]
+				},
+				{
+					"type": "Product Family",
+					"name": "ESU",
+					"fullproductname": [
+						{
+							"text": "Windows 7 for x64-based Systems Service Pack 1",
+							"productid": "10048"
+						},
+						{
+							"text": "Windows Server 2008 for x64-based Systems Service Pack 2",
+							"productid": "9318"
+						},
+						{
+							"text": "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
+							"productid": "9344"
+						},
+						{
+							"text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
+							"productid": "10051"
+						},
+						{
+							"text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
+							"productid": "10049"
+						},
+						{
+							"text": "Windows 7 for 32-bit Systems Service Pack 1",
+							"productid": "10047"
+						},
+						{
+							"text": "Windows Server 2008 for 32-bit Systems Service Pack 2",
+							"productid": "9312"
+						},
+						{
+							"text": "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
+							"productid": "10287"
+						}
+					]
+				},
+				{
+					"type": "Product Family",
+					"name": "Device",
+					"fullproductname": [
+						{
+							"text": "Microsoft Surface Laptop",
+							"productid": "11521"
+						},
+						{
+							"text": "Surface Pro with Advanced LTE Model 1807",
+							"productid": "11524"
+						},
+						{
+							"text": "Microsoft Surface Studio",
+							"productid": "11457"
+						},
+						{
+							"text": "Microsoft Surface Book",
+							"productid": "10824"
+						},
+						{
+							"text": "Microsoft Surface Pro 4",
+							"productid": "10820"
+						},
+						{
+							"text": "Surface Pro Model 1796",
+							"productid": "11523"
+						},
+						{
+							"text": "Microsoft Surface Pro 3",
+							"productid": "10819"
+						},
+						{
+							"text": "Microsoft Surface Book 2",
+							"productid": "11520"
+						}
+					]
+				}
+			]
+		}
+	},
+	"vulnerability": [
+		{
+			"ordinal": "1",
+			"title": "Microsoft Guidance for Speculative Store Bypass",
+			"notes": {
+				"note": [
+					{
+						"text": "<h1>Executive summary</h1>\n<p>On January 3, 2018, Microsoft released an advisory and security updates related to a newly-discovered class of hardware vulnerabilities (known as Spectre and Meltdown) involving speculative execution side channels that affect AMD, ARM, and Intel CPUs to varying degrees. On May 21st, a new subclass of speculative execution side channel vulnerabilities known as <em>Speculative Store Bypass (SSB)</em> has been announced and assigned <a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639\">CVE-2018-3639</a>.</p>\n<p>An attacker who has successfully exploited this vulnerability may be able to read privileged data across trust boundaries. Vulnerable code patterns in the operating system (OS) or in applications could allow an attacker to exploit this vulnerability. In the case of Just-in-Time (JIT) compilers, such as JavaScript JIT employed by modern web browsers, it may be possible for an attacker to supply JavaScript that produces native code that could give rise to an instance of CVE-2018-3639. However, Microsoft Edge, Internet Explorer, and other major browsers have taken steps to increase the difficulty of successfully creating a side channel.</p>\n<p>At the time of publication, we are not aware of any exploitable code patterns of this vulnerability class in our software or cloud service infrastructure, but we are continuing to investigate. Microsoft will implement the following strategy to mitigate Speculative Store Bypass:</p>\n<ul>\n<li>If a vulnerable code pattern is found, we will address it with a security update.</li>\n<li>Microsoft Windows and Azure will add support for Speculative Store Bypass Disable (SSBD) as documented by <a href=\"https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00115.html\">Intel</a> and <a href=\"https://www.amd.com/en/corporate/security-updates\">AMD</a>. SSBD inhibits a Speculative Store Bypass from occurring, thus eliminating the security risk completely. For Windows on ARM devices, OEMs will provide an update that will mitigate Speculative Store Bypass automatically as documented by <a href=\"https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability\">ARM</a>. This mitigation will be delivered via Windows Update.</li>\n<li>Microsoft will continue to develop, release, and deploy defense-in-depth mitigations for speculative execution side channel vulnerabilities including Speculative Store Bypass. See the <a href=\"Https://aka.ms/sescsrdssb\">Microsoft Security Research and Defense blog</a> for more details.</li>\n<li>Microsoft will continue to research speculative execution side channels, including through researcher outreach and the speculative execution bounty program. See <a href=\"https://technet.microsoft.com/en-us/mt846432.aspx\">https://technet.microsoft.com/en-us/mt846432.aspx</a>.</li>\n</ul>\n<h1>Recommended actions (updated November 13, 2018)</h1>\n<ol>\n<li><p>Register for security notifications mailer to be alerted of content changes to this advisory.  See <a href=\"https://technet.microsoft.com/en-us/security/dd252948\">Microsoft Technical Security Notifications</a>.</p>\n</li>\n<li><p>Familiarize yourself with the vulnerability details. See the <strong>References</strong> section for links to further information.</p>\n</li>\n<li><p>Microsoft recommends that developers review the updated developer guidance for Speculative Store Bypass at: <a href=\"https://docs.microsoft.com/en-us/cpp/security/developer-guidance-speculative-execution\">https://docs.microsoft.com/en-us/cpp/security/developer-guidance-speculative-execution</a>.</p>\n</li>\n<li><p>Apply updates as follows:</p>\n<p>4.1. Apply the Windows updates that provide support for SSBD. See the <strong>Security Updates</strong> table to download and install these updates.</p>\n<p>4.2. Hardware-specific action may be required in devices using certain processors:</p>\n<p>a. Intel processors: For a list of affected Intel processors see Intel's advisory <a href=\"https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00115.html\">here</a>. Apply hardware/microcode updates from your device OEM for affected Intel-based systems. Note that SSBD in Intel processors is dependent upon having the corresponding microcode installed. Contact your OEM for firmware/BIOS versions that contain SSBD compatibility.</p>\n<p>b. AMD processors: For a list of affected AMD processor families see AMD’s advisory <a href=\"https://www.amd.com/en/corporate/security-updates\">here</a>. Updated microcode is not required.</p>\n<p>c. ARM processors: For a list of affected ARM processors, see ARM’s advisory <a href=\"https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability\">here</a>. An OEM provided update will be delivered via Windows Update to mitigate Speculative Store Bypass automatically (enabled by default without option to disable). Contact your OEM for availability.</p>\n<p>4.3. Evaluate the performance implication of turning on SSBD in your environment.</p>\n<p>4.4. Evaluate the Speculative Store Bypass risk to your environment, including CVSS value and exposure to vulnerable code patterns in third-party software, and decide if SSBD should be turned on.</p>\n<p>4.5. To turn on SSBD, use the registry settings documented here:</p>\n<ul>\n<li><a href=\"https://support.microsoft.com/en-us/help/4073119\">Windows Client Guidance for IT Pros to protect against speculative execution side-channel vulnerabilities</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4072698\">Windows Server guidance to protect against speculative execution side-channel vulnerabilities</a></li>\n</ul>\n<p>4.6. To verify the status of SSBD, the Get-SpeculationControlSettings PowerShell script has been updated to detect affected processors, status of the SSBD operating system updates, and state of the processor microcode if applicable. For more information and to obtain the PowerShell script visit: <a href=\"https://support.microsoft.com/en-us/help/4074629/understanding-the-output-of-get-speculationcontrolsettings-powershell\">Understanding Get-SpeculationControlSettings PowerShell script output</a>.</p>\n</li>\n</ol>\n<h2>References</h2>\n<ul>\n<li>Intel: <a href=\"https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00115.html\">https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00115.html</a></li>\n<li>AMD: <a href=\"https://www.amd.com/en/corporate/security-updates\">https://www.amd.com/en/corporate/security-updates</a></li>\n<li>ARM: <a href=\"https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability\">https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability</a></li>\n<li>Microsoft Security Research and Defense blog:  <a href=\"Https://aka.ms/sescsrdssb\">https://aka.ms/sescsrdssb</a></li>\n<li>Google Project Zero: <a href=\"https://bugs.chromium.org/p/project-zero/issues/detail?id=1528\">https://bugs.chromium.org/p/project-zero/issues/detail?id=1528</a></li>\n</ul>\n<h1>FAQ (updated November 13, 2018)</h1>\n<p><strong>1. Microsoft is releasing security updates for this advisory. Does this mean that you have found vulnerable code?</strong></p>\n<p>No. At the time of publication, we have not discovered vulnerable code patterns in our software or cloud service infrastructure. The updates released on June 12, 2018 provide Windows support for Speculative Store Bypass Disable (SSBD) for Intel processors. See the update in the <strong>Executive Summary</strong> for more information.</p>\n<p><strong>2. What does &quot;a vulnerable code pattern&quot; mean?</strong></p>\n<p>A vulnerable code pattern is software code that creates the conditions that allow exploitation of Speculative Store Bypass. For greater details, please see the Speculative Store Bypass overview at: <a href=\"https://aka.ms/sescsrdssb\">https://aka.ms/sescsrdssb</a>.</p>\n<p><strong>3. When will the Windows update(s) that provide support for SSBD be available?</strong></p>\n<p><strong>Devices using Intel processors:</strong> Support for SSBD was released in all supported versions of Windows by July 2018.</p>\n<p><strong>Devices using AMD processors:</strong> Microsoft has released support for SSBD in supported versions of Windows 10, Windows Server 2016, and Windows Server 2019 on November 13, 2018. See the <strong>Security Updates</strong> table for update information.  We continue to work with AMD to enable support of SSBD in additional supported versions of Windows.</p>\n<p>Microsoft has released support for SSBD in supported versions of Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows 8.1, and Windows Server 2012 R2 on January 8, 2019. See the <strong>Security Updates</strong> table for update information.  We continue to work with AMD to enable support of SSBD in additional supported versions of Windows.</p>\n<p><strong>Devices using ARM processors:</strong> Updates will be made available by OEMs via Windows Update. Contact your OEM for availability.</p>\n<p>See the <strong>Recommended actions</strong> section for information about the updates and the steps to apply to turn on SSBD.</p>\n<p><strong>4. Is there a performance implication when I install the updates that provide support for SSBD on AMD and Intel processors?</strong></p>\n<p>No. Installing the updates themselves will not affect the performance of your CPU.</p>\n<p><strong>5. Is there a performance implication when I turn on SSBD on supported AMD and Intel processors?</strong></p>\n<p>In testing Microsoft has seen some performance impact when SSBD is turned on.  However, the actual performance impact will depend on multiple factors, such as the specific chipset in your physical host and the workloads that are running.</p>\n<p><strong>6. Where can I find information about CVE-2018-3640 that was also announced on May 21, 2018?</strong></p>\n<p>See <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV180013\">ADV180013 | Microsoft Guidance for Rogue System Register Read</a>.</p>\n<p><strong>7. Is the Microsoft Cloud infrastructure affected?</strong></p>\n<p>At the time of publication, we have not discovered vulnerable code patterns in our software or cloud service infrastructure.  In addition, defense-in-depth mitigations have been deployed across the Microsoft cloud infrastructure which directly address speculative execution vulnerabilities.</p>\n<p><strong>8. How does Speculative Store Bypass compare to the Spectre and Meltdown vulnerabilities?</strong></p>\n<p>Speculative Store Bypass is a subclass of speculative execution side-channel vulnerabilities like Spectre and Meltdown.</p>\n<p><strong>9. Where can I find Microsoft guidance for the Spectre and Meltdown vulnerabilities?</strong></p>\n<p>See <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV180002\">ADV180002 | Guidance to mitigate speculative execution side-channel vulnerabilities</a>.</p>\n",
+						"title": "Description",
+						"type": "Description",
+						"ordinal": "0"
+					}
+				]
+			},
+			"cve": "ADV180012",
+			"productstatuses": {
+				"status": {
+					"type": "Known Affected",
+					"product_id": [
+						"11521",
+						"11524",
+						"11457",
+						"11569",
+						"11568",
+						"10824",
+						"10820",
+						"11523",
+						"10819",
+						"11520",
+						"11497",
+						"11498",
+						"10951",
+						"10952",
+						"11453",
+						"11454",
+						"11466",
+						"10729",
+						"10735",
+						"10852",
+						"10853",
+						"10816",
+						"10855",
+						"10047",
+						"10048",
+						"10481",
+						"10482",
+						"9312",
+						"10287",
+						"9318",
+						"9344",
+						"10051",
+						"10049",
+						"10378",
+						"10379",
+						"10483",
+						"10543",
+						"11499"
+					]
+				}
+			},
+			"threats": {
+				"threat": [
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11521"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11524"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11457"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11569"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11568"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10824"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10820"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11523"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10819"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11520"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11497"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11498"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10951"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10952"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11453"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11454"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11466"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10729"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10735"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10852"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10853"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10816"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10855"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10047"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10048"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10481"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10482"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "9312"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10287"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "9318"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "9344"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10051"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10049"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10378"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10379"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10483"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "10543"
+					},
+					{
+						"type": "Impact",
+						"description": "Information Disclosure",
+						"product_id": "11499"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11521"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11524"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11457"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11569"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11568"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10824"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10820"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11523"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10819"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11520"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11497"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11498"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10951"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10952"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11453"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11454"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11466"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10729"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10735"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10852"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10853"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10816"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10855"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10047"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10048"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10481"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10482"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "9312"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10287"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "9318"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "9344"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10051"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10049"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10378"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10379"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10483"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10543"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11499"
+					},
+					{
+						"type": "Exploit Status",
+						"description": "Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation Less Likely;Older Software Release:Exploitation Less Likely"
+					}
+				]
+			},
+			"cvssscoresets": {
+				"scoreset": [
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "11497"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "11498"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10951"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10952"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "11453"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "11454"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "11466"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10729"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10735"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10852"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10853"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10816"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10855"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10047"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10048"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10051"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "10049"
+					},
+					{
+						"base_score": "7.1",
+						"temporal_score": "7.1",
+						"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+						"product_id": "11499"
+					}
+				]
+			},
+			"remediations": {
+				"remediation": [
+					{
+						"type": "Vendor Fix",
+						"description": "4073065",
+						"url": "https://support.microsoft.com/en-us/help/4037237/surface-surface-laptop-update-history",
+						"product_id": [
+							"11521"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Update history"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4073065",
+						"url": "https://support.microsoft.com/en-us/help/4037238/surface-surface-pro-update-history",
+						"product_id": [
+							"11524"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Update history"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4073065",
+						"url": "https://support.microsoft.com/en-us/help/4023490/surface-surface-studio-update-history",
+						"product_id": [
+							"11457"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Update history"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467708",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467708",
+						"supercedence": "4464330",
+						"product_id": [
+							"11569"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467708",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467708",
+						"supercedence": "4464330",
+						"product_id": [
+							"11568"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4073065",
+						"url": "https://support.microsoft.com/en-us/help/4023488/surface-surface-book-update-history",
+						"product_id": [
+							"10824"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Update history"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4073065",
+						"url": "https://support.microsoft.com/en-us/help/4023489/surface-surface-pro-4-update-history",
+						"product_id": [
+							"10820"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Update history"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4073065",
+						"url": "https://support.microsoft.com/en-us/help/4037238/surface-surface-pro-update-history",
+						"product_id": [
+							"11523"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Update history"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4073065",
+						"url": "https://support.microsoft.com/en-us/help/4023484/surface-surface-pro-3-update-history",
+						"product_id": [
+							"10819"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Update history"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4073065",
+						"url": "https://support.microsoft.com/en-us/help/4055398/surface-book-2-update-history",
+						"product_id": [
+							"11520"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Update history"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467702",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467702",
+						"supercedence": "4462919",
+						"product_id": [
+							"11497"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467702",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467702",
+						"supercedence": "4462919",
+						"product_id": [
+							"11498"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467696",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467696",
+						"supercedence": "4462937",
+						"product_id": [
+							"10951"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467696",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467696",
+						"supercedence": "4462937",
+						"product_id": [
+							"10952"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467686",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467686",
+						"supercedence": "4462918",
+						"product_id": [
+							"11453"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467686",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467686",
+						"supercedence": "4462918",
+						"product_id": [
+							"11454"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467686",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467686",
+						"supercedence": "4462918",
+						"product_id": [
+							"11466"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467680",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467680",
+						"supercedence": "4462922",
+						"product_id": [
+							"10729"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467680",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467680",
+						"supercedence": "4462922",
+						"product_id": [
+							"10735"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467691",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467691",
+						"supercedence": "4462917",
+						"product_id": [
+							"10852"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467691",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467691",
+						"supercedence": "4462917",
+						"product_id": [
+							"10853"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467691",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467691",
+						"supercedence": "4462917",
+						"product_id": [
+							"10816"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467691",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467691",
+						"supercedence": "4462917",
+						"product_id": [
+							"10855"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480970",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480970",
+						"supercedence": "4471318",
+						"product_id": [
+							"10047"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480970",
+						"url": "https://support.microsoft.com/help/4480970",
+						"product_id": [
+							"10047"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480960",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480960",
+						"product_id": [
+							"10047"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480960",
+						"url": "https://support.microsoft.com/help/4480960",
+						"product_id": [
+							"10047"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480970",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480970",
+						"supercedence": "4471318",
+						"product_id": [
+							"10048"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480970",
+						"url": "https://support.microsoft.com/help/4480970",
+						"product_id": [
+							"10048"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480960",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480960",
+						"product_id": [
+							"10048"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480960",
+						"url": "https://support.microsoft.com/help/4480960",
+						"product_id": [
+							"10048"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480963",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480963",
+						"supercedence": "4471320",
+						"product_id": [
+							"10481"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480963",
+						"url": "https://support.microsoft.com/help/4480963",
+						"product_id": [
+							"10481"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480964",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480964",
+						"product_id": [
+							"10481"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480964",
+						"url": "https://support.microsoft.com/help/4480964",
+						"product_id": [
+							"10481"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480963",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480963",
+						"supercedence": "4471320",
+						"product_id": [
+							"10482"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480963",
+						"url": "https://support.microsoft.com/help/4480963",
+						"product_id": [
+							"10482"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480964",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480964",
+						"product_id": [
+							"10482"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480964",
+						"url": "https://support.microsoft.com/help/4480964",
+						"product_id": [
+							"10482"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480968",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480968",
+						"supercedence": "4471325",
+						"product_id": [
+							"9312"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480968",
+						"url": "https://support.microsoft.com/help/4480968",
+						"product_id": [
+							"9312"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480957",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480957",
+						"product_id": [
+							"9312"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480957",
+						"url": "https://support.microsoft.com/help/4480957",
+						"product_id": [
+							"9312"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480968",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480968",
+						"supercedence": "4471325",
+						"product_id": [
+							"10287"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480968",
+						"url": "https://support.microsoft.com/help/4480968",
+						"product_id": [
+							"10287"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480957",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480957",
+						"product_id": [
+							"10287"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480957",
+						"url": "https://support.microsoft.com/help/4480957",
+						"product_id": [
+							"10287"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480968",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480968",
+						"supercedence": "4471325",
+						"product_id": [
+							"9318"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480968",
+						"url": "https://support.microsoft.com/help/4480968",
+						"product_id": [
+							"9318"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480957",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480957",
+						"product_id": [
+							"9318"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480957",
+						"url": "https://support.microsoft.com/help/4480957",
+						"product_id": [
+							"9318"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480968",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480968",
+						"supercedence": "4471325",
+						"product_id": [
+							"9344"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480968",
+						"url": "https://support.microsoft.com/help/4480968",
+						"product_id": [
+							"9344"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480957",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480957",
+						"product_id": [
+							"9344"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480957",
+						"url": "https://support.microsoft.com/help/4480957",
+						"product_id": [
+							"9344"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480970",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480970",
+						"supercedence": "4471318",
+						"product_id": [
+							"10051"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480970",
+						"url": "https://support.microsoft.com/help/4480970",
+						"product_id": [
+							"10051"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480960",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480960",
+						"product_id": [
+							"10051"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480960",
+						"url": "https://support.microsoft.com/help/4480960",
+						"product_id": [
+							"10051"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480970",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480970",
+						"supercedence": "4471318",
+						"product_id": [
+							"10049"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480970",
+						"url": "https://support.microsoft.com/help/4480970",
+						"product_id": [
+							"10049"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480960",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480960",
+						"product_id": [
+							"10049"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480960",
+						"url": "https://support.microsoft.com/help/4480960",
+						"product_id": [
+							"10049"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480975",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480975",
+						"supercedence": "4471330",
+						"product_id": [
+							"10378"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480975",
+						"url": "https://support.microsoft.com/help/4480975",
+						"product_id": [
+							"10378"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480972",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480972",
+						"product_id": [
+							"10378"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480972",
+						"url": "https://support.microsoft.com/help/4480972",
+						"product_id": [
+							"10378"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480975",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480975",
+						"supercedence": "4471330",
+						"product_id": [
+							"10379"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480975",
+						"url": "https://support.microsoft.com/help/4480975",
+						"product_id": [
+							"10379"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480972",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480972",
+						"product_id": [
+							"10379"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480972",
+						"url": "https://support.microsoft.com/help/4480972",
+						"product_id": [
+							"10379"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480963",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480963",
+						"supercedence": "4471320",
+						"product_id": [
+							"10483"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480963",
+						"url": "https://support.microsoft.com/help/4480963",
+						"product_id": [
+							"10483"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480964",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480964",
+						"product_id": [
+							"10483"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480964",
+						"url": "https://support.microsoft.com/help/4480964",
+						"product_id": [
+							"10483"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480963",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480963",
+						"supercedence": "4471320",
+						"product_id": [
+							"10543"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480963",
+						"url": "https://support.microsoft.com/help/4480963",
+						"product_id": [
+							"10543"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4480964",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4480964",
+						"product_id": [
+							"10543"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Known Issue",
+						"description": "4480964",
+						"url": "https://support.microsoft.com/help/4480964",
+						"product_id": [
+							"10543"
+						],
+						"affectedfiles": {}
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4467702",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4467702",
+						"supercedence": "4462919",
+						"product_id": [
+							"11499"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					}
+				]
+			},
+			"acknowledgments": {
+				"acknowledgment": [
+					{
+						"name": "Jann Horn of <a href=\"http://www.google.com/\" >Google Project Zero</a>"
+					},
+					{
+						"name": "Ken Johnson of Microsoft Corporation"
+					}
+				]
+			},
+			"revisionhistory": {
+				"revision": [
+					{
+						"number": "1.0",
+						"date": "2018-05-21T07:00:00Z",
+						"description": "<p>Information published.</p>\n"
+					},
+					{
+						"number": "2.0",
+						"date": "2018-06-12T07:00:00Z",
+						"description": "<p>Microsoft is announcing that the Windows security updates released on June 12, 2018 include support for Speculative Store Bypass Disable (SSBD) in Intel processors. This support is available for all supported editions of Windows 10, Windows Server 2016, Windows 7, and Windows Server 2008 R2. See the Affected Products table for the security updates. The Recommended Actions section of this advisory has been updated to include steps for applying updates to mitigate CVE-2018-3639 - Speculative Store Bypass (SSB), Variant 4. In addtion, revisions have been made to the FAQ section to address questions about performance implications of these updates and of SSBD.</p>\n"
+					},
+					{
+						"number": "3.0",
+						"date": "2018-07-10T07:00:00Z",
+						"description": "<p>Microsoft is announcing that the Windows security updates released on July 10, 2018 include support for Speculative Store Bypass Disable (SSBD) in Intel processors. This support is available for all supported editions of Windows Server 2008, Windows Server 2012, Windows 8.1, and Windows Server 2012 R2. See the Affected Products table for the security updates, and the Recommended Actions section to follow the steps for applying updates to mitigate CVE-2018-3639 - Speculative Store Bypass (SSB), Variant 4.</p>\n"
+					},
+					{
+						"number": "4.0",
+						"date": "2018-07-26T07:00:00Z",
+						"description": "<p>Microsoft is announcing the availability of updates for Surface Pro 4, Surface Laptop, Surface Pro Model 1796, and Surface Pro with Advanced LTE Model 1807 that address the Speculative Store Bypass (SSB) (CVE-2018-3639) vulnerability. See the Affected Products table for links to download and install the updates. See <a href=\"https://support.microsoft.com/en-us/help/4073065\">Microsoft Knowledge Base article 4073065</a> for more information.</p>\n"
+					},
+					{
+						"number": "6.0",
+						"date": "2018-11-13T08:00:00Z",
+						"description": "<p>The following updates have been made to this advisory: 1. Microsoft is announcing that the security updates released on November 13, 2018 for all supported versions of Windows 10, and for Windows Server 2016; Windows Server, version 1709; Windows Server, version 1803; and Windows Server 2019 provide protections against the Speculative Store Bypass vulnerability (CVE-2018-3639) for AMD-based computers. These protections are not enabled by default. For Windows client (IT pro) guidance, follow the instructions in KB4073119. 2. Microsoft is announcing the availability of updates for Surface Studio and Surface Book that address the Speculative Store Bypass (SSB) (CVE-2018-3639) vulnerability. See the Affected Products table for links to download and install the updates. See Microsoft Knowledge Base article 4073065 for more information. 3. In the Security Updates table, the Article and Download links have been corrected for affected Surface devices. 4. Windows 10 version 1809 and Windows Server 2019 have been added to the Security Updates table because they are affected by the SSB vulnerability. 5. The Recommended Actions and FAQ sections have been updated to include information for devices using AMD processors.</p>\n"
+					},
+					{
+						"number": "7.0",
+						"date": "2019-01-08T08:00:00Z",
+						"description": "<p>The following updates have been made to this advisory: 1. Microsoft is announcing that the security updates released on January 8, 2018 for supported versions of Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows 8.1, and Windows Server 2012 R2 provide protections against the Speculative Store Bypass vulnerability (CVE-2018-3639) for AMD-based computers. These protections are not enabled by default. For Windows client (IT pro) guidance, follow the instructions in Microsoft Knowledge Base article 4073119. 2. In the Recommended Actions and FAQ sections the &quot;Affected Products&quot; table name has been corrected to &quot;Security Updates&quot; to reflect the correct table name.</p>\n"
+					},
+					{
+						"number": "5.0",
+						"date": "2018-08-08T07:00:00Z",
+						"description": "<p>Microsoft is announcing the availability of updates for Surface Pro 3 and Surface Book 2 that address the Speculative Store Bypass (SSB) (CVE-2018-3639) vulnerability. See the Affected Products table for links to download and install the updates. See <a href=\"https://support.microsoft.com/en-us/help/4073065\">Microsoft Knowledge Base article 4073065</a> for more information.</p>\n"
+					}
+				]
+			}
+		}
+	]
 }

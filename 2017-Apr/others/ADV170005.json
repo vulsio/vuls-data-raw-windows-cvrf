@@ -1,301 +1,301 @@
 {
-  "document_title": "April 2017 Security Updates",
-  "document_type": "Security Update",
-  "documentpublisher": {
-    "type": "Vendor",
-    "contact_details": "secure@microsoft.com",
-    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
-  },
-  "documenttracking": {
-    "identification": {
-      "id": "ADV170005",
-      "alias": "ADV170005"
-    },
-    "status": "Final",
-    "version": "1.0",
-    "revisionhistory": {
-      "revision": {
-        "number": "7",
-        "date": "2017-09-13T07:00:00Z",
-        "description": "April 2017 Security Updates"
-      }
-    },
-    "initial_release_date": "2017-04-11T07:00:00Z",
-    "current_release_date": "2017-09-13T07:00:00Z"
-  },
-  "documentnotes": {
-    "note": [
-      {
-        "text": "<p>The April security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Visual Studio for Mac</li>\n<li>.NET Framework</li>\n<li>Silverlight</li>\n<li>Adobe Flash Player</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer.  This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/help/4014561\">4014561</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014567\">4014567</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014563\">4014563</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014565\">4014565</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014555\">4014555</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014557\">4014557</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014559\">4014559</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014553\">4014553</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014551\">4014551</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014548\">4014548</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014547\">4014547</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014546\">4014546</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014545\">4014545</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014571\">4014571</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014574\">4014574</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014572\">4014572</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014573\">4014573</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014562\">4014562</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014564\">4014564</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014566\">4014566</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014558\">4014558</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014556\">4014556</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014560\">4014560</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014552\">4014552</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014550\">4014550</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014549\">4014549</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014984\">4014984</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014983\">4014983</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014982\">4014982</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014981\">4014981</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014988\">4014988</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014987\">4014987</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014986\">4014986</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014985\">4014985</a></li>\n</ul>\n",
-        "title": "Release Notes",
-        "audience": "Public",
-        "type": "Details",
-        "ordinal": "0"
-      },
-      {
-        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
-        "title": "Legal Disclaimer",
-        "audience": "Public",
-        "type": "Legal Disclaimer",
-        "ordinal": "1"
-      }
-    ]
-  },
-  "producttree": {
-    "branch": {
-      "type": "Vendor",
-      "name": "Microsoft",
-      "branch": [
-        {
-          "type": "Product Family",
-          "name": "Microsoft Office",
-          "fullproductname": [
-            {
-              "text": "Microsoft Office 2010 Service Pack 2 (32-bit editions)",
-              "productid": "10521"
-            },
-            {
-              "text": "Microsoft Office 2010 Service Pack 2 (64-bit editions)",
-              "productid": "10522"
-            },
-            {
-              "text": "Microsoft Office 2013 Service Pack 1 (32-bit editions)",
-              "productid": "10601"
-            },
-            {
-              "text": "Microsoft Office 2013 Service Pack 1 (64-bit editions)",
-              "productid": "10602"
-            },
-            {
-              "text": "Microsoft Office 2016 (32-bit edition)",
-              "productid": "10753"
-            },
-            {
-              "text": "Microsoft Office 2016 (64-bit edition)",
-              "productid": "10754"
-            },
-            {
-              "text": "Microsoft Office 2013 RT Service Pack 1",
-              "productid": "10603"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "vulnerability": [
-    {
-      "ordinal": "1",
-      "title": "Defense-in-Depth Update for Microsoft Office",
-      "notes": {
-        "note": [
-          {
-            "text": "<p>Microsoft has released an update for Microsoft Office that turns off, by default, the Encapsulated PostScript (EPS) Filter in Office as a defense-in-depth measure. Microsoft is aware of limited targeted attacks that could leverage an unpatched vulnerability in the EPS filter and is taking this action to help reduce customer risk until the security update is released.</p>\n<p>Microsoft strongly recommends against turning on the EPS filter at this time, however customers who need to turn on the EPS filter can reference <a href=\"https://support.microsoft.com/en-us/kb/2479871\">KB Article 2479871</a>.</p>\n",
-            "title": "Description",
-            "type": "Description",
-            "ordinal": "0"
-          },
-          {
-            "text": "Microsoft Office",
-            "title": "Microsoft Office",
-            "type": "Tag",
-            "ordinal": "20"
-          }
-        ]
-      },
-      "cve": "ADV170005",
-      "productstatuses": {
-        "status": {
-          "type": "Known Affected",
-          "product_id": [
-            "10753",
-            "10754",
-            "10521",
-            "10522",
-            "10603",
-            "10601",
-            "10602"
-          ]
-        }
-      },
-      "threats": {
-        "threat": [
-          {
-            "type": "Impact",
-            "product_id": "10753"
-          },
-          {
-            "type": "Impact",
-            "product_id": "10754"
-          },
-          {
-            "type": "Impact",
-            "product_id": "10521"
-          },
-          {
-            "type": "Impact",
-            "product_id": "10522"
-          },
-          {
-            "type": "Impact",
-            "product_id": "10603"
-          },
-          {
-            "type": "Impact",
-            "product_id": "10601"
-          },
-          {
-            "type": "Impact",
-            "product_id": "10602"
-          },
-          {
-            "type": "Severity",
-            "product_id": "10753"
-          },
-          {
-            "type": "Severity",
-            "product_id": "10754"
-          },
-          {
-            "type": "Severity",
-            "product_id": "10521"
-          },
-          {
-            "type": "Severity",
-            "product_id": "10522"
-          },
-          {
-            "type": "Severity",
-            "product_id": "10603"
-          },
-          {
-            "type": "Severity",
-            "product_id": "10601"
-          },
-          {
-            "type": "Severity",
-            "product_id": "10602"
-          },
-          {
-            "type": "Exploit Status",
-            "description": "Publicly Disclosed:No;Exploited:Yes;Latest Software Release:Exploitation Detected;Older Software Release:Exploitation Detected"
-          }
-        ]
-      },
-      "cvssscoresets": {},
-      "remediations": {
-        "remediation": [
-          {
-            "type": "Vendor Fix",
-            "description": "3178702",
-            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=1126e935-1986-4c77-995b-fc546693fb5b",
-            "supercedence": "3127986",
-            "product_id": [
-              "10753"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Maybe",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "3178702",
-            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=ab14986b-b878-4e96-ad9e-2c45fdb6bdd5",
-            "supercedence": "3127986",
-            "product_id": [
-              "10754"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Maybe",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "3141538",
-            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=0321799f-eda2-47c7-b565-d87316539029",
-            "supercedence": "3118380",
-            "product_id": [
-              "10521"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Maybe",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "3141538",
-            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=309fd6ac-933d-4110-825a-58b34f207df4",
-            "supercedence": "3118380",
-            "product_id": [
-              "10522"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Maybe",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "3178710",
-            "supercedence": "3127968",
-            "product_id": [
-              "10603"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Maybe",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "3178710",
-            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=2c7ae47b-31cc-4311-909a-425b3d80026f",
-            "supercedence": "3127968",
-            "product_id": [
-              "10601"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Maybe",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "3178710",
-            "url": "https://www.microsoft.com/downloads/details.aspx?familyid=a53d575c-2cfe-40be-9408-deb41cf26573",
-            "supercedence": "3127968",
-            "product_id": [
-              "10602"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Maybe",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Mitigation",
-            "description": "<p><strong>The following mitigating factors may be helpful for customers who need to re-enable the EPS filter</strong>\nThis vulnerability could not be exploited automatically through a Web-based attack scenario. An attacker would have to host a website that contains an Office file containing a specially crafted EPS image that is used to attempt to exploit this vulnerability. An attacker would have no way to force users to visit a malicious website. Instead, an attacker would have to convince them to visit the website, typically by getting them to click a link that takes them to the attacker's site, and then convince the user to open the file in an affected Microsoft Office application.\nThere is no way for an attacker to force a user to open a specially crafted file in order for the vulnerability to be exploited.</p>\n",
-            "affectedfiles": {}
-          }
-        ]
-      },
-      "acknowledgments": {
-        "acknowledgment": [
-          {
-            "name": "Genwei Jiang of <a href=\"http://www.fireeye.com/\">FireEye, Inc. </a>"
-          }
-        ]
-      },
-      "revisionhistory": {
-        "revision": [
-          {
-            "number": "1.0",
-            "date": "2017-04-11T07:00:00Z",
-            "description": "<p>Information published.</p>\n"
-          },
-          {
-            "number": "1.1",
-            "date": "2017-04-12T07:00:00Z",
-            "description": "<p>Changed identifier to reduce confusion with CVE IDs. This is an informational change only.</p>\n"
-          }
-        ]
-      }
-    }
-  ]
+	"document_title": "April 2017 Security Updates",
+	"document_type": "Security Update",
+	"documentpublisher": {
+		"type": "Vendor",
+		"contact_details": "secure@microsoft.com",
+		"issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+	},
+	"documenttracking": {
+		"identification": {
+			"id": "ADV170005",
+			"alias": "ADV170005"
+		},
+		"status": "Final",
+		"version": "1.0",
+		"revisionhistory": {
+			"revision": {
+				"number": "7",
+				"date": "2017-09-13T07:00:00Z",
+				"description": "April 2017 Security Updates"
+			}
+		},
+		"initial_release_date": "2017-04-11T07:00:00Z",
+		"current_release_date": "2017-09-13T07:00:00Z"
+	},
+	"documentnotes": {
+		"note": [
+			{
+				"text": "<p>The April security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Visual Studio for Mac</li>\n<li>.NET Framework</li>\n<li>Silverlight</li>\n<li>Adobe Flash Player</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer.  This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/help/4014561\">4014561</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014567\">4014567</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014563\">4014563</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014565\">4014565</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014555\">4014555</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014557\">4014557</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014559\">4014559</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014553\">4014553</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014551\">4014551</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014548\">4014548</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014547\">4014547</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014546\">4014546</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014545\">4014545</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014571\">4014571</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014574\">4014574</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014572\">4014572</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014573\">4014573</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014562\">4014562</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014564\">4014564</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014566\">4014566</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014558\">4014558</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014556\">4014556</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014560\">4014560</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014552\">4014552</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014550\">4014550</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014549\">4014549</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014984\">4014984</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014983\">4014983</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014982\">4014982</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014981\">4014981</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014988\">4014988</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014987\">4014987</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014986\">4014986</a></li>\n<li><a href=\"https://support.microsoft.com/help/4014985\">4014985</a></li>\n</ul>\n",
+				"title": "Release Notes",
+				"audience": "Public",
+				"type": "Details",
+				"ordinal": "0"
+			},
+			{
+				"text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+				"title": "Legal Disclaimer",
+				"audience": "Public",
+				"type": "Legal Disclaimer",
+				"ordinal": "1"
+			}
+		]
+	},
+	"producttree": {
+		"branch": {
+			"type": "Vendor",
+			"name": "Microsoft",
+			"branch": [
+				{
+					"type": "Product Family",
+					"name": "Microsoft Office",
+					"fullproductname": [
+						{
+							"text": "Microsoft Office 2010 Service Pack 2 (32-bit editions)",
+							"productid": "10521"
+						},
+						{
+							"text": "Microsoft Office 2010 Service Pack 2 (64-bit editions)",
+							"productid": "10522"
+						},
+						{
+							"text": "Microsoft Office 2013 Service Pack 1 (32-bit editions)",
+							"productid": "10601"
+						},
+						{
+							"text": "Microsoft Office 2013 Service Pack 1 (64-bit editions)",
+							"productid": "10602"
+						},
+						{
+							"text": "Microsoft Office 2016 (32-bit edition)",
+							"productid": "10753"
+						},
+						{
+							"text": "Microsoft Office 2016 (64-bit edition)",
+							"productid": "10754"
+						},
+						{
+							"text": "Microsoft Office 2013 RT Service Pack 1",
+							"productid": "10603"
+						}
+					]
+				}
+			]
+		}
+	},
+	"vulnerability": [
+		{
+			"ordinal": "1",
+			"title": "Defense-in-Depth Update for Microsoft Office",
+			"notes": {
+				"note": [
+					{
+						"text": "<p>Microsoft has released an update for Microsoft Office that turns off, by default, the Encapsulated PostScript (EPS) Filter in Office as a defense-in-depth measure. Microsoft is aware of limited targeted attacks that could leverage an unpatched vulnerability in the EPS filter and is taking this action to help reduce customer risk until the security update is released.</p>\n<p>Microsoft strongly recommends against turning on the EPS filter at this time, however customers who need to turn on the EPS filter can reference <a href=\"https://support.microsoft.com/en-us/kb/2479871\">KB Article 2479871</a>.</p>\n",
+						"title": "Description",
+						"type": "Description",
+						"ordinal": "0"
+					},
+					{
+						"text": "Microsoft Office",
+						"title": "Microsoft Office",
+						"type": "Tag",
+						"ordinal": "20"
+					}
+				]
+			},
+			"cve": "ADV170005",
+			"productstatuses": {
+				"status": {
+					"type": "Known Affected",
+					"product_id": [
+						"10753",
+						"10754",
+						"10521",
+						"10522",
+						"10603",
+						"10601",
+						"10602"
+					]
+				}
+			},
+			"threats": {
+				"threat": [
+					{
+						"type": "Impact",
+						"product_id": "10753"
+					},
+					{
+						"type": "Impact",
+						"product_id": "10754"
+					},
+					{
+						"type": "Impact",
+						"product_id": "10521"
+					},
+					{
+						"type": "Impact",
+						"product_id": "10522"
+					},
+					{
+						"type": "Impact",
+						"product_id": "10603"
+					},
+					{
+						"type": "Impact",
+						"product_id": "10601"
+					},
+					{
+						"type": "Impact",
+						"product_id": "10602"
+					},
+					{
+						"type": "Severity",
+						"product_id": "10753"
+					},
+					{
+						"type": "Severity",
+						"product_id": "10754"
+					},
+					{
+						"type": "Severity",
+						"product_id": "10521"
+					},
+					{
+						"type": "Severity",
+						"product_id": "10522"
+					},
+					{
+						"type": "Severity",
+						"product_id": "10603"
+					},
+					{
+						"type": "Severity",
+						"product_id": "10601"
+					},
+					{
+						"type": "Severity",
+						"product_id": "10602"
+					},
+					{
+						"type": "Exploit Status",
+						"description": "Publicly Disclosed:No;Exploited:Yes;Latest Software Release:Exploitation Detected;Older Software Release:Exploitation Detected"
+					}
+				]
+			},
+			"cvssscoresets": {},
+			"remediations": {
+				"remediation": [
+					{
+						"type": "Vendor Fix",
+						"description": "3178702",
+						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=1126e935-1986-4c77-995b-fc546693fb5b",
+						"supercedence": "3127986",
+						"product_id": [
+							"10753"
+						],
+						"affectedfiles": {},
+						"restart_required": "Maybe",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "3178702",
+						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=ab14986b-b878-4e96-ad9e-2c45fdb6bdd5",
+						"supercedence": "3127986",
+						"product_id": [
+							"10754"
+						],
+						"affectedfiles": {},
+						"restart_required": "Maybe",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "3141538",
+						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=0321799f-eda2-47c7-b565-d87316539029",
+						"supercedence": "3118380",
+						"product_id": [
+							"10521"
+						],
+						"affectedfiles": {},
+						"restart_required": "Maybe",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "3141538",
+						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=309fd6ac-933d-4110-825a-58b34f207df4",
+						"supercedence": "3118380",
+						"product_id": [
+							"10522"
+						],
+						"affectedfiles": {},
+						"restart_required": "Maybe",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "3178710",
+						"supercedence": "3127968",
+						"product_id": [
+							"10603"
+						],
+						"affectedfiles": {},
+						"restart_required": "Maybe",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "3178710",
+						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=2c7ae47b-31cc-4311-909a-425b3d80026f",
+						"supercedence": "3127968",
+						"product_id": [
+							"10601"
+						],
+						"affectedfiles": {},
+						"restart_required": "Maybe",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "3178710",
+						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=a53d575c-2cfe-40be-9408-deb41cf26573",
+						"supercedence": "3127968",
+						"product_id": [
+							"10602"
+						],
+						"affectedfiles": {},
+						"restart_required": "Maybe",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Mitigation",
+						"description": "<p><strong>The following mitigating factors may be helpful for customers who need to re-enable the EPS filter</strong>\nThis vulnerability could not be exploited automatically through a Web-based attack scenario. An attacker would have to host a website that contains an Office file containing a specially crafted EPS image that is used to attempt to exploit this vulnerability. An attacker would have no way to force users to visit a malicious website. Instead, an attacker would have to convince them to visit the website, typically by getting them to click a link that takes them to the attacker's site, and then convince the user to open the file in an affected Microsoft Office application.\nThere is no way for an attacker to force a user to open a specially crafted file in order for the vulnerability to be exploited.</p>\n",
+						"affectedfiles": {}
+					}
+				]
+			},
+			"acknowledgments": {
+				"acknowledgment": [
+					{
+						"name": "Genwei Jiang of <a href=\"http://www.fireeye.com/\">FireEye, Inc. </a>"
+					}
+				]
+			},
+			"revisionhistory": {
+				"revision": [
+					{
+						"number": "1.0",
+						"date": "2017-04-11T07:00:00Z",
+						"description": "<p>Information published.</p>\n"
+					},
+					{
+						"number": "1.1",
+						"date": "2017-04-12T07:00:00Z",
+						"description": "<p>Changed identifier to reduce confusion with CVE IDs. This is an informational change only.</p>\n"
+					}
+				]
+			}
+		}
+	]
 }

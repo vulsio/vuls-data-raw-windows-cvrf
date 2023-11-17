@@ -1,580 +1,580 @@
 {
-  "document_title": "October 2017 Security Updates",
-  "document_type": "Security Update",
-  "documentpublisher": {
-    "type": "Vendor",
-    "contact_details": "secure@microsoft.com",
-    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
-  },
-  "documenttracking": {
-    "identification": {
-      "id": "ADV170012",
-      "alias": "ADV170012"
-    },
-    "status": "Final",
-    "version": "1.0",
-    "revisionhistory": {
-      "revision": {
-        "number": "18",
-        "date": "2021-04-06T07:00:00Z",
-        "description": "October 2017 Security Updates"
-      }
-    },
-    "initial_release_date": "2017-10-10T07:00:00Z",
-    "current_release_date": "2021-04-06T07:00:00Z"
-  },
-  "documentnotes": {
-    "note": [
-      {
-        "text": "<p>The October security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Adobe Flash Player</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Skype for Business and Lync</li>\n<li>Chakra Core</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>ADV170016 was deprecated in lieu of CVE-2017-13080.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer.  This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041691\">4041691</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4042895\">4042895</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041676\">4041676</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041681\">4041681</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4040685\">4040685</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4049179\">4049179</a></li>\n</ul>\n",
-        "title": "Release Notes",
-        "audience": "Public",
-        "type": "Details",
-        "ordinal": "0"
-      },
-      {
-        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
-        "title": "Legal Disclaimer",
-        "audience": "Public",
-        "type": "Legal Disclaimer",
-        "ordinal": "1"
-      }
-    ]
-  },
-  "producttree": {
-    "branch": {
-      "type": "Vendor",
-      "name": "Microsoft",
-      "branch": [
-        {
-          "type": "Product Family",
-          "name": "Windows",
-          "fullproductname": [
-            {
-              "text": "Windows 10 Version 1703 for 32-bit Systems",
-              "productid": "10951"
-            },
-            {
-              "text": "Windows 10 Version 1703 for x64-based Systems",
-              "productid": "10952"
-            },
-            {
-              "text": "Windows 10 for 32-bit Systems",
-              "productid": "10729"
-            },
-            {
-              "text": "Windows 10 for x64-based Systems",
-              "productid": "10735"
-            },
-            {
-              "text": "Windows 10 Version 1511 for 32-bit Systems",
-              "productid": "10789"
-            },
-            {
-              "text": "Windows 10 Version 1511 for x64-based Systems",
-              "productid": "10788"
-            },
-            {
-              "text": "Windows 10 Version 1607 for 32-bit Systems",
-              "productid": "10852"
-            },
-            {
-              "text": "Windows 10 Version 1607 for x64-based Systems",
-              "productid": "10853"
-            },
-            {
-              "text": "Windows Server 2016",
-              "productid": "10816"
-            },
-            {
-              "text": "Windows 8.1 for 32-bit systems",
-              "productid": "10481"
-            },
-            {
-              "text": "Windows 8.1 for x64-based systems",
-              "productid": "10482"
-            },
-            {
-              "text": "Windows RT 8.1",
-              "productid": "10484"
-            },
-            {
-              "text": "Windows Server 2012 R2",
-              "productid": "10483"
-            },
-            {
-              "text": "Windows Server 2012",
-              "productid": "10378"
-            },
-            {
-              "text": "Windows 10 Version 1709 for 32-bit Systems",
-              "productid": "11453"
-            },
-            {
-              "text": "Windows 10 Version 1709 for x64-based Systems",
-              "productid": "11454"
-            }
-          ]
-        },
-        {
-          "type": "Product Family",
-          "name": "Device",
-          "fullproductname": [
-            {
-              "text": "Microsoft Surface Studio",
-              "productid": "11457"
-            },
-            {
-              "text": "Microsoft Surface Pro 4",
-              "productid": "10820"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "vulnerability": [
-    {
-      "ordinal": "0",
-      "title": "Vulnerability in TPM could allow Security Feature Bypass",
-      "notes": {
-        "note": [
-          {
-            "text": "<h2>Executive Summary</h2>\n<p>This advisory addresses CVE-2017-15361, also referred to as &quot;Return of Coppersmith's Attack&quot; (ROCA).</p>\n<p>A security vulnerability exists in certain Trusted Platform Module (TPM) chipsets. The vulnerability weakens key strength. It is important to note that this is a firmware vulnerability, and not a vulnerability in the operating system or a specific application. After you have installed software and/or firmware updates, you will need to re-enroll in any security services you are running to remediate those services. For more details contact the TPM manufacturer - https://www.infineon.com/TPM-update. For specific services and use cases that are rendered insecure, see &quot;Step 5 - Remediate services/(Use cases)&quot; under <strong>Recommended Actions</strong>.</p>\n<h2>Advisory Details</h2>\n<p><strong>Important</strong> This vulnerability is present in a specific vendor’s TPM firmware that is based on Trusted Computing Guidelines (TCG) specification family 1.2 and 2.0, not in the TPM standard or in Microsoft Windows. Some Windows security features and potentially third-party software rely on keys generated by the TPM (if available on the system). Microsoft is releasing Windows security updates to help work around the vulnerability by logging events and by allowing the generation of software based keys. Even after the operating system and/or TPM firmware updates are installed, you will need to carry out additional remediation steps to force regeneration of previously created weak TPM keys, depending on the applicable services you are running and on your particular use-cases. See Step 5 - &quot;Remediate services based on your particular use cases&quot; under <strong>Recommended Actions</strong>.</p>\n<h2>FAQ</h2>\n<p><strong>1. What systems are at risk from these vulnerabilities?</strong></p>\n<ul>\n<li><strong>Client Operating Systems</strong> Windows client systems are at increased risk due to the prevalence of TPM on client hardware systems. There are distinct advantages to using hardware encryption modules.</li>\n<li><strong>Server Operating Systems</strong> Servers with TPM modules.</li>\n</ul>\n<p><strong>2. What is a TPM?</strong></p>\n<p>See <a href=\"https://technet.microsoft.com/en-us/library/jj131725%28v=ws.11%29\">Trusted Platform Module Technology Overview</a></p>\n<p><strong>3. What is the associated CVE for this vulnerability?</strong></p>\n<p>See  <a href=\"https://www.infineon.com/TPM-update\">https://www.infineon.com/TPM-update</a></p>\n<p><strong>4. Have there been any active attacks detected?</strong></p>\n<p>No. When this security advisory was issued, Microsoft had not received any information to indicate that this vulnerability had been publicly used to attack customers.</p>\n<p><strong>5. Has this vulnerability been publicly disclosed?</strong></p>\n<p>No. Microsoft received information about the vulnerability through coordinated vulnerability disclosure.</p>\n<p><strong>6. What is the CVSS score?</strong></p>\n<p>See <a href=\"http://www.kb.cert.org/vuls/id/307015\">Vulnerability Note VU#307015:CVSS Metrics</a></p>\n<p><strong>7. What if a TPM firmware update is not available from my hardware OEM?</strong></p>\n<p>Hardware OEMs may release a TPM firmware update independently of the Microsoft software updates. The software updates are being released as a workaround to the vulnerability. To address the underlying issue, customers need to obtain and install a TPM firmware update. It is recommended that you contact your hardware manufacturer(s) for further guidance. TPM firmware updates may be combined with OEM system firmware updates or be delivered as a standalone tool by OEMs.</p>\n<p>In the event of a hardware OEM explicitly NOT issuing a firmware update, customers can:</p>\n<ul>\n<li>Decide that the operating system update (that generates software-based keys) is sufficient for your services and use-cases.  <strong>Note</strong> Services and use-case remediation will still be necessary.</li>\n<li>Move critical roles and users to devices that have updated firmware</li>\n<li>Move critical roles and users to devices that are not impacted by this vulnerability</li>\n</ul>\n<p><strong>8. I am running Windows 7 or Windows Server 2008 R2. Why do these operating systems not appear on the Affected Products table?</strong></p>\n<p>Windows 7 services and use cases are limited to BitLocker. Bitlocker on Windows 7 cannot work around the hardware issue. Therefore, because the vulnerability is in the firmware, updates are only necessary for the firmware. When TPM-based protector is used to protect the operating system volume, the security of the BitLocker protection is affected only if the TPM firmware version is 1.2.</p>\n<p>For customers with affected devices that are running Windows 7, Microsoft suggests the following actions:</p>\n<ul>\n<li>Move critical roles and users to devices that have updated firmware</li>\n<li>Move critical roles and users to devices that are not affected by this vulnerability</li>\n</ul>\n<p>If you are using non-Microsoft apps that require a TPM, you should contact the app developer to see if the app is affected.</p>\n<p><strong>9. I am running Windows Server 2012, Windows Server 2012 R2, or Windows 8.1. Why are the security-only updates listed in the Affected Products table from September 2017?</strong></p>\n<p>The updates addressing this vulnerability are part of an industry-wide coordinated disclosure to remediate the issue. Microsoft released updates for this vulnerability in a phased approach, and some of these updates were released in September.</p>\n<p><strong>Important:</strong> Because the security-only updates are not cumulative, customers who install these updates must install the September 2017 security-only update to receive the changes for this vulnerability. The security-only updates released on October 10, 2017 do not contain updates for this vulnerability.</p>\n<p><strong>10. What do the security-only updates for Windows Server 2012, Windows Server 2012 R2, and Windows 8.1  contain?</strong></p>\n<p>The updates provide:</p>\n<ul>\n<li>Detection to determine if your device has a vulnerable TPM chipset.</li>\n<li>A Virtual Smart Card event log entry indicating that the TPM verification failed.</li>\n</ul>\n<p>Note that the monthly rollups are cumulative, while Security-only updates are not. Customers who install the October monthly rollup will receive the updates for this vulnerability.</p>\n<h2>Recommended Actions</h2>\n<p><strong>1. Apply the Windows operating system updates (see Affected Products table for specific package KB numbers) first</strong></p>\n<p><strong>WARNING:</strong> Do <strong>NOT</strong> apply the TPM firmware update prior to applying the Windows operating system mitigation update. Doing so will render your system unable to determine if your system is affected. You will need this information to conduct full remedation.</p>\n<ul>\n<li>The mitigation and detection update for Windows:\n<ul>\n<li>Addresses the vulnerability by preventing the generation of weak keys by the TPM hardware. New keys are generated using a software algorithm. Microsoft recommends that customers running systems that use affected TPM chipsets install the Windows security update as an interim measure until a firmware update is available from the system manufacturer.</li>\n<li>Generates event log entries when a vulnerable TPM is detected.</li>\n<li>Does NOT reduce BitLocker risk.</li>\n</ul>\n</li>\n</ul>\n<p>The majority of customers have automatic updating enabled and will not need to take any action because the updates will be downloaded and installed automatically. Customers who have not enabled automatic updating need to check for updates and install applicable updates manually. For administrators and enterprise installations, or end users who want to install the updates manually, Microsoft recommends applying the update immediately using update management software, or by checking for updates using the Microsoft Update service. For more information on how to manually apply this specific update, see the Affected Products table.</p>\n<p><strong>2. Determine devices in your organization that are affected</strong></p>\n<p>Because both mobile and stationary systems may be affected, mixing reactive and proactive measures may be best to determine affected devices. Depending on your use-case scenario, Microsoft recommends that you use one of the following methods to determine affected devices.</p>\n<p>a. Option 1 - Use event log entries.</p>\n<p>After the applicable Windows update is applied, the system will generate Event ID 1794 in the Event Viewer after each reboot under <strong>Windows Logs - System</strong> when vulnerable firmware is identified.</p>\n<table>\n<thead>\n<tr>\n<th>Type</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Event Log</td>\n<td>Windows Log/System</td>\n</tr>\n<tr>\n<td>Event Source</td>\n<td>TPM-WMI</td>\n</tr>\n<tr>\n<td>Event ID</td>\n<td>1794</td>\n</tr>\n</tbody>\n</table>\n<p><strong>NOTE</strong>: Microsoft recommends that enterprise or home office users leverage this step as a reactive method to identify affected software.</p>\n<p>b. Option 2 - Use a script (See <strong>Additional Context</strong>) to detect if firmware on your systems contain the vulnerability.</p>\n<p><strong>NOTE</strong>: Microsoft recommends that enterprise users leverage this step as a proactive method to identify affected software.</p>\n<p>c. Option 3 - Manually check the Trusted Platform Module (TPM) Management snap-in (TPM.MSC) on each Windows 10 device</p>\n<p>On devices running Windows 10 that have the October 2017 security update installed, in a CMD prompt, type &quot;TPM.MSC&quot; to open the Trusted Platform Module (TPM) Management snap-in.  Devices with affected TPM modules will display the following error message:</p>\n<p>&quot;The TPM is ready for use.\nThe TPM firmware on this PC has a known security problem. Please contact your PC manufacturer to find out if an update is available. For more information please go to <a href=\"https://go.microsoft.com/fwlink/?linkid=852572\">https://go.microsoft.com/fwlink/?linkid=852572</a>.&quot;</p>\n<p><strong>NOTE</strong>: Microsoft recommends that consumers and Home office users leverage this step to identify affected software.</p>\n<p><strong>3. If you determine that devices in your organization are affected, analyze your risk tolerance and create short and long term resolution plans</strong></p>\n<p>A firmware update may or may not be available at the time of advisory release. Furthermore, the affected devices may represent a only small portion of your overall resources. Even though the Windows update is not a true replacement for fixing the firmware flaw it can be used as a temporary mitigation. However, even after the operating system and TPM firmware updates are installed, you will need to assess your TPM usage scenarios and take manual actions to force new keys to be generated.</p>\n<table>\n<thead>\n<tr>\n<th>Action</th>\n<th>Pros</th>\n<th>Cons</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Keep keys generated by an at-risk TPM</td>\n<td>Secrets cannot be “pried” from local machine</td>\n<td>Persists known vulnerability and creates risk, especially for high value targets and data</td>\n</tr>\n<tr>\n<td>Transition to software generated keys</td>\n<td>Cryptographically strong, and potential temporary solution while waiting for firmware updates</td>\n<td>Stored in software in local machine, and not supported by pre-Windows 8.1 / Windows Server 2012 clients and servers</td>\n</tr>\n</tbody>\n</table>\n<p><strong>4. Apply applicable firmware updates</strong></p>\n<ul>\n<li><p>If your hardware is a Surface device, please see the following article for additional information:</p>\n<p><a href=\"https://support.microsoft.com/en-us/help/4073006\">Microsoft Knowledge Base Article 4073006</a></p>\n</li>\n<li><p>If your device is not from Microsoft, apply the firmware provided by the OEM.</p>\n</li>\n<li><p>If your device OEM is not listed in the following table, please contact the OEM's Customer Support.</p>\n</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>OEM</th>\n<th>Link for firmware update</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>TPM OEM</td>\n<td><a href=\"https://www.infineon.com/TPM-update\">https://www.infineon.com/TPM-update</a></td>\n</tr>\n<tr>\n<td>Acer</td>\n<td><a href=\"https://us.answers.acer.com/app/answers/detail/a_id/51137\">https://us.answers.acer.com/app/answers/detail/a_id/51137</a></td>\n</tr>\n<tr>\n<td>Fujitsu</td>\n<td><a href=\"http://www.fujitsu.com/global/support/products/software/security/products-f/ifsa-201701e.html\">http://www.fujitsu.com/global/support/products/software/security/products-f/ifsa-201701e.html</a></td>\n</tr>\n<tr>\n<td>HP Customer Support</td>\n<td><a href=\"https://support.hp.com/us-en/document/c05792935\">https://support.hp.com/us-en/document/c05792935</a></td>\n</tr>\n<tr>\n<td>HP Enterprise Support</td>\n<td><a href=\"https://support.hpe.com/hpsc/doc/public/display?docId=emr_na-hpesbhf03789en_us\">https://support.hpe.com/hpsc/doc/public/display?docId=emr_na-hpesbhf03789en_us</a></td>\n</tr>\n<tr>\n<td>Lenovo</td>\n<td><a href=\"https://support.lenovo.com/us/en/product_security/LEN-15552\">https://support.lenovo.com/us/en/product_security/LEN-15552</a></td>\n</tr>\n<tr>\n<td>Panasonic</td>\n<td><a href=\"http://pc-dl.panasonic.co.jp/itn/info/osinfo20171026.html\">http://pc-dl.panasonic.co.jp/itn/info/osinfo20171026.html</a></td>\n</tr>\n<tr>\n<td>Toshiba</td>\n<td><a href=\"http://go.toshiba.com/tpmsecuritynotice\">http://go.toshiba.com/tpmsecuritynotice</a></td>\n</tr>\n</tbody>\n</table>\n<p><strong>5. Remediate services based on your particular use cases</strong></p>\n<p>Microsoft will continue to provide additional support to help identify and remediate this issue as it becomes available. The following table contains a list of services that you may be running on your device and a link to instructions for applying remediation steps for that service.</p>\n<p><strong>IMPORTANT</strong> BEFORE any remedition steps can be taken, Microsoft strongly recommends that a firmware update be applied. This is not a simple one-step procedure and you should fully understand the scope of the impact to you before proceeding.</p>\n<table>\n<thead>\n<tr>\n<th>SERVICE</th>\n<th>REMEDIATION STEPS</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Active Directory Certificate Services (ADCS)</td>\n<td><a href=\"https://support.microsoft.com/en-us/help/4047409\">https://support.microsoft.com/en-us/help/4047409</a></td>\n</tr>\n<tr>\n<td>Active Directory Directory Services (ADDS)</td>\n<td><a href=\"https://support.microsoft.com/en-us/help/4046462\">https://support.microsoft.com/en-us/help/4046462</a></td>\n</tr>\n<tr>\n<td>BitLocker</td>\n<td><a href=\"https://support.microsoft.com/en-us/help/4046783\">https://support.microsoft.com/en-us/help/4046783</a></td>\n</tr>\n<tr>\n<td>Credential Guard/DPAPI/Windows Information Protection</td>\n<td><a href=\"https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard-considerations#clearing-tpm-considerations\">https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard-considerations#clearing-tpm-considerations</a></td>\n</tr>\n<tr>\n<td>Device Health Attestation Service (DHA)</td>\n<td>This vulnerability may impact the validity of the DHA-report that is issued by Device Health Attestation Service. The DHA-report cannot be trusted when the originating device is Jailbroken and DHA-Service is configured to perform attestation in “AIKCert validation mode”.  To address the issue please use DHA-Cloud or configure your organization's On Premise DHA-Service to run in “ EKCert validation” mode, and update your TPM firmware to address the root cause of the vulnerability.</td>\n</tr>\n<tr>\n<td>VSC - Virtual Smart Card</td>\n<td><a href=\"https://support.microsoft.com/en-us/help/4046784\">https://support.microsoft.com/en-us/help/4046784</a></td>\n</tr>\n<tr>\n<td>Windows Hello For Business and Azure Active Directory</td>\n<td> <a href=\"https://support.microsoft.com/en-us/help/4046168\">https://support.microsoft.com/en-us/help/4046168</a></td>\n</tr>\n<tr>\n<td>Windows Hello  (and Microsoft Accounts (MSA))</td>\n<td>Affected Microsoft account users should apply the latest Windows update and reset their PIN. To find out if you are affected, follow the instructions in Step 2: Determine devices in your organization that are affected, under Recommended Actions.</td>\n</tr>\n<tr>\n<td>Windows Server 2016 Domain-joined device public key authentication</td>\n<td><a href=\"https://docs.microsoft.com/en-us/windows-server/security/kerberos/domain-joined-device-public-key-authentication\">Domain-joined Device Public Key Authentication</a></td>\n</tr>\n</tbody>\n</table>\n<p><strong>6. Clear TPM</strong></p>\n<p><strong>Important</strong>: Before using one of these methods for clearing TPM, please take note of the following:</p>\n<ul>\n<li><p>If there is any data protected by a TPM key, clearing the TPM without a data recovery plan or suspension of the protection will cause the data to become unavailable.  Microsoft recommends reviewing your current data protection scheme before clearing TPM.</p>\n</li>\n<li><p>Be aware that clearing a TPM will render ALL services that use TPM keys unusable until you complete any required remeditation steps. You may need to contact any third-party service vendors for those steps.</p>\n</li>\n<li><p>For systems running Windows 7, you must suspend BitLocker protection before clearing TPM from the operating system.  See <a href=\"https://technet.microsoft.com/en-us/library/jj649830(v=wps.630).aspx\">Suspend-BitLocker</a></p>\n</li>\n<li><p>For systems running Windows Server 2012, Windows Server 2012 R2, or Windows 8.1, it is not necessary to suspend BitLocker before clearing TPM from the operating system. It is not recommended that you clear the TPM from a firmware menu because if you have activated Device Encryption, you will be unable to suspend it in the operating system. Additionally, you  will need to retrieve your Device Encryption Recovery Key from the MSA cloud to boot after clearing the TPM.</p>\n</li>\n<li><p>Devices running Windows 10 that are protected by Credential Guard will lose secrets. For more information, see <a href=\"https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard-considerations#clearing-tpm-considerations\">Credential Guard Considerations: Clearing TPM considerations</a>.</p>\n</li>\n<li><p>To clear TPM via PowerShell, see the following:</p>\n</li>\n<li><p>For Windows Server 2012, Windows 8.1, and Windows Server 2012 R2: <a href=\"https://technet.microsoft.com/library/jj603122(v=wps.630).aspx\">Clear-Tpm</a></p>\n</li>\n<li><p>For Windows 10 and Server 2016: <a href=\"https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/clear-tpm?view=win10-ps\">Clear-Tpm</a></p>\n</li>\n<li><p>To clear TPM via GUI, see the following:</p>\n</li>\n<li><p>For Windows 7 and Windows Server 2008 R2: <a href=\"https://technet.microsoft.com/en-us/library/cc753694(v=ws.11).aspx\">Clear the TPM</a></p>\n</li>\n<li><p>For Windows Server 2012, Windows 8.1, and Windows Server 2012 R2: <a href=\"https://technet.microsoft.com/en-us/library/dn466538(v=ws.11).aspx#BKMK_clear1\">Clear all the keys from the TPM</a></p>\n</li>\n<li><p>For Windows 10 and Windows Server 2016: <a href=\"https://docs.microsoft.com/en-us/windows/device-security/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm\">Clear all the keys from the TPM</a></p>\n</li>\n</ul>\n<h2>Additional context</h2>\n<ul>\n<li>Azure AD - <a href=\"https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis\">What is Azure Active Directory?</a></li>\n<li>Bitlocker suspension - <a href=\"https://technet.microsoft.com/en-us/library/jj649830(v=wps.630).aspx\">Suspend-BitLocker</a></li>\n<li>Credential Guard: Clearing TPM considerations - <a href=\"https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard-considerations#clearing-tpm-considerations\">Clearing TPM Considerations</a></li>\n<li>Domain-joined Device Public Key Authentication - <a href=\"https://docs.microsoft.com/en-us/windows-server/security/kerberos/domain-joined-device-public-key-authentication#automatic-public-key-provisioning\">Automatic public key provisioning</a></li>\n<li>MSA Microsoft Account- <a href=\"https://technet.microsoft.com/en-us/library/dn579254(v=ws.11).aspx\">Microsoft Accounts</a></li>\n<li>TPM - <a href=\"https://technet.microsoft.com/en-us/library/cc749022%40v=ws.10%41.aspx\">Windows Trusted Platform Module Management Step-by-Step Guide</a></li>\n<li>TPM Key Attestation - <a href=\"https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/tpm-key-attestation\">TPM Key Attestation</a></li>\n<li>Virtual Smart Card overview - <a href=\"https://technet.microsoft.com/en-us/library/dn593708(v=ws.11).aspx\">Virtual Smart Card Overview</a></li>\n<li>Windows hello / Next Gen Credential - <a href=\"https://docs.microsoft.com/en-us/windows/access-protection/hello-for-business/hello-identity-verification\">Windows Hello for Business</a></li>\n</ul>\n<p>Quick methods for determining the firmware version:</p>\n<ul>\n<li>Use PowerShell cmd: Get-TPM (run as an administrator) on each device.</li>\n<li>Use the following PowerShell script, run as an administrator. <strong>Failing to run the script as an administrator will return incorrect results.</strong> In an enterprise setting, if you need to run the script remotely to check several devices, see the following:\n<ul>\n<li>PowerShell remoting setup: <a href=\"https://technet.microsoft.com/en-us/library/ff700227.aspx\">Tip: Enable and Use Remote Commands in Windows PowerShell</a></li>\n<li>PowerShell remoting usage: <a href=\"https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/running-remote-commands?view=powershell-5.1\">PowerShell 5.1:Running Remote Commands</a></li>\n</ul>\n</li>\n</ul>\n<pre><code>$IfxManufacturerIdInt = 0x49465800 # 'IFX'\n\t\t\n\t\tfunction IsInfineonFirmwareVersionAffected ($FirmwareVersion)\n\t\t{\n\t\t\t$FirmwareMajor = $FirmwareVersion[0]\n\t\t\t$FirmwareMinor = $FirmwareVersion[1]\n\t\t\tswitch ($FirmwareMajor)\n\t\t\t{\n\t\t\t\t4 { return $FirmwareMinor -le 33 -or ($FirmwareMinor -ge 40 -and $FirmwareMinor -le 42) }\n\t\t\t\t5 { return $FirmwareMinor -le 61 }\n\t\t\t\t6 { return $FirmwareMinor -le 42 }\n\t\t\t\t7 { return $FirmwareMinor -le 61 }\n\t\t\t\t133 { return $FirmwareMinor -le 32 }\n\t\t\t\tdefault { return $False }\n\t\t\t}\n\t\t}\n\t\t\n\t\tfunction IsInfineonFirmwareVersionSusceptible ($FirmwareMajor)\n\t\t{\n\t\t\tswitch ($FirmwareMajor)\n\t\t\t{\n\t\t\t\t4 { return $True }\n\t\t\t\t5 { return $True }\n\t\t\t\t6 { return $True }\n\t\t\t\t7 { return $True }\n\t\t\t\t133 { return $True }\n\t\t\t\tdefault { return $False }\n\t\t\t}\n\t\t}\n\t\t\n\t\t$Tpm = Get-Tpm\n\t\t$ManufacturerIdInt = $Tpm.ManufacturerId\n\t\t$FirmwareVersion = $Tpm.ManufacturerVersion -split &quot;\\.&quot;\n\t\t$FirmwareVersionAtLastProvision = (Get-ItemProperty -Path &quot;HKLM:\\SYSTEM\\CurrentControlSet\\Services\\TPM\\WMI&quot; -Name &quot;FirmwareVersionAtLastProvision&quot; -ErrorAction SilentlyContinue).FirmwareVersionAtLastProvision\n\t\t\n\t\tif (!$Tpm)\n\t\t{\n\t\t\tWrite-Host &quot;No TPM found on this system, so the issue does not apply here.&quot;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tif ($ManufacturerIdInt -ne $IfxManufacturerIdInt)\n\t\t\t{\n\t\t\t\tWrite-Host &quot;This non-Infineon TPM is not affected by the issue.&quot;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tif ($FirmwareVersion.Length -lt 2)\n\t\t\t\t{\n\t\t\t\t\tWrite-Error &quot;Could not get TPM firmware version from this TPM.&quot;\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\tif (IsInfineonFirmwareVersionSusceptible($FirmwareVersion[0]))\n\t\t\t\t\t{\n\t\t\t\t\t\tif (IsInfineonFirmwareVersionAffected($FirmwareVersion))\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tWrite-Host (&quot;This Infineon firmware version {0}.{1} TPM is not safe. Please update your firmware.&quot; -f [int]$FirmwareVersion[0], [int]$FirmwareVersion[1])\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tWrite-Host (&quot;This Infineon firmware version {0}.{1} TPM is safe.&quot; -f [int]$FirmwareVersion[0], [int]$FirmwareVersion[1])\n\t\t\t\t\t\t\tif (!$FirmwareVersionAtLastProvision)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tWrite-Host (&quot;We cannot determine what the firmware version was when the TPM was last cleared. Please clear your TPM now that the firmware is safe.&quot;)\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\telseif ($FirmwareVersion -ne $FirmwareVersionAtLastProvision)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tWrite-Host (&quot;The firmware version when the TPM was last cleared was different from the current firmware version. Please clear your TPM now that the firmware is safe.&quot;)\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\telse\n\t\t\t\t\t{\n\t\t\t\t\t\tWrite-Host (&quot;This Infineon firmware version {0}.{1} TPM is safe.&quot; -f [int]$FirmwareVersion[0], [int]$FirmwareVersion[1])\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n</code></pre>\n",
-            "title": "Description",
-            "type": "Description",
-            "ordinal": "0"
-          },
-          {
-            "text": "Windows TPM",
-            "title": "Windows TPM",
-            "type": "Tag",
-            "ordinal": "20"
-          },
-          {
-            "text": "Microsoft",
-            "title": "Issuing CNA",
-            "type": "CNA",
-            "ordinal": "30"
-          }
-        ]
-      },
-      "cve": "ADV170012",
-      "productstatuses": {
-        "status": {
-          "type": "Known Affected",
-          "product_id": [
-            "10951",
-            "10952",
-            "10729",
-            "10735",
-            "10789",
-            "10788",
-            "10852",
-            "10853",
-            "10816",
-            "10481",
-            "10482",
-            "10484",
-            "10378",
-            "10483",
-            "11457",
-            "10820",
-            "11453",
-            "11454"
-          ]
-        }
-      },
-      "threats": {
-        "threat": [
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10951"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10952"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10729"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10735"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10789"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10788"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10852"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10853"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10816"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10481"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10482"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10484"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10378"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10483"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "11457"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "10820"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "11453"
-          },
-          {
-            "type": "Impact",
-            "description": "Security Feature Bypass",
-            "product_id": "11454"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10951"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10952"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10729"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10735"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10789"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10788"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10852"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10853"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10816"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10481"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10482"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10484"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10378"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10483"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "11457"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10820"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "11453"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "11454"
-          },
-          {
-            "type": "Exploit Status",
-            "description": "Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation More Likely;Older Software Release:Exploitation More Likely;DOS:N/A"
-          }
-        ]
-      },
-      "cvssscoresets": {},
-      "remediations": {
-        "remediation": [
-          {
-            "type": "Vendor Fix",
-            "description": "4041676",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041676",
-            "supercedence": "4038788",
-            "product_id": [
-              "10951",
-              "10952"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4042895",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4042895",
-            "supercedence": "4038781",
-            "product_id": [
-              "10729",
-              "10735"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4041689",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041689",
-            "supercedence": "4038783",
-            "product_id": [
-              "10789",
-              "10788"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4041691",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041691",
-            "supercedence": "4038782",
-            "product_id": [
-              "10852",
-              "10853",
-              "10816"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4041693",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041693",
-            "supercedence": "4038792",
-            "product_id": [
-              "10481",
-              "10482",
-              "10484",
-              "10483"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4038793",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4038793",
-            "product_id": [
-              "10481",
-              "10482"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4041690",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041690",
-            "supercedence": "4038799",
-            "product_id": [
-              "10378"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Monthly Rollup"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4041679",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041679",
-            "product_id": [
-              "10378"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4041687",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041687",
-            "product_id": [
-              "10483"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Only"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4023490",
-            "product_id": [
-              "11457"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4023489",
-            "product_id": [
-              "10820"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          },
-          {
-            "type": "Vendor Fix",
-            "description": "4048955",
-            "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4048955",
-            "supercedence": "4042198",
-            "product_id": [
-              "11453",
-              "11454"
-            ],
-            "affectedfiles": {},
-            "restart_required": "Yes",
-            "sub_type": "Security Update"
-          }
-        ]
-      },
-      "acknowledgments": {},
-      "revisionhistory": {
-        "revision": [
-          {
-            "number": "1.0",
-            "date": "2017-10-10T07:00:00Z",
-            "description": "<p>Information published.</p>\n"
-          },
-          {
-            "number": "1.1",
-            "date": "2017-10-10T07:00:00Z",
-            "description": "<p>To keep the information in the advisory up-to-date, made several corrections: corrected link to HP OEM site, added link to Lenovo OEM site, added note that failure to run the PowerShell script as an administrator will return incorrect results. These are all informational changes only.</p>\n"
-          },
-          {
-            "number": "1.2",
-            "date": "2017-10-12T07:00:00Z",
-            "description": "<p>Added information about how to use the PowerShell script to remotely check devices for affected TPMs. Clarified that BitLocker protection is affected only if the TPM firmware version is 1.2. These are informational changes only.</p>\n"
-          },
-          {
-            "number": "1.3",
-            "date": "2017-10-17T07:00:00Z",
-            "description": "<p>The following revisions are informational changes only:</p>\n<ul>\n<li>Added CVE number and vulnerability name.</li>\n<li>Added links for OEM information for HPE and Toshiba to the table under Step 4: Apply applicable firmware updates.</li>\n<li>Added information for MSA to the table under Step 5: Remediate services based on your particular use cases.</li>\n</ul>\n"
-          },
-          {
-            "number": "1.4",
-            "date": "2017-10-18T07:00:00Z",
-            "description": "<p>The following revisions added under Step 4: Apply applicable firmware updates are informational only:</p>\n<ul>\n<li>Added list of affected Microsoft Surface devices.</li>\n<li>Added link for Acer to the table of OEM information.</li>\n</ul>\n"
-          },
-          {
-            "number": "1.6",
-            "date": "2017-10-26T07:00:00Z",
-            "description": "<p>The following revisions are informational changes only: * Added link for OEM information for Panasonic to the table under Step 4: Apply applicable firmware updates. * Revised Windows Hello information in the table under Step 5: Remediate services based on your particular use cases.</p>\n"
-          },
-          {
-            "number": "2.0",
-            "date": "2017-11-16T08:00:00Z",
-            "description": "<p>Revised the Affected Products table to include Windows 10 Version 1709 for 32-bit Systems and Windows 10 Version 1709 for x64-based Systems because they are affected by CVE-2017-15361, described in this advisory. In addition, the following informational-only changes have been made: *Under Recommended Action #4, Revised the list of affected Surface devices to indicate that Surface Hub is not affected by this vulnerability. *Under Recommended Action #6, updated the links for information about clearing the TPM.</p>\n"
-          },
-          {
-            "number": "2.1",
-            "date": "2018-01-11T08:00:00Z",
-            "description": "<p>Under Recommended Action #4, replaced the information for Surface products with a link to Microsoft Knowledge Base Article 4073006. Customers with Surface devices should refer to the article for the latest update information.</p>\n"
-          },
-          {
-            "number": "1.5",
-            "date": "2017-10-20T07:00:00Z",
-            "description": "<p>Removed the October security-only updates for Windows Server 2012, Windows Server 2012 R2, and Windows 8.1 from the Affected Products table because these updates do not address the vulnerability discussed in this advisory. Clarified in FAQ 9 and 10 that customers running these versions of Windows who install security-only updates must install the either September security-only updates or the October monthly rollup to receive the changes for this vulnerability. These are informational changes only.</p>\n"
-          }
-        ]
-      }
-    }
-  ]
+	"document_title": "October 2017 Security Updates",
+	"document_type": "Security Update",
+	"documentpublisher": {
+		"type": "Vendor",
+		"contact_details": "secure@microsoft.com",
+		"issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+	},
+	"documenttracking": {
+		"identification": {
+			"id": "ADV170012",
+			"alias": "ADV170012"
+		},
+		"status": "Final",
+		"version": "1.0",
+		"revisionhistory": {
+			"revision": {
+				"number": "18",
+				"date": "2021-04-06T07:00:00Z",
+				"description": "October 2017 Security Updates"
+			}
+		},
+		"initial_release_date": "2017-10-10T07:00:00Z",
+		"current_release_date": "2021-04-06T07:00:00Z"
+	},
+	"documentnotes": {
+		"note": [
+			{
+				"text": "<p>The October security release consists of security updates for the following software:</p>\n<ul>\n<li>Internet Explorer</li>\n<li>Microsoft Edge</li>\n<li>Microsoft Windows</li>\n<li>Adobe Flash Player</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Skype for Business and Lync</li>\n<li>Chakra Core</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>ADV170016 was deprecated in lieu of CVE-2017-13080.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Starting in March 2017, a delta package will be available on the Microsoft Update Catalog for Windows 10 version 1607 and newer.  This delta package contains just the delta changes between the previous month and the current release.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<ul>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041691\">4041691</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4042895\">4042895</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041676\">4041676</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4041681\">4041681</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4040685\">4040685</a></li>\n<li><a href=\"https://support.microsoft.com/en-us/help/4049179\">4049179</a></li>\n</ul>\n",
+				"title": "Release Notes",
+				"audience": "Public",
+				"type": "Details",
+				"ordinal": "0"
+			},
+			{
+				"text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+				"title": "Legal Disclaimer",
+				"audience": "Public",
+				"type": "Legal Disclaimer",
+				"ordinal": "1"
+			}
+		]
+	},
+	"producttree": {
+		"branch": {
+			"type": "Vendor",
+			"name": "Microsoft",
+			"branch": [
+				{
+					"type": "Product Family",
+					"name": "Windows",
+					"fullproductname": [
+						{
+							"text": "Windows 10 Version 1703 for 32-bit Systems",
+							"productid": "10951"
+						},
+						{
+							"text": "Windows 10 Version 1703 for x64-based Systems",
+							"productid": "10952"
+						},
+						{
+							"text": "Windows 10 for 32-bit Systems",
+							"productid": "10729"
+						},
+						{
+							"text": "Windows 10 for x64-based Systems",
+							"productid": "10735"
+						},
+						{
+							"text": "Windows 10 Version 1511 for 32-bit Systems",
+							"productid": "10789"
+						},
+						{
+							"text": "Windows 10 Version 1511 for x64-based Systems",
+							"productid": "10788"
+						},
+						{
+							"text": "Windows 10 Version 1607 for 32-bit Systems",
+							"productid": "10852"
+						},
+						{
+							"text": "Windows 10 Version 1607 for x64-based Systems",
+							"productid": "10853"
+						},
+						{
+							"text": "Windows Server 2016",
+							"productid": "10816"
+						},
+						{
+							"text": "Windows 8.1 for 32-bit systems",
+							"productid": "10481"
+						},
+						{
+							"text": "Windows 8.1 for x64-based systems",
+							"productid": "10482"
+						},
+						{
+							"text": "Windows RT 8.1",
+							"productid": "10484"
+						},
+						{
+							"text": "Windows Server 2012 R2",
+							"productid": "10483"
+						},
+						{
+							"text": "Windows Server 2012",
+							"productid": "10378"
+						},
+						{
+							"text": "Windows 10 Version 1709 for 32-bit Systems",
+							"productid": "11453"
+						},
+						{
+							"text": "Windows 10 Version 1709 for x64-based Systems",
+							"productid": "11454"
+						}
+					]
+				},
+				{
+					"type": "Product Family",
+					"name": "Device",
+					"fullproductname": [
+						{
+							"text": "Microsoft Surface Studio",
+							"productid": "11457"
+						},
+						{
+							"text": "Microsoft Surface Pro 4",
+							"productid": "10820"
+						}
+					]
+				}
+			]
+		}
+	},
+	"vulnerability": [
+		{
+			"ordinal": "0",
+			"title": "Vulnerability in TPM could allow Security Feature Bypass",
+			"notes": {
+				"note": [
+					{
+						"text": "<h2>Executive Summary</h2>\n<p>This advisory addresses CVE-2017-15361, also referred to as &quot;Return of Coppersmith's Attack&quot; (ROCA).</p>\n<p>A security vulnerability exists in certain Trusted Platform Module (TPM) chipsets. The vulnerability weakens key strength. It is important to note that this is a firmware vulnerability, and not a vulnerability in the operating system or a specific application. After you have installed software and/or firmware updates, you will need to re-enroll in any security services you are running to remediate those services. For more details contact the TPM manufacturer - https://www.infineon.com/TPM-update. For specific services and use cases that are rendered insecure, see &quot;Step 5 - Remediate services/(Use cases)&quot; under <strong>Recommended Actions</strong>.</p>\n<h2>Advisory Details</h2>\n<p><strong>Important</strong> This vulnerability is present in a specific vendor’s TPM firmware that is based on Trusted Computing Guidelines (TCG) specification family 1.2 and 2.0, not in the TPM standard or in Microsoft Windows. Some Windows security features and potentially third-party software rely on keys generated by the TPM (if available on the system). Microsoft is releasing Windows security updates to help work around the vulnerability by logging events and by allowing the generation of software based keys. Even after the operating system and/or TPM firmware updates are installed, you will need to carry out additional remediation steps to force regeneration of previously created weak TPM keys, depending on the applicable services you are running and on your particular use-cases. See Step 5 - &quot;Remediate services based on your particular use cases&quot; under <strong>Recommended Actions</strong>.</p>\n<h2>FAQ</h2>\n<p><strong>1. What systems are at risk from these vulnerabilities?</strong></p>\n<ul>\n<li><strong>Client Operating Systems</strong> Windows client systems are at increased risk due to the prevalence of TPM on client hardware systems. There are distinct advantages to using hardware encryption modules.</li>\n<li><strong>Server Operating Systems</strong> Servers with TPM modules.</li>\n</ul>\n<p><strong>2. What is a TPM?</strong></p>\n<p>See <a href=\"https://technet.microsoft.com/en-us/library/jj131725%28v=ws.11%29\">Trusted Platform Module Technology Overview</a></p>\n<p><strong>3. What is the associated CVE for this vulnerability?</strong></p>\n<p>See  <a href=\"https://www.infineon.com/TPM-update\">https://www.infineon.com/TPM-update</a></p>\n<p><strong>4. Have there been any active attacks detected?</strong></p>\n<p>No. When this security advisory was issued, Microsoft had not received any information to indicate that this vulnerability had been publicly used to attack customers.</p>\n<p><strong>5. Has this vulnerability been publicly disclosed?</strong></p>\n<p>No. Microsoft received information about the vulnerability through coordinated vulnerability disclosure.</p>\n<p><strong>6. What is the CVSS score?</strong></p>\n<p>See <a href=\"http://www.kb.cert.org/vuls/id/307015\">Vulnerability Note VU#307015:CVSS Metrics</a></p>\n<p><strong>7. What if a TPM firmware update is not available from my hardware OEM?</strong></p>\n<p>Hardware OEMs may release a TPM firmware update independently of the Microsoft software updates. The software updates are being released as a workaround to the vulnerability. To address the underlying issue, customers need to obtain and install a TPM firmware update. It is recommended that you contact your hardware manufacturer(s) for further guidance. TPM firmware updates may be combined with OEM system firmware updates or be delivered as a standalone tool by OEMs.</p>\n<p>In the event of a hardware OEM explicitly NOT issuing a firmware update, customers can:</p>\n<ul>\n<li>Decide that the operating system update (that generates software-based keys) is sufficient for your services and use-cases.  <strong>Note</strong> Services and use-case remediation will still be necessary.</li>\n<li>Move critical roles and users to devices that have updated firmware</li>\n<li>Move critical roles and users to devices that are not impacted by this vulnerability</li>\n</ul>\n<p><strong>8. I am running Windows 7 or Windows Server 2008 R2. Why do these operating systems not appear on the Affected Products table?</strong></p>\n<p>Windows 7 services and use cases are limited to BitLocker. Bitlocker on Windows 7 cannot work around the hardware issue. Therefore, because the vulnerability is in the firmware, updates are only necessary for the firmware. When TPM-based protector is used to protect the operating system volume, the security of the BitLocker protection is affected only if the TPM firmware version is 1.2.</p>\n<p>For customers with affected devices that are running Windows 7, Microsoft suggests the following actions:</p>\n<ul>\n<li>Move critical roles and users to devices that have updated firmware</li>\n<li>Move critical roles and users to devices that are not affected by this vulnerability</li>\n</ul>\n<p>If you are using non-Microsoft apps that require a TPM, you should contact the app developer to see if the app is affected.</p>\n<p><strong>9. I am running Windows Server 2012, Windows Server 2012 R2, or Windows 8.1. Why are the security-only updates listed in the Affected Products table from September 2017?</strong></p>\n<p>The updates addressing this vulnerability are part of an industry-wide coordinated disclosure to remediate the issue. Microsoft released updates for this vulnerability in a phased approach, and some of these updates were released in September.</p>\n<p><strong>Important:</strong> Because the security-only updates are not cumulative, customers who install these updates must install the September 2017 security-only update to receive the changes for this vulnerability. The security-only updates released on October 10, 2017 do not contain updates for this vulnerability.</p>\n<p><strong>10. What do the security-only updates for Windows Server 2012, Windows Server 2012 R2, and Windows 8.1  contain?</strong></p>\n<p>The updates provide:</p>\n<ul>\n<li>Detection to determine if your device has a vulnerable TPM chipset.</li>\n<li>A Virtual Smart Card event log entry indicating that the TPM verification failed.</li>\n</ul>\n<p>Note that the monthly rollups are cumulative, while Security-only updates are not. Customers who install the October monthly rollup will receive the updates for this vulnerability.</p>\n<h2>Recommended Actions</h2>\n<p><strong>1. Apply the Windows operating system updates (see Affected Products table for specific package KB numbers) first</strong></p>\n<p><strong>WARNING:</strong> Do <strong>NOT</strong> apply the TPM firmware update prior to applying the Windows operating system mitigation update. Doing so will render your system unable to determine if your system is affected. You will need this information to conduct full remedation.</p>\n<ul>\n<li>The mitigation and detection update for Windows:\n<ul>\n<li>Addresses the vulnerability by preventing the generation of weak keys by the TPM hardware. New keys are generated using a software algorithm. Microsoft recommends that customers running systems that use affected TPM chipsets install the Windows security update as an interim measure until a firmware update is available from the system manufacturer.</li>\n<li>Generates event log entries when a vulnerable TPM is detected.</li>\n<li>Does NOT reduce BitLocker risk.</li>\n</ul>\n</li>\n</ul>\n<p>The majority of customers have automatic updating enabled and will not need to take any action because the updates will be downloaded and installed automatically. Customers who have not enabled automatic updating need to check for updates and install applicable updates manually. For administrators and enterprise installations, or end users who want to install the updates manually, Microsoft recommends applying the update immediately using update management software, or by checking for updates using the Microsoft Update service. For more information on how to manually apply this specific update, see the Affected Products table.</p>\n<p><strong>2. Determine devices in your organization that are affected</strong></p>\n<p>Because both mobile and stationary systems may be affected, mixing reactive and proactive measures may be best to determine affected devices. Depending on your use-case scenario, Microsoft recommends that you use one of the following methods to determine affected devices.</p>\n<p>a. Option 1 - Use event log entries.</p>\n<p>After the applicable Windows update is applied, the system will generate Event ID 1794 in the Event Viewer after each reboot under <strong>Windows Logs - System</strong> when vulnerable firmware is identified.</p>\n<table>\n<thead>\n<tr>\n<th>Type</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Event Log</td>\n<td>Windows Log/System</td>\n</tr>\n<tr>\n<td>Event Source</td>\n<td>TPM-WMI</td>\n</tr>\n<tr>\n<td>Event ID</td>\n<td>1794</td>\n</tr>\n</tbody>\n</table>\n<p><strong>NOTE</strong>: Microsoft recommends that enterprise or home office users leverage this step as a reactive method to identify affected software.</p>\n<p>b. Option 2 - Use a script (See <strong>Additional Context</strong>) to detect if firmware on your systems contain the vulnerability.</p>\n<p><strong>NOTE</strong>: Microsoft recommends that enterprise users leverage this step as a proactive method to identify affected software.</p>\n<p>c. Option 3 - Manually check the Trusted Platform Module (TPM) Management snap-in (TPM.MSC) on each Windows 10 device</p>\n<p>On devices running Windows 10 that have the October 2017 security update installed, in a CMD prompt, type &quot;TPM.MSC&quot; to open the Trusted Platform Module (TPM) Management snap-in.  Devices with affected TPM modules will display the following error message:</p>\n<p>&quot;The TPM is ready for use.\nThe TPM firmware on this PC has a known security problem. Please contact your PC manufacturer to find out if an update is available. For more information please go to <a href=\"https://go.microsoft.com/fwlink/?linkid=852572\">https://go.microsoft.com/fwlink/?linkid=852572</a>.&quot;</p>\n<p><strong>NOTE</strong>: Microsoft recommends that consumers and Home office users leverage this step to identify affected software.</p>\n<p><strong>3. If you determine that devices in your organization are affected, analyze your risk tolerance and create short and long term resolution plans</strong></p>\n<p>A firmware update may or may not be available at the time of advisory release. Furthermore, the affected devices may represent a only small portion of your overall resources. Even though the Windows update is not a true replacement for fixing the firmware flaw it can be used as a temporary mitigation. However, even after the operating system and TPM firmware updates are installed, you will need to assess your TPM usage scenarios and take manual actions to force new keys to be generated.</p>\n<table>\n<thead>\n<tr>\n<th>Action</th>\n<th>Pros</th>\n<th>Cons</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Keep keys generated by an at-risk TPM</td>\n<td>Secrets cannot be “pried” from local machine</td>\n<td>Persists known vulnerability and creates risk, especially for high value targets and data</td>\n</tr>\n<tr>\n<td>Transition to software generated keys</td>\n<td>Cryptographically strong, and potential temporary solution while waiting for firmware updates</td>\n<td>Stored in software in local machine, and not supported by pre-Windows 8.1 / Windows Server 2012 clients and servers</td>\n</tr>\n</tbody>\n</table>\n<p><strong>4. Apply applicable firmware updates</strong></p>\n<ul>\n<li><p>If your hardware is a Surface device, please see the following article for additional information:</p>\n<p><a href=\"https://support.microsoft.com/en-us/help/4073006\">Microsoft Knowledge Base Article 4073006</a></p>\n</li>\n<li><p>If your device is not from Microsoft, apply the firmware provided by the OEM.</p>\n</li>\n<li><p>If your device OEM is not listed in the following table, please contact the OEM's Customer Support.</p>\n</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>OEM</th>\n<th>Link for firmware update</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>TPM OEM</td>\n<td><a href=\"https://www.infineon.com/TPM-update\">https://www.infineon.com/TPM-update</a></td>\n</tr>\n<tr>\n<td>Acer</td>\n<td><a href=\"https://us.answers.acer.com/app/answers/detail/a_id/51137\">https://us.answers.acer.com/app/answers/detail/a_id/51137</a></td>\n</tr>\n<tr>\n<td>Fujitsu</td>\n<td><a href=\"http://www.fujitsu.com/global/support/products/software/security/products-f/ifsa-201701e.html\">http://www.fujitsu.com/global/support/products/software/security/products-f/ifsa-201701e.html</a></td>\n</tr>\n<tr>\n<td>HP Customer Support</td>\n<td><a href=\"https://support.hp.com/us-en/document/c05792935\">https://support.hp.com/us-en/document/c05792935</a></td>\n</tr>\n<tr>\n<td>HP Enterprise Support</td>\n<td><a href=\"https://support.hpe.com/hpsc/doc/public/display?docId=emr_na-hpesbhf03789en_us\">https://support.hpe.com/hpsc/doc/public/display?docId=emr_na-hpesbhf03789en_us</a></td>\n</tr>\n<tr>\n<td>Lenovo</td>\n<td><a href=\"https://support.lenovo.com/us/en/product_security/LEN-15552\">https://support.lenovo.com/us/en/product_security/LEN-15552</a></td>\n</tr>\n<tr>\n<td>Panasonic</td>\n<td><a href=\"http://pc-dl.panasonic.co.jp/itn/info/osinfo20171026.html\">http://pc-dl.panasonic.co.jp/itn/info/osinfo20171026.html</a></td>\n</tr>\n<tr>\n<td>Toshiba</td>\n<td><a href=\"http://go.toshiba.com/tpmsecuritynotice\">http://go.toshiba.com/tpmsecuritynotice</a></td>\n</tr>\n</tbody>\n</table>\n<p><strong>5. Remediate services based on your particular use cases</strong></p>\n<p>Microsoft will continue to provide additional support to help identify and remediate this issue as it becomes available. The following table contains a list of services that you may be running on your device and a link to instructions for applying remediation steps for that service.</p>\n<p><strong>IMPORTANT</strong> BEFORE any remedition steps can be taken, Microsoft strongly recommends that a firmware update be applied. This is not a simple one-step procedure and you should fully understand the scope of the impact to you before proceeding.</p>\n<table>\n<thead>\n<tr>\n<th>SERVICE</th>\n<th>REMEDIATION STEPS</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Active Directory Certificate Services (ADCS)</td>\n<td><a href=\"https://support.microsoft.com/en-us/help/4047409\">https://support.microsoft.com/en-us/help/4047409</a></td>\n</tr>\n<tr>\n<td>Active Directory Directory Services (ADDS)</td>\n<td><a href=\"https://support.microsoft.com/en-us/help/4046462\">https://support.microsoft.com/en-us/help/4046462</a></td>\n</tr>\n<tr>\n<td>BitLocker</td>\n<td><a href=\"https://support.microsoft.com/en-us/help/4046783\">https://support.microsoft.com/en-us/help/4046783</a></td>\n</tr>\n<tr>\n<td>Credential Guard/DPAPI/Windows Information Protection</td>\n<td><a href=\"https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard-considerations#clearing-tpm-considerations\">https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard-considerations#clearing-tpm-considerations</a></td>\n</tr>\n<tr>\n<td>Device Health Attestation Service (DHA)</td>\n<td>This vulnerability may impact the validity of the DHA-report that is issued by Device Health Attestation Service. The DHA-report cannot be trusted when the originating device is Jailbroken and DHA-Service is configured to perform attestation in “AIKCert validation mode”.  To address the issue please use DHA-Cloud or configure your organization's On Premise DHA-Service to run in “ EKCert validation” mode, and update your TPM firmware to address the root cause of the vulnerability.</td>\n</tr>\n<tr>\n<td>VSC - Virtual Smart Card</td>\n<td><a href=\"https://support.microsoft.com/en-us/help/4046784\">https://support.microsoft.com/en-us/help/4046784</a></td>\n</tr>\n<tr>\n<td>Windows Hello For Business and Azure Active Directory</td>\n<td> <a href=\"https://support.microsoft.com/en-us/help/4046168\">https://support.microsoft.com/en-us/help/4046168</a></td>\n</tr>\n<tr>\n<td>Windows Hello  (and Microsoft Accounts (MSA))</td>\n<td>Affected Microsoft account users should apply the latest Windows update and reset their PIN. To find out if you are affected, follow the instructions in Step 2: Determine devices in your organization that are affected, under Recommended Actions.</td>\n</tr>\n<tr>\n<td>Windows Server 2016 Domain-joined device public key authentication</td>\n<td><a href=\"https://docs.microsoft.com/en-us/windows-server/security/kerberos/domain-joined-device-public-key-authentication\">Domain-joined Device Public Key Authentication</a></td>\n</tr>\n</tbody>\n</table>\n<p><strong>6. Clear TPM</strong></p>\n<p><strong>Important</strong>: Before using one of these methods for clearing TPM, please take note of the following:</p>\n<ul>\n<li><p>If there is any data protected by a TPM key, clearing the TPM without a data recovery plan or suspension of the protection will cause the data to become unavailable.  Microsoft recommends reviewing your current data protection scheme before clearing TPM.</p>\n</li>\n<li><p>Be aware that clearing a TPM will render ALL services that use TPM keys unusable until you complete any required remeditation steps. You may need to contact any third-party service vendors for those steps.</p>\n</li>\n<li><p>For systems running Windows 7, you must suspend BitLocker protection before clearing TPM from the operating system.  See <a href=\"https://technet.microsoft.com/en-us/library/jj649830(v=wps.630).aspx\">Suspend-BitLocker</a></p>\n</li>\n<li><p>For systems running Windows Server 2012, Windows Server 2012 R2, or Windows 8.1, it is not necessary to suspend BitLocker before clearing TPM from the operating system. It is not recommended that you clear the TPM from a firmware menu because if you have activated Device Encryption, you will be unable to suspend it in the operating system. Additionally, you  will need to retrieve your Device Encryption Recovery Key from the MSA cloud to boot after clearing the TPM.</p>\n</li>\n<li><p>Devices running Windows 10 that are protected by Credential Guard will lose secrets. For more information, see <a href=\"https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard-considerations#clearing-tpm-considerations\">Credential Guard Considerations: Clearing TPM considerations</a>.</p>\n</li>\n<li><p>To clear TPM via PowerShell, see the following:</p>\n</li>\n<li><p>For Windows Server 2012, Windows 8.1, and Windows Server 2012 R2: <a href=\"https://technet.microsoft.com/library/jj603122(v=wps.630).aspx\">Clear-Tpm</a></p>\n</li>\n<li><p>For Windows 10 and Server 2016: <a href=\"https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/clear-tpm?view=win10-ps\">Clear-Tpm</a></p>\n</li>\n<li><p>To clear TPM via GUI, see the following:</p>\n</li>\n<li><p>For Windows 7 and Windows Server 2008 R2: <a href=\"https://technet.microsoft.com/en-us/library/cc753694(v=ws.11).aspx\">Clear the TPM</a></p>\n</li>\n<li><p>For Windows Server 2012, Windows 8.1, and Windows Server 2012 R2: <a href=\"https://technet.microsoft.com/en-us/library/dn466538(v=ws.11).aspx#BKMK_clear1\">Clear all the keys from the TPM</a></p>\n</li>\n<li><p>For Windows 10 and Windows Server 2016: <a href=\"https://docs.microsoft.com/en-us/windows/device-security/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm\">Clear all the keys from the TPM</a></p>\n</li>\n</ul>\n<h2>Additional context</h2>\n<ul>\n<li>Azure AD - <a href=\"https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis\">What is Azure Active Directory?</a></li>\n<li>Bitlocker suspension - <a href=\"https://technet.microsoft.com/en-us/library/jj649830(v=wps.630).aspx\">Suspend-BitLocker</a></li>\n<li>Credential Guard: Clearing TPM considerations - <a href=\"https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard-considerations#clearing-tpm-considerations\">Clearing TPM Considerations</a></li>\n<li>Domain-joined Device Public Key Authentication - <a href=\"https://docs.microsoft.com/en-us/windows-server/security/kerberos/domain-joined-device-public-key-authentication#automatic-public-key-provisioning\">Automatic public key provisioning</a></li>\n<li>MSA Microsoft Account- <a href=\"https://technet.microsoft.com/en-us/library/dn579254(v=ws.11).aspx\">Microsoft Accounts</a></li>\n<li>TPM - <a href=\"https://technet.microsoft.com/en-us/library/cc749022%40v=ws.10%41.aspx\">Windows Trusted Platform Module Management Step-by-Step Guide</a></li>\n<li>TPM Key Attestation - <a href=\"https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/tpm-key-attestation\">TPM Key Attestation</a></li>\n<li>Virtual Smart Card overview - <a href=\"https://technet.microsoft.com/en-us/library/dn593708(v=ws.11).aspx\">Virtual Smart Card Overview</a></li>\n<li>Windows hello / Next Gen Credential - <a href=\"https://docs.microsoft.com/en-us/windows/access-protection/hello-for-business/hello-identity-verification\">Windows Hello for Business</a></li>\n</ul>\n<p>Quick methods for determining the firmware version:</p>\n<ul>\n<li>Use PowerShell cmd: Get-TPM (run as an administrator) on each device.</li>\n<li>Use the following PowerShell script, run as an administrator. <strong>Failing to run the script as an administrator will return incorrect results.</strong> In an enterprise setting, if you need to run the script remotely to check several devices, see the following:\n<ul>\n<li>PowerShell remoting setup: <a href=\"https://technet.microsoft.com/en-us/library/ff700227.aspx\">Tip: Enable and Use Remote Commands in Windows PowerShell</a></li>\n<li>PowerShell remoting usage: <a href=\"https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/running-remote-commands?view=powershell-5.1\">PowerShell 5.1:Running Remote Commands</a></li>\n</ul>\n</li>\n</ul>\n<pre><code>$IfxManufacturerIdInt = 0x49465800 # 'IFX'\n\t\t\n\t\tfunction IsInfineonFirmwareVersionAffected ($FirmwareVersion)\n\t\t{\n\t\t\t$FirmwareMajor = $FirmwareVersion[0]\n\t\t\t$FirmwareMinor = $FirmwareVersion[1]\n\t\t\tswitch ($FirmwareMajor)\n\t\t\t{\n\t\t\t\t4 { return $FirmwareMinor -le 33 -or ($FirmwareMinor -ge 40 -and $FirmwareMinor -le 42) }\n\t\t\t\t5 { return $FirmwareMinor -le 61 }\n\t\t\t\t6 { return $FirmwareMinor -le 42 }\n\t\t\t\t7 { return $FirmwareMinor -le 61 }\n\t\t\t\t133 { return $FirmwareMinor -le 32 }\n\t\t\t\tdefault { return $False }\n\t\t\t}\n\t\t}\n\t\t\n\t\tfunction IsInfineonFirmwareVersionSusceptible ($FirmwareMajor)\n\t\t{\n\t\t\tswitch ($FirmwareMajor)\n\t\t\t{\n\t\t\t\t4 { return $True }\n\t\t\t\t5 { return $True }\n\t\t\t\t6 { return $True }\n\t\t\t\t7 { return $True }\n\t\t\t\t133 { return $True }\n\t\t\t\tdefault { return $False }\n\t\t\t}\n\t\t}\n\t\t\n\t\t$Tpm = Get-Tpm\n\t\t$ManufacturerIdInt = $Tpm.ManufacturerId\n\t\t$FirmwareVersion = $Tpm.ManufacturerVersion -split &quot;\\.&quot;\n\t\t$FirmwareVersionAtLastProvision = (Get-ItemProperty -Path &quot;HKLM:\\SYSTEM\\CurrentControlSet\\Services\\TPM\\WMI&quot; -Name &quot;FirmwareVersionAtLastProvision&quot; -ErrorAction SilentlyContinue).FirmwareVersionAtLastProvision\n\t\t\n\t\tif (!$Tpm)\n\t\t{\n\t\t\tWrite-Host &quot;No TPM found on this system, so the issue does not apply here.&quot;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tif ($ManufacturerIdInt -ne $IfxManufacturerIdInt)\n\t\t\t{\n\t\t\t\tWrite-Host &quot;This non-Infineon TPM is not affected by the issue.&quot;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tif ($FirmwareVersion.Length -lt 2)\n\t\t\t\t{\n\t\t\t\t\tWrite-Error &quot;Could not get TPM firmware version from this TPM.&quot;\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\tif (IsInfineonFirmwareVersionSusceptible($FirmwareVersion[0]))\n\t\t\t\t\t{\n\t\t\t\t\t\tif (IsInfineonFirmwareVersionAffected($FirmwareVersion))\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tWrite-Host (&quot;This Infineon firmware version {0}.{1} TPM is not safe. Please update your firmware.&quot; -f [int]$FirmwareVersion[0], [int]$FirmwareVersion[1])\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tWrite-Host (&quot;This Infineon firmware version {0}.{1} TPM is safe.&quot; -f [int]$FirmwareVersion[0], [int]$FirmwareVersion[1])\n\t\t\t\t\t\t\tif (!$FirmwareVersionAtLastProvision)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tWrite-Host (&quot;We cannot determine what the firmware version was when the TPM was last cleared. Please clear your TPM now that the firmware is safe.&quot;)\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\telseif ($FirmwareVersion -ne $FirmwareVersionAtLastProvision)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tWrite-Host (&quot;The firmware version when the TPM was last cleared was different from the current firmware version. Please clear your TPM now that the firmware is safe.&quot;)\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\telse\n\t\t\t\t\t{\n\t\t\t\t\t\tWrite-Host (&quot;This Infineon firmware version {0}.{1} TPM is safe.&quot; -f [int]$FirmwareVersion[0], [int]$FirmwareVersion[1])\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n</code></pre>\n",
+						"title": "Description",
+						"type": "Description",
+						"ordinal": "0"
+					},
+					{
+						"text": "Windows TPM",
+						"title": "Windows TPM",
+						"type": "Tag",
+						"ordinal": "20"
+					},
+					{
+						"text": "Microsoft",
+						"title": "Issuing CNA",
+						"type": "CNA",
+						"ordinal": "30"
+					}
+				]
+			},
+			"cve": "ADV170012",
+			"productstatuses": {
+				"status": {
+					"type": "Known Affected",
+					"product_id": [
+						"10951",
+						"10952",
+						"10729",
+						"10735",
+						"10789",
+						"10788",
+						"10852",
+						"10853",
+						"10816",
+						"10481",
+						"10482",
+						"10484",
+						"10378",
+						"10483",
+						"11457",
+						"10820",
+						"11453",
+						"11454"
+					]
+				}
+			},
+			"threats": {
+				"threat": [
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10951"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10952"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10729"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10735"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10789"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10788"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10852"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10853"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10816"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10481"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10482"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10484"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10378"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10483"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "11457"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "10820"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "11453"
+					},
+					{
+						"type": "Impact",
+						"description": "Security Feature Bypass",
+						"product_id": "11454"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10951"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10952"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10729"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10735"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10789"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10788"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10852"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10853"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10816"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10481"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10482"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10484"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10378"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10483"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "11457"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10820"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "11453"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "11454"
+					},
+					{
+						"type": "Exploit Status",
+						"description": "Publicly Disclosed:No;Exploited:No;Latest Software Release:Exploitation More Likely;Older Software Release:Exploitation More Likely;DOS:N/A"
+					}
+				]
+			},
+			"cvssscoresets": {},
+			"remediations": {
+				"remediation": [
+					{
+						"type": "Vendor Fix",
+						"description": "4041676",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041676",
+						"supercedence": "4038788",
+						"product_id": [
+							"10951",
+							"10952"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4042895",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4042895",
+						"supercedence": "4038781",
+						"product_id": [
+							"10729",
+							"10735"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4041689",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041689",
+						"supercedence": "4038783",
+						"product_id": [
+							"10789",
+							"10788"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4041691",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041691",
+						"supercedence": "4038782",
+						"product_id": [
+							"10852",
+							"10853",
+							"10816"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4041693",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041693",
+						"supercedence": "4038792",
+						"product_id": [
+							"10481",
+							"10482",
+							"10484",
+							"10483"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4038793",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4038793",
+						"product_id": [
+							"10481",
+							"10482"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4041690",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041690",
+						"supercedence": "4038799",
+						"product_id": [
+							"10378"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Monthly Rollup"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4041679",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041679",
+						"product_id": [
+							"10378"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4041687",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4041687",
+						"product_id": [
+							"10483"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Only"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4023490",
+						"product_id": [
+							"11457"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4023489",
+						"product_id": [
+							"10820"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					},
+					{
+						"type": "Vendor Fix",
+						"description": "4048955",
+						"url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4048955",
+						"supercedence": "4042198",
+						"product_id": [
+							"11453",
+							"11454"
+						],
+						"affectedfiles": {},
+						"restart_required": "Yes",
+						"sub_type": "Security Update"
+					}
+				]
+			},
+			"acknowledgments": {},
+			"revisionhistory": {
+				"revision": [
+					{
+						"number": "1.0",
+						"date": "2017-10-10T07:00:00Z",
+						"description": "<p>Information published.</p>\n"
+					},
+					{
+						"number": "1.1",
+						"date": "2017-10-10T07:00:00Z",
+						"description": "<p>To keep the information in the advisory up-to-date, made several corrections: corrected link to HP OEM site, added link to Lenovo OEM site, added note that failure to run the PowerShell script as an administrator will return incorrect results. These are all informational changes only.</p>\n"
+					},
+					{
+						"number": "1.2",
+						"date": "2017-10-12T07:00:00Z",
+						"description": "<p>Added information about how to use the PowerShell script to remotely check devices for affected TPMs. Clarified that BitLocker protection is affected only if the TPM firmware version is 1.2. These are informational changes only.</p>\n"
+					},
+					{
+						"number": "1.3",
+						"date": "2017-10-17T07:00:00Z",
+						"description": "<p>The following revisions are informational changes only:</p>\n<ul>\n<li>Added CVE number and vulnerability name.</li>\n<li>Added links for OEM information for HPE and Toshiba to the table under Step 4: Apply applicable firmware updates.</li>\n<li>Added information for MSA to the table under Step 5: Remediate services based on your particular use cases.</li>\n</ul>\n"
+					},
+					{
+						"number": "1.4",
+						"date": "2017-10-18T07:00:00Z",
+						"description": "<p>The following revisions added under Step 4: Apply applicable firmware updates are informational only:</p>\n<ul>\n<li>Added list of affected Microsoft Surface devices.</li>\n<li>Added link for Acer to the table of OEM information.</li>\n</ul>\n"
+					},
+					{
+						"number": "1.6",
+						"date": "2017-10-26T07:00:00Z",
+						"description": "<p>The following revisions are informational changes only: * Added link for OEM information for Panasonic to the table under Step 4: Apply applicable firmware updates. * Revised Windows Hello information in the table under Step 5: Remediate services based on your particular use cases.</p>\n"
+					},
+					{
+						"number": "2.0",
+						"date": "2017-11-16T08:00:00Z",
+						"description": "<p>Revised the Affected Products table to include Windows 10 Version 1709 for 32-bit Systems and Windows 10 Version 1709 for x64-based Systems because they are affected by CVE-2017-15361, described in this advisory. In addition, the following informational-only changes have been made: *Under Recommended Action #4, Revised the list of affected Surface devices to indicate that Surface Hub is not affected by this vulnerability. *Under Recommended Action #6, updated the links for information about clearing the TPM.</p>\n"
+					},
+					{
+						"number": "2.1",
+						"date": "2018-01-11T08:00:00Z",
+						"description": "<p>Under Recommended Action #4, replaced the information for Surface products with a link to Microsoft Knowledge Base Article 4073006. Customers with Surface devices should refer to the article for the latest update information.</p>\n"
+					},
+					{
+						"number": "1.5",
+						"date": "2017-10-20T07:00:00Z",
+						"description": "<p>Removed the October security-only updates for Windows Server 2012, Windows Server 2012 R2, and Windows 8.1 from the Affected Products table because these updates do not address the vulnerability discussed in this advisory. Clarified in FAQ 9 and 10 that customers running these versions of Windows who install security-only updates must install the either September security-only updates or the October monthly rollup to receive the changes for this vulnerability. These are informational changes only.</p>\n"
+					}
+				]
+			}
+		}
+	]
 }

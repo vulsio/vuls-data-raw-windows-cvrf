@@ -1,739 +1,739 @@
 {
-  "document_title": "March 2020 Security Updates",
-  "document_type": "Security Update",
-  "documentpublisher": {
-    "type": "Vendor",
-    "contact_details": "secure@microsoft.com",
-    "issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
-  },
-  "documenttracking": {
-    "identification": {
-      "id": "ADV200006",
-      "alias": "ADV200006"
-    },
-    "status": "Final",
-    "version": "1.0",
-    "revisionhistory": {
-      "revision": {
-        "number": "15",
-        "date": "2021-08-10T07:00:00Z",
-        "description": "March 2020 Security Updates"
-      }
-    },
-    "initial_release_date": "2020-03-10T07:00:00Z",
-    "current_release_date": "2021-08-10T07:00:00Z"
-  },
-  "documentnotes": {
-    "note": [
-      {
-        "text": "<p>The March 2020 security release consists of security updates for the following software:</p>\n<ul>\n<li>Microsoft Windows</li>\n<li>Microsoft Edge (EdgeHTML-based)</li>\n<li>Microsoft Edge (Chromium-based)</li>\n<li>ChakraCore</li>\n<li>Internet Explorer</li>\n<li>Microsoft Exchange Server</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Azure DevOps</li>\n<li>Windows Defender</li>\n<li>Visual Studio</li>\n<li>Open Source Software</li>\n<li>Azure</li>\n<li>Microsoft Dynamics</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>A list of the latest servicing stack updates for each operating system can be found in <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001\">ADV990001</a>. This list will be updated whenever a new servicing stack update is released. It is important to install the latest servicing stack update.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>Customers running Windows 7, Windows Server 2008 R2, or Windows Server 2008 need to purchase the Extended Security Update to continue receiving security updates. See <a href=\"https://support.microsoft.com/en-us/help/4522133/procedure-to-continue-receiving-security-updates\">4522133</a> for more information.</li>\n</ul>\n<p><strong>The following CVEs have additional information and may include * further steps to take after installing the updates. Please note that this is not a complete list of CVEs for this release.</strong></p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV200005\">ADV200005</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV200006\">ADV200006</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0765\">CVE-2020-0765</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0774\">CVE-2020-0774</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0775\">CVE-2020-0775</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0795\">CVE-2020-0795</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796\">CVE-2020-0796</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0813\">CVE-2020-0813</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0820\">CVE-2020-0820</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0850\">CVE-2020-0850</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0851\">CVE-2020-0851</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0852\">CVE-2020-0852</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0853\">CVE-2020-0853</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0855\">CVE-2020-0855</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0859\">CVE-2020-0859</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0861\">CVE-2020-0861</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0863\">CVE-2020-0863</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0871\">CVE-2020-0871</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0874\">CVE-2020-0874</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0876\">CVE-2020-0876</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0879\">CVE-2020-0879</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0880\">CVE-2020-0880</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0882\">CVE-2020-0882</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0885\">CVE-2020-0885</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0891\">CVE-2020-0891</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0892\">CVE-2020-0892</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0893\">CVE-2020-0893</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0894\">CVE-2020-0894</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0902\">CVE-2020-0902</a> *</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<p>The following KBs contain information about known issues with the security updates. For a complete list of security update KBs, please see <a href=\"https://support.microsoft.com/help/20200310\">20200310</a></p>\n<table>\n<thead>\n<tr>\n<th>KB Article</th>\n<th>Applies To</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4538032\">4538032</a></td>\n<td>Visual Studio</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4538461\">4538461</a></td>\n<td>Windows 10 Version 1809, Windows Server 2019</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540123\">4540123</a></td>\n<td>Microsoft Exchange Server</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540670\">4540670</a></td>\n<td>Windows 10, version 1607, Windows Server 2016</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540671\">4540671</a></td>\n<td>Internet Explorer</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540688\">4540688</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540694\">4540694</a></td>\n<td>Windows Server 2012 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541500\">4541500</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541504\">4541504</a></td>\n<td>Windows Server 2008 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541505\">4541505</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541506\">4541506</a></td>\n<td>Windows Server 2008 Service Pack 2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541509\">4541509</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541510\">4541510</a></td>\n<td>Windows Server 2012 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4551762\">4551762</a></td>\n<td>Windows 10, version 1903, Windows Server version 1903, Windows 10, version 1909, Windows Server version 1909</td>\n</tr>\n</tbody>\n</table>\n",
-        "title": "Release Notes",
-        "audience": "Public",
-        "type": "Details",
-        "ordinal": "0"
-      },
-      {
-        "text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
-        "title": "Legal Disclaimer",
-        "audience": "Public",
-        "type": "Legal Disclaimer",
-        "ordinal": "1"
-      }
-    ]
-  },
-  "producttree": {
-    "branch": {
-      "type": "Vendor",
-      "name": "Microsoft",
-      "branch": [
-        {
-          "type": "Product Family",
-          "name": "Windows",
-          "fullproductname": [
-            {
-              "text": "Windows 10 Version 1803 for 32-bit Systems",
-              "productid": "11497"
-            },
-            {
-              "text": "Windows 10 Version 1803 for x64-based Systems",
-              "productid": "11498"
-            },
-            {
-              "text": "Windows 10 Version 1803 for ARM64-based Systems",
-              "productid": "11563"
-            },
-            {
-              "text": "Windows 10 Version 1809 for 32-bit Systems",
-              "productid": "11568"
-            },
-            {
-              "text": "Windows 10 Version 1809 for x64-based Systems",
-              "productid": "11569"
-            },
-            {
-              "text": "Windows 10 Version 1809 for ARM64-based Systems",
-              "productid": "11570"
-            },
-            {
-              "text": "Windows Server 2019",
-              "productid": "11571"
-            },
-            {
-              "text": "Windows Server 2019  (Server Core installation)",
-              "productid": "11572"
-            },
-            {
-              "text": "Windows 10 Version 1709 for x64-based Systems",
-              "productid": "11454"
-            },
-            {
-              "text": "Windows 10 Version 1709 for ARM64-based Systems",
-              "productid": "11583"
-            },
-            {
-              "text": "Windows 10 Version 1903 for 32-bit Systems",
-              "productid": "11644"
-            },
-            {
-              "text": "Windows 10 Version 1903 for x64-based Systems",
-              "productid": "11645"
-            },
-            {
-              "text": "Windows 10 Version 1903 for ARM64-based Systems",
-              "productid": "11646"
-            },
-            {
-              "text": "Windows 10 for 32-bit Systems",
-              "productid": "10729"
-            },
-            {
-              "text": "Windows 10 for x64-based Systems",
-              "productid": "10735"
-            },
-            {
-              "text": "Windows 10 Version 1607 for 32-bit Systems",
-              "productid": "10852"
-            },
-            {
-              "text": "Windows 10 Version 1607 for x64-based Systems",
-              "productid": "10853"
-            },
-            {
-              "text": "Windows Server 2016",
-              "productid": "10816"
-            },
-            {
-              "text": "Windows Server 2016  (Server Core installation)",
-              "productid": "10855"
-            },
-            {
-              "text": "Windows 8.1 for 32-bit systems",
-              "productid": "10481"
-            },
-            {
-              "text": "Windows 8.1 for x64-based systems",
-              "productid": "10482"
-            },
-            {
-              "text": "Windows RT 8.1",
-              "productid": "10484"
-            },
-            {
-              "text": "Windows Server 2012",
-              "productid": "10378"
-            },
-            {
-              "text": "Windows Server 2012 (Server Core installation)",
-              "productid": "10379"
-            },
-            {
-              "text": "Windows Server 2012 R2",
-              "productid": "10483"
-            },
-            {
-              "text": "Windows Server 2012 R2 (Server Core installation)",
-              "productid": "10543"
-            },
-            {
-              "text": "Windows 10 Version 1909 for 32-bit Systems",
-              "productid": "11712"
-            },
-            {
-              "text": "Windows 10 Version 1909 for x64-based Systems",
-              "productid": "11713"
-            },
-            {
-              "text": "Windows 10 Version 1909 for ARM64-based Systems",
-              "productid": "11714"
-            },
-            {
-              "text": "Windows 10 Version 1709 for 32-bit Systems",
-              "productid": "11453"
-            }
-          ]
-        },
-        {
-          "type": "Product Family",
-          "name": "ESU",
-          "fullproductname": [
-            {
-              "text": "Windows 7 for 32-bit Systems Service Pack 1",
-              "productid": "10047"
-            },
-            {
-              "text": "Windows 7 for x64-based Systems Service Pack 1",
-              "productid": "10048"
-            },
-            {
-              "text": "Windows Server 2008 for 32-bit Systems Service Pack 2",
-              "productid": "9312"
-            },
-            {
-              "text": "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
-              "productid": "10287"
-            },
-            {
-              "text": "Windows Server 2008 for x64-based Systems Service Pack 2",
-              "productid": "9318"
-            },
-            {
-              "text": "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
-              "productid": "9344"
-            },
-            {
-              "text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
-              "productid": "10051"
-            },
-            {
-              "text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
-              "productid": "10049"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "vulnerability": [
-    {
-      "ordinal": "1",
-      "title": "Type 1 Font Parsing Remote Code Execution Vulnerability",
-      "notes": {
-        "note": [
-          {
-            "text": "<p>Microsoft has become aware of limited targeted Windows 7 based attacks that could leverage un-patched vulnerabilities in the Adobe Type Manager Library, and is providing the following guidance to help reduce customer risk until the security update is released.  We appreciate the efforts of our industry partners and are complying with a 7-day timeline for disclosing information regarding these limited attacks.</p>\n<p>Two remote code execution vulnerabilities exist in Microsoft Windows when the Windows Adobe Type Manager Library improperly handles a specially-crafted multi-master font - Adobe Type 1 PostScript format.</p>\n<p>There are multiple ways an attacker could exploit the vulnerability, such as convincing a user to open a specially crafted document or viewing it in the Windows Preview pane.</p>\n<p>Microsoft is aware of this vulnerability and working on a fix. Updates that address security vulnerabilities in Microsoft software are typically released on Update Tuesday, the second Tuesday of each month. This predictable schedule allows for partner quality assurance and IT planning, which helps maintain the Windows ecosystem as a reliable, secure choice for our customers. The operating system versions that are affected by this vulnerability are listed below.  Please see the mitigation and workarounds for guidance on how to reduce the risk.</p>\n<p><strong>Please Note:</strong> The threat is low for those systems running Windows 10 due to mitigations that were put in place with the first version released in 2015.</p>\n<p>Please see the mitigation section for details.  Microsoft is not aware of any attacks against the Windows 10 platform.  The possibility of remote code execution is negligible and elevation of privilege is not possible.  We do not recommend that IT administrators running Windows 10 implement the workarounds described below.</p>\n<p>Microsoft recommends upgrading to the Windows 10 family of clients and servers.</p>\n",
-            "title": "Description",
-            "type": "Description",
-            "ordinal": "0"
-          },
-          {
-            "text": "<p><strong>Is there an update to address this vulnerability?</strong></p>\n<p>Yes, Microsoft has released the April security updates, which address this vulnerability. See CVE-2020-1020 for download links and more information.</p>\n<p><strong>Is Microsoft aware of attacks that attempt to leverage this vulnerability?</strong></p>\n<p>Yes, Microsoft is aware of limited, targeted attacks that attempt to leverage this vulnerability.</p>\n<p><strong>How would customers receive notification about this issue and updated information from Microsoft when published?</strong></p>\n<p>Customers who subscribe to Microsoft Technical Security Notifications will receive a notifications whenever new content is published in Microsoft’s Security Update Guide. Find more information about these notifications here: <a href=\"https://www.microsoft.com/en-us/msrc/technical-security-notifications\">Technical Security Notifications</a>.</p>\n<p><strong>Do I need an ESU license to receive the update for Windows 7, Windows Server 2008 and Windows Server 2008 R2 for this vulnerability?</strong></p>\n<p>Yes, to receive the security update for this vulnerability for Windows 7, Windows Server 2008,  or Windows Server 2008 R2 you must have an ESU license. See <a href=\"https://support.microsoft.com/en-us/help/4522133/procedure-to-continue-receiving-security-updates\">4522133</a> for more information.</p>\n<p><strong>Why is this update not being released for all Windows 7 customers?</strong></p>\n<p>Windows 7 reached end of support on January 14, 2020. For more information on Microsoft lifecycle policies, please visit <a href=\"https://aka.ms/lifecycle\">Life Cycle</a>.</p>\n<p><strong>Is the Outlook Preview Pane an attack vector for this vulnerability?</strong></p>\n<p>No, the Outlook Preview Pane is NOT an attack vector for this vulnerability</p>\n<p><strong>Is the Windows Explorer Preview Pane an attack vector for this vulnerability?</strong></p>\n<p>Yes, the Windows Explorer Preview Pane is an attack vector for this vulnerability</p>\n<p><strong>Is Enhanced Security Configuration, which is on by default on Windows Servers, a mitigation for this vulnerability?</strong></p>\n<p>No, Enhanced Security Configuration does not mitigate this vulnerability.</p>\n",
-            "title": "FAQ",
-            "type": "FAQ",
-            "ordinal": "10"
-          },
-          {
-            "text": "Microsoft Graphics Component",
-            "title": "Microsoft Graphics Component",
-            "type": "Tag",
-            "ordinal": "20"
-          },
-          {
-            "text": "Microsoft",
-            "title": "Issuing CNA",
-            "type": "CNA",
-            "ordinal": "30"
-          }
-        ]
-      },
-      "cve": "ADV200006",
-      "productstatuses": {
-        "status": {
-          "type": "Known Affected",
-          "product_id": [
-            "11497",
-            "11498",
-            "11563",
-            "11568",
-            "11569",
-            "11570",
-            "11571",
-            "11572",
-            "11712",
-            "11713",
-            "11714",
-            "11453",
-            "11454",
-            "11583",
-            "11644",
-            "11645",
-            "11646",
-            "10729",
-            "10735",
-            "10852",
-            "10853",
-            "10816",
-            "10855",
-            "10047",
-            "10048",
-            "10481",
-            "10482",
-            "10484",
-            "9312",
-            "10287",
-            "9318",
-            "9344",
-            "10051",
-            "10049",
-            "10378",
-            "10379",
-            "10483",
-            "10543"
-          ]
-        }
-      },
-      "threats": {
-        "threat": [
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11497"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11498"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11563"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11568"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11569"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11570"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11571"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11572"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11712"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11713"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11714"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11453"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11454"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11583"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11644"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11645"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "11646"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10729"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10735"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10852"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10853"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10816"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10855"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10047"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10048"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10481"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10482"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10484"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "9312"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10287"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "9318"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "9344"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10051"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10049"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10378"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10379"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10483"
-          },
-          {
-            "type": "Impact",
-            "description": "Remote Code Execution",
-            "product_id": "10543"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11497"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11498"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11563"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11568"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11569"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11570"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11571"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11572"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11712"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11713"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11714"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11453"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11454"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11583"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11644"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11645"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "11646"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10729"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10735"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10852"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10853"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10816"
-          },
-          {
-            "type": "Severity",
-            "description": "Important",
-            "product_id": "10855"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10047"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10048"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10481"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10482"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10484"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "9312"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10287"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "9318"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "9344"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10051"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10049"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10378"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10379"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10483"
-          },
-          {
-            "type": "Severity",
-            "description": "Critical",
-            "product_id": "10543"
-          },
-          {
-            "type": "Exploit Status",
-            "description": "Publicly Disclosed:No;Exploited:Yes;DOS:N/A"
-          }
-        ]
-      },
-      "cvssscoresets": {},
-      "remediations": {
-        "remediation": [
-          {
-            "type": "Workaround",
-            "description": "<p>There are several different workarounds in this section.  Not all may apply to all networks.</p>\n<table>\n<thead>\n<tr>\n<th>Workaround</th>\n<th>Applicability</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Disable the Preview Pane and Details Pane in Windows Explorer</td>\n<td>Works on all systems but won't mitigate the issue if you open a document with the vulnerable font class</td>\n</tr>\n<tr>\n<td>Disable the WebClient service</td>\n<td>Works on all systems but won't mitigate the issue if you open a document with the vulnerable font class</td>\n</tr>\n<tr>\n<td>DisableATMFD registry key using a managed deployment script</td>\n<td>Only works on older (before Windows 10) but completely mitigates the issue though can introduce usability issues in rare cases</td>\n</tr>\n<tr>\n<td>DisableATMFD registry key manually</td>\n<td>Only works on older (before Windows 10) but completely mitigates the issue though can introduce usability issues in rare cases</td>\n</tr>\n<tr>\n<td>Rename ATMFD.DLL</td>\n<td>Only works on older (before Windows 10) but completely mitigates the issue though can introduce usability issues in rare cases</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Note:</strong> We do not recommend that IT administrators running Windows 10 implement the workarounds described below. ATMFD.DLL is not present in Windows 10 installations starting with Windows 10, version 1709.  Newer versions do not have this DLL. See the <strong>Mitigation</strong> section for more information.</p>\n<h4><strong>Disable the Preview Pane and Details Pane in Windows Explorer</strong></h4>\n<p>Disabling the Preview and Details panes in Windows Explorer prevents the automatic display of OTF fonts in Windows Explorer. While this prevents malicious files from being viewed in Windows Explorer, it does not prevent a local, authenticated user from running a specially crafted program to exploit this vulnerability.</p>\n<p>To disable these panes in Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows 8.1, perform the following steps:</p>\n<ol>\n<li>Open Windows Explorer, click <strong>Organize</strong>, and then click <strong>Layout</strong>.</li>\n<li>Clear both the <strong>Details pane</strong> and <strong>Preview pane</strong> menu options.</li>\n<li>Click <strong>Organize</strong>, and then click <strong>Folder and search options</strong>.</li>\n<li>Click the <strong>View</strong> tab.</li>\n<li>Under <strong>Advanced settings</strong>, check the <strong>Always show icons, never thumbnails</strong> box.</li>\n<li>Close all open instances of Windows Explorer for the change to take effect.</li>\n</ol>\n<p>To disable these panes in all supported client and server versions of  Windows 10, perform the following steps:</p>\n<ol>\n<li>Open Windows Explorer, click the <strong>View</strong> tab.</li>\n<li>Clear both the <strong>Details pane</strong> and <strong>Preview pane</strong> menu options.</li>\n<li>Click <strong>Options</strong>, and then click <strong>Change folder and search options</strong>.</li>\n<li>Click the <strong>View</strong> tab.</li>\n<li>Under <strong>Advanced settings</strong>, check the <strong>Always show icons, never thumbnails</strong> box.</li>\n<li>Close all open instances of Windows Explorer for the change to take effect.</li>\n</ol>\n<p><strong>Impact of workaround.</strong></p>\n<p>Windows Explorer will not automatically display OTF fonts.</p>\n<p><strong>How to undo the workaround.</strong></p>\n<p>To re-enable the Preview and Details panes in Windows Explorer for Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows 8.1:</p>\n<ol>\n<li>Open Windows Explorer, click <strong>Organize</strong>, and then click <strong>Layout</strong>.</li>\n<li>Select both the <strong>Details pane</strong> and <strong>Preview pane</strong> menu options.</li>\n<li>Click <strong>Organize</strong>, and then click <strong>Folder and search options</strong>.</li>\n<li>Click the <strong>View</strong> tab.</li>\n<li>Under <strong>Advanced settings</strong>, clear the <strong>Always show icons, never thumbnails</strong> box.</li>\n<li>Close all open instances of Windows Explorer for the change to take effect.</li>\n</ol>\n<p>To re-enable the Preview and Details panes in Windows Explorer for all supported client and server versions of  Windows 10, perform the following steps:</p>\n<ol>\n<li>Open Windows Explorer, click the <strong>View</strong> tab.</li>\n<li>Select both the <strong>Details pane</strong> and <strong>Preview pane</strong> menu options.</li>\n<li>Click <strong>Options</strong>, and then click <strong>Change folder and search options</strong>.</li>\n<li>Click the <strong>View</strong> tab.</li>\n<li>Under <strong>Advanced settings</strong>, clear the <strong>Always show icons, never thumbnails</strong> box.</li>\n<li>Close all open instances of Windows Explorer for the change to take effect.</li>\n</ol>\n<h4><strong>Disable the WebClient service</strong></h4>\n<p>Disabling the WebClient service helps protect affected systems from attempts to exploit this vulnerability by blocking the most likely remote attack vector through the Web Distributed Authoring and Versioning (WebDAV) client service. After applying this workaround it is still possible for remote attackers who successfully exploit this vulnerability to cause the system to run programs located on the targeted user's computer or the Local Area Network (LAN), but users will be prompted for confirmation before opening arbitrary programs from the Internet.</p>\n<p>To disable the WebClient Service, perform the following steps:</p>\n<ol>\n<li>Click <strong>Start</strong>, click <strong>Run</strong> (or press the <strong>Windows Key</strong> and <strong>R</strong> on the keyboard), type <strong>Services.msc</strong> and then click <strong>OK</strong>.</li>\n<li>Right-click <strong>WebClient</strong> service and select <strong>Properties</strong>.</li>\n<li>Change the Startup type to <strong>Disabled</strong>. If the service is running, click <strong>Stop</strong>.</li>\n<li>Click <strong>OK</strong> and exit the management application.</li>\n</ol>\n<p><strong>Impact of workaround.</strong></p>\n<p>When the WebClient service is disabled, Web Distributed Authoring and Versioning (WebDAV) requests are not transmitted. In addition, any services that explicitly depend on the WebClient service will not start, and an error message will be logged in the System log. For example, WebDAV shares will be inaccessible from the client computer.</p>\n<p><strong>How to undo the workaround.</strong></p>\n<p>To re-enable the WebClient Service, perform the following steps:</p>\n<ol>\n<li>Click <strong>Start</strong>, click <strong>Run</strong> (or press the <strong>Windows Key</strong> and <strong>R</strong> on the keyboard), type <strong>Services.msc</strong> and then click <strong>OK</strong>.</li>\n<li>Right-click <strong>WebClient</strong> service and select <strong>Properties</strong>.</li>\n<li>Change the Startup type to <strong>Automatic</strong>. If the service is not running, click <strong>Start</strong>.</li>\n<li>Click <strong>OK</strong> and exit the management application.</li>\n</ol>\n<h4><strong>DisableATMFD registry key using a managed deployment script</strong></h4>\n<p><strong>Please Note:</strong> This workaround works for Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows 8.1.  ATMFD.DLL is not present in Windows 10 installations starting with Windows 10, version 1709.</p>\n<p><strong>Note</strong> Using Registry Editor incorrectly can cause serious problems that may require you to reinstall your operating system. Microsoft cannot guarantee that problems resulting from the incorrect use of Registry Editor can be solved. Use Registry Editor at your own risk. For information about how to edit the registry, view the &quot;Changing Keys And Values&quot; Help topic in Registry Editor (Regedit.exe) or view the &quot;Add and Delete Information in the Registry&quot; and &quot;Edit Registry Data&quot; Help topics in Regedt32.exe.</p>\n<ol>\n<li>Create a text file named <strong>ATMFD-disable.reg</strong> that contains the following text:</li>\n</ol>\n<pre><code>Windows Registry Editor Version 5.00\n[HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows]\n&quot;DisableATMFD&quot;=dword:00000001\n</code></pre>\n<ol start=\"2\">\n<li>Run regedit.exe.</li>\n<li>In Registry Editor, click the <strong>File</strong> menu and then click <strong>Import</strong>.</li>\n<li>Navigate to and select the** ATMFD-disable.reg** file that you created in the first step. (<strong>Note</strong> If your file is not listed where you expect it to be, ensure that it has not been automatically given a .txt file extension, or change the dialog’s file extension parameters to <strong>All Files</strong>).</li>\n<li>Click <strong>Open</strong> and then click <strong>OK</strong> to close Registry Editor.</li>\n<li>Restart the system.</li>\n</ol>\n<p><strong>Impact of workaround</strong></p>\n<p>Applications that rely on embedded font technology will not display properly. Renaming ATMFD.DLL could cause certain applications to stop working properly if they use OpenType fonts. Microsoft Windows does not release any OpenType fonts natively. However, third-party applications could install them and they could be affected by this change.</p>\n<p><strong>How to undo the workaround.</strong></p>\n<ol>\n<li>Create a text file named <strong>ATMFD-enable.reg</strong> that contains the following text:</li>\n</ol>\n<pre><code>Windows Registry Editor Version 5.00\n[HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows]\n&quot;DisableATMFD&quot;=dword:00000000\n</code></pre>\n<ol start=\"2\">\n<li>Run regedit.exe.</li>\n<li>In Registry Editor, click the <strong>File</strong> menu and then click <strong>Import</strong>.</li>\n<li>Navigate to and select the <strong>ATMFD-enable.reg</strong> file that you created in the first step. (Note If your file is not listed where you expect it to be, ensure that it has not been automatically given a .txt file extension, or change the dialog’s file extension parameters to <strong>All Files</strong>).</li>\n<li>Click <strong>Open</strong> and then click <strong>OK</strong> to close Registry Editor.</li>\n<li>Restart the system.</li>\n</ol>\n<h4><strong>DisableATMFD registry key manually</strong></h4>\n<p><strong>Please Note:</strong> This workaround works for Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows 8.1. ATMFD.DLL is not present in Windows 10 installations starting with Windows 10, version 1709.  Newer versions do not have this DLL. See the <strong>Mitigation</strong> section for more information.</p>\n<p><strong>Note</strong> Using Registry Editor incorrectly can cause serious problems that may require you to reinstall your operating system. Microsoft cannot guarantee that problems resulting from the incorrect use of Registry Editor can be solved. Use Registry Editor at your own risk. For information about how to edit the registry, view the &quot;Changing Keys And Values&quot; Help topic in Registry Editor (Regedit.exe) or view the &quot;Add and Delete Information in the Registry&quot; and &quot;Edit Registry Data&quot; Help topics in Regedt32.exe.</p>\n<ol>\n<li>Run <strong>regedit.exe</strong> as Administrator.</li>\n<li>In Registry Editor, navigate to the following sub key (or create it) and set its DWORD value to 1:\n<code>HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\DisableATMFD, DWORD = 1</code></li>\n<li>Close Registry Editor and restart the system.</li>\n</ol>\n<p><strong>Impact of workaround</strong></p>\n<p>Applications that rely on embedded font technology will not display properly. Renaming ATMFD.DLL could cause certain applications to stop working properly if they use OpenType fonts. Microsoft Windows does not release any OpenType fonts natively. However, third-party applications could install them and they could be affected by this change.</p>\n<p><strong>How to undo the workaround.</strong></p>\n<ol>\n<li>Run <strong>regedit.exe</strong> as Administrator.</li>\n<li>In Registry Editor, navigate to the following sub key and set its DWORD value to 0:\n<code>HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\DisableATMFD, DWORD = 0</code></li>\n<li>Close Registry Editor and restart the system.</li>\n</ol>\n<h4><strong>Rename ATMFD.DLL</strong></h4>\n<p><strong>Please Note:</strong> This workaround works for Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows 8.1. ATMFD.DLL is not present in Windows 10 installations starting with Windows 10, version 1709.  Newer versions do not have this DLL. See the <strong>Mitigation</strong> section for more information.</p>\n<p>For 32-bit systems:</p>\n<ol>\n<li>Enter the following commands at an administrative command prompt:</li>\n</ol>\n<pre><code> cd &quot;%windir%\\system32&quot;\n takeown.exe /f atmfd.dll\n icacls.exe atmfd.dll /save atmfd.dll.acl\n icacls.exe atmfd.dll /grant Administrators:(F) \n rename atmfd.dll x-atmfd.dll\n</code></pre>\n<ol start=\"2\">\n<li>Restart the system.</li>\n</ol>\n<p>For 64-bit systems:</p>\n<ol>\n<li>Enter the following commands at an administrative command prompt:</li>\n</ol>\n<pre><code>\tcd &quot;%windir%\\system32&quot;\n\ttakeown.exe /f atmfd.dll\n\ticacls.exe atmfd.dll /save atmfd.dll.acl\n\ticacls.exe atmfd.dll /grant Administrators:(F) \n\trename atmfd.dll x-atmfd.dll\n\tcd &quot;%windir%\\syswow64&quot;\n\ttakeown.exe /f atmfd.dll\n\ticacls.exe atmfd.dll /save atmfd.dll.acl\n\ticacls.exe atmfd.dll /grant Administrators:(F) \n\trename atmfd.dll x-atmfd.dll\n</code></pre>\n<ol start=\"2\">\n<li>Restart the system.</li>\n</ol>\n<p><strong>Impact of workaround</strong></p>\n<p>Applications that rely on embedded font technology will not display properly. Renaming ATMFD.DLL could cause certain applications to stop working properly if they use OpenType fonts. Microsoft Windows does not release any OpenType fonts natively. However, third-party applications could install them and they could be affected by this change.</p>\n<p><strong>How to undo the workaround</strong></p>\n<p>For 32-bit systems:</p>\n<ol>\n<li>Enter the following commands at an administrative command prompt:</li>\n</ol>\n<pre><code>\tcd &quot;%windir%\\system32&quot;\n\trename x-atmfd.dll atmfd.dll\n\ticacls.exe atmfd.dll /setowner &quot;NT SERVICE\\TrustedInstaller&quot;\n\ticacls.exe . /restore atmfd.dll.acl\n</code></pre>\n<ol start=\"2\">\n<li>Restart the system.</li>\n</ol>\n<p>For 64-bit systems:</p>\n<ol>\n<li>Enter the following commands at an administrative command prompt:</li>\n</ol>\n<pre><code>\tcd &quot;%windir%\\system32&quot;\n\trename x-atmfd.dll atmfd.dll\n\ticacls.exe atmfd.dll /setowner &quot;NT SERVICE\\TrustedInstaller&quot;\n\ticacls.exe . /restore atmfd.dll.acl\n\tcd &quot;%windir%\\syswow64&quot;\n\trename x-atmfd.dll atmfd.dll\n\ticacls.exe atmfd.dll /setowner &quot;NT SERVICE\\TrustedInstaller&quot;\n\ticacls.exe . /restore atmfd.dll.acl\n</code></pre>\n<ol start=\"2\">\n<li>Restart the system.</li>\n</ol>\n",
-            "affectedfiles": {}
-          },
-          {
-            "type": "Mitigation",
-            "description": "<p>For systems running supported versions of Windows 10 a successful attack could only result in code execution within an AppContainer sandbox context with limited privileges and capabilities.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Fonts Process With</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Windows 10</td>\n<td>fontdrvhost.exe in user mode appcontainer. Installed fonts are still processed in kernel mode</td>\n</tr>\n<tr>\n<td>Windows 10 Version 1607/Server 2016</td>\n<td>fontdrvhost.exe in user mode appcontainer. Installed fonts are still processed in kernel mode</td>\n</tr>\n<tr>\n<td>Windows 10 1703</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n<tr>\n<td>Windows 10 1709</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n<tr>\n<td>Windows 10 1803/Windows Server, version 1803</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n<tr>\n<td>Windows 10 1809/Server 2019</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n<tr>\n<td>Windows 10 1903/Windows Server, version 1903</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n<tr>\n<td>Windows 10 1909/Windows Server, version 1909</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n</tbody>\n</table>\n<p>For more information, see <a href=\"https://www.microsoft.com/security/blog/2017/01/13/hardening-windows-10-with-zero-day-exploit-mitigations/\">Mitigating font exploits with AppContainer</a>.</p>\n",
-            "affectedfiles": {}
-          }
-        ]
-      },
-      "acknowledgments": {},
-      "revisionhistory": {
-        "revision": [
-          {
-            "number": "1.0",
-            "date": "2020-03-23T07:00:00Z",
-            "description": "<p>Information published.</p>\n"
-          },
-          {
-            "number": "1.1",
-            "date": "2020-03-23T07:00:00Z",
-            "description": "<p>Added clarifying information to the mitigation. This is an informational change only.</p>\n"
-          },
-          {
-            "number": "1.2",
-            "date": "2020-03-24T07:00:00Z",
-            "description": "<p>Added information to the executive summary to clarify targets of attacks. This is an informational change only.</p>\n"
-          },
-          {
-            "number": "1.3",
-            "date": "2020-03-24T07:00:00Z",
-            "description": "<p>Updated the severity of the Windows 10 client and server products from Critical to Important.  This is an informational change only.</p>\n"
-          },
-          {
-            "number": "1.4",
-            "date": "2020-03-26T07:00:00Z",
-            "description": "<p>Updated Workaround information. This is an informational change only.</p>\n"
-          },
-          {
-            "number": "1.5",
-            "date": "2020-03-27T07:00:00Z",
-            "description": "<p>Updated Workaround information. This is an informational change only.</p>\n"
-          },
-          {
-            "number": "2.0",
-            "date": "2020-04-14T07:00:00Z",
-            "description": "<p>Updated first FAQ to state that CVE-2020-1020 has now been issued to address this vulnerability. This is an informational change only.</p>\n"
-          }
-        ]
-      }
-    }
-  ]
+	"document_title": "March 2020 Security Updates",
+	"document_type": "Security Update",
+	"documentpublisher": {
+		"type": "Vendor",
+		"contact_details": "secure@microsoft.com",
+		"issuing_authority": "The Microsoft Security Response Center (MSRC) identifies, monitors, resolves, and responds to security incidents and Microsoft software security vulnerabilities. For more information, see http://www.microsoft.com/security/msrc."
+	},
+	"documenttracking": {
+		"identification": {
+			"id": "ADV200006",
+			"alias": "ADV200006"
+		},
+		"status": "Final",
+		"version": "1.0",
+		"revisionhistory": {
+			"revision": {
+				"number": "15",
+				"date": "2021-08-10T07:00:00Z",
+				"description": "March 2020 Security Updates"
+			}
+		},
+		"initial_release_date": "2020-03-10T07:00:00Z",
+		"current_release_date": "2021-08-10T07:00:00Z"
+	},
+	"documentnotes": {
+		"note": [
+			{
+				"text": "<p>The March 2020 security release consists of security updates for the following software:</p>\n<ul>\n<li>Microsoft Windows</li>\n<li>Microsoft Edge (EdgeHTML-based)</li>\n<li>Microsoft Edge (Chromium-based)</li>\n<li>ChakraCore</li>\n<li>Internet Explorer</li>\n<li>Microsoft Exchange Server</li>\n<li>Microsoft Office and Microsoft Office Services and Web Apps</li>\n<li>Azure DevOps</li>\n<li>Windows Defender</li>\n<li>Visual Studio</li>\n<li>Open Source Software</li>\n<li>Azure</li>\n<li>Microsoft Dynamics</li>\n</ul>\n<p>Please note the following information regarding the security updates:</p>\n<ul>\n<li>A list of the latest servicing stack updates for each operating system can be found in <a href=\"https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001\">ADV990001</a>. This list will be updated whenever a new servicing stack update is released. It is important to install the latest servicing stack update.</li>\n<li>Windows 10 updates are cumulative. The monthly security release includes all security fixes for vulnerabilities that affect Windows 10, in addition to non-security updates. The updates are available via the <a href=\"http://catalog.update.microsoft.com/v7/site/Home.aspx\">Microsoft Update Catalog</a>.</li>\n<li>Updates for Windows RT 8.1 and Microsoft Office RT software are only available via <a href=\"http://go.microsoft.com/fwlink/?LinkId=21130\">Windows Update</a>.</li>\n<li>For information on lifecycle and support dates for Windows 10 operating systems, please see <a href=\"https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet\">Windows Lifecycle Facts Sheet</a>.</li>\n<li>In addition to security changes for the vulnerabilities, updates include defense-in-depth updates to help improve security-related features.</li>\n<li>Customers running Windows 7, Windows Server 2008 R2, or Windows Server 2008 need to purchase the Extended Security Update to continue receiving security updates. See <a href=\"https://support.microsoft.com/en-us/help/4522133/procedure-to-continue-receiving-security-updates\">4522133</a> for more information.</li>\n</ul>\n<p><strong>The following CVEs have additional information and may include * further steps to take after installing the updates. Please note that this is not a complete list of CVEs for this release.</strong></p>\n<ul>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV200005\">ADV200005</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV200006\">ADV200006</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0765\">CVE-2020-0765</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0774\">CVE-2020-0774</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0775\">CVE-2020-0775</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0795\">CVE-2020-0795</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796\">CVE-2020-0796</a> *</li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0813\">CVE-2020-0813</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0820\">CVE-2020-0820</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0850\">CVE-2020-0850</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0851\">CVE-2020-0851</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0852\">CVE-2020-0852</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0853\">CVE-2020-0853</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0855\">CVE-2020-0855</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0859\">CVE-2020-0859</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0861\">CVE-2020-0861</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0863\">CVE-2020-0863</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0871\">CVE-2020-0871</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0874\">CVE-2020-0874</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0876\">CVE-2020-0876</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0879\">CVE-2020-0879</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0880\">CVE-2020-0880</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0882\">CVE-2020-0882</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0885\">CVE-2020-0885</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0891\">CVE-2020-0891</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0892\">CVE-2020-0892</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0893\">CVE-2020-0893</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0894\">CVE-2020-0894</a></li>\n<li><a href=\"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0902\">CVE-2020-0902</a> *</li>\n</ul>\n<p><strong>Known Issues</strong></p>\n<p>The following KBs contain information about known issues with the security updates. For a complete list of security update KBs, please see <a href=\"https://support.microsoft.com/help/20200310\">20200310</a></p>\n<table>\n<thead>\n<tr>\n<th>KB Article</th>\n<th>Applies To</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4538032\">4538032</a></td>\n<td>Visual Studio</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4538461\">4538461</a></td>\n<td>Windows 10 Version 1809, Windows Server 2019</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540123\">4540123</a></td>\n<td>Microsoft Exchange Server</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540670\">4540670</a></td>\n<td>Windows 10, version 1607, Windows Server 2016</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540671\">4540671</a></td>\n<td>Internet Explorer</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540688\">4540688</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4540694\">4540694</a></td>\n<td>Windows Server 2012 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541500\">4541500</a></td>\n<td>Windows 7, Windows Server 2008 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541504\">4541504</a></td>\n<td>Windows Server 2008 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541505\">4541505</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Security-only update)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541506\">4541506</a></td>\n<td>Windows Server 2008 Service Pack 2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541509\">4541509</a></td>\n<td>Windows 8.1, Windows Server 2012 R2 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4541510\">4541510</a></td>\n<td>Windows Server 2012 (Monthly Rollup)</td>\n</tr>\n<tr>\n<td><a href=\"https://support.microsoft.com/help/4551762\">4551762</a></td>\n<td>Windows 10, version 1903, Windows Server version 1903, Windows 10, version 1909, Windows Server version 1909</td>\n</tr>\n</tbody>\n</table>\n",
+				"title": "Release Notes",
+				"audience": "Public",
+				"type": "Details",
+				"ordinal": "0"
+			},
+			{
+				"text": "The information provided in the Microsoft Knowledge Base is provided \"as is\" without warranty of any kind. Microsoft disclaims all warranties, either express or implied, including the warranties of merchantability and fitness for a particular purpose. In no event shall Microsoft Corporation or its suppliers be liable for any damages whatsoever including direct, indirect, incidental, consequential, loss of business profits or special damages, even if Microsoft Corporation or its suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages so the foregoing limitation may not apply.",
+				"title": "Legal Disclaimer",
+				"audience": "Public",
+				"type": "Legal Disclaimer",
+				"ordinal": "1"
+			}
+		]
+	},
+	"producttree": {
+		"branch": {
+			"type": "Vendor",
+			"name": "Microsoft",
+			"branch": [
+				{
+					"type": "Product Family",
+					"name": "Windows",
+					"fullproductname": [
+						{
+							"text": "Windows 10 Version 1803 for 32-bit Systems",
+							"productid": "11497"
+						},
+						{
+							"text": "Windows 10 Version 1803 for x64-based Systems",
+							"productid": "11498"
+						},
+						{
+							"text": "Windows 10 Version 1803 for ARM64-based Systems",
+							"productid": "11563"
+						},
+						{
+							"text": "Windows 10 Version 1809 for 32-bit Systems",
+							"productid": "11568"
+						},
+						{
+							"text": "Windows 10 Version 1809 for x64-based Systems",
+							"productid": "11569"
+						},
+						{
+							"text": "Windows 10 Version 1809 for ARM64-based Systems",
+							"productid": "11570"
+						},
+						{
+							"text": "Windows Server 2019",
+							"productid": "11571"
+						},
+						{
+							"text": "Windows Server 2019  (Server Core installation)",
+							"productid": "11572"
+						},
+						{
+							"text": "Windows 10 Version 1709 for x64-based Systems",
+							"productid": "11454"
+						},
+						{
+							"text": "Windows 10 Version 1709 for ARM64-based Systems",
+							"productid": "11583"
+						},
+						{
+							"text": "Windows 10 Version 1903 for 32-bit Systems",
+							"productid": "11644"
+						},
+						{
+							"text": "Windows 10 Version 1903 for x64-based Systems",
+							"productid": "11645"
+						},
+						{
+							"text": "Windows 10 Version 1903 for ARM64-based Systems",
+							"productid": "11646"
+						},
+						{
+							"text": "Windows 10 for 32-bit Systems",
+							"productid": "10729"
+						},
+						{
+							"text": "Windows 10 for x64-based Systems",
+							"productid": "10735"
+						},
+						{
+							"text": "Windows 10 Version 1607 for 32-bit Systems",
+							"productid": "10852"
+						},
+						{
+							"text": "Windows 10 Version 1607 for x64-based Systems",
+							"productid": "10853"
+						},
+						{
+							"text": "Windows Server 2016",
+							"productid": "10816"
+						},
+						{
+							"text": "Windows Server 2016  (Server Core installation)",
+							"productid": "10855"
+						},
+						{
+							"text": "Windows 8.1 for 32-bit systems",
+							"productid": "10481"
+						},
+						{
+							"text": "Windows 8.1 for x64-based systems",
+							"productid": "10482"
+						},
+						{
+							"text": "Windows RT 8.1",
+							"productid": "10484"
+						},
+						{
+							"text": "Windows Server 2012",
+							"productid": "10378"
+						},
+						{
+							"text": "Windows Server 2012 (Server Core installation)",
+							"productid": "10379"
+						},
+						{
+							"text": "Windows Server 2012 R2",
+							"productid": "10483"
+						},
+						{
+							"text": "Windows Server 2012 R2 (Server Core installation)",
+							"productid": "10543"
+						},
+						{
+							"text": "Windows 10 Version 1909 for 32-bit Systems",
+							"productid": "11712"
+						},
+						{
+							"text": "Windows 10 Version 1909 for x64-based Systems",
+							"productid": "11713"
+						},
+						{
+							"text": "Windows 10 Version 1909 for ARM64-based Systems",
+							"productid": "11714"
+						},
+						{
+							"text": "Windows 10 Version 1709 for 32-bit Systems",
+							"productid": "11453"
+						}
+					]
+				},
+				{
+					"type": "Product Family",
+					"name": "ESU",
+					"fullproductname": [
+						{
+							"text": "Windows 7 for 32-bit Systems Service Pack 1",
+							"productid": "10047"
+						},
+						{
+							"text": "Windows 7 for x64-based Systems Service Pack 1",
+							"productid": "10048"
+						},
+						{
+							"text": "Windows Server 2008 for 32-bit Systems Service Pack 2",
+							"productid": "9312"
+						},
+						{
+							"text": "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
+							"productid": "10287"
+						},
+						{
+							"text": "Windows Server 2008 for x64-based Systems Service Pack 2",
+							"productid": "9318"
+						},
+						{
+							"text": "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
+							"productid": "9344"
+						},
+						{
+							"text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
+							"productid": "10051"
+						},
+						{
+							"text": "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
+							"productid": "10049"
+						}
+					]
+				}
+			]
+		}
+	},
+	"vulnerability": [
+		{
+			"ordinal": "1",
+			"title": "Type 1 Font Parsing Remote Code Execution Vulnerability",
+			"notes": {
+				"note": [
+					{
+						"text": "<p>Microsoft has become aware of limited targeted Windows 7 based attacks that could leverage un-patched vulnerabilities in the Adobe Type Manager Library, and is providing the following guidance to help reduce customer risk until the security update is released.  We appreciate the efforts of our industry partners and are complying with a 7-day timeline for disclosing information regarding these limited attacks.</p>\n<p>Two remote code execution vulnerabilities exist in Microsoft Windows when the Windows Adobe Type Manager Library improperly handles a specially-crafted multi-master font - Adobe Type 1 PostScript format.</p>\n<p>There are multiple ways an attacker could exploit the vulnerability, such as convincing a user to open a specially crafted document or viewing it in the Windows Preview pane.</p>\n<p>Microsoft is aware of this vulnerability and working on a fix. Updates that address security vulnerabilities in Microsoft software are typically released on Update Tuesday, the second Tuesday of each month. This predictable schedule allows for partner quality assurance and IT planning, which helps maintain the Windows ecosystem as a reliable, secure choice for our customers. The operating system versions that are affected by this vulnerability are listed below.  Please see the mitigation and workarounds for guidance on how to reduce the risk.</p>\n<p><strong>Please Note:</strong> The threat is low for those systems running Windows 10 due to mitigations that were put in place with the first version released in 2015.</p>\n<p>Please see the mitigation section for details.  Microsoft is not aware of any attacks against the Windows 10 platform.  The possibility of remote code execution is negligible and elevation of privilege is not possible.  We do not recommend that IT administrators running Windows 10 implement the workarounds described below.</p>\n<p>Microsoft recommends upgrading to the Windows 10 family of clients and servers.</p>\n",
+						"title": "Description",
+						"type": "Description",
+						"ordinal": "0"
+					},
+					{
+						"text": "<p><strong>Is there an update to address this vulnerability?</strong></p>\n<p>Yes, Microsoft has released the April security updates, which address this vulnerability. See CVE-2020-1020 for download links and more information.</p>\n<p><strong>Is Microsoft aware of attacks that attempt to leverage this vulnerability?</strong></p>\n<p>Yes, Microsoft is aware of limited, targeted attacks that attempt to leverage this vulnerability.</p>\n<p><strong>How would customers receive notification about this issue and updated information from Microsoft when published?</strong></p>\n<p>Customers who subscribe to Microsoft Technical Security Notifications will receive a notifications whenever new content is published in Microsoft’s Security Update Guide. Find more information about these notifications here: <a href=\"https://www.microsoft.com/en-us/msrc/technical-security-notifications\">Technical Security Notifications</a>.</p>\n<p><strong>Do I need an ESU license to receive the update for Windows 7, Windows Server 2008 and Windows Server 2008 R2 for this vulnerability?</strong></p>\n<p>Yes, to receive the security update for this vulnerability for Windows 7, Windows Server 2008,  or Windows Server 2008 R2 you must have an ESU license. See <a href=\"https://support.microsoft.com/en-us/help/4522133/procedure-to-continue-receiving-security-updates\">4522133</a> for more information.</p>\n<p><strong>Why is this update not being released for all Windows 7 customers?</strong></p>\n<p>Windows 7 reached end of support on January 14, 2020. For more information on Microsoft lifecycle policies, please visit <a href=\"https://aka.ms/lifecycle\">Life Cycle</a>.</p>\n<p><strong>Is the Outlook Preview Pane an attack vector for this vulnerability?</strong></p>\n<p>No, the Outlook Preview Pane is NOT an attack vector for this vulnerability</p>\n<p><strong>Is the Windows Explorer Preview Pane an attack vector for this vulnerability?</strong></p>\n<p>Yes, the Windows Explorer Preview Pane is an attack vector for this vulnerability</p>\n<p><strong>Is Enhanced Security Configuration, which is on by default on Windows Servers, a mitigation for this vulnerability?</strong></p>\n<p>No, Enhanced Security Configuration does not mitigate this vulnerability.</p>\n",
+						"title": "FAQ",
+						"type": "FAQ",
+						"ordinal": "10"
+					},
+					{
+						"text": "Microsoft Graphics Component",
+						"title": "Microsoft Graphics Component",
+						"type": "Tag",
+						"ordinal": "20"
+					},
+					{
+						"text": "Microsoft",
+						"title": "Issuing CNA",
+						"type": "CNA",
+						"ordinal": "30"
+					}
+				]
+			},
+			"cve": "ADV200006",
+			"productstatuses": {
+				"status": {
+					"type": "Known Affected",
+					"product_id": [
+						"11497",
+						"11498",
+						"11563",
+						"11568",
+						"11569",
+						"11570",
+						"11571",
+						"11572",
+						"11712",
+						"11713",
+						"11714",
+						"11453",
+						"11454",
+						"11583",
+						"11644",
+						"11645",
+						"11646",
+						"10729",
+						"10735",
+						"10852",
+						"10853",
+						"10816",
+						"10855",
+						"10047",
+						"10048",
+						"10481",
+						"10482",
+						"10484",
+						"9312",
+						"10287",
+						"9318",
+						"9344",
+						"10051",
+						"10049",
+						"10378",
+						"10379",
+						"10483",
+						"10543"
+					]
+				}
+			},
+			"threats": {
+				"threat": [
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11497"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11498"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11563"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11568"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11569"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11570"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11571"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11572"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11712"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11713"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11714"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11453"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11454"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11583"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11644"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11645"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "11646"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10729"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10735"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10852"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10853"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10816"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10855"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10047"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10048"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10481"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10482"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10484"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "9312"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10287"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "9318"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "9344"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10051"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10049"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10378"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10379"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10483"
+					},
+					{
+						"type": "Impact",
+						"description": "Remote Code Execution",
+						"product_id": "10543"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11497"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11498"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11563"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11568"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11569"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11570"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11571"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11572"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11712"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11713"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11714"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11453"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11454"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11583"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11644"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11645"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "11646"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10729"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10735"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10852"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10853"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10816"
+					},
+					{
+						"type": "Severity",
+						"description": "Important",
+						"product_id": "10855"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10047"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10048"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10481"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10482"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10484"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "9312"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10287"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "9318"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "9344"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10051"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10049"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10378"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10379"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10483"
+					},
+					{
+						"type": "Severity",
+						"description": "Critical",
+						"product_id": "10543"
+					},
+					{
+						"type": "Exploit Status",
+						"description": "Publicly Disclosed:No;Exploited:Yes;DOS:N/A"
+					}
+				]
+			},
+			"cvssscoresets": {},
+			"remediations": {
+				"remediation": [
+					{
+						"type": "Workaround",
+						"description": "<p>There are several different workarounds in this section.  Not all may apply to all networks.</p>\n<table>\n<thead>\n<tr>\n<th>Workaround</th>\n<th>Applicability</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Disable the Preview Pane and Details Pane in Windows Explorer</td>\n<td>Works on all systems but won't mitigate the issue if you open a document with the vulnerable font class</td>\n</tr>\n<tr>\n<td>Disable the WebClient service</td>\n<td>Works on all systems but won't mitigate the issue if you open a document with the vulnerable font class</td>\n</tr>\n<tr>\n<td>DisableATMFD registry key using a managed deployment script</td>\n<td>Only works on older (before Windows 10) but completely mitigates the issue though can introduce usability issues in rare cases</td>\n</tr>\n<tr>\n<td>DisableATMFD registry key manually</td>\n<td>Only works on older (before Windows 10) but completely mitigates the issue though can introduce usability issues in rare cases</td>\n</tr>\n<tr>\n<td>Rename ATMFD.DLL</td>\n<td>Only works on older (before Windows 10) but completely mitigates the issue though can introduce usability issues in rare cases</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Note:</strong> We do not recommend that IT administrators running Windows 10 implement the workarounds described below. ATMFD.DLL is not present in Windows 10 installations starting with Windows 10, version 1709.  Newer versions do not have this DLL. See the <strong>Mitigation</strong> section for more information.</p>\n<h4><strong>Disable the Preview Pane and Details Pane in Windows Explorer</strong></h4>\n<p>Disabling the Preview and Details panes in Windows Explorer prevents the automatic display of OTF fonts in Windows Explorer. While this prevents malicious files from being viewed in Windows Explorer, it does not prevent a local, authenticated user from running a specially crafted program to exploit this vulnerability.</p>\n<p>To disable these panes in Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows 8.1, perform the following steps:</p>\n<ol>\n<li>Open Windows Explorer, click <strong>Organize</strong>, and then click <strong>Layout</strong>.</li>\n<li>Clear both the <strong>Details pane</strong> and <strong>Preview pane</strong> menu options.</li>\n<li>Click <strong>Organize</strong>, and then click <strong>Folder and search options</strong>.</li>\n<li>Click the <strong>View</strong> tab.</li>\n<li>Under <strong>Advanced settings</strong>, check the <strong>Always show icons, never thumbnails</strong> box.</li>\n<li>Close all open instances of Windows Explorer for the change to take effect.</li>\n</ol>\n<p>To disable these panes in all supported client and server versions of  Windows 10, perform the following steps:</p>\n<ol>\n<li>Open Windows Explorer, click the <strong>View</strong> tab.</li>\n<li>Clear both the <strong>Details pane</strong> and <strong>Preview pane</strong> menu options.</li>\n<li>Click <strong>Options</strong>, and then click <strong>Change folder and search options</strong>.</li>\n<li>Click the <strong>View</strong> tab.</li>\n<li>Under <strong>Advanced settings</strong>, check the <strong>Always show icons, never thumbnails</strong> box.</li>\n<li>Close all open instances of Windows Explorer for the change to take effect.</li>\n</ol>\n<p><strong>Impact of workaround.</strong></p>\n<p>Windows Explorer will not automatically display OTF fonts.</p>\n<p><strong>How to undo the workaround.</strong></p>\n<p>To re-enable the Preview and Details panes in Windows Explorer for Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows 8.1:</p>\n<ol>\n<li>Open Windows Explorer, click <strong>Organize</strong>, and then click <strong>Layout</strong>.</li>\n<li>Select both the <strong>Details pane</strong> and <strong>Preview pane</strong> menu options.</li>\n<li>Click <strong>Organize</strong>, and then click <strong>Folder and search options</strong>.</li>\n<li>Click the <strong>View</strong> tab.</li>\n<li>Under <strong>Advanced settings</strong>, clear the <strong>Always show icons, never thumbnails</strong> box.</li>\n<li>Close all open instances of Windows Explorer for the change to take effect.</li>\n</ol>\n<p>To re-enable the Preview and Details panes in Windows Explorer for all supported client and server versions of  Windows 10, perform the following steps:</p>\n<ol>\n<li>Open Windows Explorer, click the <strong>View</strong> tab.</li>\n<li>Select both the <strong>Details pane</strong> and <strong>Preview pane</strong> menu options.</li>\n<li>Click <strong>Options</strong>, and then click <strong>Change folder and search options</strong>.</li>\n<li>Click the <strong>View</strong> tab.</li>\n<li>Under <strong>Advanced settings</strong>, clear the <strong>Always show icons, never thumbnails</strong> box.</li>\n<li>Close all open instances of Windows Explorer for the change to take effect.</li>\n</ol>\n<h4><strong>Disable the WebClient service</strong></h4>\n<p>Disabling the WebClient service helps protect affected systems from attempts to exploit this vulnerability by blocking the most likely remote attack vector through the Web Distributed Authoring and Versioning (WebDAV) client service. After applying this workaround it is still possible for remote attackers who successfully exploit this vulnerability to cause the system to run programs located on the targeted user's computer or the Local Area Network (LAN), but users will be prompted for confirmation before opening arbitrary programs from the Internet.</p>\n<p>To disable the WebClient Service, perform the following steps:</p>\n<ol>\n<li>Click <strong>Start</strong>, click <strong>Run</strong> (or press the <strong>Windows Key</strong> and <strong>R</strong> on the keyboard), type <strong>Services.msc</strong> and then click <strong>OK</strong>.</li>\n<li>Right-click <strong>WebClient</strong> service and select <strong>Properties</strong>.</li>\n<li>Change the Startup type to <strong>Disabled</strong>. If the service is running, click <strong>Stop</strong>.</li>\n<li>Click <strong>OK</strong> and exit the management application.</li>\n</ol>\n<p><strong>Impact of workaround.</strong></p>\n<p>When the WebClient service is disabled, Web Distributed Authoring and Versioning (WebDAV) requests are not transmitted. In addition, any services that explicitly depend on the WebClient service will not start, and an error message will be logged in the System log. For example, WebDAV shares will be inaccessible from the client computer.</p>\n<p><strong>How to undo the workaround.</strong></p>\n<p>To re-enable the WebClient Service, perform the following steps:</p>\n<ol>\n<li>Click <strong>Start</strong>, click <strong>Run</strong> (or press the <strong>Windows Key</strong> and <strong>R</strong> on the keyboard), type <strong>Services.msc</strong> and then click <strong>OK</strong>.</li>\n<li>Right-click <strong>WebClient</strong> service and select <strong>Properties</strong>.</li>\n<li>Change the Startup type to <strong>Automatic</strong>. If the service is not running, click <strong>Start</strong>.</li>\n<li>Click <strong>OK</strong> and exit the management application.</li>\n</ol>\n<h4><strong>DisableATMFD registry key using a managed deployment script</strong></h4>\n<p><strong>Please Note:</strong> This workaround works for Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows 8.1.  ATMFD.DLL is not present in Windows 10 installations starting with Windows 10, version 1709.</p>\n<p><strong>Note</strong> Using Registry Editor incorrectly can cause serious problems that may require you to reinstall your operating system. Microsoft cannot guarantee that problems resulting from the incorrect use of Registry Editor can be solved. Use Registry Editor at your own risk. For information about how to edit the registry, view the &quot;Changing Keys And Values&quot; Help topic in Registry Editor (Regedit.exe) or view the &quot;Add and Delete Information in the Registry&quot; and &quot;Edit Registry Data&quot; Help topics in Regedt32.exe.</p>\n<ol>\n<li>Create a text file named <strong>ATMFD-disable.reg</strong> that contains the following text:</li>\n</ol>\n<pre><code>Windows Registry Editor Version 5.00\n[HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows]\n&quot;DisableATMFD&quot;=dword:00000001\n</code></pre>\n<ol start=\"2\">\n<li>Run regedit.exe.</li>\n<li>In Registry Editor, click the <strong>File</strong> menu and then click <strong>Import</strong>.</li>\n<li>Navigate to and select the** ATMFD-disable.reg** file that you created in the first step. (<strong>Note</strong> If your file is not listed where you expect it to be, ensure that it has not been automatically given a .txt file extension, or change the dialog’s file extension parameters to <strong>All Files</strong>).</li>\n<li>Click <strong>Open</strong> and then click <strong>OK</strong> to close Registry Editor.</li>\n<li>Restart the system.</li>\n</ol>\n<p><strong>Impact of workaround</strong></p>\n<p>Applications that rely on embedded font technology will not display properly. Renaming ATMFD.DLL could cause certain applications to stop working properly if they use OpenType fonts. Microsoft Windows does not release any OpenType fonts natively. However, third-party applications could install them and they could be affected by this change.</p>\n<p><strong>How to undo the workaround.</strong></p>\n<ol>\n<li>Create a text file named <strong>ATMFD-enable.reg</strong> that contains the following text:</li>\n</ol>\n<pre><code>Windows Registry Editor Version 5.00\n[HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows]\n&quot;DisableATMFD&quot;=dword:00000000\n</code></pre>\n<ol start=\"2\">\n<li>Run regedit.exe.</li>\n<li>In Registry Editor, click the <strong>File</strong> menu and then click <strong>Import</strong>.</li>\n<li>Navigate to and select the <strong>ATMFD-enable.reg</strong> file that you created in the first step. (Note If your file is not listed where you expect it to be, ensure that it has not been automatically given a .txt file extension, or change the dialog’s file extension parameters to <strong>All Files</strong>).</li>\n<li>Click <strong>Open</strong> and then click <strong>OK</strong> to close Registry Editor.</li>\n<li>Restart the system.</li>\n</ol>\n<h4><strong>DisableATMFD registry key manually</strong></h4>\n<p><strong>Please Note:</strong> This workaround works for Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows 8.1. ATMFD.DLL is not present in Windows 10 installations starting with Windows 10, version 1709.  Newer versions do not have this DLL. See the <strong>Mitigation</strong> section for more information.</p>\n<p><strong>Note</strong> Using Registry Editor incorrectly can cause serious problems that may require you to reinstall your operating system. Microsoft cannot guarantee that problems resulting from the incorrect use of Registry Editor can be solved. Use Registry Editor at your own risk. For information about how to edit the registry, view the &quot;Changing Keys And Values&quot; Help topic in Registry Editor (Regedit.exe) or view the &quot;Add and Delete Information in the Registry&quot; and &quot;Edit Registry Data&quot; Help topics in Regedt32.exe.</p>\n<ol>\n<li>Run <strong>regedit.exe</strong> as Administrator.</li>\n<li>In Registry Editor, navigate to the following sub key (or create it) and set its DWORD value to 1:\n<code>HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\DisableATMFD, DWORD = 1</code></li>\n<li>Close Registry Editor and restart the system.</li>\n</ol>\n<p><strong>Impact of workaround</strong></p>\n<p>Applications that rely on embedded font technology will not display properly. Renaming ATMFD.DLL could cause certain applications to stop working properly if they use OpenType fonts. Microsoft Windows does not release any OpenType fonts natively. However, third-party applications could install them and they could be affected by this change.</p>\n<p><strong>How to undo the workaround.</strong></p>\n<ol>\n<li>Run <strong>regedit.exe</strong> as Administrator.</li>\n<li>In Registry Editor, navigate to the following sub key and set its DWORD value to 0:\n<code>HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\DisableATMFD, DWORD = 0</code></li>\n<li>Close Registry Editor and restart the system.</li>\n</ol>\n<h4><strong>Rename ATMFD.DLL</strong></h4>\n<p><strong>Please Note:</strong> This workaround works for Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows 8.1. ATMFD.DLL is not present in Windows 10 installations starting with Windows 10, version 1709.  Newer versions do not have this DLL. See the <strong>Mitigation</strong> section for more information.</p>\n<p>For 32-bit systems:</p>\n<ol>\n<li>Enter the following commands at an administrative command prompt:</li>\n</ol>\n<pre><code> cd &quot;%windir%\\system32&quot;\n takeown.exe /f atmfd.dll\n icacls.exe atmfd.dll /save atmfd.dll.acl\n icacls.exe atmfd.dll /grant Administrators:(F) \n rename atmfd.dll x-atmfd.dll\n</code></pre>\n<ol start=\"2\">\n<li>Restart the system.</li>\n</ol>\n<p>For 64-bit systems:</p>\n<ol>\n<li>Enter the following commands at an administrative command prompt:</li>\n</ol>\n<pre><code>\tcd &quot;%windir%\\system32&quot;\n\ttakeown.exe /f atmfd.dll\n\ticacls.exe atmfd.dll /save atmfd.dll.acl\n\ticacls.exe atmfd.dll /grant Administrators:(F) \n\trename atmfd.dll x-atmfd.dll\n\tcd &quot;%windir%\\syswow64&quot;\n\ttakeown.exe /f atmfd.dll\n\ticacls.exe atmfd.dll /save atmfd.dll.acl\n\ticacls.exe atmfd.dll /grant Administrators:(F) \n\trename atmfd.dll x-atmfd.dll\n</code></pre>\n<ol start=\"2\">\n<li>Restart the system.</li>\n</ol>\n<p><strong>Impact of workaround</strong></p>\n<p>Applications that rely on embedded font technology will not display properly. Renaming ATMFD.DLL could cause certain applications to stop working properly if they use OpenType fonts. Microsoft Windows does not release any OpenType fonts natively. However, third-party applications could install them and they could be affected by this change.</p>\n<p><strong>How to undo the workaround</strong></p>\n<p>For 32-bit systems:</p>\n<ol>\n<li>Enter the following commands at an administrative command prompt:</li>\n</ol>\n<pre><code>\tcd &quot;%windir%\\system32&quot;\n\trename x-atmfd.dll atmfd.dll\n\ticacls.exe atmfd.dll /setowner &quot;NT SERVICE\\TrustedInstaller&quot;\n\ticacls.exe . /restore atmfd.dll.acl\n</code></pre>\n<ol start=\"2\">\n<li>Restart the system.</li>\n</ol>\n<p>For 64-bit systems:</p>\n<ol>\n<li>Enter the following commands at an administrative command prompt:</li>\n</ol>\n<pre><code>\tcd &quot;%windir%\\system32&quot;\n\trename x-atmfd.dll atmfd.dll\n\ticacls.exe atmfd.dll /setowner &quot;NT SERVICE\\TrustedInstaller&quot;\n\ticacls.exe . /restore atmfd.dll.acl\n\tcd &quot;%windir%\\syswow64&quot;\n\trename x-atmfd.dll atmfd.dll\n\ticacls.exe atmfd.dll /setowner &quot;NT SERVICE\\TrustedInstaller&quot;\n\ticacls.exe . /restore atmfd.dll.acl\n</code></pre>\n<ol start=\"2\">\n<li>Restart the system.</li>\n</ol>\n",
+						"affectedfiles": {}
+					},
+					{
+						"type": "Mitigation",
+						"description": "<p>For systems running supported versions of Windows 10 a successful attack could only result in code execution within an AppContainer sandbox context with limited privileges and capabilities.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Fonts Process With</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Windows 10</td>\n<td>fontdrvhost.exe in user mode appcontainer. Installed fonts are still processed in kernel mode</td>\n</tr>\n<tr>\n<td>Windows 10 Version 1607/Server 2016</td>\n<td>fontdrvhost.exe in user mode appcontainer. Installed fonts are still processed in kernel mode</td>\n</tr>\n<tr>\n<td>Windows 10 1703</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n<tr>\n<td>Windows 10 1709</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n<tr>\n<td>Windows 10 1803/Windows Server, version 1803</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n<tr>\n<td>Windows 10 1809/Server 2019</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n<tr>\n<td>Windows 10 1903/Windows Server, version 1903</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n<tr>\n<td>Windows 10 1909/Windows Server, version 1909</td>\n<td>All fonts are processed in fontdrvhost.exe in user mode appcontainer.</td>\n</tr>\n</tbody>\n</table>\n<p>For more information, see <a href=\"https://www.microsoft.com/security/blog/2017/01/13/hardening-windows-10-with-zero-day-exploit-mitigations/\">Mitigating font exploits with AppContainer</a>.</p>\n",
+						"affectedfiles": {}
+					}
+				]
+			},
+			"acknowledgments": {},
+			"revisionhistory": {
+				"revision": [
+					{
+						"number": "1.0",
+						"date": "2020-03-23T07:00:00Z",
+						"description": "<p>Information published.</p>\n"
+					},
+					{
+						"number": "1.1",
+						"date": "2020-03-23T07:00:00Z",
+						"description": "<p>Added clarifying information to the mitigation. This is an informational change only.</p>\n"
+					},
+					{
+						"number": "1.2",
+						"date": "2020-03-24T07:00:00Z",
+						"description": "<p>Added information to the executive summary to clarify targets of attacks. This is an informational change only.</p>\n"
+					},
+					{
+						"number": "1.3",
+						"date": "2020-03-24T07:00:00Z",
+						"description": "<p>Updated the severity of the Windows 10 client and server products from Critical to Important.  This is an informational change only.</p>\n"
+					},
+					{
+						"number": "1.4",
+						"date": "2020-03-26T07:00:00Z",
+						"description": "<p>Updated Workaround information. This is an informational change only.</p>\n"
+					},
+					{
+						"number": "1.5",
+						"date": "2020-03-27T07:00:00Z",
+						"description": "<p>Updated Workaround information. This is an informational change only.</p>\n"
+					},
+					{
+						"number": "2.0",
+						"date": "2020-04-14T07:00:00Z",
+						"description": "<p>Updated first FAQ to state that CVE-2020-1020 has now been issued to address this vulnerability. This is an informational change only.</p>\n"
+					}
+				]
+			}
+		}
+	]
 }
