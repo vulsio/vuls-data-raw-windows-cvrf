@@ -15,13 +15,13 @@
 		"version": "1.0",
 		"revisionhistory": {
 			"revision": {
-				"number": "41",
-				"date": "2023-11-28T08:00:00",
+				"number": "42",
+				"date": "2024-03-12T07:00:00",
 				"description": "August 2023 Security Updates"
 			}
 		},
 		"initial_release_date": "2023-08-08T07:00:00",
-		"current_release_date": "2023-11-28T08:00:00"
+		"current_release_date": "2024-03-12T07:00:00"
 	},
 	"documentnotes": {
 		"note": [
@@ -73,6 +73,14 @@
 						{
 							"text": "Microsoft Office LTSC 2021 for 32-bit editions",
 							"productid": "11953"
+						},
+						{
+							"text": "Microsoft Visio 2016 (64-bit edition)",
+							"productid": "10744"
+						},
+						{
+							"text": "Microsoft Visio 2016 (32-bit edition)",
+							"productid": "10743"
 						},
 						{
 							"text": "Microsoft Project 2013 Service Pack 1 (32-bit editions)",
@@ -129,14 +137,6 @@
 						{
 							"text": "Microsoft PowerPoint 2016 (64-bit edition)",
 							"productid": "10742"
-						},
-						{
-							"text": "Microsoft Visio 2016 (32-bit edition)",
-							"productid": "10743"
-						},
-						{
-							"text": "Microsoft Visio 2016 (64-bit edition)",
-							"productid": "10744"
 						},
 						{
 							"text": "Microsoft Word 2016 (32-bit edition)",
