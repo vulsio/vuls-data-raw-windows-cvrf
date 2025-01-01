@@ -15,7 +15,7 @@
 		"version": "1.0",
 		"revisionhistory": {
 			"revision": {
-				"number": "43",
+				"number": "49",
 				"date": "2024-03-12T07:00:00",
 				"description": "August 2023 Security Updates"
 			}
@@ -700,7 +700,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "4484489",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=095c4762-8c16-4eb2-ad13-7a9b783d325e",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=095c4762-8c16-4eb2-ad13-7a9b783d325e",
 						"supercedence": "4484450",
 						"product_id": [
 							"10800"
@@ -713,7 +713,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "4484489",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=6b8ad96c-39db-4652-a1e2-c27e667865fc",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=6b8ad96c-39db-4652-a1e2-c27e667865fc",
 						"supercedence": "4484450",
 						"product_id": [
 							"10801"
@@ -754,7 +754,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002399",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=5349afe1-d0d7-4bc3-981e-c12ad02f4eb4",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=5349afe1-d0d7-4bc3-981e-c12ad02f4eb4",
 						"supercedence": "4493227",
 						"product_id": [
 							"10692"
@@ -767,7 +767,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002399",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=35cc42f2-44d9-489c-b536-bc118efa8b3f",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=35cc42f2-44d9-489c-b536-bc118efa8b3f",
 						"supercedence": "4493227",
 						"product_id": [
 							"10693"
@@ -792,7 +792,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002417",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=48cd9112-c516-4db2-88d2-2fde980cfe14",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=48cd9112-c516-4db2-88d2-2fde980cfe14",
 						"supercedence": "5002332",
 						"product_id": [
 							"10725"
@@ -805,7 +805,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002417",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=d0ee5377-8c47-478e-9269-16d67cc8c3ea",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=d0ee5377-8c47-478e-9269-16d67cc8c3ea",
 						"supercedence": "5002332",
 						"product_id": [
 							"10726"
@@ -818,7 +818,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002463",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=5b2826e7-01bb-4dc5-af73-753ee845f57d",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=5b2826e7-01bb-4dc5-af73-753ee845f57d",
 						"supercedence": "5002351",
 						"product_id": [
 							"10739"
@@ -831,7 +831,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002463",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=bf124c47-f6f2-4851-9348-77128468d279",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=bf124c47-f6f2-4851-9348-77128468d279",
 						"supercedence": "5002351",
 						"product_id": [
 							"10740"
@@ -844,7 +844,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002465",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=c7c6b516-aa08-4d1e-8935-74625e0b7478",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=c7c6b516-aa08-4d1e-8935-74625e0b7478",
 						"supercedence": "4011126",
 						"product_id": [
 							"10753"
@@ -857,7 +857,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002465",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=7cf8e974-3820-461d-bb2f-060c61dd721a",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=7cf8e974-3820-461d-bb2f-060c61dd721a",
 						"supercedence": "4011126",
 						"product_id": [
 							"10754"
@@ -870,7 +870,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "4504720",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=36200b29-2fc6-4a85-8d00-ca65ba662d32",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=36200b29-2fc6-4a85-8d00-ca65ba662d32",
 						"supercedence": "4493224",
 						"product_id": [
 							"10741",
@@ -884,7 +884,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002418",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=6cd0317b-3ca6-4c34-ad4f-607622509987",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=6cd0317b-3ca6-4c34-ad4f-607622509987",
 						"supercedence": "5002337",
 						"product_id": [
 							"10743"
@@ -897,7 +897,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002418",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=81a60a50-8fcd-4d4f-8bf6-bd28415dea2c",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=81a60a50-8fcd-4d4f-8bf6-bd28415dea2c",
 						"supercedence": "5002337",
 						"product_id": [
 							"10744"
@@ -910,7 +910,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002464",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=72bf5493-bfd0-4459-977c-79f3b40bc363",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=72bf5493-bfd0-4459-977c-79f3b40bc363",
 						"supercedence": "5002323",
 						"product_id": [
 							"10746"
@@ -923,7 +923,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002464",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=b1e8bafa-3ce1-4efe-b368-72808ddfd84a",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=b1e8bafa-3ce1-4efe-b368-72808ddfd84a",
 						"supercedence": "5002323",
 						"product_id": [
 							"10747"
@@ -936,7 +936,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002462",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=9edfdf28-4052-439f-95d0-4c17e29c20ae",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=9edfdf28-4052-439f-95d0-4c17e29c20ae",
 						"supercedence": "4493152",
 						"product_id": [
 							"10749"
@@ -949,7 +949,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002462",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=34cae9be-9176-4fb1-8eca-2df1fc8c276d",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=34cae9be-9176-4fb1-8eca-2df1fc8c276d",
 						"supercedence": "4493152",
 						"product_id": [
 							"10750"
@@ -962,7 +962,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002328",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=995c7d0e-f1d0-4a41-9dfc-1a4b868786d5",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=995c7d0e-f1d0-4a41-9dfc-1a4b868786d5",
 						"supercedence": "4484441",
 						"product_id": [
 							"10760"
@@ -975,7 +975,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002328",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=5abd2842-f3bc-47a7-b7ba-81c5558fd8b1",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=5abd2842-f3bc-47a7-b7ba-81c5558fd8b1",
 						"supercedence": "4484441",
 						"product_id": [
 							"10761"
@@ -999,7 +999,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002451",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=ba9c1d96-de43-4dc1-a358-bd59af21b954",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=ba9c1d96-de43-4dc1-a358-bd59af21b954",
 						"supercedence": "5002348",
 						"product_id": [
 							"10654"
@@ -1012,7 +1012,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002451",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=571659e3-f35f-40ea-950a-6d5689b12ea3",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=571659e3-f35f-40ea-950a-6d5689b12ea3",
 						"supercedence": "5002348",
 						"product_id": [
 							"10655"
@@ -1036,7 +1036,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002439",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=956c724d-2f20-4ebd-bf40-5a0977415514",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=956c724d-2f20-4ebd-bf40-5a0977415514",
 						"product_id": [
 							"10601"
 						],
@@ -1048,7 +1048,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002439",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=3ebcbd96-68f7-4d48-8aab-6d5f9a7d317e",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=3ebcbd96-68f7-4d48-8aab-6d5f9a7d317e",
 						"product_id": [
 							"10602"
 						],
@@ -1060,7 +1060,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002391",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=3bae6b8b-3b9f-4932-90a3-3ce0308f9ba4",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=3bae6b8b-3b9f-4932-90a3-3ce0308f9ba4",
 						"supercedence": "4484347",
 						"product_id": [
 							"10609"
@@ -1073,7 +1073,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002391",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=6f68bc75-9acc-4595-94a9-eebbb6ec27ac",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=6f68bc75-9acc-4595-94a9-eebbb6ec27ac",
 						"supercedence": "4484347",
 						"product_id": [
 							"10610"
@@ -1098,7 +1098,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002445",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=2a9a5ca1-bda7-48e3-bc8c-89582cb064ae",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=2a9a5ca1-bda7-48e3-bc8c-89582cb064ae",
 						"supercedence": "5002316",
 						"product_id": [
 							"10604"
@@ -1111,7 +1111,7 @@
 					{
 						"type": "Vendor Fix",
 						"description": "5002445",
-						"url": "https://www.microsoft.com/downloads/details.aspx?familyid=6ef4e273-6636-452d-83ba-f40371d631f7",
+						"url": "https://www.microsoft.com/download/details.aspx?familyid=6ef4e273-6636-452d-83ba-f40371d631f7",
 						"supercedence": "5002316",
 						"product_id": [
 							"10605"
